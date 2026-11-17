@@ -38,8 +38,13 @@ iniciais e DEVEM ser refeitos e corrigidos.
    brasileiras aplicáveis, artigos técnicos, produtos parecidos (Ecozen Ecofrost,
    ColdHubs). Citar a fonte de CADA número com link. Só citar página que você
    realmente abriu ou que apareceu no resultado da busca; nunca inventar link.
-2. Preferir componentes à venda no Brasil: modelo, fabricante, link, preço
-   encontrado e data. Sem preço encontrado: escrever "preço não encontrado".
+2. Componentes: dar sempre a opção à venda no Brasil (modelo, fabricante, link,
+   preço encontrado e data; sem preço: escrever "preço não encontrado"). O dono
+   autorizou IMPORTAR DA CHINA para montar aqui: para cada item principal,
+   escrever também uma "especificação para cotação" genérica (capacidade, tensão,
+   gás, dimensões, certificações exigidas), para o agente de importação cotar o
+   equivalente importado. A comparação Brasil x China é do agente de importação
+   (`docs/11-importacao.md`); os projetistas não escolhem entre os dois.
 3. Marcar cada número ou decisão como [CALCULADO], [SUPOSTO] ou
    [VALIDAR COM PROFISSIONAL HABILITADO].
 4. Mostrar as contas com unidades, passo a passo, conferíveis por outra pessoa.
