@@ -39,17 +39,17 @@ Marcação: **[CALCULADO]** = conta sobre dado com fonte; **[CALCULADO sobre SUP
 
 | Item | Estimativa do dono | Este anteprojeto |
 |---|---|---|
-| Frio por dia | 55 a 60 kWh | **82 kWh** no dia de projeto (41 °C, fruta a 35 °C até 14 h); 69 a 74 kWh em dia comum [CALCULADO sobre SUPOSTO] |
-| Painéis | 5 kWp | **10 kWp é o mínimo; 12 kWp é o valor com folga** (em aberto para o dono, seção 5.5). Faixa de incerteza: 9 a 13 kWp |
+| Frio por dia | 55 a 60 kWh | **87 kWh** no dia de projeto (41 °C, fruta a 35 °C até 14 h); 71 a 76 kWh em dia comum [CALCULADO sobre SUPOSTO] |
+| Painéis | 5 kWp | **11 kWp é o mínimo (arquitetura (b)); 12 kWp é o valor de referência** (em aberto para o dono, seção 5.5). Faixa de incerteza: 10 a 13 kWp |
 | Gelo | 200 kg | **500 kg é o mínimo; 700 kg é o valor com folga.** Faixa de incerteza: 400 a 800 kg |
-| Sem sol | 14 h | Noite inteira com folga (o gelo nunca desce de 34 % no dia de projeto). 1 dia nublado com recepção normal; 3 dias nublados sem fruta nova |
+| Sem sol | 14 h | Noite inteira com folga (o gelo nunca desce de 30 % no dia de projeto). 1 dia nublado com recepção normal só com a bateria de apoio; 3 dias nublados sem fruta nova |
 | Bateria de apoio | "o que compensa" | **Só a mínima: 5 kWh úteis**, com a regra "dia nublado, meia carga". Mais painel rende mais que mais bateria (seção 6) |
 | Fruta | — | Manga a 12 °C, 85 a 90 % de umidade, uma zona |
 | Gás | em aberto | Sem propano montado no local. Duas arquiteturas com números (seção 7) |
 | Máquina | "velocidade variável direto no painel" | **Não existe pronta no Brasil.** Três rotas comparadas na seção seguinte |
-| Frio à noite | — | Bomba de água gelada e ventiladores: cerca de 80 a 110 W, 1,2 kWh por noite pelo modelo; passar 150 W à elétrica |
+| Frio à noite | — | Bomba de água gelada e ventiladores, com água a 6 °C à noite: 82 a 173 W, **1,5 kWh por noite** pelo modelo; passar **150 W médios e 300 W de pico** à elétrica |
 
-Com 5 kWp e 200 kg o sistema produz cerca de 37 kWh de frio no dia de projeto e a câmara pede 82. **Não fecha**; a fruta esquentaria dia após dia [CALCULADO sobre SUPOSTO]. O revisor chegou à mesma conclusão por conta independente.
+Com 5 kWp e 200 kg o sistema produz cerca de 37 kWh de frio no dia de projeto e a câmara pede 87. **Não fecha**; a fruta esquentaria dia após dia [CALCULADO sobre SUPOSTO]. O revisor chegou à mesma conclusão por conta independente.
 
 ---
 
@@ -123,11 +123,11 @@ Medidas internas típicas de reefer de 20 pés: 5,44 × 2,29 × 2,26 m, 28 m³ [
 
 | Opção | Custo | Frio a mais por dia | A favor | Contra |
 |---|---|---|---|---|
-| **Reefer usado** | R$ 20 a 30 mil | referência (82,2 kWh/dia) | Piso, porta, vedação e dreno prontos; transportável | Isolamento envelhecido |
+| **Reefer usado** | R$ 20 a 30 mil | referência (87,3 kWh/dia) | Piso, porta, vedação e dreno prontos; transportável | Isolamento envelhecido |
 | Seco + isolamento | R$ 7 mil + cerca de R$ 60 mil (67 m² × R$ 894) | −6,8 kWh/dia | Casca barata | Perde espaço interno; porta e piso novos; sai mais caro |
 | Painéis PIR | cerca de R$ 59 mil, sem porta, piso e cobertura | cerca de −9 kWh/dia | Menor carga | Mais caro; precisa de base e telhado |
 
-Efeito do UA no frio diário (dia de projeto) [CALCULADO sobre SUPOSTO]: 22 W/K → 75,4 kWh; 33 W/K → 82,2 kWh; 40 W/K → 86,5 kWh.
+Efeito do UA no frio diário (dia de projeto) [CALCULADO sobre SUPOSTO]: 22 W/K → 80,5 kWh; 33 W/K → 87,3 kWh; 40 W/K → 91,7 kWh.
 
 **Decisão: reefer usado de 20 pés, só a caixa.** A diferença de preço paga com folga 1 a 2 kWp de painel. Condições: teste de perda de calor na compra, aceitando UA ≤ 30 W/K [VALIDAR] (método na seção 14.3); teto sombreado pela cobertura dos painéis, com vão ventilado de 30 cm; cortina de tiras na porta.
 
@@ -160,7 +160,6 @@ Valores de memória, sem fonte aberta, exceto a goiaba [SUPOSTO; VALIDAR com o a
 
 | Fruta | Temperatura que prefere | Respiração comparada à manga | Observação a 12 °C |
 |---|---|---|---|
-| Banana verde | 13 a 14 °C | parecida | **12 °C está no limite do dano por frio**; só giro rápido. Muito sensível a etileno |
 | Mamão | 7 a 13 °C | menor | Compatível |
 | Acerola | cerca de 8 °C | maior | A 12 °C dura pouco; só giro de 1 a 2 dias |
 | Goiaba | 8 a 10 °C (verde-madura); respiração de 4 a 30 ml CO₂/kg·h a 10 °C ([UC Davis](https://postharvest.ucdavis.edu/node/5281)) | até o dobro | Giro rápido |
@@ -168,10 +167,17 @@ Valores de memória, sem fonte aberta, exceto a goiaba [SUPOSTO; VALIDAR com o a
 
 Conclusão para o projeto térmico:
 
-- **Carga:** a sensibilidade "respiração de 137 W/t em todas as 5 t" (o teto do USDA, 65 % acima do valor adotado) leva o frio diário de 82,2 para 98,1 kWh e **ainda fecha com 12 kWp + 700 kg** (gelo mínimo de 11,6 kWh). Com o conjunto mínimo (10 kWp + 500 kg) não fecharia. Nenhuma dessas frutas, completando a ocupação, passa desse teto [SUPOSTO].
+- **Carga:** a sensibilidade "respiração de 137 W/t em todas as 5 t" (o teto do USDA, 65 % acima do valor adotado) leva o frio diário de 87,3 para 103,6 kWh e **ainda fecha com 12 kWp + 700 kg, mas no limite** (gelo mínimo de 0,3 kWh). Com o conjunto mínimo (11 kWp + 500 kg) não fecharia. Ocupação parcial com essas frutas fica abaixo desse teto [SUPOSTO].
 - **Umidade:** todas pedem 85 a 95 %. Sem mudança.
-- **Etileno:** manga, banana, mamão, goiaba e maracujá produzem etileno ao amadurecer; fruta madura junto de banana verde acelera o amadurecimento dela. Não previ exaustão dedicada: a renovação de ar do CO₂ (10 m³/h) dilui pouco. Regra de operação: não guardar fruta madura junto de fruta verde por mais de 2 dias; se necessário, sachês absorvedores de etileno [SUPOSTO].
-- **Renovação de ar:** se a respiração dobrar, o CO₂ dobra; o ventilador de ar novo é comandado pelo sensor e foi especificado para 30 m³/h, o triplo do necessário para a manga.
+- **Etileno e ar novo por modo** (dado do analista de frutas, `docs/10-frutas-e-demanda.md`, seção 2.6; banana saiu dos complementos):
+
+| Modo | Ar novo pedido pelo etileno | Ar novo pedido pelo CO₂ | **Vazão adotada (a maior)** | Carga térmica do ar novo, dia de 41 °C |
+|---|---|---|---|---|
+| Só manga | 1 a 2 m³/h (etileno abaixo de 1 ppm) | 30 m³/h (CO₂ a 0,32 %) | **30 m³/h** | **6,6 kWh/dia** (já no frio de 87,3) |
+| Manga + acerola, mamão, goiaba, maracujá | cerca de 25 m³/h (uma troca por hora) | 30 m³/h, até 60 se a respiração da mistura for maior | **30 m³/h; 60 m³/h pelo sensor** | 6,6 a 13,2 kWh/dia (+6,6 no pior caso, coberto pela sensibilidade de respiração alta da seção 5.5 só em parte; com 60 m³/h contínuos, pedir 13 kWp) |
+
+  O CO₂ manda nos dois modos; nenhuma exaustão dedicada ao etileno é necessária. Regra: não guardar fruta madura junto de fruta verde por mais de 2 dias [SUPOSTO].
+- **Renovação de ar:** se a respiração dobrar, o CO₂ de equilíbrio com 30 m³/h sobe para cerca de 0,6 %; o ventilador de ar novo foi especificado para 60 m³/h no máximo, comandado pelo sensor (cada 30 m³/h a mais custa cerca de 4,4 kWh/dia de frio no dia de 41 °C).
 
 ### 2.4 Estudo futuro: caju
 
@@ -479,7 +485,7 @@ Por que não propano dentro do contêiner (mantido da versão 1, endossado pelo 
 | Impacto se vazar tudo | Com R290: quase nenhum no clima; risco de fogo junto à máquina | 12 a 20 kg × 630 = 8 a 13 t de CO₂ equivalente [CALCULADO sobre SUPOSTO]; sem risco de fogo |
 | Evaporação | −10,5 °C (glicol de −6 a −2 °C) | −7 °C em média (−4 °C no começo, −8 °C no fim da carga) |
 | COP a 41 °C | 1,70 (com 6 % de perda do inversor de rede) | 1,98 |
-| Mínimo que fecha (D2) | **12 kWp + 500 kg** | **10 kWp + 500 kg** |
+| Mínimo que fecha (D2) | **12 kWp + 700 kg** | **11 kWp + 500 kg** |
 | Trocadores e bombas | Trocador de placas dentro do resfriador; 2 bombas; válvula misturadora | Sem trocador de placas; 1 bomba; válvula misturadora |
 | Banco de gelo | A glicol, fusão interna (tubo plástico) | Serpentina de cobre com gás dentro; fusão externa; água a 0,5 a 1,5 °C |
 | Trabalho de frigorista no local | Nenhuma solda de gás. Só hidráulica | Solda, vácuo e carga de gás em dois circuitos, com serpentina longa: exige frigorista experiente em banco de gelo |
@@ -503,7 +509,7 @@ Por que não propano dentro do contêiner (mantido da versão 1, endossado pelo 
 > 4. Medir a concentração do glicol com refratômetro na partida e a cada 6 meses.
 > 5. Se o aparelho for a R290: detector de hidrocarboneto **dentro da câmara, junto ao piso**, com alarme na porta, e trocador de parede dupla se o fabricante oferecer [VALIDAR com a ABNT NBR ISO 5149].
 >
-> Na arquitetura (b) esse caminho não existe com gás inflamável: se a serpentina do banco furar, o R513A borbulha no tanque aberto, ao ar livre.
+> Na arquitetura (b) esse caminho não existe com gás inflamável: se a serpentina do banco furar, o R513A borbulha no tanque aberto, ao ar livre. **O óleo do compressor (POE) também vai para a água** e seria bombeado para a serpentina da câmara (achado N6): não é risco à saúde [SUPOSTO], mas suja. Prever filtro de água na saída do banco (tela e cartucho) e o procedimento: parar a bomba P2, esgotar e lavar o tanque, trocar a água e o filtro, só depois reparar e recarregar o circuito.
 
 > ⚠ **SEGURANÇA — equipamento selado com R290 (se for o caso).**
 > - Instalar ao ar livre, a pelo menos 3 m da porta da câmara, de ralos, fossas e canaletas (o propano é mais pesado que o ar) [SUPOSTO; VALIDAR].
@@ -553,7 +559,7 @@ Não escolho: depende de cotação real (pendência 4) e da arquitetura.
    distribuidor de agua de retorno no fundo (tubo furado)             (embaixo->cima)  catalogo (U de 90 mm)
 ```
 
-- Cada grade: 10 passes retos de 2,0 m de tubo de cobre de 1/2", unidos por curvas em U de catálogo com 90 mm entre centros: 20 m por grade; 13 grades = 260 m. Altura da grade: 0,90 m.
+- Cada grade: 10 passes retos de 2,0 m de tubo de cobre de 1/2", unidos por curvas em U com 90 mm entre centros: 20 m por grade; 13 grades = 260 m. Altura da grade: 0,90 m. **Não confirmei que exista curva de catálogo com esse entre-centros** (achado N5): ou o fornecedor de conexões confirma, ou o frigorista curva o próprio tubo com curvador e gabarito (raio de 45 mm, acima do mínimo usual de cerca de 2 diâmetros para cobre recozido de 1/2" [SUPOSTO; VALIDAR]). Se o entre-centros mudar, recalcular o passo e o vão de 27 mm.
 - Espaço entre os cilindros de gelo prontos (62,7 mm de diâmetro): 27 mm, por onde a água circula. **O controle para de fazer gelo antes de fechar esse vão** (sensor de nível e, por segurança, sonda de espessura numa grade).
 - Grades presas a um quadro de cantoneira de aço inox ou galvanizado a fogo, **aparafusado ao fundo do tanque**: o gelo tem empuxo líquido de 63 kgf para cima [CALCULADO].
 - Tanque: aço inox, fibra de vidro ou polietileno com cinta estrutural, calculado para 1,05 m de coluna de água (cerca de 10 kPa no fundo); 100 mm de poliuretano por fora; tampa isolada removível; ladrão e dreno.
@@ -570,7 +576,7 @@ Não escolho: depende de cotação real (pendência 4) e da arquitetura.
 |---|---|
 | Gelo | **Escolhido.** Barato por kWh, não se desgasta, mede-se pelo nível |
 | PCM (material que muda de fase a 5 a 8 °C) | Permitiria evaporar perto de 0 °C (COP cerca de 25 % melhor [SUPOSTO]), mas não achei fornecedor no Brasil nem preço. É o que a diretriz indiana usa ([Renewable Watch](https://renewablewatch.in/2025/02/14/mnre-releases-draft-guidelines-for-solar-cold-storage-with-tes-backup/)) |
-| Bateria no lugar do gelo | 35,9 kWh de frio por noite ÷ COP 2,9 = 12,4 kWh elétricos por noite, todo dia → 3 a 4 módulos (R$ 25 a 33 mil), com desgaste diário. Mais caro que o gelo. Só como apoio (seção 6) |
+| Bateria no lugar do gelo | 38,3 kWh de frio por noite ÷ COP 2,9 = 13,2 kWh elétricos por noite, todo dia → 3 a 4 módulos (R$ 25 a 33 mil), com desgaste diário. Mais caro que o gelo. Só como apoio (seção 6) |
 
 ---
 
@@ -685,8 +691,9 @@ Na arquitetura (a) o bloco externo é o resfriador selado; entre ele e o banco h
 
 ### 11.1 Umidade e condensado
 
-- Alvo: 85 a 90 %. A válvula misturadora mantém a água em 5 a 7 °C quando a carga é pequena (noite) e só desce a 3 °C nas horas de recepção; com isso a serpentina seca pouco o ar [SUPOSTO; ajustar em campo com o sensor de umidade].
+- Alvo: 85 a 90 %. Ar a 12 °C e 88 % tem ponto de orvalho de 10,1 °C [CALCULADO]. Com água entrando a 3 °C (dia, horas de recepção) a superfície média da serpentina fica a cerca de 6 °C, 4 K abaixo do orvalho: seca o ar. Com **água a 6 °C das 17 h às 7 h**, a superfície fica a cerca de 9 °C, só 1 K abaixo: quase não seca [CALCULADO sobre SUPOSTO]. O modelo usa exatamente isso (3 °C de dia, 6 °C à noite), e com água a 6 °C a serpentina ainda entrega cerca de 5,7 kW, acima do pico noturno de 3,8 kW. Ajustar em campo com o sensor de umidade.
 - A água nunca entra abaixo de 3 °C: **não há geada nem degelo.**
+- Se a umidade ficar abaixo de 85 % mesmo assim: umidificador simples ou piso molhado [SUPOSTO].
 - Condensado: poucos litros por dia [SUPOSTO]; dreno com sifão para fora.
 - Tubos frios e banco com barreira de vapor contínua sobre o isolante.
 
@@ -697,8 +704,8 @@ Na arquitetura (a) o bloco externo é o resfriador selado; entre ele e o banco h
 
 Medidas incluídas no projeto:
 
-1. **Renovação contínua de 10 m³/h** por ventilador pequeno com tomada de ar filtrada e saída oposta, com registros de retenção. Equilíbrio em 0,9 % de CO₂ [CALCULADO]. Custo térmico: 2,1 a 2,4 kWh/dia, **já somado à carga**.
-2. **Sensor de CO₂ dentro da câmara, com mostrador e luz na porta**: verde abaixo de 0,39 %, vermelho acima. O sensor também comanda o ventilador, que pode ir a 30 m³/h (equilíbrio em 0,3 %).
+1. **Renovação contínua de 30 m³/h** por ventilador pequeno com tomada de ar filtrada e saída oposta, com registros de retenção. Equilíbrio em **0,32 %** de CO₂ com 85 L/h [CALCULADO], abaixo do limite de 0,39 %. Custo térmico: **6,6 kWh/dia de frio no dia de 41 °C** (2,1 em junho), **já somado à carga** — 4,2 kWh/dia a mais que na versão anterior, que somava só 10 m³/h (achado N2).
+2. **Sensor de CO₂ dentro da câmara, com mostrador e luz na porta**: verde abaixo de 0,39 %, vermelho acima. O sensor também comanda o ventilador: 30 m³/h como base e até 60 m³/h se passar de 0,39 % (fruta mais ativa, D6).
 3. **Ventilação antes da primeira entrada do dia**: ventilador no máximo e porta aberta até a luz ficar verde (previstos 45 m³ às 6 h, já na carga).
 4. Regra de operação: ninguém entra com a luz vermelha; ninguém entra sozinho com a porta fechada; porta com abertura por dentro; luz interna; botão de alarme de pessoa presa.
 5. O reefer usado vaza algum ar, o que ajuda, mas o projeto não conta com isso.
@@ -707,27 +714,28 @@ Medidas incluídas no projeto:
 
 ## 12. Interface para elétrica e controle
 
-### 12.1 Cargas elétricas — arquitetura (b), Rota B
+### 12.1 Cargas elétricas por rota (para o integrador solar)
 
-| Carga | Qtde | Potência | Tensão / tipo | Quando |
+Correntes de partida "direta" são de memória (4 a 7 vezes a nominal, como o revisor) [SUPOSTO; o integrador confirma com a ficha de cada motor]. Fator de potência de 0,85 [SUPOSTO]. Como a bateria chega ao compressor na Rota B e a interface completa da Rota A ficam com o integrador (N1 e N4).
+
+| Carga | Qtde | Rota B — tensão; potência; corrente nominal; **tipo e corrente de partida** | Rota A (unidades de rotação fixa num inversor híbrido) | Quando |
 |---|---|---|---|---|
-| Compressor | 2 | até 3,7 kW cada; um compressor parte com 1,6 kW + auxiliares (2,0 kW de geração) | Motor 220 V trifásico, inversor da classe 380 V, 30 a 70 Hz (até 257 V), 9,8 A; **sem pico de partida** | Só com sol |
-| Painéis por inversor | 2 grupos | 6 kWp cada (referência de 12 kWp) | Tensão contínua em operação de 400 V ou mais; janela conforme o inversor (450 a 750 V nos anúncios); 8,4 A a 500 V | — |
-| Ventilador do condensador | 2 | 150 W [SUPOSTO] | EC monofásico, 0 a 10 V | Com o compressor |
-| Bomba de agitação do banco | 1 | 60 W [SUPOSTO] | Monofásica | Durante a carga |
-| Bomba P2 | 1 | 25 a 110 W | Circuladora eletrônica | **24 h** |
-| Ventiladores da serpentina de ar | 2 | 17 W (30 %) a 238 W (100 %) no total | EC, 0 a 10 V | **24 h** |
-| Ventilador de ar novo | 1 | 5 a 20 W | EC pequeno | **24 h**, pelo sensor de CO₂ |
-| Válvulas, sensores e controlador | — | 15 W [SUPOSTO] | 24 V | 24 h |
-| Resistência de cárter | 2 | 50 W cada [SUPOSTO] | Monofásica | Compressor parado; avaliar ligar só 1 h antes do sol |
-| Luz interna e alarme da porta | — | 40 W | LED | Com gente |
-| **Starlink** | 1 | 75 a 100 W (padrão) ou 25 a 40 W (Mini) — [DishyTech](https://www.dishytech.com/how-much-power-does-starlink-use/), [SlashGear](https://www.slashgear.com/1768335/starlink-battery-power-needs-while-camping) | — | **24 h**; fora do meu escopo, registrada |
+| Compressor | 2 | Motor trifásico de 220 V/60 Hz, alimentado por inversor solar da classe 380 V, 30 a 70 Hz (até 257 V); até 3,7 kW; 9,8 A; **partida por rampa do inversor, sem pico** (corrente de partida ≈ nominal) | Unidade condensadora de 220 V trifásica (ou monofásica, conforme o modelo); até 3,7 kW; cerca de 11 A; **partida direta: 45 a 80 A por 0,2 a 0,5 s**; ligar as duas com pelo menos 30 s de intervalo [SUPOSTO]. Com resfriador inverter selado (arquitetura (a)): partida suave, potência máxima de 7,4 kW (ficha a obter) | Só com sol (B); com sol ou bateria (A) |
+| Lado contínuo dos painéis | 2 grupos | 6 kWp cada; tensão em operação de 400 V ou mais (janela de 450 a 750 V nos anúncios); 8,4 A a 500 V | Conforme o inversor híbrido escolhido | — |
+| Ventilador do condensador | 2 | EC monofásico 220 V; 150 W; 0,7 A; partida suave | Vem na unidade | Com o compressor |
+| Bomba de agitação do banco (b) | 1 | Monofásica 220 V; 60 W; 0,3 A; direta, cerca de 1,5 A | igual | Durante a carga |
+| Bomba P1 (só arquitetura (a)) | 1 | — | Monofásica 220 V; 260 W; 1,4 A; direta, cerca de 7 A | Com o resfriador |
+| Bomba P2 | 1 | Circuladora eletrônica 220 V; 25 a 110 W; até 0,6 A; partida suave | igual | **24 h** |
+| Ventiladores da serpentina de ar | 2 | EC 220 V; 17 W (30 %) a 238 W (100 %) no total; até 1,2 A; partida suave | igual | **24 h** |
+| Ventilador de ar novo | 1 | EC 220 V; 15 a 30 W (30 a 60 m³/h); partida suave | igual | **24 h** |
+| Válvulas, sensores, controlador | — | 24 V; 15 W | igual | 24 h |
+| Resistência de cárter | 2 | 220 V; 50 W cada; resistiva | igual | Compressor parado; avaliar ligar só 1 h antes do sol |
+| Luz interna e alarme | — | 220 V LED; 40 W | igual | Com gente |
+| **Starlink** | 1 | 75 a 100 W (padrão) ou 25 a 40 W (Mini) — [DishyTech](https://www.dishytech.com/how-much-power-does-starlink-use/), [SlashGear](https://www.slashgear.com/1768335/starlink-battery-power-needs-while-camping) | igual | **24 h**; fora do meu escopo |
 
-**Consumo noturno da parte térmica (achado 7).** Pelo modelo, hora a hora (coluna "auxiliares internos" da tabela 5.4): 79 a 109 W das 17 h às 7 h, **1,22 kWh por noite** no dia de projeto; pico diurno de 204 W às 13 h; noite depois de dia ruim com recepção normal: 2,6 kWh. O revisor estima 250 a 400 W (seção 15.4). **Valor a usar pela elétrica até haver curva de ventilador real: 150 W médios das 17 h às 7 h (2,1 kWh), com pico de 300 W**, mais as resistências de cárter se ficarem ligadas (até 1,4 kWh).
+**Consumo noturno da parte térmica (achados 7 e N3).** Refeito com a água a 6 °C das 17 h às 7 h (antes o modelo usava 3 °C): **82 a 173 W, 1,51 kWh por noite** no dia de projeto (antes 79 a 109 W e 1,22 kWh); pico do dia de 221 W às 13 h; noite depois de dia ruim com recepção normal: 5,1 kWh (ventilador no máximo, situação de falta de gelo). **Valor de interface confirmado: 150 W médios das 17 h às 7 h (2,1 kWh) e 300 W de pico**, mais as resistências de cárter se ficarem ligadas (até 1,4 kWh). Sobe para cerca de 170 W médios com ar novo a 60 m³/h (frutas de D6).
 
 **Bateria de apoio térmico (seção 6):** 5 kWh úteis na Rota B; 10 a 15 kWh na Rota A.
-
-Na Rota A (arquitetura (a)): a carga é o resfriador de rede (tensão e potência conforme a ficha; estimativa de 7,4 kW no máximo), a bomba P1 de 260 W e os mesmos auxiliares internos.
 
 ### 12.2 Sensores
 
@@ -754,7 +762,7 @@ Na Rota A (arquitetura (a)): a carga é o resfriador de rede (tensão e potênci
 | Parâmetro | Valor |
 |---|---|
 | Câmara | 12,0 °C; alarme alto a 15 °C por 2 h; **alarme baixo a 10 °C** |
-| Água para a serpentina (TT5) | 3 °C no mínimo; 5 a 7 °C com carga leve |
+| Água para a serpentina (TT5) | 3 °C das 7 h às 17 h; 6 °C das 17 h às 7 h |
 | Fim de carga do banco | LT1 = 100 % ou sonda de espessura; evaporação mínima de −10 °C |
 | Partida do 1º compressor | Geração disponível acima de **2,0 kW** por 2 min (1,6 kW do compressor + auxiliares) |
 | Partida do 2º compressor | Geração disponível acima de 4,0 kW por 2 min |
@@ -762,7 +770,7 @@ Na Rota A (arquitetura (a)): a carga é o resfriador de rede (tensão e potênci
 | Tempos | Mínimo de 3 min ligado e 5 min desligado; no máximo 6 partidas por hora por compressor [VALIDAR com o fabricante] |
 | Frequência | 30 a 70 Hz |
 | Parada | Fecha a solenoide, recolhe até 0,9 bar relativo, desliga |
-| CO₂ | Ventilador no mínimo abaixo de 0,3 %; máximo acima de 0,39 %; alarme a 1 % |
+| CO₂ | Ventilador de ar novo a 30 m³/h contínuos; 60 m³/h acima de 0,39 %; alarme a 1 % |
 | Aviso "meia carga hoje" | LT1 abaixo de 50 % às 9 h, ou geração acumulada até as 10 h menor que 6 kWh |
 | Aviso "não receber fruta" | LT1 abaixo de 20 % |
 | Bateria de apoio | Só alimenta compressor com LT1 em 0 % e câmara acima de 13 °C |
@@ -772,7 +780,7 @@ Na Rota A (arquitetura (a)): a carga é o resfriador de rede (tensão e potênci
 
 | Assunto | Dado para as outras disciplinas |
 |---|---|
-| Outras frutas a 12 °C (banana, mamão, acerola, goiaba, maracujá) | **Não aumentam o equipamento se o conjunto for 12 kWp + 700 kg** (coberto pela sensibilidade de respiração de 137 W/t: 98,1 kWh/dia). Com 10 kWp + 500 kg não há folga para elas. Umidade igual (85 a 95 %). Sem exaustão de etileno dedicada; ventilador de ar novo especificado para 30 m³/h e comandado pelo sensor de CO₂. Banana verde a 12 °C está no limite do dano por frio; separar fruta madura de fruta verde [SUPOSTO; VALIDAR com o analista de frutas] |
+| Outras frutas a 12 °C (acerola, mamão, goiaba, maracujá; banana saiu) | **Cabem no conjunto de 12 kWp + 700 kg, no limite** (sensibilidade de respiração de 137 W/t: 103,6 kWh/dia, gelo mínimo de 0,3 kWh); com a arquitetura (a), pedir 13 kWp. Com 11 kWp + 500 kg não há folga para elas. Umidade igual (85 a 95 %). Sem exaustão de etileno dedicada; ventilador de ar novo de 30 m³/h contínuos, até 60 m³/h, comandado pelo sensor de CO₂. Ar novo por modo: só manga 30 m³/h (6,6 kWh/dia); mistura 30 a 60 m³/h (6,6 a 13,2 kWh/dia). Separar fruta madura de fruta verde [SUPOSTO; VALIDAR com o analista de frutas] |
 
 ---
 
@@ -795,7 +803,7 @@ Na Rota A (arquitetura (a)): a carga é o resfriador de rede (tensão e potênci
 | 9 | Bomba P2 (mais 1 reserva); bomba de agitação | modelo não encontrado | 2 + 1 | preço não encontrado | — |
 | 10 | Válvula misturadora de 3 vias com atuador | — | 1 | preço não encontrado | — |
 | 11 | Tubos, conexões, isolamento elastomérico | — | 1 lote | preço não encontrado | — |
-| 12 | **Ventilador de ar novo de 30 m³/h, registros de retenção, filtro** | — | 1 | preço não encontrado | — |
+| 12 | **Ventilador de ar novo de 30 a 60 m³/h, registros de retenção, filtro** | — | 1 | preço não encontrado | — |
 | 13 | **Sensor de CO₂ com saída para o controlador, luz verde/vermelha na porta, botão de pessoa presa, sirene** | — | 1 jogo | preço não encontrado | — |
 | 14 | Demais sensores da seção 12.2 | — | 1 lote | preço não encontrado | — |
 | 15 | Módulos de 550 W (fora do meu escopo; referência) | OSDA 550 W | 22 para 12 kWp | R$ 869,99 cada = R$ 19.140 (`docs/11-importacao.md`) | — |
@@ -878,7 +886,7 @@ Alternativas a investigar, não verificadas: unidades condensadoras "solares" de
 | 6 | Primeira carga de gelo | De 0 a 100 % em um dia de sol; anotar horas, kWh dos compressores e subida do nível (2,2 ou 3,6 cm); pressões dentro da tabela 9.1 |
 | 7 | Descarga noturna com a câmara vazia e aquecedor de 2 kW dentro | Ar a 12 °C ± 1 por 12 h; anotar a queda do nível |
 | 8 | Partidas com nuvem | Um dia de sol entre nuvens sem desarme, respeitando 6 partidas por hora |
-| 9 | CO₂ | Com a câmara fechada e fonte de CO₂ de teste, a luz muda a 0,39 % e o ventilador acelera; alarme a 1 % |
+| 9 | CO₂ | Com a câmara cheia e fechada, o CO₂ estabiliza abaixo de 0,39 % com 30 m³/h; com fonte de teste, a luz muda a 0,39 % e o ventilador vai a 60 m³/h; alarme a 1 % |
 | 10 | Porta e pessoa presa | Abre por dentro; botão aciona a sirene |
 | 11 | Ensaio com fruta | 1 t de manga às 13 h: registrar polpa do lote e do estoque por 48 h e comparar com a tabela 5.4 |
 | 12 | Consumo noturno | Medir a energia dos auxiliares das 17 h às 7 h e comparar com 1,2 a 2,1 kWh |
@@ -891,20 +899,20 @@ Alternativas a investigar, não verificadas: unidades condensadoras "solares" de
 
 1. Reefer usado de 20 pés, UA de projeto de 33 W/K, teto sombreado.
 2. Manga a 12 °C, uma zona, 5 t (D1); recepção até 14 h, depois só meia carga (D2).
-3. Frio de projeto: 82,2 kWh/dia; pico de 6,0 kW na serpentina de ar.
+3. Frio de projeto: 87,3 kWh/dia; pico de 6,3 kW na serpentina de ar.
 4. Nenhum propano montado no local (D3); nenhum gás inflamável dentro da câmara em hipótese alguma.
 5. Para dentro da câmara só água (b) ou glicol atóxico (a), por uma única serpentina de ar de 8,5 kW.
 6. Dois compressores (ou dois estágios), para partir com pouca luz e ter redundância.
-7. Renovação de ar de 10 m³/h, sensor de CO₂ e luz na porta.
+7. Renovação de ar de 30 m³/h contínuos (até 60), sensor de CO₂ e luz na porta.
 8. Conjunto de referência das contas: 12 kWp + 700 kg + 5 kWh de bateria de apoio.
 
 ### 15.2 O que mudou em relação às estimativas do dono
 
 | Estimativa | Era | Passa a ser | Motivo |
 |---|---|---|---|
-| Painéis | 5 kWp | 10 (mínimo) a 12 kWp | 5 kWp produzem 37 kWh de frio; pedem-se 82 |
-| Gelo | 200 kg | 500 (mínimo) a 700 kg | A noite gasta 35,9 kWh; 200 kg guardam 18,6 |
-| Frio diário | 55 a 60 kWh | 82 kWh no dia de projeto | Reefer usado, fruta a 35 °C, respiração, ar novo, folga |
+| Painéis | 5 kWp | 11 (mínimo) a 12 kWp | 5 kWp produzem 37 kWh de frio; pedem-se 87 |
+| Gelo | 200 kg | 500 (mínimo) a 700 kg | A noite gasta 38,3 kWh; 200 kg guardam 18,6 |
+| Frio diário | 55 a 60 kWh | 87 kWh no dia de projeto | Reefer usado, fruta a 35 °C, respiração, ar novo, folga |
 | Temperatura | 5 a 10 °C | 12 °C | Dano por frio da manga |
 | Máquina | Um compressor variável direto no painel | Não existe pronta; três rotas | Seção "O que existe pronto" |
 
@@ -913,19 +921,19 @@ Alternativas a investigar, não verificadas: unidades condensadoras "solares" de
 | Conflito | Opção 1 | Opção 2 | Custo e risco |
 |---|---|---|---|
 | **R — Rota de acionamento** | **A**: máquina de rede + inversor híbrido + bateria de 10 a 15 kWh. Menor risco | **B**: compressor + inversor solar direto, bateria de 5 kWh. Menor custo. (C: importada, alto risco sem CNPJ) | A custa 2 a 3 módulos de bateria (R$ 17 a 25 mil), um inversor híbrido e cerca de 1 kWp a mais; B depende de duas confirmações por escrito e pode ficar sem garantia do conjunto |
-| **D3 — Arquitetura** | (a) resfriador selado + glicol: 12 kWp + 500 kg no mínimo; sem solda de gás no local | (b) R513A + expansão direta: 10 kWp + 500 kg no mínimo; 12 a 20 kg de gás de GWP 630; exige frigorista experiente | Seção 7.2. Recomendo (a) se a ficha do resfriador confirmar; senão (b) |
+| **D3 — Arquitetura** | (a) resfriador selado + glicol: 12 kWp + 700 kg no mínimo; sem solda de gás no local | (b) R513A + expansão direta: 11 kWp + 500 kg no mínimo; 12 a 20 kg de gás de GWP 630; exige frigorista experiente | Seção 7.2. Recomendo (a) se a ficha do resfriador confirmar; senão (b) |
 | **C2 — Banco de gelo** | Artesanal (cobre ou plástico), com desenho na seção 8.3 | Comercial | Nenhum tem preço; o comercial não tem fornecedor identificado. Decidir com cotações |
-| **C4 — Tamanho do arranjo** | 10 kWp + 500 kg: fecha só na arquitetura (b), sem folga, sem dia nublado, sem frutas de D6 | 12 kWp + 700 kg: fecha nas duas arquiteturas, com 1 dia nublado e folga para respiração maior | Diferença: 4 módulos (R$ 3.480) mais estrutura, e 200 kg de gelo. O revisor sugere esperar catálogo e SunData antes de comprar os 2 kWp finais; eu sugiro dimensionar estrutura e inversores para 12 a 14 kWp desde já |
+| **C4 — Tamanho do arranjo** | 11 kWp + 500 kg: fecha só na arquitetura (b), sem folga (usa 83 % do gelo), sem dia nublado, sem frutas de D6 | 12 kWp + 700 kg: fecha nas duas arquiteturas (na (a) no limite); 1 dia nublado com 5 kWh de bateria | Diferença: 2 módulos (R$ 1.740) mais estrutura, e 200 kg de gelo. Na (a) com frutas de D6, 13 kWp. O revisor sugere esperar catálogo e SunData antes de comprar os módulos finais; eu sugiro dimensionar estrutura e inversores para 12 a 14 kWp desde já |
 | **D4 — Bateria de apoio** | 5 kWh + regra de meia carga em dia nublado | 14 kWp + 5 kWh (2 dias com recepção normal) ou 14 kWp + 15 kWh (3 dias) | Seção 6.4 |
 
 ### 15.4 Discordâncias com a revisão (as duas posições; o dono medeia)
 
 | Assunto | Revisor | Autor | O que resolve |
 |---|---|---|---|
-| Consumo noturno dos auxiliares (achado 7) | 250 a 400 W, 3,5 a 5,5 kWh por noite | 79 a 109 W, 1,22 kWh pelo modelo. A conta do revisor era para duas serpentinas com água a +1/+3 °C e ar a 5 °C; agora há uma serpentina, ar a 12 °C e 9 °C de diferença, o que permite ventilador a 30 a 40 % quase a noite toda (potência cai com o cubo da rotação). Aceito que os 115 W da versão 1 não tinham base. **Passo 150 W à elétrica como valor prudente** | Curva do ventilador real e o teste 12 |
+| Consumo noturno dos auxiliares (achado 7) | 250 a 400 W, 3,5 a 5,5 kWh por noite. **Na 2ª revisão aceitou 150 W médios e 300 W de pico, condicionado a N3** | 82 a 173 W, 1,51 kWh pelo modelo, já com água a 6 °C à noite (N3). A conta do revisor era para duas serpentinas com água a +1/+3 °C e ar a 5 °C; agora há uma serpentina, ar a 12 °C e 9 °C de diferença, o que permite ventilador a 30 a 40 % quase a noite toda (potência cai com o cubo da rotação). Aceito que os 115 W da versão 1 não tinham base. **Passo 150 W à elétrica como valor prudente** | Curva do ventilador real e o teste 12 |
 | Banco de gelo comercial "de prateleira no Brasil" (C2) | Afirma que existe (bancos de laticínio), sem fonte | A busca não achou fabricante, capacidade nem preço. Mantenho as duas opções abertas e não trato a comercial como disponível até haver cotação | Uma cotação |
 | Ordem de preferência para o gás (C1, hoje D3) | 1º resfriador monobloco de fábrica; 2º R513A com expansão direta | Mesma ordem **condicionada à ficha técnica**: o único candidato brasileiro visto não tem capacidade nem gás publicados. Sem a ficha, não considero (a) demonstrada; a (b) é a única que consigo dimensionar hoje | Ficha do resfriador |
-| Quando comprar os painéis (C4) | Esperar COP de catálogo e SunData para decidir entre 10 e 12 kWp | Concordo que o número final pode esperar, mas a diferença é pequena (R$ 3.480 de módulos) diante do risco de faltar frio; e a arquitetura (a) e as frutas de D6 já pedem 12 kWp | Decisão do dono |
+| Quando comprar os painéis (C4) | Esperar COP de catálogo e SunData para decidir entre 10 e 12 kWp | Concordo que o número final pode esperar, mas a diferença é pequena (R$ 1.740 de módulos, de 11 para 12 kWp) diante do risco de faltar frio; e a arquitetura (a) e as frutas de D6 já pedem 12 kWp | Decisão do dono |
 | "20 de 23 itens sem modelo e preço" (achado 3) | Bloqueante | Concordo com o fato e com o título de anteprojeto. Registro só que não é sanável por pesquisa neste ambiente: mesmo com os sites liberados, catálogos e preços não abriram | Cotações formais |
 
 Pontos em que **aceitei** a correção sem ressalva: achados 1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 e 27.
@@ -980,7 +988,7 @@ Pontos em que **aceitei** a correção sem ressalva: achados 1, 2, 4, 5, 6, 8, 9
 
 | Para quem | Dado |
 |---|---|
-| Integrador solar | Referência de 12 kWp (em aberto: 10 a 14) em dois grupos; Rota B: dois inversores de 5,5 kW, motor de 220 V com inversor de 380 V, 30 a 70 Hz, 9,8 A, tensão contínua de 400 V ou mais em operação, um compressor parte com 2,0 kW de geração; Rota A: inversor híbrido de 8 a 10 kW com 10 a 15 kWh. Auxiliares de dia: 360 W (b) ou 560 W (a). Auxiliares internos de 24 h: 150 W médios à noite, pico de 300 W. Bateria de apoio térmico: 5 kWh úteis (Rota B). Sobra típica de geração: 12 a 21 kWh/dia em dia de sol. Starlink: 25 a 100 W, 24 h |
+| Integrador solar | Referência de 12 kWp (em aberto: 10 a 14) em dois grupos; Rota B: dois inversores de 5,5 kW, motor de 220 V com inversor de 380 V, 30 a 70 Hz, 9,8 A, tensão contínua de 400 V ou mais em operação, um compressor parte com 2,0 kW de geração; Rota A: inversor híbrido de 8 a 10 kW com 10 a 15 kWh. Auxiliares de dia: 360 W (b) ou 560 W (a). Auxiliares internos de 24 h: 150 W médios à noite, pico de 300 W (confirmado com água a 6 °C). Tipos e correntes de partida por rota na tabela 12.1. Bateria de apoio térmico: 5 kWh úteis (Rota B). Sobra típica de geração: 12 a 21 kWh/dia em dia de sol. Starlink: 25 a 100 W, 24 h |
 | Programador de controle | Seções 12.2 e 12.3; estados: carga, banco cheio (liga-desliga), descarga, meia carga, não receber; CO₂ com luz na porta; LT1 com rotina de zero; bateria de apoio só com gelo em 0 % |
 | Frigorista | Seções 7.3, 8.3, 9 e 10; ajustes em bar relativo; testes 2, 3 e 6 |
 | Logística | Recepção das 7 h às 14 h; depois, meia carga; dia nublado, meia carga; terceiro dia nublado, sem fruta nova; resfriamento lento (polpa a 15 °C em cerca de 20 h); 5 t com corredor estreito; abrigo de máquinas de cerca de 4 × 2,5 m ao lado do contêiner e base para 3,2 t |
