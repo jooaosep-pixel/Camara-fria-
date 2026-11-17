@@ -193,8 +193,9 @@ O caju (pedúnculo) pede 5 °C e 85 a 90 % de umidade ([Embrapa/PAB 2007](https:
 | Resfriamento da fruta dentro da câmara | constante de tempo de 8 h | [SUPOSTO]; sensibilidade com 6 h |
 | Respiração | 83 W/t a 10 °C, fator 2,5 por 10 °C, teto a 38 °C | seção 2.1; fator e teto [SUPOSTO] |
 | Porta | 12 trocas de ar por dia, 60 % delas nas horas de recepção; ar externo na temperatura da hora, 30 % de umidade | [SUPOSTO] |
-| **Ar novo por causa do CO₂** | 10 m³/h contínuos + 45 m³ de ventilação às 6 h | seção 11.2 [CALCULADO sobre SUPOSTO] |
+| **Ar novo por causa do CO₂** | **30 m³/h contínuos** (CO₂ estabiliza em 0,32 %, abaixo do limite de 0,39 %) + 45 m³ de ventilação às 6 h | seção 11.2 [CALCULADO sobre SUPOSTO] |
 | Ventiladores da serpentina | 17 a 250 W conforme a carga (lei cúbica) | seção 9.3 [CALCULADO sobre SUPOSTO] |
+| Água que chega à serpentina | 3 °C das 7 h às 17 h; **6 °C das 17 h às 7 h** (para secar menos o ar) | seção 11.1 [SUPOSTO] |
 | Pessoas e luz | 2 pessoas × 200 W + 40 W nas horas de recepção | 272 − 6 × 12 = 200 W [SUPOSTO, fórmula de memória] |
 | Bomba e banco de gelo | bomba de 25 a 110 W; banco com UA de 3,5 W/K | [CALCULADO sobre SUPOSTO] |
 | Folga | +10 % sobre o frio tirado do banco | [SUPOSTO] |
@@ -205,18 +206,18 @@ Conferência à mão do calor de campo: (1.000 kg × 3,77 + 90 kg × 1,9) kJ/K �
 
 | Dia | Recepção | Invólucro | Porta | Ar novo | Calor de campo | Respiração | Ventiladores | Pessoas e luz | Bomba e banco | Soma | **Com folga de 10 %** | Pico na serpentina (kW) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Recorde 27–41 °C** | **até 14 h, 35 °C** | 18,1 | 4,1 | 2,4 | 24,2 | 19,1 | 0,7 | 2,0 | 4,2 | 74,7 | **82,2** | 6,0 |
-| Recorde | até 10 h, 30 °C | 18,1 | 3,2 | 2,4 | 18,8 | 18,0 | 0,6 | 1,4 | 4,1 | 66,5 | 73,1 | 5,0 |
-| Recorde | 1 t de uma vez às 13 h | 18,1 | 4,4 | 2,4 | 24,3 | 25,7 | 0,9 | 0,7 | 4,2 | 80,6 | 88,6 | 8,5 |
-| Quente típico 23–34 °C | até 14 h | 13,7 | 2,4 | 1,3 | 24,2 | 19,1 | 0,6 | 2,0 | 3,6 | 66,9 | 73,6 | 5,3 |
-| Junho 20–31 °C | até 14 h | 11,3 | 1,7 | 0,7 | 24,2 | 19,1 | 0,6 | 2,0 | 3,3 | 62,9 | 69,2 | 5,0 |
-| Recorde | sem fruta nova | 18,1 | 2,0 | 2,4 | 0,0 | 12,9 | 0,4 | 0,2 | 3,8 | 39,7 | 43,7 | 2,1 |
+| **Recorde 27–41 °C** | **até 14 h, 35 °C** | 18,1 | 4,1 | 6,6 | 24,2 | 19,2 | 1,0 | 2,0 | 4,2 | 79,4 | **87,3** | 6,3 |
+| Recorde | até 10 h, 30 °C | 18,1 | 3,2 | 6,6 | 18,8 | 18,0 | 0,7 | 1,4 | 4,1 | 70,9 | 78,0 | 5,1 |
+| Recorde | 1 t de uma vez às 13 h | 18,0 | 4,4 | 6,6 | 24,3 | 25,7 | 1,4 | 0,7 | 4,3 | 85,4 | 94,0 | 8,6 |
+| Quente típico 23–34 °C | até 14 h | 13,7 | 2,4 | 3,6 | 24,2 | 19,2 | 0,8 | 2,0 | 3,7 | 69,4 | 76,4 | 5,5 |
+| Junho 20–31 °C | até 14 h | 11,3 | 1,7 | 2,1 | 24,2 | 19,1 | 0,7 | 2,0 | 3,4 | 64,5 | 70,9 | 5,2 |
+| Recorde | sem fruta nova | 18,1 | 2,0 | 6,6 | 0,0 | 12,9 | 0,4 | 0,2 | 3,9 | 44,1 | 48,5 | 2,4 |
 
 A respiração pesa mais do que na versão 1 porque o valor subiu para 83 W/t, a câmara está a 12 °C e a fruta nova, ainda quente, respira muito nas primeiras horas.
 
 ### 3.3 Horário de recepção (D2)
 
-Receber até 14 h a 35 °C custa 9 kWh/dia a mais que receber até 10 h a 30 °C (82,2 contra 73,1), e gasta 35,9 kWh de gelo das 17 h às 7 h, contra 28,7 kWh. **O projeto foi dimensionado para a recepção até 14 h.** Depois das 14 h: só meia carga (até 500 kg), porque a fruta passa a ser resfriada só com gelo.
+Receber até 14 h a 35 °C custa 9 kWh/dia a mais que receber até 10 h a 30 °C (87,3 contra 78,0), e gasta 38,3 kWh de gelo das 17 h às 7 h, contra 30,9 kWh. **O projeto foi dimensionado para a recepção até 14 h.** Depois das 14 h: só meia carga (até 500 kg), porque a fruta passa a ser resfriada só com gelo.
 
 ---
 
@@ -262,10 +263,10 @@ Pressão relativa (a que o manômetro do frigorista mostra) = absoluta − 0,97 
 
 | Arquitetura | Geração | Frio produzido | Frio necessário | Resultado |
 |---|---|---|---|---|
-| (b) | 21,8 kWh | 37,3 kWh | 82 kWh | Não fecha: falta mais da metade; a fruta esquenta a cada dia |
-| (a) | 21,8 kWh | 27,2 kWh | 82 kWh | Idem |
+| (b) | 21,8 kWh | 37,3 kWh | 87 kWh | Não fecha: falta mais da metade; a fruta esquenta a cada dia |
+| (a) | 21,8 kWh | 27,2 kWh | 87 kWh | Idem |
 
-O limite é o painel. E 200 kg de gelo (18,6 kWh) não cobrem os 35,9 kWh gastos das 17 h às 7 h.
+O limite é o painel. E 200 kg de gelo (18,6 kWh) não cobrem os 38,3 kWh gastos das 17 h às 7 h.
 
 ### 5.3 Tabela única das variantes: menor conjunto que fecha no dia de projeto [CALCULADO sobre SUPOSTO]
 
@@ -273,66 +274,69 @@ O limite é o painel. E 200 kg de gelo (18,6 kWh) não cobrem os 35,9 kWh gastos
 
 | Arquitetura | Recepção | Frio tirado do banco (kWh/dia) | Gelo gasto das 17 h às 7 h (kWh) | **Mínimo de painel** (com o gelo que ele pede) | **Mínimo equilibrado** | Menor gelo com 12 kWp |
 |---|---|---|---|---|---|---|
-| (b) R513A, expansão direta | até 10 h, 30 °C | 73,1 | 28,7 | 8 kWp + 700 kg | 9 kWp + 400 kg | 400 kg |
-| **(b)** | **até 14 h, 35 °C (D2)** | **82,2** | **35,9** | 9 kWp + 800 kg | **10 kWp + 500 kg** | **500 kg** |
-| (b) | 1 t de uma vez às 13 h | 88,6 | 43,0 | 9 kWp + 1.000 kg | — | 600 kg |
-| (a) resfriador de glicol | até 10 h, 30 °C | 73,1 | 28,7 | 9 kWp + 1.000 kg | 11 kWp + 400 kg | 400 kg |
-| **(a)** | **até 14 h, 35 °C (D2)** | **82,2** | **35,9** | 10 kWp + 1.000 kg | **12 kWp + 500 kg** | **500 kg** |
-| (a) | 1 t de uma vez às 13 h | 88,6 | 43,0 | 11 kWp + 800 kg | — | 600 kg |
+| (b) R513A, expansão direta | até 10 h, 30 °C | 78,0 | 30,9 | 8 kWp + 1.000 kg | 10 kWp + 400 kg | 400 kg |
+| **(b)** | **até 14 h, 35 °C (D2)** | **87,3** | **38,3** | 9 kWp + 1.000 kg | **11 kWp + 500 kg** (ou 10 kWp + 700 kg) | **500 kg** |
+| (b) | 1 t de uma vez às 13 h | 94,0 | 45,6 | 10 kWp + 800 kg | — | 600 kg |
+| (a) resfriador de glicol | até 10 h, 30 °C | 78,0 | 30,9 | 10 kWp + 800 kg | 12 kWp + 400 kg | 400 kg |
+| **(a)** | **até 14 h, 35 °C (D2)** | **87,3** | **38,3** | 11 kWp + 1.000 kg | **12 kWp + 700 kg** (ou 13 kWp + 500 kg) | **700 kg** |
+| (a) | 1 t de uma vez às 13 h | 94,0 | 45,6 | 11 kWp + 1.000 kg | — | 800 kg |
 
 Varredura completa (frio não atendido em kWh/dia para cada par kWp × kg) na seção 3 da saída do script. Trecho para a recepção até 14 h, arquitetura (b):
 
 | kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
 |---|---|---|---|---|---|---|---|
-| 8 | 153,1 | 129,7 | 103,2 | 81,5 | 62,0 | 44,6 | 6,0 |
-| 9 | 64,0 | 45,9 | 31,3 | 15,6 | 2,5 | 0,0 | 0,0 |
-| 10 | 29,1 | 8,8 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
-| 12 | 26,5 | 7,9 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
-| 14 | 26,5 | 7,9 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
+| 8 | 182,7 | 161,0 | 142,3 | 126,4 | 109,5 | 90,3 | 52,5 |
+| 9 | 115,0 | 95,0 | 76,6 | 57,4 | 39,1 | 20,4 | 0,0 |
+| 10 | 54,1 | 28,0 | 12,2 | 2,8 | 0,0 | 0,0 | 0,0 |
+| 11 | 36,8 | 13,6 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
+| 12 | 35,2 | 12,7 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
+| 14 | 33,9 | 12,7 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
 
 (Valores altos com 8 kWp: quando falta frio todo dia, a fruta esquenta e respira mais, e a falta cresce.)
 
-O revisor estimou, para só manga, cerca de 10 kWp e 400 a 600 kg. **As duas contas agora coincidem no mínimo: 10 kWp + 500 kg na arquitetura (b).**
+O revisor estimou, para só manga, cerca de 10 kWp e 400 a 600 kg (390 kg com 85 % de fração útil, na 2ª revisão). Com o ar novo corrigido para 30 m³/h o mínimo da arquitetura (b) subiu para **11 kWp + 500 kg**.
+
+**Fração útil do gelo (achado N8).** O modelo deixa derreter o banco até zero. No mínimo de 11 kWp + 500 kg a noite gasta 38,3 kWh dos 46,4 kWh do banco: **83 %**. Com fusão externa a fração útil costuma ser de 80 a 90 % [SUPOSTO, de memória do revisor]: esse mínimo está no limite. No conjunto de referência (700 kg) o banco nunca desce de 30 % (usa 70 %), com folga.
 
 ### 5.4 Conjunto de referência: 12 kWp + 700 kg (64,9 kWh de frio)
 
-É o mínimo da arquitetura (a) com 200 kg de folga, ou o mínimo da (b) com 2 kWp e 200 kg de folga. Usei-o para todas as tabelas seguintes. **O tamanho final é decisão do dono (seção 5.5).**
+É o mínimo da arquitetura (a), ou o mínimo da (b) com 1 kWp e 200 kg de folga. Usei-o para todas as tabelas seguintes. **O tamanho final é decisão do dono (seção 5.5).**
 
 Hora a hora, dia recorde, recepção até 14 h, arquitetura (b), em regime [CALCULADO sobre SUPOSTO]:
 
 | h | T ext. | FV (kW) | Compressores (kW) | Frio produzido (kW) | Serpentina de ar (kW) | Ar da câmara (°C) | Polpa do lote mais quente (°C) | Polpa do estoque (°C) | Gelo (kWh) | Auxiliares internos (W) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 00 | 28,5 | 0,00 | 0,00 | 0,00 | 2,07 | 12,0 | 18,9 | 12,8 | 34,9 | 82 |
-| 01 | 27,6 | 0,00 | 0,00 | 0,00 | 1,94 | 12,0 | 18,2 | 12,8 | 32,6 | 81 |
-| 02 | 27,1 | 0,00 | 0,00 | 0,00 | 1,84 | 12,0 | 17,6 | 12,8 | 30,5 | 80 |
-| 03 | 27,1 | 0,00 | 0,00 | 0,00 | 1,77 | 12,0 | 17,1 | 12,8 | 28,4 | 79 |
-| 04 | 27,5 | 0,00 | 0,00 | 0,00 | 1,73 | 12,0 | 16,6 | 12,8 | 26,3 | 79 |
-| 05 | 28,4 | 0,10 | 0,00 | 0,00 | 1,71 | 12,0 | 16,2 | 12,8 | 24,3 | 79 |
-| 06 | 29,7 | 1,21 | 0,00 | 0,00 | 1,95 | 12,0 | 15,9 | 12,8 | 22,0 | 81 |
-| 07 | 31,2 | 2,87 | 2,51 | 6,45 | 2,00 | 12,0 | 15,5 | 12,8 | 26,0 | 81 |
-| 08 | 33,0 | 4,53 | 4,17 | 10,22 | 1,93 | 12,0 | 15,2 | 12,8 | 34,0 | 81 |
-| 09 | 34,8 | 5,94 | 5,58 | 13,02 | 1,98 | 12,0 | 15,0 | 12,8 | 44,6 | 81 |
-| 10 | 36,6 | 6,90 | 6,54 | 14,54 | 3,65 | 12,0 | 32,9 | 12,8 | 54,9 | 113 |
-| 11 | 38,2 | 7,29 | 6,93 | 14,77 | 4,48 | 12,0 | 32,9 | 12,8 | 64,6 | 140 |
-| 12 | 39,5 | 7,05 | 3,09 | 6,37 | 5,22 | 12,1 | 32,9 | 12,8 | 64,9 (cheio) | 171 |
-| 13 | 40,4 | 6,23 | 3,33 | 6,71 | 5,87 | 12,1 | 32,9 | 12,8 | 64,9 | 204 |
-| 14 | 40,9 | 4,92 | 2,59 | 5,14 | 4,46 | 12,0 | 31,0 | 12,8 | 64,9 | 140 |
-| 15 | 40,9 | 3,30 | 2,53 | 5,01 | 4,34 | 12,0 | 29,2 | 12,8 | 64,9 | 135 |
-| 16 | 40,5 | 1,61 | 0,00 | 0,00 | 3,97 | 12,0 | 27,6 | 12,8 | 60,3 | 123 |
-| 17 | 39,6 | 0,26 | 0,00 | 0,00 | 3,47 | 12,0 | 26,1 | 12,8 | 56,3 | 109 |
-| 18 | 38,3 | 0,00 | 0,00 | 0,00 | 3,24 | 12,0 | 24,7 | 12,8 | 52,5 | 103 |
-| 19 | 36,8 | 0,00 | 0,00 | 0,00 | 3,00 | 12,0 | 23,5 | 12,8 | 49,0 | 97 |
-| 20 | 35,0 | 0,00 | 0,00 | 0,00 | 2,78 | 12,0 | 22,4 | 12,8 | 45,8 | 93 |
-| 21 | 33,2 | 0,00 | 0,00 | 0,00 | 2,57 | 12,0 | 21,3 | 12,8 | 42,8 | 88 |
-| 22 | 31,4 | 0,00 | 0,00 | 0,00 | 2,39 | 12,0 | 20,4 | 12,8 | 40,0 | 85 |
-| 23 | 29,8 | 0,00 | 0,00 | 0,00 | 2,22 | 12,0 | 19,6 | 12,8 | 37,4 | 84 |
-| **dia** | | 52,2 kWh | 37,3 kWh | 82,2 kWh | 74,7 kWh | máx. 12,1 | | máx. 12,8 | mín. 22,0 (34 %) | 1,22 kWh das 17 h às 7 h |
+| 00 | 28,5 | 0,00 | 0,00 | 0,00 | 2,17 | 12,0 | 18,9 | 12,8 | 32,8 | 92 |
+| 01 | 27,6 | 0,00 | 0,00 | 0,00 | 2,03 | 12,0 | 18,2 | 12,8 | 30,5 | 88 |
+| 02 | 27,1 | 0,00 | 0,00 | 0,00 | 1,92 | 12,0 | 17,7 | 12,8 | 28,2 | 85 |
+| 03 | 27,1 | 0,00 | 0,00 | 0,00 | 1,85 | 12,0 | 17,1 | 12,8 | 26,0 | 83 |
+| 04 | 27,5 | 0,00 | 0,00 | 0,00 | 1,81 | 12,0 | 16,7 | 12,8 | 23,8 | 82 |
+| 05 | 28,4 | 0,10 | 0,00 | 0,00 | 1,80 | 12,0 | 16,2 | 12,8 | 21,7 | 82 |
+| 06 | 29,7 | 1,21 | 0,00 | 0,00 | 2,07 | 12,0 | 15,9 | 12,8 | 19,3 | 89 |
+| 07 | 31,2 | 2,87 | 2,51 | 6,45 | 2,14 | 12,0 | 15,5 | 12,8 | 23,2 | 83 |
+| 08 | 33,0 | 4,53 | 4,17 | 10,22 | 2,10 | 12,0 | 15,2 | 12,8 | 30,9 | 82 |
+| 09 | 34,8 | 5,94 | 5,58 | 13,02 | 2,18 | 12,0 | 15,0 | 12,8 | 41,4 | 83 |
+| 10 | 36,6 | 6,90 | 6,54 | 14,54 | 3,88 | 12,0 | 32,9 | 12,8 | 51,4 | 120 |
+| 11 | 38,2 | 7,29 | 6,93 | 14,77 | 4,73 | 12,0 | 32,9 | 12,8 | 60,8 | 150 |
+| 12 | 39,5 | 7,05 | 5,06 | 10,47 | 5,50 | 12,1 | 32,9 | 12,8 | 64,9 (cheio) | 184 |
+| 13 | 40,4 | 6,23 | 3,49 | 7,04 | 6,17 | 12,1 | 32,9 | 12,8 | 64,9 | 221 |
+| 14 | 40,9 | 4,92 | 2,76 | 5,48 | 4,77 | 12,0 | 31,0 | 12,8 | 64,9 | 151 |
+| 15 | 40,9 | 3,30 | 2,70 | 5,35 | 4,65 | 12,0 | 29,2 | 12,8 | 64,9 | 147 |
+| 16 | 40,5 | 1,61 | 0,00 | 0,00 | 4,27 | 12,0 | 27,6 | 12,8 | 60,0 | 133 |
+| 17 | 39,6 | 0,26 | 0,00 | 0,00 | 3,78 | 12,1 | 26,1 | 12,8 | 55,6 | 173 |
+| 18 | 38,3 | 0,00 | 0,00 | 0,00 | 3,51 | 12,1 | 24,7 | 12,8 | 51,6 | 155 |
+| 19 | 36,8 | 0,00 | 0,00 | 0,00 | 3,25 | 12,0 | 23,5 | 12,8 | 47,8 | 139 |
+| 20 | 35,0 | 0,00 | 0,00 | 0,00 | 2,99 | 12,0 | 22,4 | 12,8 | 44,3 | 126 |
+| 21 | 33,2 | 0,00 | 0,00 | 0,00 | 2,75 | 12,0 | 21,4 | 12,8 | 41,1 | 114 |
+| 22 | 31,4 | 0,00 | 0,00 | 0,00 | 2,53 | 12,0 | 20,5 | 12,8 | 38,1 | 105 |
+| 23 | 29,8 | 0,00 | 0,00 | 0,00 | 2,34 | 12,0 | 19,6 | 12,8 | 35,4 | 98 |
+| **dia** | | 52,2 kWh | 39,7 kWh | 87,3 kWh | 79,4 kWh | máx. 12,1 | | máx. 12,8 | mín. 19,3 (30 %) | 1,51 kWh das 17 h às 7 h |
 
-COP médio do dia: 2,21. Geração não aproveitada: 11,7 kWh (banco cheio a partir das 12 h; começo e fim do dia abaixo do limiar de partida). Essa sobra é a folga do painel e pode carregar a bateria.
+COP médio do dia: 2,20. Geração não aproveitada: 9,2 kWh (banco cheio a partir das 12 h; começo e fim do dia abaixo do limiar de partida). Essa sobra é a folga do painel e pode carregar a bateria.
 
 Leitura para o leigo:
 
-- **A potência de descarga foi conferida, não só a energia** (achado 4 do revisor). A serpentina de ar entrega até 8,5 kW com o ventilador no máximo; o pico pedido é 6,0 kW. O ar não passa de 12,1 °C. Mesmo com a serpentina rendendo a metade, o ar chega a 13,8 °C e nada fica sem atender.
+- **A potência de descarga foi conferida, não só a energia** (achado 4 do revisor). A serpentina de ar entrega até 8,5 kW com água a 3 °C e cerca de 5,7 kW com água a 6 °C (à noite); o pico pedido é 6,3 kW de dia e 3,8 kW às 17 h. O ar não passa de 12,1 °C. Mesmo com a serpentina rendendo a metade, o ar chega a 14,2 °C e nada fica sem atender.
 - A manga nova demora: entra a 35 °C às 13 h, está a 19 °C à meia-noite e a 15 °C às 9 h do dia seguinte. É resfriamento lento de câmara, não pré-resfriamento rápido. **Se o comprador exigir polpa a 12 °C em 24 h, é outro equipamento** (ar forçado através das caixas) e outra carga de pico (pendência 9).
 - A polpa do estoque fica 0,8 °C acima do ar por causa do calor da própria respiração.
 
@@ -340,40 +344,42 @@ Leitura para o leigo:
 
 | Dia | Recepção | Arq. | Frio tirado (kWh) | Não atendido (kWh) | Gelo mínimo (kWh) | Ar máx. (°C) | FV sobrando (kWh) |
 |---|---|---|---|---|---|---|---|
-| Recorde | até 14 h | (b) | 82,2 | 0,0 | 22,0 | 12,1 | 11,7 |
-| Recorde | até 10 h | (b) | 73,1 | 0,0 | 30,4 | 12,0 | 16,2 |
-| Recorde | 1 t às 13 h | (b) | 88,6 | 0,0 | 15,1 | 12,4 | 9,0 |
-| Quente típico | até 14 h | (b) | 73,6 | 0,0 | 25,9 | 12,1 | 21,1 |
-| Junho | até 14 h | (b) | 69,2 | 0,0 | 28,2 | 12,0 | 14,9 |
-| Recorde, irradiação 10 % menor | até 14 h | (b) | 82,2 | 0,0 | 22,0 | 12,1 | 6,0 |
-| Dia ruim repetido | até 14 h | (b) | — | 91,2 | 0 | 19,8 | — |
-| Dia ruim repetido | meia carga | (b) | 54,5 | 0,0 | 23,5 | 12,0 | 4,8 |
-| Dia ruim repetido | sem fruta nova | (b) | 35,5 | 0,0 | 41,3 | 12,0 | 11,2 |
-| Recorde | até 14 h | (a) | 82,2 | 0,0 | 20,7 | 12,1 | 3,2 |
-| Junho | até 14 h | (a) | 69,2 | 0,0 | 28,2 | 12,0 | 8,3 |
+| Recorde | até 14 h | (b) | 87,3 | 0,0 | 19,3 | 12,1 | 9,2 |
+| Recorde | até 10 h | (b) | 78,0 | 0,0 | 27,8 | 12,0 | 13,8 |
+| Recorde | 1 t às 13 h | (b) | 94,0 | 0,0 | 11,8 | 12,6 | 6,5 |
+| Quente típico | até 14 h | (b) | 76,4 | 0,0 | 24,5 | 12,1 | 20,0 |
+| Junho | até 14 h | (b) | 70,9 | 0,0 | 27,4 | 12,0 | 14,2 |
+| Recorde, irradiação 10 % menor | até 14 h | (b) | 87,3 | 0,0 | 19,1 | 12,1 | 3,4 |
+| Dia ruim repetido | até 14 h | (b) | — | 116,4 | 0 | 22,1 | — |
+| Dia ruim repetido | meia carga | (b) | 56,9 | 0,0 | 14,8 | 12,0 | 4,8 |
+| Dia ruim repetido | sem fruta nova | (b) | 37,9 | 0,0 | 39,9 | 12,0 | 10,3 |
+| Recorde | até 14 h | (a) | 87,3 | 0,0 | **6,2 (no limite)** | 12,1 | 3,2 |
+| Junho | até 14 h | (a) | 70,9 | 0,0 | 27,4 | 12,0 | 7,6 |
 
 Sensibilidades (dia recorde, até 14 h, arquitetura (b)); em todas o não atendido é zero:
 
 | Mudança | Frio tirado (kWh/dia) | Gelo mínimo (kWh) |
 |---|---|---|
-| Base | 82,2 | 22,0 |
-| UA de 22 W/K | 75,4 | 25,7 |
-| UA de 40 W/K | 86,5 | 19,6 |
-| Respiração de 137 W/t (teto do USDA) | 98,1 | 11,6 |
-| Respiração de 68 W/t | 78,2 | 24,6 |
-| Constante de tempo da fruta de 6 h | 81,1 | 24,6 |
-| Desempenho do arranjo de 0,70; eficiência de compressão de 0,55 | 82,2 | 22,0 (cabem na sobra de geração) |
-| Serpentina de ar com metade do desempenho | 85,0 | 17,7 (ar até 13,8 °C) |
+| Base | 87,3 | 19,3 |
+| UA de 22 W/K | 80,5 | 23,1 |
+| UA de 40 W/K | 91,7 | 16,8 |
+| Respiração de 137 W/t (teto do USDA) | 103,6 | **0,3 (no limite)** |
+| Respiração de 68 W/t | 83,3 | 21,9 |
+| Constante de tempo da fruta de 6 h | 86,2 | 21,9 |
+| Desempenho do arranjo de 0,70; eficiência de compressão de 0,55 | 87,3 | 19,3 (cabem na sobra de geração) |
+| Serpentina de ar com metade do desempenho | 92,3 | 13,2 (ar até 14,2 °C) |
 
 **Tamanho do arranjo — em aberto para o dono (conflito C4, seção 15.3).** As duas opções:
 
-| | 10 kWp + 500 kg | 12 kWp + 700 kg |
+| | 11 kWp + 500 kg | 12 kWp + 700 kg |
 |---|---|---|
-| Dia recorde, até 14 h, arquitetura (b) | Fecha sem folga | Fecha com 11,7 kWh de geração sobrando e gelo mínimo de 34 % |
-| Arquitetura (a) | **Não fecha** (pede 12 kWp + 500 kg) | Fecha |
-| Respiração no teto, ou fruta de D6 | Não fecha | Fecha |
-| 1 dia nublado com recepção normal | Não atende | Atende |
-| Diferença de custo | referência | 4 módulos de 550 W a R$ 869,99 = R$ 3.480 (preço de `docs/11-importacao.md`), mais estrutura e cabos (não cotados), mais 200 kg de gelo |
+| Dia recorde, até 14 h, arquitetura (b) | Fecha sem folga (usa 83 % do gelo) | Fecha com 9,2 kWh de geração sobrando e gelo mínimo de 30 % |
+| Arquitetura (a) | **Não fecha** (pede 12 kWp + 700 kg) | Fecha, no limite (gelo mínimo de 6,2 kWh) |
+| Respiração no teto, ou fruta de D6 | Não fecha | Fecha, no limite |
+| 1 dia nublado com recepção normal | Não atende | Só com a bateria de apoio de 5 kWh |
+| Diferença de custo | referência | 2 módulos de 550 W a R$ 869,99 = R$ 1.740 (preço de `docs/11-importacao.md`), mais estrutura e cabos (não cotados), mais 200 kg de gelo |
+
+Com a arquitetura (a) e as frutas de D6, 13 kWp dariam a mesma folga que a (b) tem com 12.
 
 ---
 
@@ -385,34 +391,36 @@ Cenário: depois de dias quentes típicos, vêm 1, 2 ou 3 dias com 2,0 kWh/m²·
 
 | Dias nublados | Recepção normal (1 t até 14 h) | Meia carga (0,5 t) | Sem fruta nova |
 |---|---|---|---|
-| 1 | Atende (polpa a 13,5 °C) | Atende | Atende |
-| 2 | **Não** (polpa a 19,5 °C) | **Não** (15,4 °C) | Atende |
-| 3 | **Não** (27,3 °C) | **Não** (19,5 °C) | Atende (13,1 °C) |
+| 1 | **Não** por pouco (polpa a 13,9 °C, ar a 15,4 °C) | Atende | Atende |
+| 2 | **Não** (polpa a 20,5 °C) | **Não** (16,2 °C) | Atende |
+| 3 | **Não** (29,0 °C) | **Não** (21,2 °C) | Atende (13,9 °C) |
 
 ### 6.2 Quanto falta para atender com recepção normal em todos os dias [CALCULADO sobre SUPOSTO]
 
 | Dias nublados | Só mais gelo | Só mais bateria | Só mais painel | +2 kWp e bateria | +300 kg e bateria |
 |---|---|---|---|---|---|
-| 1 | nada | nada | nada | nada | nada |
-| 2 | 1.200 kg (+500) | 10 kWh úteis | 16 kWp (+4) | 14 kWp + 5 kWh | 1.000 kg + 10 kWh |
-| 3 | 1.700 kg (+1.000) | 25 kWh úteis | 19 kWp (+7) | 14 kWp + 15 kWh | 1.000 kg + 20 kWh |
+| 1 | 800 kg (+100) | 5 kWh úteis | 14 kWp (+2) | nada | nada |
+| 2 | 1.300 kg (+600) | 15 kWh úteis | 17 kWp (+5) | 14 kWp + 10 kWh | 1.000 kg + 10 kWh |
+| 3 | 1.800 kg (+1.100) | 25 kWh úteis | 20 kWp (+8) | 14 kWp + 15 kWh | 1.000 kg + 20 kWh |
 
 Combinações conferidas uma a uma:
 
 | kWp | kg de gelo | Bateria de apoio (kWh úteis) | Recepção nos dias nublados | 1 dia | 2 dias | 3 dias |
 |---|---|---|---|---|---|---|
 | 10 | 500 | 0 ou 5 | normal | não | não | não |
-| 12 | 700 | 0 | normal | sim | não | não |
-| 12 | 700 | 10 | normal | sim | sim | não |
+| 12 | 700 | 0 | normal | não | não | não |
+| 12 | 700 | 5 | normal | sim | não | não |
+| 12 | 700 | 10 | normal | sim | não | não |
 | 12 | 700 | 0 | meia carga | sim | não | não |
-| **12** | **700** | **5** | **meia carga** | **sim** | **sim** | **quase (polpa a 14,2 °C)** |
+| **12** | **700** | **5** | **meia carga** | **sim** | **sim** | **não (polpa a 14,9 °C)** |
 | 12 | 700 | 10 | meia carga | sim | sim | sim |
 | 12 | 700 | 0 | sem fruta nova | sim | sim | sim |
 | 14 | 700 | 0 | normal | sim | não | não |
-| 14 | 700 | 5 | normal | sim | sim | não |
+| 14 | 700 | 5 | normal | sim | não | não |
 | 14 | 700 | 15 | normal | sim | sim | sim |
+| 14 | 700 | 0 | meia carga | sim | sim | não |
 | 14 | 700 | 5 | meia carga | sim | sim | sim |
-| 14 | 1.000 | 0 | normal | sim | sim | não |
+| 14 | 1.000 | 5 | normal | sim | sim | não |
 
 ### 6.3 Custo e vida útil
 
@@ -420,7 +428,7 @@ Quanto frio cada recurso entrega em dia nublado [CALCULADO sobre SUPOSTO]:
 
 | Recurso | Frio entregue | Custo encontrado | Custo por kWh de frio de reserva | Vida útil |
 |---|---|---|---|---|
-| +100 kg de gelo | 9,3 kWh, **uma vez por sequência** de dias nublados | **Preço não encontrado.** Ordem de grandeza R$ 1.000 a 2.000 por 100 kg (tubo, tanque, isolante) [SUPOSTO, sem fonte] | R$ 110 a 215 por kWh de reserva [SUPOSTO] | 15 a 20 anos [SUPOSTO]; não se desgasta com o uso |
+| +100 kg de gelo | 9,3 kWh, **uma vez por sequência** de dias nublados | **Preço não encontrado.** Ordem de grandeza R$ 1.000 a 2.000 por 100 kg (tubo, tanque, isolante) **[SUPOSTO, sem fonte — a conclusão sobre o gelo depende disso; refazer com cotação, pendência 4]** | R$ 110 a 215 por kWh de reserva [SUPOSTO] | 15 a 20 anos [SUPOSTO]; não se desgasta com o uso |
 | +1 módulo de bateria de 5,12 kWh (4,6 úteis) | 12,7 kWh por descarga (COP de 2,90 a 27 °C), **uma vez por sequência**; depois precisa de sol para recarregar | R$ 8.331 (custo posto de importado, `docs/11-importacao.md`); preço no Brasil não encontrado | **R$ 656 por kWh de reserva** | Cerca de 10 anos ou alguns milhares de ciclos [SUPOSTO]; o calor do sertão reduz |
 | +1 kWp de painel | 4,3 kWh de frio **em cada dia nublado**, sem limite de sequência; 10,4 kWh em dia de sol | 2 módulos de 550 W a R$ 869,99 = R$ 1.740, mais estrutura e cabos (não cotados) | R$ 405 por kWh de frio por dia nublado (só módulos), **e o benefício se repete todo dia** | 25 anos [SUPOSTO] |
 
@@ -432,11 +440,11 @@ Custo por kWh de frio efetivamente entregue ao longo da vida, supondo 15 dias nu
 
 ### 6.4 Recomendação de bateria (a decisão é do dono)
 
-1. **Bateria de apoio: só a mínima — 1 módulo de cerca de 5 kWh (4,6 úteis)**, além da bateria das cargas de 24 h que o integrador dimensiona. Com a regra "dia nublado, meia carga", o conjunto 12 kWp + 700 kg + 5 kWh atravessa 2 dias nublados e chega ao fim do terceiro com a polpa a 14,2 °C.
-2. **Para atender recepção normal em 2 dias nublados, o que compensa é painel, não bateria:** 14 kWp + 5 kWh faz o mesmo que 12 kWp + 10 kWh e custa menos (2 kWp de módulos ≈ R$ 3.480; 1 módulo de bateria ≈ R$ 8.331).
+1. **Bateria de apoio: só a mínima — 1 módulo de cerca de 5 kWh (4,6 úteis)**, além da bateria das cargas de 24 h que o integrador dimensiona. Com ela o conjunto 12 kWp + 700 kg atravessa **1 dia nublado com recepção normal**; com a regra "dia nublado, meia carga", atravessa **2 dias**; no terceiro, sem fruta nova. (Como a energia da bateria chega ao compressor na Rota B é assunto do integrador solar.)
+2. **Para atender recepção normal em 2 dias nublados:** 14 kWp + 10 kWh ou 12 kWp + 15 kWh; o primeiro custa menos (2 kWp de módulos ≈ R$ 1.740 contra 1 módulo de bateria ≈ R$ 8.331).
 3. **3 dias nublados com recepção normal:** 14 kWp + 15 kWh (3 módulos, cerca de R$ 25 mil). Não recomendo: a regra "no terceiro dia nublado não entra fruta nova" custa zero.
-4. Bateria grande só se justifica se o dono escolher a **Rota A**, que precisa dela para funcionar (10 a 15 kWh). Nesse caso ela já cobre o item 3.
-5. Mais gelo é a reserva mais barata por kWh, mas só serve uma vez por sequência e o gelo extra só enche se houver painel sobrando.
+4. Bateria grande só se justifica se o dono escolher a **Rota A**, que precisa dela para funcionar (10 a 15 kWh). Nesse caso ela já cobre o item 2.
+5. Mais gelo parece a reserva mais barata por kWh, mas o custo é suposto, só serve uma vez por sequência, e o gelo extra só enche se houver painel sobrando.
 
 O integrador solar deve refazer esta comparação com preços reais de bateria e inversor no Brasil.
 

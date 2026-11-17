@@ -544,17 +544,29 @@ Só o que achei com fonte. Condições mudam todo ano: confirmar no banco antes 
 
 Procurei de propósito. O que achei:
 
-1. **Estudo controlado na Índia (Rourkela, Odisha, 2025).** 300 feirantes em cinco mercados; metade recebeu acesso grátis à câmara solar, metade pagava uma pequena taxa diária. **Só 1% a 2% dos que pagavam usaram a câmara em um dia qualquer.** O benefício ficou com comerciantes grandes; o efeito sobre pequenos agricultores foi "pouco ou nenhum". Os próprios autores dizem não saber explicar bem a baixa adesão [F14]. É a evidência mais forte contra o modelo de pagar por dia.
+1. **Estudo controlado na Índia (Rourkela, Odisha, maio a agosto de 2024; divulgado em 2025)** — contado pelos dois lados. 300 feirantes em cinco mercados; 150 com acesso grátis à câmara solar, 150 pagando US$ 0,03 a US$ 0,10 por dia.
+   - **Contra:** só 1% a 2% dos que pagavam usaram a câmara num dia qualquer; o benefício ficou com comerciantes grandes e o efeito sobre pequenos agricultores foi "pouco ou nenhum"; os autores não sabem explicar bem a baixa adesão.
+   - **A favor:** o acesso grátis aumentou de **20% a 30% o volume vendido e a receita** dos feirantes, sem mudar o preço ao consumidor.
+   - **A quem se aplica:** feirantes de cidade pagando por dia, isto é, o modelo de aluguel avulso, que este documento já não recomenda. Não testa um grupo de produtores com comprador fixo.
+   - Ressalva de fonte: a página não abriu (fora da rede liberada); os números vêm de dois trechos de busca da mesma página [F14].
 2. **Vontade declarada não é uso pago.** Em Gana, mais de dois terços de 1.001 pequenos produtores disseram que adotariam câmara solar. Na Tanzânia, os obstáculos apontados foram custo alto, baixa capacidade de pagamento, pouco conhecimento e preferência do consumidor por produto não refrigerado [F15]. Não achei dado de taxa de ocupação real de nenhuma câmara de serviço.
 3. **Os números de sucesso do ColdHubs são da própria empresa** e divergem entre fontes [F12].
 4. **O pequeno produtor de manga vende na roça, no dia, pelo preço do comprador** (doc 09, seção 1.2). O problema dele é poder de venda, não falta de frio. Câmara sem comprador novo só adia a mesma venda.
-5. **A manga não é fruta de pequeno em PE:** 17% do volume [F4]. E a escala não casa: um lote familiar produz 150 a 180 t por ano, o que a câmara gira no ano inteiro (doc 09, seção 1.4).
-6. **A manga não atravessa a entressafra no frio** (seção 4.2). O argumento "guardar para vender caro" não vale.
-7. **Caju de mesa é nicho.** Cerca de 88% a 90% do pedúnculo não é aproveitado [F6][F11]; a renda do produtor vem da castanha. Em PE o volume é mínimo e concentrado em um município. A safra de castanha caiu 32% de 2024 para 2025 (169.210 para 114.749 t [F1]): fornecimento instável.
-8. **Onde há fruta em volume, já há frio.** O polo irrigado tem rede elétrica, packing houses e cooperativas com câmara (doc 09). O diferencial "fora da rede" vale pouco ali.
-9. **Acerola e goiaba têm destino industrial forte.** Um documento da Embrapa (antigo) dá 46% da acerola para a indústria [F34]. Quem entrega para a indústria no mesmo dia não precisa de câmara.
-10. **Não existe caso brasileiro funcionando para copiar** (seção 5.3). Quem for primeiro paga o aprendizado.
-11. **Equipamento comunitário parado:** procurei notícias de câmara fria ou packing house de associação abandonados no Nordeste e não achei caso documentado. Achei uma menção, de fonte fraca, a três agroindústrias de castanha em PE que "nunca funcionaram por falta de castanha" (doc 09, seção 1.3). O risco de o equipamento virar depósito é real e a ausência de notícia não o afasta [VALIDAR em campo: perguntar às cooperativas que receberam câmara se ela está ligada].
+5. **"A árvore é o estoque."** A manga irrigada do Vale é colhida por talhão, com florada induzida; quem vende por encomenda pode colher no dia da entrega, e grupos da agricultura familiar já entregam à merenda sem câmara [SUPOSTO; é o argumento do revisor e não achei dado que o negue]. Se for assim, a câmara só serve para amortecer o pico (um lote em colheita entrega cerca de 3 t/dia, doc 09, seção 1.4) e para juntar carga. Pergunta de campo: "já perdeu venda ou entrega por não ter onde guardar? quando?" (seção 9.1, pergunta 15).
+6. **A manga não é fruta de pequeno em PE:** 17% do volume pelo Censo [F4]. Um lote familiar produz cerca de 64 t de manga por ano (doc 09, seção 1.4) e um estabelecimento familiar de Petrolina, 21 t pelo Censo [F4]: o grupo atendido é pequeno.
+7. **A manga não atravessa a entressafra no frio** (seção 4.2). O argumento "guardar para vender caro" não vale.
+8. **Caju de mesa é nicho.** Cerca de 88% a 90% do pedúnculo não é aproveitado [F6][F11]; a renda do produtor vem da castanha. Em PE o volume é mínimo e concentrado em um município. A safra de castanha caiu 32% de 2024 para 2025 (169.210 para 114.749 t [F1]): fornecimento instável.
+9. **Onde há fruta em volume, já há frio.** O polo irrigado tem rede elétrica, packing houses e cooperativas com câmara (doc 09). O diferencial "fora da rede" vale pouco ali.
+10. **Acerola e goiaba têm destino industrial forte.** Um documento da Embrapa (antigo) dá 46% da acerola para a indústria [F34]. Quem entrega para a indústria no mesmo dia não precisa de câmara.
+11. **Não existe caso brasileiro funcionando para copiar** (seção 5.3). Quem for primeiro paga o aprendizado.
+12. **Equipamento comunitário parado:** procurei notícias de câmara fria ou packing house de associação abandonados no Nordeste e não achei caso documentado. Achei uma menção, de fonte fraca, a três agroindústrias de castanha em PE que "nunca funcionaram por falta de castanha" (doc 09, seção 1.3). O risco de o equipamento virar depósito é real e a ausência de notícia não o afasta [VALIDAR em campo: perguntar às cooperativas que receberam câmara se ela está ligada].
+
+### Sinais a favor que eu tinha deixado de fora
+
+- Só em Petrolina há **734 estabelecimentos familiares com manga** (Censo 2017) [F4]: a base de clientes possíveis é maior do que os "17% do volume" sugerem.
+- No pico, um lote em colheita entrega cerca de 3 t/dia (doc 09, seção 1.4): há excesso de curto prazo para amortecer, que é exatamente o que uma câmara faz.
+- O acesso à câmara aumentou de 20% a 30% as vendas no experimento da Índia (item 1).
+- A merenda tem de comprar pelo menos 45% da agricultura familiar desde 2026 [F19] e exige entrega regular.
 
 ### Onde a demanda é fraca e onde é forte
 
@@ -567,7 +579,7 @@ Procurei de propósito. O que achei:
 | Só manga, de abril a julho | **Fraca**: quase não há fruta para guardar |
 | Local com rede elétrica boa e packing house por perto | Fraca para o solar; uma câmara comum resolve |
 | **Grupo organizado, com contrato de merenda, PAA ou varejo, entregando 2 a 3 vezes por semana** | **Forte** |
-| **Manga de agosto a março, com banana, mamão ou acerola completando o resto do ano** | **Forte** |
+| **Manga de agosto a março, com acerola ou mamão completando o resto do ano** (se o campo confirmar calendário e preço) | **Forte, em tese** |
 | **Local com rede fraca ou sem rede, longe de packing house** | **Forte** para o solar |
 | **Polo de caju de mesa (CE, PI, RN) com comprador de fruta fresca** | Forte em tese; fora de PE |
 
@@ -586,13 +598,15 @@ Fazer **antes** de comprar equipamento. O doc 09 (seção 8) tem perguntas sobre
 5. Já deixou de colher por falta de comprador? Em que mês?
 6. Se pudesse segurar a fruta 5 dias sem estragar, venderia para quem? Esse comprador já existe? Como se chama?
 7. Já usou câmara fria de alguém? De quem, quanto pagou, por que parou?
-8. Mostrar o preço: "R$ 1,20 por caixa de 20 kg por dia, para manga. O senhor usaria? Quantas caixas por semana? Em que meses?"
+8. Mostrar o preço: "R$ 4 por caixa de 20 kg, para até 5 dias de câmara (cerca de R$ 0,80 por caixa por dia). O senhor usaria? Quantas caixas por semana? Em que meses?"
 9. E se fosse o dobro? E a metade? (Achar o preço em que ele desiste.)
 10. Prefere pagar por caixa, mensalidade fixa ou desconto na venda feita pela associação?
 11. Levaria a fruta até a câmara entre 7 h e 14 h? Com que transporte? Até quantos quilômetros?
 12. Participa de associação ou cooperativa? Tem CAF? Vende ou já vendeu para merenda ou PAA?
 13. Além da manga, que outra fruta guardaria na câmara (banana, mamão, acerola, goiaba, maracujá)? Em que meses? (Caju: só anotar se tem e quantos pés, para o estudo futuro.)
-14. Daria R$ 100 de sinal agora para garantir vaga na primeira safra? (Pergunta de compromisso real, não de opinião.)
+14. Assinaria a lista de interessados da associação, com quantas caixas por semana e em que meses, para a primeira safra? (Compromisso por escrito, sem dinheiro na mão do dono do protótipo, que não tem CNPJ — D5. Se a associação quiser recolher sinal, é decisão dela [VALIDAR com contador].)
+15. Já perdeu venda ou entrega por não ter onde guardar a fruta? Quando? Quanto?
+16. Quanto recebe hoje por caixa de acerola, goiaba, mamão ou banana, e em que meses colhe cada uma?
 
 ### 9.2 Para cooperativas e associações (meta: 3)
 
@@ -604,6 +618,7 @@ Fazer **antes** de comprar equipamento. O doc 09 (seção 8) tem perguntas sobre
 6. Cederiam terreno e assinariam um termo de uso por um ano de teste?
 7. Que frutas os sócios entregam em cada mês?
 8. Qual a conta de luz e a qualidade da rede no galpão? (Para saber se o solar fora da rede é mesmo necessário.)
+9. Há câmara fria de terceiros ou de packing house por perto que alugue espaço? Quanto cobra por caixa ou por palete por dia? (Única forma de ter referência brasileira de taxa.)
 
 ### 9.3 Para compradores (meta: 5 — nutricionista ou setor de merenda de 2 prefeituras, 1 supermercado ou sacolão, 1 atacadista de CEASA ou Mercado do Produtor, 1 indústria de polpa)
 
@@ -617,14 +632,13 @@ Fazer **antes** de comprar equipamento. O doc 09 (seção 8) tem perguntas sobre
 
 ### 9.4 Número mínimo para seguir
 
-Regra proposta [SUPOSTO; o dono pode mudar]:
+Regra proposta [SUPOSTO; o dono pode mudar]. **Um critério de volume só**, e os outros derivados dele:
 
 | Grupo | Mínimo para seguir |
 |---|---|
-| Compradores | **Pelo menos 1 de 5 com compromisso por escrito** (carta de intenção ou chamada pública com data) que cubra no mínimo 50 t por ano |
-| Cooperativas e associações | **Pelo menos 1 de 3** disposta a ceder terreno, indicar operador e assinar termo de uso |
-| Produtores | **Pelo menos 8 de 15** dizendo que usariam ao preço mostrado **e pelo menos 5 dando o sinal** (pergunta 14) |
-| Volume | A soma do que os interessados declaram tem de chegar a **2 t de estoque médio** (40% da câmara de 5 t) por pelo menos 6 meses do ano |
+| **Compradores (critério principal)** | **Compromisso por escrito** (carta de intenção, contrato ou chamada pública com data) somando **pelo menos 50 t por ano**. Equivale a 50 ÷ 200 dias letivos = 0,25 t/dia e, com 5 dias de permanência, 1,25 t de estoque médio (25% da câmara) [CALCULADO] |
+| Cooperativas e associações | Pelo menos 1 de 3 disposta a ceder terreno, indicar quem opera e assinar termo de uso |
+| Produtores | Pelo menos 8 de 15 dizendo que usariam à taxa de referência (R$ 4 por caixa de 20 kg movimentada, isto é, R$ 0,20/kg) e **assinando a lista** da pergunta 14 com caixas que, somadas, cubram as 50 t |
 
 - Se os compradores falharem: **parar**. Sem comprador novo a câmara não tem função.
 - Se só os produtores falharem: rever preço e modelo de cobrança (seção 5.2) e repetir.
@@ -638,61 +652,60 @@ Regra proposta [SUPOSTO; o dono pode mudar]:
 
 | Fruta | Temperatura do ar | Umidade | Meses de uso | Embalagem | Papel |
 |---|---|---|---|---|---|
-| **Manga** (verde-madura e "de vez") | **12 °C** | 85–90% | Ago a Mar (pico Out a Jan) | Caixa plástica de 20–25 kg | **Fruta do protótipo (D1)** |
-| Banana | 12 °C (ideal 13–14) | 85–90% [SUPOSTO] | Ano todo; interesse maior de Abr a Jul | Caixa | Complemento possível; testar variedade |
-| Mamão | 12 °C | 85–90% | Ano todo | Caixa | Complemento possível |
-| Acerola | 12 °C | 90% | Ano todo | Caixa baixa (fruta amassa) | Complemento possível |
-| Goiaba, maracujá | 12 °C (ideal 8–10) | 85–90% | Ano todo | Caixa | Complemento de giro rápido |
+| **Manga** (verde-madura e "de vez") | **12 °C** | 85–90% | Ago a Mar (pico Out a Jan) | Caixa plástica de 20 kg | **Fruta principal (D1)** |
+| Acerola | 12 °C | 90% | A confirmar em campo; interesse maior de Abr a Jul | Caixa baixa (fruta amassa) | Complemento (D6), primeiro da lista |
+| Mamão | 12 °C | 85–90% | A confirmar em campo | Caixa | Complemento se houver oferta no raio de coleta |
+| Goiaba, maracujá | 12 °C (ideal 8–10) | 85–90% | A confirmar em campo | Caixa | Só verdoengos, até 3 dias |
+| Banana | ideal 13,3–14,4 °C | — | — | — | **Fora até ensaio** (dano por frio abaixo de 13 °C) |
 | Caju | 5 °C | 85–90% | Set a Dez | Bandeja com filme | **Fora do protótipo**; estudo futuro (seção 2.5) |
 
 ### 10.2 Recados para o engenheiro
 
 - Uma zona, 12 °C, 85% a 90% de umidade, 5 t (D1). Recepção das 7 h às 14 h (D2).
-- **Carga esperada pela demanda:** entrada de 0,17 a 0,88 t por dia (seção 6.2). O teto de 1 t por dia da premissa só é atingido com a câmara cheia e giro de 5 dias.
-- **Abril a julho: câmara quase vazia se for só manga.** O equipamento vai trabalhar com pouca carga, ou com outras frutas.
-- Se entrar banana ou mamão junto com manga madura: prever renovação de ar por causa do etileno [SUPOSTO].
-- Não achei dado de respiração para banana, mamão, acerola, goiaba e maracujá nesta pesquisa; buscar antes de aceitar essas frutas.
-- A manga a 12 °C pode ficar 2 a 3 semanas [F7]; a logística trabalha com 2 a 5 dias. O estoque máximo é o mesmo (5 t); o que muda é o giro.
+- **Carga esperada:** cenário de referência 79 t por ano, cerca de 0,40 t/dia nos dias letivos; calendário de manga acordado com a logística: 0,6 t/dia de outubro a janeiro e 0,3 t/dia em fevereiro, março, agosto e setembro (108 t); com complementos, hipótese de mais 54 t (seção 2.4). Teto de 1 t/dia por cota (doc 09).
+- **Renovação de ar quando houver mistura de frutas: uma troca por hora, cerca de 25 m³/h** [F21][CALCULADO sobre SUPOSTO, seção 2.6]. Só com manga, 1 a 2 m³/h bastam para segurar o etileno abaixo de 1 ppm. O ar novo entra a cerca de 40 °C: é carga térmica e de umidade a calcular.
+- Não achei dado de respiração para acerola, mamão, goiaba e maracujá nesta pesquisa; buscar antes de aceitar essas frutas.
+- Abril a julho: pouca carga, ou só complementos.
 
 ---
 
 ## 11. Acordo com a logística
 
-Divisão combinada: o doc 09 é dono de local, municípios, distâncias, compradores por local, modelo de operação e horário. Este documento é dono de frutas, pós-colheita, compatibilidade, calendário de ocupação, perdas, quem paga, cobrança, receita e financiamento. Nos pontos de contato eu usei o doc 09, salvo onde tenho fonte melhor (li as tabelas do IBGE direto, o que o doc 09 não conseguiu).
+Refeita contra a versão atual do doc 09 (versão 5) e contra a proposta de acordo da logística (`docs/_trabalho/acordo-logistica-demanda.md`). Divisão de escopo: o doc 09 é dono de local, municípios, distâncias, compradores por local, operação e horário; este documento é dono de frutas, pós-colheita, compatibilidade, calendário de ocupação, perdas, quem paga, cobrança, receita e financiamento.
 
 ### (a) Pontos em que concordo e adoto o doc 09
 
-1. Manga e caju não coexistem num mesmo raio de coleta em Pernambuco (doc 09, resumo, item 1). **Confirmado** com dados municipais do IBGE de 2024 e 2025.
-2. Quase toda a manga de PE está em sete municípios da beira do São Francisco (doc 09: 98%). Minha conta com 2025: 98%.
-3. Escala: a câmara equivale a 1,4 a 1,7 lote familiar; o cliente é um grupo de 5 a 15 famílias que separa parte da fruta para vender melhor (doc 09, seção 1.4).
-4. Calendário de safra de manga e caju (doc 09, seção 1.5). Adotei sem refazer.
-5. O pequeno é "tomador de preço" e vende na roça (doc 09, seção 1.2).
-6. Tetos de PNAE e a conta de R$ 400 mil por ano para 10 famílias (doc 09, seção 2.4).
-7. Regra "fruta sem comprador marcado não entra" e permanência de 2 a 5 dias (doc 09, seção 6).
-8. Começar só com manga no local recomendado (doc 09, seção 6; agora decisão D1). Eu acrescento os complementos da seção 2.3.
+1. As correções de fonte que eu tinha apontado (manga de PE em 2024 = 560.977 t; Lagoa Grande 30.000 t; castanha 3.099 t com Buíque 81%; dados de 2025) **já estão no doc 09**; a logística também conferiu no IBGE. Fechado.
+2. Caju: estudo futuro, candidato Buíque–Tupanatinga; o Pajeú saiu. Fechado.
+3. Escala do doc 09, seção 1.4: cerca de **64 t de manga por lote** e câmara para **2 a 6 lotes, valor central perto de 4**. Adoto e retirei os "150 a 180 t por lote" que eu ainda citava.
+4. Pico de colheita: um lote entrega cerca de 3 t/dia; daí a **cota diária** e o teto de 1 t/dia (doc 09, seção 6).
+5. Local, condicionado a comprador por escrito, associação que ceda terreno e indique operador, e ausência de câmara com vaga por perto (item 3 do acordo).
+6. Horário: recepção das 7 h às 14 h (D2); chegada provável da manga **entre 9 h e 16 h**, com o alerta de que a Embrapa recomenda colher entre 10 h e 15 h por causa do látex (doc 09, seção 6). A versão anterior deste documento dizia "10 h às 15 h": corrigido.
+7. Calendário de manga em números (item 4 do acordo): 3 t de estoque de outubro a janeiro, 1,5 t em fevereiro, março, agosto e setembro, zero de abril a julho; **108 t por ano**. É a tradução correta dos meus níveis.
+8. Permanência de 5 dias; caixa de 20 kg (50 por tonelada); quem vende são as famílias ou a associação (D5); fruta sem comprador marcado não entra.
+9. Merenda: R$ 400 mil é **teto legal, não demanda**; resolução nº 17/2026 citada pelo doc 09.
 
 ### (b) Pontos em que tenho número ou conclusão diferente
 
-| Assunto | Doc 09 | Este documento | Fonte de cada um | Tipo |
-|---|---|---|---|---|
-| Manga, total de PE em 2024 | 540.977 t | **560.977 t** | Doc 09: reportagem (FONTE 3). Aqui: SIDRA, tabela 1613 [F1], aberta | Correção de fonte |
-| Manga, Lagoa Grande em 2024 | 10.000 t (400 ha) | **30.000 t**; em 2025, 66.500 t | Doc 09: boletim Embrapa (FONTE 1). Aqui: SIDRA [F3] | Correção de fonte |
-| Manga, PE em 2025 | não tem | 609.940 t; Petrolina 286.250 t | SIDRA [F1][F3] | Atualização |
-| Castanha de caju em PE | 3.126 t; Buíque o maior; tabela ilegível (FONTE 14, blog) | **3.099 t em 2024, 1.894 t em 2025; Buíque 2.521 t (81%) e 1.662 t (88%)**; Tupanatinga 165 e 56 t | SIDRA [F3] | Correção de fonte; a "maior lacuna" do doc 09 fica resolvida |
-| Peso do Pajeú no caju | cerca de 9% do estado; 281 t de castanha; cerca de 2.800 t de pedúnculo | 2024: São José do Belmonte 151 + Carnaíba 50 + Flores 42 + Santa Terezinha 7 = 250 t (8%), 2.250 t de pedúnculo. **2025: 115 t (6%), 1.035 t de pedúnculo** | SIDRA [F3]; conversão 9:1 [F6] | Confirma a ordem de grandeza; 2025 é metade |
-| Conversão castanha → pedúnculo | 10 kg por kg (pomar irrigado, FONTE 29) | 9 kg por kg (10% castanha, 90% pedúnculo) | [F6] | Diferença pequena |
-| **Alternativa de local para o caju** (agora estudo futuro) | Sertão do Pajeú "empata se o caju for prioridade" | Pelos dados, **o caju de PE está em Buíque e Tupanatinga (Agreste), não no Pajeú**. Com 1.035 t de pedúnculo por ano em todo o Pajeú, espalhadas por vários municípios, uma câmara dificilmente junta 1 t/dia num raio de coleta | SIDRA [F3] | **Divergência de conclusão.** O local é do doc 09; registro a minha leitura e peço que o agente de logística reavalie o candidato de caju |
-| Giro da câmara | 250 t por ano (1 t/dia × 250 dias) | 108 t (médio) a 289 t (otimista); com 5 t e 5 dias de permanência o teto é 1 t/dia | Seção 6.2 | Divergência de hipótese: o doc 09 usa o teto de entrada; eu uso ocupação esperada |
-| Fatia do pequeno na manga | "Petrolina não é só exportador grande"; 84,5% dos lotes são de pequenos | Em **volume**, a agricultura familiar fez 17% da manga de PE (Censo 2017) | [F4] | Não é contradição (um conta lotes, outro conta toneladas), mas muda o tom: o pequeno existe e é minoria na fruta |
-| Horário de chegada | Manga das 10 h às 15 h; recepção das 7 h às 14 h | Não tenho dado próprio. O doc 01 pedia fruta nova até as 10 h | doc 01, seção 13.1, item 10 | **Resolvido pelo dono: D2, recepção das 7 h às 14 h** |
+| Assunto | Doc 09 / acordo proposto | Este documento | Fonte de cada um |
+|---|---|---|---|
+| **Primeiro complemento** | Banana e acerola em primeiro lugar (acordo, item 2) | **Acerola primeiro; banana só depois de ensaio a 12 °C** (dano por frio abaixo de 13 °C em 2 a 24 h) | Acordo: lista do D6. Aqui: [F35], [F36] e parecer do revisor |
+| **54 t de complementos por ano** | Proposta da logística, "a confirmar" (acordo, item 4) | Aceito **como hipótese para o projeto térmico**, não como receita: não há calendário nem preço de acerola, mamão e banana do pequeno | Seção 2.3 |
+| **Taxa de referência** | R$ 0,06 por kg por dia, "do doc 10" (acordo, item 11) | **R$ 0,20 por kg movimentado** (≈ R$ 0,04/kg·dia × 5 dias), ancorada no ColdHubs convertido; a de R$ 0,06 era escolha minha sem base | Seção 5.1 |
+| **Giro de referência** | 108 t por ano (adotado do meu cenário médio) | **79 t por ano** como referência (1 comprador no teto); 108 t passa a ser "mais de um comprador" | Seção 6.1 e conflito A do revisor |
+| **Giro no próprio doc 09** | Resumo e seção 6 usam 108 t; a seção 1.4 ainda faz a conta de lotes com 250 t por ano | A conta de lotes com o giro esperado dá 79 ÷ 64 = 1,2 lote (referência) ou 108 ÷ 64 = 1,7 lote | Peço à logística que diga isso na seção 1.4 |
+| **Toneladas por família** | 64 t de manga por lote (conta: 6,4 ha × 40% × 25 t/ha) | **21 t por estabelecimento familiar** em Petrolina pelo Censo 2017 (15.646 t ÷ 734) | Doc 09, seção 1.4; aqui [F4]. **Ponto a fechar**: o Censo enxerga 54% do volume; o 40% de manga por lote é suposto |
+| **Quem opera** | Pessoa da associação sem salário dedicado, com ajuda de custo (acordo, item 10); o próprio doc 09 diz que isso é "risco de porta fechada" | Concordo que é a única forma de a taxa pagar algo; uso R$ 6 mil por ano de ajuda de custo dentro dos R$ 12 mil de operação e mostro o caso com operador pago (R$ 36 mil), que não fecha | Seção 6.2 |
+| **Regra de parada** | 1 comprador com 50 t, 1 associação, 8 de 15 produtores; mais "nenhuma câmara com vaga por perto" (acordo, item 15) | Mesma base, **sem sinal em dinheiro**; critério único de 50 t por escrito; acrescento a pergunta da câmara de terceiros (seção 9.2, pergunta 9) | Seção 9.4 |
 
-### (c) Texto comum que proponho (já com as decisões D1, D2 e D5)
+### (c) Texto comum que proponho (com D1, D2, D5 e D6)
 
-- **Fruta principal:** "Manga, verde-madura ou 'de vez', a 12 °C, em uma zona só. Outras frutas só entram para completar a ocupação e desde que sirvam a 12 °C: banana, mamão e acerola em primeiro lugar; goiaba e maracujá em giro rápido. Caju está fora do protótipo."
-- **Local:** "O indicado pelo doc 09 (núcleo de colonos no polo irrigado do São Francisco, em terreno de associação ou cooperativa), **condicionado** a existir um comprador com compromisso por escrito e a associação indicar quem opera. Para um estudo futuro de caju, o candidato pelos dados do IBGE é Buíque e Tupanatinga, no Agreste, não o Pajeú."
-- **Calendário de uso:** "Só manga: uso alto de outubro a janeiro, médio de fevereiro a março e de agosto a setembro, muito baixo de abril a julho. Com frutas complementares, uso médio também de abril a julho."
-- **Horário de chegada:** "Recepção das 7 h às 14 h (decisão D2). A logística orienta colher cedo; o térmico dimensiona para fruta quente até as 14 h."
-- **Tamanho do grupo atendido:** "5 a 15 famílias com CAF, em um raio de 10 a 15 km, girando 100 a 290 t por ano. Meta inicial: um contrato de merenda (cerca de 80 t por ano para 10 famílias em uma prefeitura). Como o protótipo não tem CNPJ (D5), quem vende e emite documento são as famílias ou a associação."
+- **Fruta principal:** "Manga, verde-madura ou 'de vez', a 12 °C, em uma zona só, 5 t."
+- **Complementos (D6):** "Acerola em primeiro lugar; mamão se houver oferta no raio de coleta; goiaba e maracujá verdoengos, até 3 dias; banana só depois de ensaio com a variedade local a 12 °C. Nenhuma fruta madura de outra espécie junto com manga verde-madura. Com mistura, uma troca de ar por hora."
+- **Local:** "Zona rural de Petrolina, núcleo do Projeto Senador Nilo Coelho, em terreno de associação ou cooperativa (doc 09), condicionado a comprador por escrito para pelo menos 50 t por ano, associação que indique quem opera e ausência de câmara com vaga por perto."
+- **Calendário de uso:** "Manga: 0,6 t/dia de outubro a janeiro, 0,3 t/dia em fevereiro, março, agosto e setembro, parada de abril a julho (108 t por ano). Complementos de abril a julho: hipótese de até 54 t, a confirmar em campo."
+- **Horário:** "Recepção das 7 h às 14 h (D2). Manga chega provavelmente entre 9 h e 16 h; o que chegar depois das 14 h espera na sombra até a manhã seguinte."
+- **Tamanho do grupo:** "Cerca de 10 famílias com CAF (5 a 15), raio de 10 a 15 km. Referência de receita: 79 t por ano (teto da merenda de uma prefeitura), cerca de 8 t por família; 108 t se houver mais de um comprador."
 
 ---
 
@@ -705,16 +718,31 @@ Divisão combinada: o doc 09 é dono de local, municípios, distâncias, comprad
 | Duas zonas (caju a 5 °C e manga a 12 °C) ou uma zona | Doc 01: duas zonas, cerca de 4 t. Este documento (versão anterior): uma zona a 10 °C com manga madura, goiaba, maracujá | **D1: só manga, uma zona a 12 °C, 5 t.** Este documento foi refeito para 12 °C |
 | Manga e caju juntos | Premissa: manga e caju. Dados: não coexistem em PE | **D1: caju fora do protótipo**, estudo futuro |
 | Horário de chegada | Doc 01: até as 10 h. Doc 09: recepção até as 14 h | **D2: 7 h às 14 h** |
+| Só manga x manga com outras frutas | Este documento: só manga deixa a câmara parada de abril a julho | **D6: outras frutas podem entrar se convivem com a manga a 12 °C; manga continua a principal** |
 
 ### 12.2 Continuam abertos (o dono é o mediador; não resolvidos aqui)
 
-| # | Assunto | Posição A | Posição B | O que cada escolha custa ou arrisca |
+O antigo conflito "só manga x outras frutas" foi resolvido por **D6** (passou para a tabela 12.1, abaixo). O antigo conflito do candidato de caju deixou de existir (doc 09 já corrigiu).
+
+**Conflitos levantados pelo revisor** (minha posição ao lado da dele):
+
+| # | Assunto | Posição do revisor | Minha posição | O que cada escolha custa ou arrisca |
 |---|---|---|---|---|
-| 1 | **Só manga x manga com outras frutas** | **D1:** o protótipo é só manga | **Este documento:** só manga deixa a câmara quase vazia de abril a julho e limita a receita ao cenário médio (R$ 32.400 por ano); banana, mamão e acerola servem a 12 °C e estão no mesmo lugar | Manter só manga: teste mais limpo e simples, câmara parada um terço do ano. Aceitar complemento: mais receita e mais dados, mas mistura de frutas (etileno) e mais regras de operação. Não contraria D1 se for tratado como segunda fase do mesmo protótipo; o dono decide |
-| 2 | **Entrada de 1 t por dia** | **Premissa:** até 1 t/dia | **Este documento:** a demanda estimada é de 0,17 a 0,88 t/dia; 1 t/dia só com câmara cheia e giro de 5 dias | Dimensionar pelo teto garante folga e encarece; dimensionar pela demanda barateia e arrisca faltar frio num pico. Conta do engenheiro |
-| 3 | **Modelo de negócio** | **Premissa:** câmara "como serviço" para pequenos produtores | **Este documento:** aluguel avulso por caixa não se paga no cenário médio; o modelo viável é a câmara como bem de uma associação ou cooperativa, sustentada pela margem da venda | Serviço avulso: o dono fica com o risco de ocupação. Câmara da associação: o dono vira fornecedor de equipamento e precisa de cliente com crédito. Com D5 (sem CNPJ) a decisão pode esperar o resultado do protótipo |
-| 4 | **Giro anual** | **Doc 09:** 250 t por ano (1 t/dia × 250 dias) | **Este documento:** 25 a 289 t por ano conforme o cenário; 108 t no médio | É diferença de hipótese; só a medição no protótipo resolve |
-| 5 | **Candidato para o caju (estudo futuro)** | **Doc 09:** Sertão do Pajeú | **Este documento:** Buíque e Tupanatinga (88% da castanha de PE em 2025 [F3]) | Sem efeito no protótipo |
+| A | **Cenário de referência da receita** | Referência deve ser o que o único comprador identificado sustenta: no máximo 79 t por ano, R$ 14 mil a R$ 24 mil; paga equipamento de R$ 20 mil a R$ 105 mil sem operador | **Concordo e adotei**: referência = 79 t × R$ 0,20/kg = R$ 15.800 por ano, paga até R$ 38 mil sem juros. Mantenho o médio (108 t) como "mais de um comprador", porque varejo, PAA ou outra prefeitura podem somar; não o uso para decidir | Referência baixa: pode desanimar se houver mais compradores. Referência alta: pode levar a comprar sem demanda. Só as entrevistas resolvem |
+| B | **Banana como primeiro complemento** | 12 °C está abaixo do limite de dano por frio da banana; é a mais sensível ao etileno e viaja sem frio. Primeiro complemento deveria ser mamão ou nenhum, até haver ensaio | **Concordo com rebaixar a banana** (fora até ensaio). **Divirjo em parte**: o primeiro complemento deve ser a **acerola**, não o mamão: a acerola tem estudo feito em Petrolina indicando 12 °C e há 30.000 t no município; o mamão quase não existe em Petrolina | Banana sem ensaio: risco de fruta manchada no primeiro mês. Acerola: fonte melhor, mas parte da fruta vai direto para a indústria. Mamão: sem oferta local |
+| C | **Peso do estudo da Índia** | Evidência contra o aluguel avulso, não contra o projeto; o mesmo estudo mostra ganho de 20% a 30% | **Concordo** e corrigi o texto (seção 8, item 1). Mantenho que é o melhor dado que existe sobre **disposição a pagar**: mostra que, mesmo com ganho, quem tem de pagar por dia quase não usa. Por isso a regra de parada exige compromisso por escrito | Muito peso: desanima sem razão. Pouco peso: ignora que pagar pode afastar o uso |
+| D | **Regra de parada** | Parar sem comprador; sem sinal em dinheiro; critério único de toneladas contratadas | **Concordo com tirar o sinal em dinheiro e com o critério único (50 t por escrito)**. **Divirjo** de tirar a contagem de produtores: mantenho "8 de 15 dispostos a pagar e assinando a lista", porque um comprador sem produtores dispostos a pagar a taxa também não fecha | Regra frouxa: compra-se o equipamento sem demanda. Regra dura: o protótipo, que é também teste de tecnologia, pode não sair. O dono pode decidir que o protótipo segue como teste técnico mesmo sem passar na regra |
+
+**Outros pontos abertos:**
+
+| # | Assunto | Posição A | Posição B | Custo ou risco |
+|---|---|---|---|---|
+| 1 | Entrada de 1 t por dia | Premissa e doc 09: dimensionar para 1 t/dia (fruta chega em dias de colheita) | Este documento: referência de 0,40 t/dia nos dias letivos; 1 t/dia só com câmara cheia e giro de 5 dias | Pelo teto: folga e custo maior. Pela demanda: mais barato, risco de faltar frio num pico. Conta do engenheiro |
+| 2 | Modelo de negócio | Premissa: câmara "como serviço" | Este documento: aluguel avulso não se paga; se o ganho de venda existir, câmara da associação sustentada pela margem | Com D5 a decisão pode esperar o resultado do protótipo |
+| 3 | Toneladas por família | Doc 09: 64 t de manga por lote | Censo: 21 t por estabelecimento familiar em Petrolina | Muda quantas famílias o grupo precisa ter; resolver com a pergunta de campo sobre caixas por semana |
+
+---|---|
+| Só manga x manga com outras frutas | **D6**: outras frutas podem entrar se convivem com a manga a 12 °C; manga continua a principal |
 
 ---
 
@@ -722,23 +750,24 @@ Divisão combinada: o doc 09 é dono de local, municípios, distâncias, comprad
 
 ### Decisões tomadas neste documento
 
-1. Usar os dados do IBGE (SIDRA) de 2025 como base de produção, com 2024 para comparar com o doc 09.
-2. Classificar as frutas em três grupos de temperatura (5 °C; 8 a 10 °C; 12 a 14 °C).
-3. Seguir as decisões D1, D2 e D5 do dono: demanda, calendário, receita e viabilidade para manga a 12 °C, 5 t; caju como estudo futuro.
-4. Indicar banana, mamão e acerola (e, em giro rápido, goiaba e maracujá) como frutas que podem completar a ocupação a 12 °C.
-5. Tratar "guardar para esperar a entressafra" como argumento inválido para a manga.
-6. Fazer a viabilidade só pela receita, com ponto de equilíbrio em função do custo X.
-7. Propor regra de seguir ou parar baseada em compromisso de comprador.
+1. Dados do IBGE (SIDRA) de 2025 como base de produção, com 2024 para comparar.
+2. Três grupos de temperatura (5 °C; 8 a 10 °C; 12 a 14 °C).
+3. Seguir D1, D2, D5 e D6: demanda, calendário, receita e viabilidade para manga a 12 °C, 5 t; caju como estudo futuro.
+4. Complementos em ordem: acerola, mamão, goiaba e maracujá de giro curto; banana só depois de ensaio. Nenhum complemento entra na receita antes de calendário e preço.
+5. Regra de mistura e renovação de ar por causa do etileno (seção 2.6).
+6. Cenário de referência ancorado no único comprador quantificado (79 t por ano) e taxa ancorada no ColdHubs convertido (R$ 0,20/kg); o "otimista" virou teto teórico.
+7. Ponto de equilíbrio em função do custo X, com a coluna sem juros.
+8. Regra de seguir ou parar com critério único de 50 t por escrito, sem sinal em dinheiro.
 
 ### Pendências para humanos (decisões do dono)
 
-1. **Aceitar outras frutas no protótipo** para não ficar parado de abril a julho? Quais (banana, mamão, acerola)? (conflito aberto 1)
-2. **Quem é o cliente depois do protótipo:** serviço avulso operado pelo dono, ou equipamento de associação ou cooperativa (conflito aberto 3)?
-3. **Fazer as entrevistas da seção 9 antes de comprar equipamento?** Recomendo que sim.
-4. **Aceita a regra de parada** (sem comprador com compromisso por escrito, não segue)?
-5. **Como cobrar no protótipo, sem CNPJ:** combinar com a associação parceira quem recebe a taxa e como registra [VALIDAR com contador].
-6. O protótipo precisa mesmo ser fora da rede no local escolhido? No polo irrigado há rede; perguntar à associação. (Como teste de tecnologia, pode ser fora da rede mesmo havendo rede; mas isso muda o argumento de venda.)
-7. Caju: quer que o estudo futuro seja feito? Onde (Buíque, ou outro estado)?
+1. **Conflitos A a D da seção 12.2** (cenário de referência, primeiro complemento, peso do estudo da Índia, regra de parada).
+2. **Fazer as entrevistas da seção 9 antes de comprar equipamento?** Recomendo que sim. E decidir se o protótipo segue como teste técnico mesmo que a regra de parada não passe.
+3. **Ensaio de banana a 12 °C** com a Embrapa Semiárido, se quiser a banana como complemento.
+4. **Como cobrar no protótipo, sem CNPJ:** via associação parceira [VALIDAR com contador].
+5. **Quem é o cliente depois do protótipo:** serviço avulso ou câmara da associação.
+6. O protótipo precisa ser fora da rede no local escolhido? No polo irrigado há rede (doc 09, seção 4.4).
+7. Caju: fazer o estudo futuro? Onde?
 
 ### O que não consegui verificar
 
@@ -746,7 +775,10 @@ Divisão combinada: o doc 09 é dono de local, municípios, distâncias, comprad
 - Tabela de preços atual do ColdHubs e do Ecozen (os sites não abriram); avaliação independente dos resultados deles.
 - Ocupação real de qualquer câmara de serviço, em qualquer país.
 - Perdas pós-colheita recentes, por fruta, no Nordeste.
-- Calendário de safra oficial por mês; todos os "ano todo" da seção 1.4 são [SUPOSTO].
+- Calendário de safra oficial por mês; todos os "ano todo" da seção 1.4 são [SUPOSTO]. Calendário de colheita e preço na roça de acerola, mamão e banana do pequeno produtor do Vale.
+- Vida útil em dias a 12 °C de acerola, mamão, goiaba e maracujá; taxa de produção de etileno da manga; estudo de manga guardada junto com outras frutas.
+- Tarifa brasileira de câmara fria por caixa ou palete; preço da Starlink, das caixas e da manutenção do frio.
+- A página do estudo da Índia (aae.wisc.edu), a do Agrolink e a do ColdHubs não abriram: números de trecho de busca.
 - Temperatura de armazenagem de coco verde, graviola e melancia; respiração de goiaba, acerola e maracujá.
 - Fatia da agricultura familiar em melão, abacaxi e melancia.
 - Se as câmaras frias de cooperativas do Vale estão funcionando.
@@ -758,7 +790,8 @@ Divisão combinada: o doc 09 é dono de local, municípios, distâncias, comprad
 
 - Para o engenheiro de refrigeração: seção 10.
 - Para a logística: seção 11.
-- Para o revisor: todas as hipóteses [SUPOSTO] que mais pesam estão nas seções 6.1 (ocupação, taxa, dias), 4.3 (fatia de mercado) e 1.4 (calendário).
+- Para o revisor: as hipóteses [SUPOSTO] que mais pesam são a taxa de R$ 0,20/kg (5.1), as 79 t do comprador de referência (4.2 e 6.1), o custo de operação (6.2), a fatia de mercado (4.3), o calendário dos complementos (2.3) e a taxa de etileno da manga (2.6).
+- Para o agente financeiro: usar o cenário de referência (R$ 15.800 por ano) e a tabela da seção 6.3; não usar o teto teórico.
 - Para a importação e o custo: a receita que o equipamento precisa pagar está na seção 6.3.
 
 ---
@@ -796,4 +829,12 @@ Divisão combinada: o doc 09 é dono de local, municípios, distâncias, comprad
 - **[F29]** Ceagesp, ficha de medidas de frutas (caixa de caju de 1,2 kg) (busca): https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf
 - **[F32]** Temporada de exportação de frutas pelo Pecém (busca): https://movimentoeconomico.com.br/agronegocio/2025/09/22/ce-enviara-200-conteineres-semanais-de-frutas-para-europa-ate-2026/
 - **[F34]** Embrapa, destino da acerola (busca; documento antigo, não confirmei qual dos dois traz o dado): https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/132160/1/1995-A-cultura-da-acerola.pdf ; https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/114145/1/Aculturadaacerola.pdf
+- **[F35]** Banana, dano por frio e etileno (busca): manual GCCA/WFLO — https://www.gcca.org/commodity/bananas-0 ; faixa de 13,3 a 14,4 °C — https://www.frontiersin.org/articles/10.3389/fpls.2022.966789/pdf ; UC Davis — https://postharvest.ucdavis.edu/node/5201
+- **[F36]** Mamão e acerola a 12 °C (busca; trechos de resumos e teses, dias de vida útil não apareceram): mamão, 9 a 12 °C — https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1073178/1/Artigo9.pdf ; acerola colhida verde a 12 °C e dano a 8 e 10 °C — https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1102405/1/Vagner.pdf e https://www.redalyc.org/pdf/1190/119017431011.pdf . Não confirmei qual dos dois links de acerola traz cada frase.
+- **[F37]** Cotações de goiaba em Juazeiro (busca; a página não abriu): https://www.agrolink.com.br/cotacoes/frutas/goiaba/goiaba-paloma-cx-20kg ; https://www.agrolink.com.br/cotacoes/ceasa/frutas/goiaba/goiaba-1kg ; banana: https://www.agrolink.com.br/regional/ba/juazeiro/cotacoes
+- **[F38]** Etileno (busca): maracujá roxo, pico de 505 µL/kg·h — https://scielo.br/j/rceres/a/RBNy9vJwdrmGN9QkRrP3d5F/?lang=en ; classificação de goiaba e acerola discutida — https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1151510/1/Quality-changes-of-acerola-fruit-harvested-at-different-maturity-stages-Acerola-Etileno-2022.pdf . Não confirmei qual link traz o valor do maracujá; pode ser o de https://www.redalyc.org/journal/3030/303067924045/303067924045.pdf
+- **[F39]** IF Sertão-PE, campus Serra Talhada, Chamada Pública PNAE nº 01/2025, termo de referência (busca): https://ifsertaope.edu.br/wp-content/uploads/2026/05/Anexo-I-Termo-de-Referencia-Chamada-Publica-PNAE-2025.pdf
+- **[F40]** Câmbio (busca): naira — https://dabafinance.com/en/news/naira-shows-resilience-amid-african-currency-pressures-2026-10-08 ; dólar a R$ 5,65 em 13/11/2026 — https://brasil61.com/n/dolar-fecha-em-r-5-65-apos-sessao-de-estabilidade-bras2617471 ; rupia a 94,24 em 13/11/2026 — https://hdfcsky.com/news/rupee-slides-0-3percent-to-94-24-as-hawkish-fed-and-oil-spike-erase-six-month-high-rally
+- **[F41]** Salário de operador de câmara fria em Petrolina, R$ 1.777 por mês, dados do CAGED (busca): https://www.salario.com.br/profissao/operador-de-camaras-frias-cbo-841456/petrolina-pe/
+- [F14] também: preço pago pelos feirantes e ganho de 20% a 30% vêm do mesmo endereço (busca); caso semelhante do Pacto de Milão: https://www.milanurbanfoodpolicypact.org/wp-content/uploads/2023/02/3.SEE_Winner_Rourkela-India.pdf
 - Documentos internos: `docs/09-logistica-e-local.md` e `docs/01-projeto-termico.md` (rascunhos lidos em 17/11/2026).

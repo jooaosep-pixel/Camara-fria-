@@ -27,12 +27,13 @@ RESP_10 = 83.0           # W/t manga a 10 C: 14 ml CO2/kg.h x 122 kcal/t.dia (UC
 Q10 = 2.5                # SUPOSTO
 V_INT = 28.0             # m3
 TROCAS_PORTA = 12.0      # trocas de ar por dia pela porta                           SUPOSTO
-AR_NOVO_M3H = 10.0       # renovacao continua por causa do CO2 (secao 10)            CALCULADO sobre SUPOSTO
+AR_NOVO_M3H = 30.0       # renovacao continua: CO2 estabiliza em 0,32 % (< 0,39 %)    CALCULADO sobre SUPOSTO
 PURGA_M3 = 45.0          # ventilacao antes da primeira entrada do dia               SUPOSTO
 FOLGA = 1.10             # folga sobre o frio tirado do banco                        SUPOSTO
 # ------------------------------------------------------------------ serpentina de ar e auxiliares
 K_COIL = 900.0           # W/K entre ar que entra e agua que entra, ventilador a 100 % SUPOSTO (conta no doc)
-T_AGUA = {"b": 3.0, "a": 3.0}     # C, agua/glicol que chega a serpentina (minimo da valvula misturadora)
+T_AGUA = {"b": 3.0, "a": 3.0}     # C, agua/glicol que chega a serpentina das 7 h as 17 h
+T_AGUA_NOITE = 6.0       # C, das 17 h as 7 h (preserva a umidade)                  SUPOSTO
 P_FAN_MAX, P_FAN_MIN_FRAC = 240.0, 0.30   # W; 6.000 m3/h, 50 Pa, rendimento 0,35  CALCULADO sobre SUPOSTO
 PESSOA_W = 272 - 6 * T_SET        # W por pessoa (formula ASHRAE, de memoria)        SUPOSTO
 UA_TANQUE = 3.5          # W/K banco de gelo + tubos                                 CALCULADO sobre SUPOSTO
@@ -146,8 +147,9 @@ def simula(kwp, kg, dias, arq="b", bat=0.0, pmax=None, s0=None, bat0=None, estad
             A = ua * (ta + sol) + q_porta + q_arnovo + gente + g_est * t_est + sum(g * x[1] for g, x in zip(g_lot, lotes))
             B = ua + g_est + sum(g_lot)
             # ventilador: do passo anterior
+            tw = T_AGUA_NOITE if (hh >= 17 or hh < 7) else T_AGUA[arq]
             q_req0 = A - B * T_SET
-            k_need = max(q_req0, 0.0) * 1000 / max(T_SET - T_AGUA[arq], 0.1)
+            k_need = max(q_req0, 0.0) * 1000 / max(T_SET - tw, 0.1)
             f = min(1.0, max(P_FAN_MIN_FRAC, k_need / K_COIL))
             p_fan = (10 + P_FAN_MAX * f ** 3) / 1000
             kmax = K_COIL * f / 1000
@@ -161,11 +163,11 @@ def simula(kwp, kg, dias, arq="b", bat=0.0, pmax=None, s0=None, bat0=None, estad
             p_bomba = (25 + 10 * max(q_req, 0)) / 1000
             q_tanque = UA_TANQUE * (ta - 0) / 1000
             # serpentina: limitada pela potencia
-            q_coil = max(min(q_req, kmax * (T_SET - T_AGUA[arq])), 0.0)
+            q_coil = max(min(q_req, kmax * (T_SET - tw)), 0.0)
             tair = T_SET
             if q_req > q_coil + 1e-9:
-                tair = (A + p_fan + kmax * T_AGUA[arq]) / (B + kmax)
-                q_coil = kmax * (tair - T_AGUA[arq])
+                tair = (A + p_fan + kmax * tw) / (B + kmax)
+                q_coil = kmax * (tair - tw)
             dreno = (q_coil + p_bomba + q_tanque) * FOLGA
             # banco cheio: compressor so acompanha a carga (liga-desliga no minimo)
             if s + (q_prod - dreno) * DT > cap:
@@ -410,6 +412,9 @@ if __name__ == "__main__":
     dh = entalpia_ar(34, 0.30) - entalpia_ar(T_SET, 0.90)
     print(f"custo termico de 10 m3/h com ar a 34 C: {10 * 1.1 * dh / 3600 * 24:.1f} kWh/dia")
 
+    print("\n## 7b. Umidade: ar a 12 C e 88 por cento tem ponto de orvalho de %.1f C" % (243.04 * (math.log(0.88) + 17.625 * 12 / 255.04) / (17.625 - math.log(0.88) - 17.625 * 12 / 255.04)))
+    for tw_ in (3.0, 6.0):
+        print(f"agua a {tw_} C, saindo a cerca de {tw_ + 4:.0f} C: superficie media da serpentina cerca de {tw_ + 3:.0f} C -> abaixo do orvalho em {10.0 - tw_ - 3:.0f} K")
     print("\n## 8. Serpentina de ar (agua gelada), conta de efetividade")
     for vaz_ar, ua_s, vaz_ag in ((6000, 2000, 1.4), (3000, 1400, 1.4), (1800, 1000, 0.7)):
         ca, cw = vaz_ar / 3600 * 1.2 * 1006, vaz_ag / 3.6 * 4190

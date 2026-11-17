@@ -22,177 +22,177 @@ arquitetura b, Q=8 kW a -7/+51 C: 217 kg/h; aspirado 20.1 m3/h; deslocamento com
 ## 1. Carga termica diaria em regime (kWh/dia), 12 kWp + 700 kg, arquitetura b
 | dia | recepcao | involucro | porta | ar novo (CO2) | calor de campo | respiracao | ventiladores | pessoas+luz | bomba+banco | soma | tirado do banco c/ folga 10 % | pico na serpentina kW |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| recorde | ate14h | 18.1 | 4.1 | 2.4 | 24.2 | 19.1 | 0.7 | 2.0 | 4.2 | 74.7 | 82.2 | 6.0 |
-| recorde | ate10h | 18.1 | 3.2 | 2.4 | 18.8 | 18.0 | 0.6 | 1.4 | 4.1 | 66.5 | 73.1 | 5.0 |
-| recorde | tudo13h | 18.1 | 4.4 | 2.4 | 24.3 | 25.7 | 0.9 | 0.7 | 4.2 | 80.6 | 88.6 | 8.5 |
-| quente | ate14h | 13.7 | 2.4 | 1.3 | 24.2 | 19.1 | 0.6 | 2.0 | 3.6 | 66.9 | 73.6 | 5.3 |
-| junho | ate14h | 11.3 | 1.7 | 0.7 | 24.2 | 19.1 | 0.6 | 2.0 | 3.3 | 62.9 | 69.2 | 5.0 |
-| recorde | nada | 18.1 | 2.0 | 2.4 | 0.0 | 12.9 | 0.4 | 0.2 | 3.8 | 39.7 | 43.7 | 2.1 |
+| recorde | ate14h | 18.1 | 4.1 | 6.6 | 24.2 | 19.2 | 1.0 | 2.0 | 4.2 | 79.4 | 87.3 | 6.3 |
+| recorde | ate10h | 18.1 | 3.2 | 6.6 | 18.8 | 18.0 | 0.7 | 1.4 | 4.1 | 70.9 | 78.0 | 5.1 |
+| recorde | tudo13h | 18.0 | 4.4 | 6.6 | 24.3 | 25.7 | 1.4 | 0.7 | 4.3 | 85.4 | 94.0 | 8.6 |
+| quente | ate14h | 13.7 | 2.4 | 3.6 | 24.2 | 19.2 | 0.8 | 2.0 | 3.7 | 69.4 | 76.4 | 5.5 |
+| junho | ate14h | 11.3 | 1.7 | 2.1 | 24.2 | 19.1 | 0.7 | 2.0 | 3.4 | 64.5 | 70.9 | 5.2 |
+| recorde | nada | 18.1 | 2.0 | 6.6 | 0.0 | 12.9 | 0.4 | 0.2 | 3.9 | 44.1 | 48.5 | 2.4 |
 
 ## 2. Os numeros do dono (5 kWp + 200 kg), dia recorde, recepcao ate 14 h
-arquitetura b: FV 21.8 kWh; frio produzido 37.3 kWh; frio pedido 1110.8 kWh; nao atendido 484.5 kWh/dia; ar ate 61.4 C; polpa do estoque ate 63.3 C
-arquitetura a: FV 21.8 kWh; frio produzido 27.2 kWh; frio pedido 1337.2 kWh; nao atendido 591.2 kWh/dia; ar ate 71.4 C; polpa do estoque ate 73.8 C
+arquitetura b: FV 21.8 kWh; frio produzido 37.3 kWh; frio pedido 1188.1 kWh; nao atendido 519.3 kWh/dia; ar ate 66.2 C; polpa do estoque ate 68.4 C
+arquitetura a: FV 21.8 kWh; frio produzido 27.2 kWh; frio pedido 1367.7 kWh; nao atendido 604.8 kWh/dia; ar ate 73.4 C; polpa do estoque ate 76.1 C
 
 ## 3. Varredura: frio nao atendido (kWh/dia) em regime, dia recorde (27-41 C; 5,8 kWh/m2)
 
 arquitetura b, recepcao ate10h:
 | kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
 |---|---|---|---|---|---|---|---|
-| 5 | 305.4 | 264.3 | 254.3 | 232.5 | 214.7 | 198.3 | 160.3 |
-| 8 | 48.1 | 33.7 | 19.1 | 3.1 | 0.0 | 0.0 | 0.0 |
-| 9 | 9.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 10 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 5 | 377.6 | 336.4 | 291.9 | 254.5 | 246.7 | 226.1 | 189.0 |
+| 8 | 98.6 | 79.0 | 59.0 | 40.8 | 22.7 | 3.6 | 0.0 |
+| 9 | 27.3 | 12.4 | 2.7 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 10 | 14.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 11 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 arquitetura b, recepcao ate14h:
 | kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
 |---|---|---|---|---|---|---|---|
-| 5 | 462.4 | 421.3 | 389.2 | 338.5 | 316.4 | 285.4 | 239.9 |
-| 8 | 153.1 | 129.7 | 103.2 | 81.5 | 62.0 | 44.6 | 6.0 |
-| 9 | 64.0 | 45.9 | 31.3 | 15.6 | 2.5 | 0.0 | 0.0 |
-| 10 | 29.1 | 8.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 27.8 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 5 | 493.8 | 448.7 | 434.9 | 399.3 | 369.8 | 321.5 | 275.3 |
+| 8 | 182.7 | 161.0 | 142.3 | 126.4 | 109.5 | 90.3 | 52.5 |
+| 9 | 115.0 | 95.0 | 76.6 | 57.4 | 39.1 | 20.4 | 0.0 |
+| 10 | 54.1 | 28.0 | 12.2 | 2.8 | 0.0 | 0.0 | 0.0 |
+| 11 | 36.8 | 13.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 35.2 | 12.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 33.9 | 12.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 33.9 | 12.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 arquitetura a, recepcao ate10h:
 | kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
 |---|---|---|---|---|---|---|---|
-| 5 | 480.7 | 451.7 | 398.1 | 359.0 | 321.9 | 287.6 | 259.8 |
-| 8 | 169.9 | 149.1 | 125.2 | 103.1 | 80.8 | 61.6 | 18.8 |
-| 9 | 91.3 | 71.7 | 54.5 | 37.6 | 18.9 | 1.1 | 0.0 |
-| 10 | 30.7 | 18.0 | 4.8 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 9.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 5 | 531.5 | 494.8 | 455.8 | 448.9 | 381.5 | 345.6 | 282.1 |
+| 8 | 197.5 | 176.7 | 158.9 | 143.9 | 128.9 | 109.7 | 69.0 |
+| 9 | 138.2 | 120.0 | 102.3 | 84.4 | 63.0 | 44.0 | 3.9 |
+| 10 | 76.6 | 55.7 | 39.1 | 22.7 | 3.7 | 0.0 | 0.0 |
+| 11 | 21.8 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 14.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 14.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 arquitetura a, recepcao ate14h:
 | kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
 |---|---|---|---|---|---|---|---|
-| 5 | 562.0 | 543.6 | 502.1 | 468.5 | 454.5 | 422.5 | 353.2 |
-| 8 | 270.4 | 238.8 | 215.2 | 195.6 | 178.6 | 160.9 | 116.2 |
-| 9 | 194.0 | 173.2 | 154.2 | 133.2 | 109.1 | 85.2 | 46.6 |
-| 10 | 128.9 | 100.7 | 78.5 | 60.4 | 42.8 | 25.1 | 0.0 |
-| 11 | 55.9 | 37.2 | 23.8 | 8.3 | 0.0 | 0.0 | 0.0 |
-| 12 | 29.3 | 8.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 28.1 | 8.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 27.0 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 5 | 592.6 | 565.9 | 548.8 | 520.3 | 482.2 | 472.0 | 409.3 |
+| 8 | 337.2 | 293.1 | 253.0 | 224.9 | 204.0 | 185.8 | 152.1 |
+| 9 | 231.3 | 201.7 | 180.5 | 161.7 | 145.2 | 130.7 | 92.7 |
+| 10 | 162.0 | 141.5 | 124.6 | 106.8 | 89.4 | 70.4 | 30.0 |
+| 11 | 105.6 | 85.6 | 66.0 | 47.4 | 30.6 | 10.7 | 0.0 |
+| 12 | 54.3 | 28.0 | 12.2 | 2.8 | 0.0 | 0.0 | 0.0 |
+| 13 | 37.5 | 13.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 35.9 | 13.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 ## 3b. Tabela unica de variantes: menor conjunto que fecha (nao atendido < 0,05 kWh/dia) no dia recorde
 | arquitetura | recepcao | frio tirado do banco kWh/dia | menor kWp (com o gelo que ele pede) | menor gelo com 12 kWp | gelo gasto das 17 h as 7 h (kWh) |
 |---|---|---|---|---|---|
-| b | ate10h | 73.1 | 8 kWp + 700 kg | 400 kg | 28.7 |
-| b | ate14h | 82.2 | 9 kWp + 800 kg | 500 kg | 35.9 |
-| b | tudo13h | 88.6 | 9 kWp + 1000 kg | 600 kg | 43.0 |
-| a | ate10h | 73.1 | 9 kWp + 1000 kg | 400 kg | 28.7 |
-| a | ate14h | 82.2 | 10 kWp + 1000 kg | 500 kg | 35.9 |
-| a | tudo13h | 88.6 | 11 kWp + 800 kg | 600 kg | 43.0 |
+| b | ate10h | 78.0 | 8 kWp + 1000 kg | 400 kg | 30.9 |
+| b | ate14h | 87.3 | 9 kWp + 1000 kg | 500 kg | 38.3 |
+| b | tudo13h | 94.0 | 10 kWp + 800 kg | 600 kg | 45.6 |
+| a | ate10h | 78.0 | 10 kWp + 800 kg | 400 kg | 30.9 |
+| a | ate14h | 87.3 | 11 kWp + 1000 kg | 700 kg | 38.3 |
+| a | tudo13h | 94.0 | 11 kWp + 1000 kg | 800 kg | 45.6 |
 
 ## 4. Conjunto de referencia: 12 kWp + 700 kg de gelo (64.9 kWh), arquitetura b, 2 compressores somando 7.4 kW (minimo de 1 compressor: 1.6 kW)
 
 ### Hora a hora, dia recorde, recepcao ate14h, em regime
 | h | T ext | FV kW | compr. kW | frio prod. kW | serpentina kW | ar C (max) | polpa lote mais quente C | polpa estoque C | gelo kWh | auxiliares internos W |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 00 | 28.5 | 0.00 | 0.00 | 0.00 | 2.07 | 12.0 | 18.9 | 12.8 | 34.9 | 82 |
-| 01 | 27.6 | 0.00 | 0.00 | 0.00 | 1.94 | 12.0 | 18.2 | 12.8 | 32.6 | 81 |
-| 02 | 27.1 | 0.00 | 0.00 | 0.00 | 1.84 | 12.0 | 17.6 | 12.8 | 30.5 | 80 |
-| 03 | 27.1 | 0.00 | 0.00 | 0.00 | 1.77 | 12.0 | 17.1 | 12.8 | 28.4 | 79 |
-| 04 | 27.5 | 0.00 | 0.00 | 0.00 | 1.73 | 12.0 | 16.6 | 12.8 | 26.3 | 79 |
-| 05 | 28.4 | 0.10 | 0.00 | 0.00 | 1.71 | 12.0 | 16.2 | 12.8 | 24.3 | 79 |
-| 06 | 29.7 | 1.21 | 0.00 | 0.00 | 1.95 | 12.0 | 15.9 | 12.8 | 22.0 | 81 |
-| 07 | 31.2 | 2.87 | 2.51 | 6.45 | 2.00 | 12.0 | 15.5 | 12.8 | 26.0 | 81 |
-| 08 | 33.0 | 4.53 | 4.17 | 10.22 | 1.93 | 12.0 | 15.2 | 12.8 | 34.0 | 81 |
-| 09 | 34.8 | 5.94 | 5.58 | 13.02 | 1.98 | 12.0 | 15.0 | 12.8 | 44.6 | 81 |
-| 10 | 36.6 | 6.90 | 6.54 | 14.54 | 3.65 | 12.0 | 32.9 | 12.8 | 54.9 | 113 |
-| 11 | 38.2 | 7.29 | 6.93 | 14.77 | 4.48 | 12.0 | 32.9 | 12.8 | 64.6 | 140 |
-| 12 | 39.5 | 7.05 | 3.09 | 6.37 | 5.22 | 12.1 | 32.9 | 12.8 | 64.9 | 171 |
-| 13 | 40.4 | 6.23 | 3.33 | 6.71 | 5.87 | 12.1 | 32.9 | 12.8 | 64.9 | 204 |
-| 14 | 40.9 | 4.92 | 2.59 | 5.14 | 4.46 | 12.0 | 31.0 | 12.8 | 64.9 | 140 |
-| 15 | 40.9 | 3.30 | 2.53 | 5.01 | 4.34 | 12.0 | 29.2 | 12.8 | 64.9 | 135 |
-| 16 | 40.5 | 1.61 | 0.00 | 0.00 | 3.97 | 12.0 | 27.6 | 12.8 | 60.3 | 123 |
-| 17 | 39.6 | 0.26 | 0.00 | 0.00 | 3.47 | 12.0 | 26.1 | 12.8 | 56.3 | 109 |
-| 18 | 38.3 | 0.00 | 0.00 | 0.00 | 3.24 | 12.0 | 24.7 | 12.8 | 52.5 | 103 |
-| 19 | 36.8 | 0.00 | 0.00 | 0.00 | 3.00 | 12.0 | 23.5 | 12.8 | 49.0 | 97 |
-| 20 | 35.0 | 0.00 | 0.00 | 0.00 | 2.78 | 12.0 | 22.4 | 12.8 | 45.8 | 93 |
-| 21 | 33.2 | 0.00 | 0.00 | 0.00 | 2.57 | 12.0 | 21.3 | 12.8 | 42.8 | 88 |
-| 22 | 31.4 | 0.00 | 0.00 | 0.00 | 2.39 | 12.0 | 20.4 | 12.8 | 40.0 | 85 |
-| 23 | 29.8 | 0.00 | 0.00 | 0.00 | 2.22 | 12.0 | 19.6 | 12.8 | 37.4 | 84 |
-| dia | | 52.2 kWh | 37.3 kWh | 82.2 kWh | 74.7 kWh | max 12.1 | | max 12.8 | min 22.0 | noite 1.22 kWh |
-COP medio do dia 2.21; FV nao aproveitada 11.7 kWh; consumo dos auxiliares internos das 17 h as 7 h: 1.22 kWh
+| 00 | 28.5 | 0.00 | 0.00 | 0.00 | 2.17 | 12.0 | 18.9 | 12.8 | 32.8 | 92 |
+| 01 | 27.6 | 0.00 | 0.00 | 0.00 | 2.03 | 12.0 | 18.2 | 12.8 | 30.5 | 88 |
+| 02 | 27.1 | 0.00 | 0.00 | 0.00 | 1.92 | 12.0 | 17.7 | 12.8 | 28.2 | 85 |
+| 03 | 27.1 | 0.00 | 0.00 | 0.00 | 1.85 | 12.0 | 17.1 | 12.8 | 26.0 | 83 |
+| 04 | 27.5 | 0.00 | 0.00 | 0.00 | 1.81 | 12.0 | 16.7 | 12.8 | 23.8 | 82 |
+| 05 | 28.4 | 0.10 | 0.00 | 0.00 | 1.80 | 12.0 | 16.2 | 12.8 | 21.7 | 82 |
+| 06 | 29.7 | 1.21 | 0.00 | 0.00 | 2.07 | 12.0 | 15.9 | 12.8 | 19.3 | 89 |
+| 07 | 31.2 | 2.87 | 2.51 | 6.45 | 2.14 | 12.0 | 15.5 | 12.8 | 23.2 | 83 |
+| 08 | 33.0 | 4.53 | 4.17 | 10.22 | 2.10 | 12.0 | 15.2 | 12.8 | 30.9 | 82 |
+| 09 | 34.8 | 5.94 | 5.58 | 13.02 | 2.18 | 12.0 | 15.0 | 12.8 | 41.4 | 83 |
+| 10 | 36.6 | 6.90 | 6.54 | 14.54 | 3.88 | 12.0 | 32.9 | 12.8 | 51.4 | 120 |
+| 11 | 38.2 | 7.29 | 6.93 | 14.77 | 4.73 | 12.0 | 32.9 | 12.8 | 60.8 | 150 |
+| 12 | 39.5 | 7.05 | 5.06 | 10.47 | 5.50 | 12.1 | 32.9 | 12.8 | 64.9 | 184 |
+| 13 | 40.4 | 6.23 | 3.49 | 7.04 | 6.17 | 12.1 | 32.9 | 12.8 | 64.9 | 221 |
+| 14 | 40.9 | 4.92 | 2.76 | 5.48 | 4.77 | 12.0 | 31.0 | 12.8 | 64.9 | 151 |
+| 15 | 40.9 | 3.30 | 2.70 | 5.35 | 4.65 | 12.0 | 29.2 | 12.8 | 64.9 | 147 |
+| 16 | 40.5 | 1.61 | 0.00 | 0.00 | 4.27 | 12.0 | 27.6 | 12.8 | 60.0 | 133 |
+| 17 | 39.6 | 0.26 | 0.00 | 0.00 | 3.78 | 12.1 | 26.1 | 12.8 | 55.6 | 173 |
+| 18 | 38.3 | 0.00 | 0.00 | 0.00 | 3.51 | 12.1 | 24.7 | 12.8 | 51.6 | 155 |
+| 19 | 36.8 | 0.00 | 0.00 | 0.00 | 3.25 | 12.0 | 23.5 | 12.8 | 47.8 | 139 |
+| 20 | 35.0 | 0.00 | 0.00 | 0.00 | 2.99 | 12.0 | 22.4 | 12.8 | 44.3 | 126 |
+| 21 | 33.2 | 0.00 | 0.00 | 0.00 | 2.75 | 12.0 | 21.4 | 12.8 | 41.1 | 114 |
+| 22 | 31.4 | 0.00 | 0.00 | 0.00 | 2.53 | 12.0 | 20.5 | 12.8 | 38.1 | 105 |
+| 23 | 29.8 | 0.00 | 0.00 | 0.00 | 2.34 | 12.0 | 19.6 | 12.8 | 35.4 | 98 |
+| dia | | 52.2 kWh | 39.7 kWh | 87.3 kWh | 79.4 kWh | max 12.1 | | max 12.8 | min 19.3 | noite 1.51 kWh |
+COP medio do dia 2.20; FV nao aproveitada 9.2 kWh; consumo dos auxiliares internos das 17 h as 7 h: 1.51 kWh
 
 ### Cenarios com o conjunto de referencia (em regime)
 | dia | recepcao | arq. | frio tirado kWh | frio produzido kWh | nao atendido kWh | gelo minimo kWh | ar max C | polpa estoque max C | FV sobrando kWh | aux. noite kWh |
 |---|---|---|---|---|---|---|---|---|---|---|
-| recorde | ate14h | b | 82.2 | 82.2 | 0.0 | 22.0 | 12.1 | 12.8 | 11.7 | 1.22 |
-| recorde | ate10h | b | 73.1 | 73.1 | 0.0 | 30.4 | 12.0 | 12.8 | 16.2 | 1.12 |
-| recorde | tudo13h | b | 88.6 | 87.6 | 0.0 | 15.1 | 12.4 | 12.8 | 9.0 | 1.34 |
-| quente | ate14h | b | 73.6 | 73.6 | 0.0 | 25.9 | 12.1 | 12.8 | 21.1 | 1.18 |
-| junho | ate14h | b | 69.2 | 69.2 | 0.0 | 28.2 | 12.0 | 12.8 | 14.9 | 1.15 |
-| recorde-10% | ate14h | b | 82.2 | 82.2 | 0.0 | 22.0 | 12.1 | 12.8 | 6.0 | 1.22 |
-| ruim | ate14h | b | 154.7 | 51.3 | 91.2 | 0.0 | 19.8 | 18.5 | 4.8 | 2.60 |
-| ruim | meia | b | 54.5 | 51.3 | 0.0 | 23.5 | 12.0 | 12.8 | 4.8 | 1.08 |
-| ruim | nada | b | 35.5 | 35.5 | 0.0 | 41.3 | 12.0 | 12.8 | 11.2 | 1.01 |
-| recorde | ate14h | a | 82.2 | 81.7 | 0.0 | 20.7 | 12.1 | 12.8 | 3.2 | 1.22 |
-| junho | ate14h | a | 69.2 | 69.2 | 0.0 | 28.2 | 12.0 | 12.8 | 8.3 | 1.15 |
+| recorde | ate14h | b | 87.3 | 87.3 | 0.0 | 19.3 | 12.1 | 12.8 | 9.2 | 1.51 |
+| recorde | ate10h | b | 78.0 | 78.0 | 0.0 | 27.8 | 12.0 | 12.8 | 13.8 | 1.25 |
+| recorde | tudo13h | b | 94.0 | 92.8 | 0.0 | 11.8 | 12.6 | 12.9 | 6.5 | 1.85 |
+| quente | ate14h | b | 76.4 | 76.4 | 0.0 | 24.5 | 12.1 | 12.8 | 20.0 | 1.36 |
+| junho | ate14h | b | 70.9 | 70.9 | 0.0 | 27.4 | 12.0 | 12.8 | 14.2 | 1.29 |
+| recorde-10% | ate14h | b | 87.3 | 87.3 | 0.0 | 19.1 | 12.1 | 12.8 | 3.4 | 1.51 |
+| ruim | ate14h | b | 182.9 | 51.3 | 116.4 | 0.0 | 22.1 | 20.8 | 4.8 | 5.14 |
+| ruim | meia | b | 56.9 | 51.3 | 0.0 | 14.8 | 12.0 | 12.8 | 4.8 | 1.12 |
+| ruim | nada | b | 37.9 | 37.9 | 0.0 | 39.9 | 12.0 | 12.8 | 10.3 | 1.02 |
+| recorde | ate14h | a | 87.3 | 81.7 | 0.0 | 6.2 | 12.1 | 12.8 | 3.2 | 1.51 |
+| junho | ate14h | a | 70.9 | 70.9 | 0.0 | 27.4 | 12.0 | 12.8 | 7.6 | 1.29 |
 
 ### Sensibilidades (dia recorde, ate 14 h, arquitetura b, 12 kWp + 700 kg): nao atendido kWh/dia | gelo minimo kWh
-- base: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
-- UA 22 W/K (reefer bom ou painel): 0.0 | 25.7 | frio tirado 75.4 | ar max 12.1 C | pico serpentina 5.6 kW
-- UA 40 W/K: 0.0 | 19.6 | frio tirado 86.5 | ar max 12.1 C | pico serpentina 6.2 kW
-- respiracao 137 W/t (teto USDA): 0.0 | 11.6 | frio tirado 98.1 | ar max 12.1 C | pico serpentina 6.5 kW
-- respiracao 68 W/t: 0.0 | 24.6 | frio tirado 78.2 | ar max 12.1 C | pico serpentina 5.8 kW
-- constante de tempo 6 h: 0.0 | 24.6 | frio tirado 81.1 | ar max 12.1 C | pico serpentina 6.6 kW
-- PR 0,70: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
-- eficiencia 0,55: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
-- eficiencia 0,65: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
-- serpentina com metade do K: 0.0 | 17.7 | frio tirado 85.0 | ar max 13.8 C | pico serpentina 4.9 kW
+- base: 0.0 | 19.3 | frio tirado 87.3 | ar max 12.1 C | pico serpentina 6.3 kW
+- UA 22 W/K (reefer bom ou painel): 0.0 | 23.1 | frio tirado 80.5 | ar max 12.1 C | pico serpentina 5.9 kW
+- UA 40 W/K: 0.0 | 16.8 | frio tirado 91.7 | ar max 12.1 C | pico serpentina 6.5 kW
+- respiracao 137 W/t (teto USDA): 0.0 | 0.3 | frio tirado 103.6 | ar max 12.1 C | pico serpentina 6.8 kW
+- respiracao 68 W/t: 0.0 | 21.9 | frio tirado 83.3 | ar max 12.1 C | pico serpentina 6.1 kW
+- constante de tempo 6 h: 0.0 | 21.9 | frio tirado 86.2 | ar max 12.1 C | pico serpentina 6.9 kW
+- PR 0,70: 0.0 | 19.3 | frio tirado 87.3 | ar max 12.1 C | pico serpentina 6.3 kW
+- eficiencia 0,55: 0.0 | 19.3 | frio tirado 87.3 | ar max 12.1 C | pico serpentina 6.3 kW
+- eficiencia 0,65: 0.0 | 19.3 | frio tirado 87.3 | ar max 12.1 C | pico serpentina 6.3 kW
+- serpentina com metade do K: 0.0 | 13.2 | frio tirado 92.3 | ar max 14.2 C | pico serpentina 5.0 kW
 
 ## 5. Dias nublados seguidos (2,0 kWh/m2; 22-32 C) depois de dias quentes tipicos; recepcao normal ate 14 h continua
 Criterio: polpa do estoque nao passa de 14 C e ar nao passa de 15 C.
 | dias nublados | recepcao | nao atendido total kWh | polpa estoque max C | ar max C | atende? |
 |---|---|---|---|---|---|
-| 1 | ate14h | 5.4 | 13.5 | 14.9 | sim |
+| 1 | ate14h | 9.2 | 13.9 | 15.4 | NAO |
 | 1 | meia | 0.0 | 12.8 | 12.0 | sim |
 | 1 | nada | 0.0 | 12.8 | 12.0 | sim |
-| 2 | ate14h | 103.2 | 19.5 | 20.8 | NAO |
-| 2 | meia | 31.1 | 15.4 | 16.2 | NAO |
+| 2 | ate14h | 114.4 | 20.5 | 21.9 | NAO |
+| 2 | meia | 43.9 | 16.2 | 17.1 | NAO |
 | 2 | nada | 0.0 | 12.8 | 12.0 | sim |
-| 3 | ate14h | 305.2 | 27.3 | 28.2 | NAO |
-| 3 | meia | 126.2 | 19.5 | 20.3 | NAO |
-| 3 | nada | 3.3 | 13.1 | 13.8 | sim |
+| 3 | ate14h | 312.2 | 29.0 | 29.8 | NAO |
+| 3 | meia | 158.7 | 21.2 | 22.2 | NAO |
+| 3 | nada | 16.5 | 13.9 | 14.6 | sim |
 
 ### Quanto falta acrescentar para atender (recepcao normal continuando), partindo de 12 kWp + 700 kg, sem bateria de apoio
 | dias nublados | so mais gelo (kg totais) | so mais bateria (kWh uteis) | so mais painel (kWp totais) | combinado: +2 kWp e bateria (kWh) | combinado: +300 kg e bateria (kWh) |
 |---|---|---|---|---|---|
-| 1 | 700 | 0 | 12 | 0 | 0 |
-| 2 | 1200 | 10 | 16 | 5 | 10 |
-| 3 | 1700 | 25 | 19 | 15 | 20 |
+| 1 | 800 | 5 | 14 | 0 | 0 |
+| 2 | 1300 | 15 | 17 | 10 | 10 |
+| 3 | 1800 | 25 | 20 | 15 | 20 |
 
 ### Combinacoes conferidas (atende = polpa do estoque <= 14 C e ar <= 15 C)
 | kWp | kg de gelo | bateria de apoio kWh uteis | recepcao nos dias nublados | 1 dia | 2 dias | 3 dias | polpa max em 3 dias C |
 |---|---|---|---|---|---|---|---|
-| 10 | 500 | 0 | ate14h | NAO | NAO | NAO | 43.7 |
-| 10 | 500 | 5 | ate14h | NAO | NAO | NAO | 26.7 |
-| 12 | 700 | 0 | ate14h | sim | NAO | NAO | 27.3 |
-| 12 | 700 | 5 | ate14h | sim | NAO | NAO | 19.5 |
-| 12 | 700 | 10 | ate14h | sim | sim | NAO | 17.4 |
-| 12 | 700 | 0 | meia | sim | NAO | NAO | 19.5 |
-| 12 | 700 | 5 | meia | sim | sim | NAO | 14.2 |
+| 10 | 500 | 0 | ate14h | NAO | NAO | NAO | 46.8 |
+| 10 | 500 | 5 | ate14h | NAO | NAO | NAO | 28.3 |
+| 12 | 700 | 0 | ate14h | NAO | NAO | NAO | 29.0 |
+| 12 | 700 | 5 | ate14h | sim | NAO | NAO | 21.1 |
+| 12 | 700 | 10 | ate14h | sim | NAO | NAO | 18.8 |
+| 12 | 700 | 0 | meia | sim | NAO | NAO | 21.2 |
+| 12 | 700 | 5 | meia | sim | sim | NAO | 14.9 |
 | 12 | 700 | 10 | meia | sim | sim | sim | 12.8 |
-| 12 | 700 | 0 | nada | sim | sim | sim | 13.1 |
-| 14 | 700 | 0 | ate14h | sim | NAO | NAO | 22.2 |
-| 14 | 700 | 5 | ate14h | sim | sim | NAO | 16.3 |
-| 14 | 700 | 15 | ate14h | sim | sim | sim | 12.8 |
-| 14 | 700 | 0 | meia | sim | sim | NAO | 15.3 |
-| 14 | 700 | 5 | meia | sim | sim | sim | 12.8 |
-| 14 | 1000 | 0 | ate14h | sim | sim | NAO | 18.0 |
-| 14 | 1000 | 5 | ate14h | sim | sim | NAO | 14.2 |
-| 12 | 1000 | 0 | meia | sim | sim | NAO | 15.5 |
+| 12 | 700 | 0 | nada | sim | sim | sim | 13.9 |
+| 14 | 700 | 0 | ate14h | sim | NAO | NAO | 23.9 |
+| 14 | 700 | 5 | ate14h | sim | NAO | NAO | 17.2 |
+| 14 | 700 | 15 | ate14h | sim | sim | sim | 13.3 |
+| 14 | 700 | 0 | meia | sim | sim | NAO | 16.4 |
+| 14 | 700 | 5 | meia | sim | sim | sim | 13.0 |
+| 14 | 1000 | 0 | ate14h | sim | NAO | NAO | 19.3 |
+| 14 | 1000 | 5 | ate14h | sim | sim | NAO | 15.3 |
+| 12 | 1000 | 0 | meia | sim | sim | NAO | 16.6 |
 
 Frio que cada recurso entrega num dia nublado (referencia):
 - 100 kg de gelo: 9.3 kWh de frio, uma vez por sequencia
@@ -224,6 +224,10 @@ espiral em tanque redondo de 1,5 m: raio de 0,15 a 0,72 m, passo 40 mm -> 38.9 m
    com 20 m3/h de ar novo: equilibrio em 0.59 %
    com 33 m3/h de ar novo: equilibrio em 0.37 %
 custo termico de 10 m3/h com ar a 34 C: 2.1 kWh/dia
+
+## 7b. Umidade: ar a 12 C e 88 por cento tem ponto de orvalho de 10.1 C
+agua a 3.0 C, saindo a cerca de 7 C: superficie media da serpentina cerca de 6 C -> abaixo do orvalho em 4 K
+agua a 6.0 C, saindo a cerca de 10 C: superficie media da serpentina cerca de 9 C -> abaixo do orvalho em 1 K
 
 ## 8. Serpentina de ar (agua gelada), conta de efetividade
 ar 6000 m3/h, UA 2000 W/K, agua 1.4 m3/h: NTU 1.23; efetividade 0.58; K = 946 W/K; com ar a 12 C e agua a 3 C: 8.5 kW
