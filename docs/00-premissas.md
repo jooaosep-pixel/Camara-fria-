@@ -18,8 +18,8 @@ iniciais e DEVEM ser refeitos e corrigidos.
 ## Em aberto (o dono ainda não decidiu): tratar assim
 | Item | Como tratar |
 |---|---|
-| Cidade | Usar Petrolina-PE como referência de clima e irradiação; mostrar a sensibilidade para outro ponto do sertão pernambucano. |
-| Fruta | Não definida. Caso-base: manga, câmara a 10 °C. Mostrar o que muda a 5 °C e avisar quais frutas não servem nessa faixa. |
+| Cidade | O agente de logística vai recomendar o local (`docs/09-logistica-e-local.md`). Até lá, usar Petrolina-PE como referência de clima e irradiação; mostrar a sensibilidade para outro ponto do sertão pernambucano. |
+| Fruta | DEFINIDA pelo dono: manga e caju (pedúnculo, fruta fresca). Pesquisar a temperatura e a umidade ideais de cada uma; as duas podem não ser compatíveis na mesma câmara (manga sofre dano por frio abaixo de cerca de 10 °C; caju pede temperatura mais baixa). Dizer claramente como resolver: temperatura de compromisso, operação alternada por safra, ou divisória com duas zonas, com o efeito na carga térmica e na vida útil de cada fruta. |
 | Horário de entrada e saída da fruta | Calcular o pior caso (1 t entrando no fim da tarde) e o melhor (de manhã cedo) e recomendar uma regra de operação. |
 | Contêiner | Comparar: reefer usado (isolado de fábrica), contêiner seco + isolamento, câmara de painéis isotérmicos. Recomendar o que combina mais, com preço encontrado. |
 | Gás | O engenheiro compara (R290, R600a, R134a/R513A, R404A/R448A/R449A/R452A, R744 etc.) e escolhe, com a segurança pesando. |
