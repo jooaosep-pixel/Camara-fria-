@@ -16,3 +16,5 @@ Entrega: `docs/10-frutas-e-demanda.md`, contendo:
 9. Roteiro de validação em campo: perguntas prontas para produtores, cooperativas e compradores, e o número mínimo de respostas positivas para seguir.
 10. Dados de interface: lista final de frutas a considerar no projeto térmico com temperatura e umidade de cada uma, e meses de uso.
 Não escolha o local (isso é do agente-logistica; leia `docs/09-logistica-e-local.md` se já existir) e não projete equipamento.
+
+Divisão com o agente-logistica: ele é dono de onde instalar, municípios e volumes por município, distâncias, compradores por local, modelo de operação e horário de chegada. Você é dono de quais frutas, ficha pós-colheita, calendário de ocupação, quem paga, preço do serviço, receita e viabilidade. Nos pontos comuns, use os números dele em vez de refazer e registre divergências numa seção "Acordo com a logística". O que não fechar em acordo vai para o dono mediar.

@@ -14,3 +14,5 @@ Entrega: `docs/09-logistica-e-local.md`, contendo:
 7. Dados de interface para o projeto: cidade recomendada, clima de projeto, horário provável de carga, meses de uso por fruta.
 8. O que só se resolve com visita de campo ou conversa com produtores: lista de perguntas prontas para o dono fazer.
 Não projete equipamento.
+
+Divisão com o analista-frutas-demanda: você é dono de onde instalar, municípios e volumes por município, distâncias, compradores por local, modelo de operação e horário de chegada. Ele é dono de quais frutas, ficha pós-colheita, calendário de ocupação, quem paga, preço do serviço, receita e viabilidade. Nos pontos comuns, use os números dele em vez de refazer e registre divergências numa seção "Acordo com frutas e demanda". O que não fechar em acordo vai para o dono mediar.
