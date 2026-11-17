@@ -1,8 +1,8 @@
 # 09 — Logística e escolha do local
 
-Autor: agente-logistica. Versão 4, de 17/11/2026 (inclui os números acordados com o analista de frutas e demanda; ver `docs/_trabalho/acordo-logistica-demanda.md`). Histórico: refeita depois do parecer do revisor (`docs/_trabalho/revisao-09-logistica.md`) e ajustada às decisões do dono (tabela "Decisões do dono" em `docs/00-premissas.md`).
+Autor: agente-logistica. Versão 5, de 17/11/2026 (com a decisão D6 e a seção 9, "Perguntas de campo: o que a pesquisa já responde") (inclui os números acordados com o analista de frutas e demanda; ver `docs/_trabalho/acordo-logistica-demanda.md`). Histórico: refeita depois do parecer do revisor (`docs/_trabalho/revisao-09-logistica.md`) e ajustada às decisões do dono (tabela "Decisões do dono" em `docs/00-premissas.md`).
 
-**Decisões do dono que valem aqui:** D1 — o protótipo é **só manga**, uma zona a 12 °C, 5 t; o caju fica como estudo futuro. D2 — recepção da fruta **das 7h às 14h**. D5 — **um protótipo só, sem CNPJ** por enquanto.
+**Decisões do dono que valem aqui:** D1 — o protótipo é **só manga**, uma zona a 12 °C, 5 t; o caju fica como estudo futuro. D2 — recepção da fruta **das 7h às 14h**. D5 — **um protótipo só, sem CNPJ** por enquanto. D6 — **outras frutas que convivem com a manga a 12 °C** (banana, mamão, acerola; goiaba e maracujá em giro rápido) podem entrar para completar a ocupação; a manga continua a principal e o caju continua fora.
 Base: `docs/00-premissas.md`. Este documento não projeta equipamento.
 
 ## Como ler este documento
@@ -34,12 +34,12 @@ Consequência: produção por município agora é dado conferido. Clima oficial,
 
 1. **Recomendação para o protótipo (só manga): zona rural de Petrolina-PE, em um núcleo do Projeto Senador Nilo Coelho, em terreno de associação ou cooperativa de colonos.** Nota 86,4 de 100; o segundo colocado tem 69,8. A conferência no IBGE reforçou a escolha.
 2. **Petrolina tem pequeno produtor de manga**, e muito: cerca de 1.950 lotes familiares, que vendem na roça pelo preço do comprador. O comprador está ao lado (Mercado do Produtor de Juazeiro, 2º do país).
-3. **Escala e uso esperado (acordado com o doc 10):** giro esperado de **108 t de manga por ano**, média de 0,45 t/dia em 240 dias (agosto a março); o 1 t/dia é teto, garantido por cota. Serve a um **grupo de cerca de 10 famílias** (faixa de 5 a 15), cada uma separando parte da colheita. De **abril a julho a câmara fica parada** se for só manga.
+3. **Escala e uso esperado (acordado com o doc 10):** giro esperado de **108 t de manga por ano**, média de 0,45 t/dia em 240 dias (agosto a março); o 1 t/dia é teto, garantido por cota. Serve a um **grupo de cerca de 10 famílias** (faixa de 5 a 15), cada uma separando parte da colheita. De abril a julho quase não há manga para guardar; por isso o dono autorizou frutas complementares (D6). Com elas a estimativa sobe para cerca de **160 t por ano** [SUPOSTO]. Em Petrolina há banana, goiaba e acerola em volume; **não há mamão** [IBGE 2025].
 4. **Três perguntas eliminam o local, e só a visita responde:** já existe câmara fria com vaga? há quem opere e ceda terreno por escrito? o comprador paga mais por manga resfriada? Nenhuma foi verificada.
-5. **Recepção das 7h às 14h (D2).** A manga deve chegar entre 9h e 15h [SUPOSTO]: o que chegar depois das 14h espera à sombra e entra na manhã seguinte.
+5. **Recepção das 7h às 14h (D2) — com um alerta novo.** Um capítulo da Embrapa sobre colheita da manga diz que o horário mais conveniente para colher é **entre 10h e 15h**, quando escorre menos látex, e manda evitar o começo da manhã (seção 9, linha 4). Se o produtor seguir isso, boa parte da manga chega **depois das 14h** e dorme fora da câmara. É o ponto mais importante a medir na visita.
 6. **Sem CNPJ (D5),** quem vende, emite nota e assina com a merenda escolar é o produtor ou a associação, não o dono do equipamento. O dono cede o uso. A forma de cobrar pelo serviço sem empresa precisa de contador.
 7. **Rede elétrica:** o núcleo recomendado provavelmente tem rede [SUPOSTO, não confirmado]. Isso não muda a pontuação, mas muda o sentido do teste: em Petrolina o protótipo prova a tecnologia, não a necessidade de estar fora da rede. Opções na seção 4.4; a decisão é do dono.
-8. **Caju: estudo futuro (seção 9).** A versão 1 apontava o Pajeú como lugar do caju; **estava errado**. Pelo IBGE, 81% da castanha do estado está em Buíque (Agreste) e não há caju onde há manga irrigada. O único município com as duas frutas é São José do Belmonte, em volume pequeno.
+8. **Caju: estudo futuro (seção 10).** A versão 1 apontava o Pajeú como lugar do caju; **estava errado**. Pelo IBGE, 81% da castanha do estado está em Buíque (Agreste) e não há caju onde há manga irrigada. O único município com as duas frutas é São José do Belmonte, em volume pequeno.
 
 ---
 
@@ -109,7 +109,7 @@ Soma: **691.078 t** [CALCULADO], mais que os sete municípios pernambucanos. Nen
 
 ### 1.3 Caju
 
-Fora do protótipo por decisão do dono (D1). O que apurei, já corrigido com o IBGE, está na seção 9, "Estudo futuro — caju". Em uma linha: os municípios da manga irrigada têm zero castanha de caju registrada; o caju de Pernambuco está em Buíque, no Agreste.
+Fora do protótipo por decisão do dono (D1). O que apurei, já corrigido com o IBGE, está na seção 10, "Estudo futuro — caju". Em uma linha: os municípios da manga irrigada têm zero castanha de caju registrada; o caju de Pernambuco está em Buíque, no Agreste.
 
 ### 1.4 A conta de escala da manga (refeita)
 
@@ -147,7 +147,23 @@ O calendário de ocupação é do analista de frutas e demanda (`docs/10-frutas-
 
 Os níveis (alto, médio, muito baixo) são do doc 10. Os números por mês são a minha tradução deles, feita para fechar com o cenário médio dele: ocupação média de (4 × 60% + 4 × 30%) ÷ 8 = 45% e 0,6 × 120 + 0,3 × 120 = **108 t no ano** [CALCULADO sobre SUPOSTO]. Tudo [SUPOSTO]: nenhum de nós achou calendário de colheita do pequeno produtor de Petrolina (pergunta 3 da seção 8).
 
-Consequência prática: **o protótipo precisa estar instalado antes de outubro** para ser testado no pico.
+**Com as frutas complementares (decisão D6)** — níveis do doc 10 (seção 2.4: "média" de abril a julho, "média a alta" em fevereiro e março, "média" em agosto e setembro); números meus, a confirmar pelo analista de frutas [SUPOSTO]:
+
+| Mês | Jan | Fev | Mar | Abr | Mai | Jun | Jul | Ago | Set | Out | Nov | Dez |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Manga, entrada (t/dia) | 0,6 | 0,3 | 0,3 | 0 | 0 | 0 | 0 | 0,3 | 0,3 | 0,6 | 0,6 | 0,6 |
+| Complementares, entrada (t/dia) | 0 | 0,15 | 0,15 | 0,3 | 0,3 | 0,3 | 0,3 | 0,15 | 0,15 | 0 | 0 | 0 |
+| Total (t/dia) | 0,6 | 0,45 | 0,45 | 0,3 | 0,3 | 0,3 | 0,3 | 0,45 | 0,45 | 0,6 | 0,6 | 0,6 |
+| Estoque médio (t), 5 dias | 3,0 | 2,25 | 2,25 | 1,5 | 1,5 | 1,5 | 1,5 | 2,25 | 2,25 | 3,0 | 3,0 | 3,0 |
+| Quais complementares | — | banana | banana | banana, acerola, goiaba | idem | idem | idem | banana, acerola | banana, acerola | — | — | — |
+
+Soma: manga 108 t + complementares (0,3 × 120 + 0,15 × 120 = 54 t) = **162 t por ano**, ocupação média de 45% nos 12 meses [CALCULADO sobre SUPOSTO]. Fica entre o cenário médio (108 t) e o otimista (289 t) do doc 10. Goiaba e maracujá só em giro rápido, porque a 12 °C duram menos (doc 10).
+
+**De onde viriam, no raio de coleta do local recomendado** [IBGE, tabela 1613, Petrolina, 2025, conferida]: banana 41.600 t; goiaba 48.000 t; acerola 30.000 t; maracujá 1.980 t. **Mamão: não há produção registrada em Petrolina**; o mais próximo é Lagoa Grande (3.680 t, segundo o doc 10), a cerca de 55 km [SUPOSTO], fora do raio de 10 a 15 km. São culturas dos mesmos lotes irrigados do Nilo Coelho (o distrito cita goiaba entre as principais [FONTE 7]); **se o núcleo escolhido as tem, e em que meses, é pergunta de campo** (pergunta 20b).
+
+**Muda o horário de chegada?** Pouco, e para melhor: acerola e banana costumam ser colhidas cedo [SUPOSTO], então chegam dentro da janela de 7h às 14h. **Muda o grupo?** O tamanho não (cerca de 10 famílias); a composição pode mudar de abril a julho, se quem tem banana ou acerola não for quem tem manga. Ressalvas de logística que mantenho: banana viaja verde e sem frio, e boa parte da acerola vai para a indústria no mesmo dia — não há prova de que alguém pague para guardá-las.
+
+Consequência prática: **o protótipo precisa estar instalado antes de outubro** para ser testado no pico da manga.
 
 ---
 
@@ -242,7 +258,7 @@ Pesos são decisão minha [SUPOSTO]; o dono pode mudar. Como o protótipo é só
 | C | **Santa Maria da Boa Vista / Lagoa Grande** | 42.500 t e 30.000 t (72.500 t) | Mesmo polo, a cerca de 55 a 110 km de Petrolina [SUPOSTO]; área de manga em crescimento (Lagoa Grande dobrou de 2022 a 2024) | **Não levantei quem produz** (colonos, assentados ou empresas); menos estrutura e menos técnicos que Petrolina [SUPOSTO] |
 | D | **São José do Belmonte** | 400 t em 20 ha | Produção pequena, do tamanho da câmara: 400 t em cerca de 120 dias de safra [SUPOSTO] = 3 t/dia no município; merenda compra da agricultura familiar [FONTE 44]; é o único com caju também (estudo futuro) | Poucos meses de uso; longe dos mercados; não sei de quem é a manga; água [SUPOSTO] escassa |
 
-Saíram da lista, por não terem manga: Buíque–Tupanatinga e Carnaíba–Flores (ver seção 9).
+Saíram da lista, por não terem manga: Buíque–Tupanatinga e Carnaíba–Flores (ver seção 10).
 
 ### 4.2 Tabela de pontuação
 
@@ -373,15 +389,15 @@ Não abri as normas. A lista é do que **perguntar**. Tudo [VALIDAR COM PROFISSI
 
 ## 6. Modelo de operação em uma página
 
-**Resfriar rápido, guardar pouco, sair em carga fechada. Só manga (D1), a 12 °C.**
+**Resfriar rápido, guardar pouco, sair em carga fechada. Manga como fruta principal (D1), a 12 °C; frutas complementares autorizadas (D6).**
 
 | Pergunta | Resposta | Marcação |
 |---|---|---|
 | Quem entrega | Cerca de 10 famílias com CAF (faixa de 5 a 15), raio de 10 a 15 km, em carro, moto com carreta ou trator, em caixas de 20 kg da associação | [SUPOSTO] |
 | Quanto cada um entrega | **Cota diária** combinada na véspera, somando no máximo 1 t (50 caixas de 20 kg). Sem cota, um só lote em colheita entrega 3 t/dia (seção 1.4) | [CALCULADO sobre SUPOSTO] |
 | Quanto entra de fato | **Média de 0,45 t/dia** nos 240 dias de operação (0,6 t/dia de outubro a janeiro; 0,3 t/dia em fevereiro, março, agosto e setembro); **1 t/dia é teto, não rotina** | [SUPOSTO; doc 10] |
-| A que horas colhem | Do amanhecer ao fim da manhã [SUPOSTO]; uma exportadora do Vale passou a priorizar as horas mais frescas do dia [FONTE 50] | |
-| **A que horas a manga chega** | **Entre 9h e 15h**, com a maior parte entre 10h e 14h | **[SUPOSTO]** — não achei nenhuma fonte; só a visita responde |
+| A que horas colhem | Há duas orientações em conflito: meio do dia, por causa do látex [FONTE 80]; horas mais frescas, por causa do calor [FONTE 50] | fontes divergentes |
+| **A que horas a manga chega** | **Entre 9h e 16h.** A Embrapa (capítulo de 2002) indica colher **entre 10h e 15h**, quando há menos látex, e evitar o começo da manhã [FONTE 80]; uma exportadora, ao contrário, passou a priorizar as horas mais frescas [FONTE 50]. Não sei qual prática o pequeno segue | **[SUPOSTO]** — só a visita responde |
 | **Horário de recepção** | **Das 7h às 14h** | **Decisão D2 do dono** |
 | Manga que chega depois das 14h | Espera à sombra, em caixa aberta, e entra na manhã seguinte a partir das 7h. Regra combinada com o grupo: **colher cedo e sair da roça até as 13h** | regra proposta |
 | Temperatura da fruta na chegada | **30 °C** como valor de projeto (o da premissa); pode chegar a 35 °C em manga colhida perto do meio-dia | [SUPOSTO] — medir na visita |
@@ -423,10 +439,11 @@ Não abri as normas. A lista é do que **perguntar**. Tudo [VALIDAR COM PROFISSI
 | Normais oficiais do INMET | **Não obtidas** (site não respondeu) | pendência |
 | Irradiação (kWh/m²·dia) | **Não obtida** (CRESESB não abriu) | pendência do integrador |
 | Horário de recepção | 7h às 14h | Decisão D2 |
-| Horário provável de chegada | 9h às 15h; maior parte entre 10h e 14h. Caso a verificar pelo térmico: 1 t inteira entrando entre 13h e 14h | **[SUPOSTO]** |
+| Horário provável de chegada | **Entre 9h e 16h.** Se o produtor colher entre 10h e 15h, como recomenda um capítulo da Embrapa [FONTE 80], a maior parte chega entre 11h e 16h, isto é, **parte depois do fechamento das 14h**. Caso a verificar pelo térmico: 1 t inteira entrando entre 13h e 14h | **[SUPOSTO]**, com apoio parcial de fonte |
 | Temperatura da fruta na chegada | **30 °C** (valor único de projeto). Sensibilidade a 35 °C: 1.000 kg × 3,77 kJ/kg·K × 5 K = 18.850 kJ = **5,2 kWh de frio a mais por dia** | [SUPOSTO] + [CALCULADO pelo revisor] |
-| Meses de uso | **Agosto a março** (alto de outubro a janeiro; médio em fevereiro, março, agosto e setembro). **Abril a julho: parado**, se for só manga | [SUPOSTO; doc 10] |
-| Fruta por ano | **108 t** (cenário médio); faixa de 25 a 289 t | [SUPOSTO; doc 10] |
+| Meses de uso | Manga: **agosto a março** (alto de outubro a janeiro). Abril a julho: só frutas complementares (D6), uso médio a baixo | [SUPOSTO; doc 10] |
+| Fruta por ano | **108 t de manga** (cenário médio do doc 10) + cerca de **54 t de complementares** = cerca de 162 t; faixa de 25 a 289 t | [SUPOSTO] |
+| Frutas complementares disponíveis em Petrolina | Banana, goiaba, acerola, maracujá. **Mamão não** | [IBGE 2025] |
 | Entrada diária | Média de **0,45 t/dia**; pico de safra 0,6 t/dia; **teto de 1 t/dia** por cota. A logística recomenda manter 1 t/dia como entrada de projeto, porque a fruta chega em dias de colheita, não espalhada por igual | [SUPOSTO] |
 | Estoque médio | 2,25 t (3 t no pico) | [SUPOSTO; doc 10] |
 | Rede elétrica no local | Provável no núcleo; **não confirmada** no terreno | [SUPOSTO] |
@@ -513,7 +530,64 @@ Leve: este documento, termômetro de espeto, celular com o aplicativo da Starlin
 
 ---
 
-## 9. Estudo futuro — caju (fora do protótipo)
+## 9. Perguntas de campo: o que a pesquisa já responde
+
+O dono pediu que eu procurasse resposta para o que tinha ficado para a visita. Pesquisa de 17/11/2026. **Quase tudo abaixo vem de trecho de busca, não de página aberta**; os sites da Codevasf, do DINC, do IFSertãoPE, da prefeitura e da Adagro não abriram nesta sessão. Só usei contato que a própria entidade ou um cadastro público divulga como institucional. **Confirmar todo telefone, e-mail e endereço antes de usar.**
+
+Confiança: **alta** = dado oficial que eu abri; **média** = trecho de busca de fonte oficial ou acadêmica; **baixa** = trecho de busca de blog, diretório ou fonte antiga; **nenhuma** = não encontrado.
+
+| # | Pergunta (nº na seção 8) | Resposta encontrada | Fonte e data | Confiança | O que ainda só se resolve no local |
+|---|---|---|---|---|---|
+| 1 | Quantos hectares e quanto de manga por lote (1) | Lote familiar de cerca de 6 ha (6,11 ha irrigáveis em estudo antigo); manga é cerca de 40% do cultivo permanente do distrito; 75% dos estabelecimentos com manga do Submédio têm até 5 ha de manga | [FONTE 59], [FONTE 6], [FONTE 5]; estudos de 2001 a 2022 | Média | Área de manga e variedade de cada família do grupo |
+| 2 | Em quantos dias colhe um talhão, quantas caixas por dia, em que meses (3) | **Não encontrado** para o pequeno produtor. Só o geral: oferta alta de outubro a janeiro, baixa de abril a julho (preço de R$ 0,99/kg em fevereiro e R$ 4,94/kg em junho de 2026, Cepea citado no doc 10) | doc 10, seção 1.4 | Baixa | **Tudo.** É o que define a cota diária |
+| 3 | Rendimento | 25 t/ha em média, em 75 produtores do distrito (2014–2018); Petrolina no IBGE: 30 t/ha em 2024, 25 t/ha em 2025 (286.250 t ÷ 11.450 ha) | [FONTE 60]; [IBGE] 2024 e 2025 | Alta (IBGE), média (estudo) | — |
+| 4 | **A que horas se colhe e a fruta sai da roça (4)** | **Fontes em conflito.** (a) Capítulo "Colheita e pós-colheita" da Embrapa (livro A Cultura da Mangueira, 2002): o horário mais conveniente é **entre 10h e 15h**, quando o fluxo de látex é mínimo; evitar as primeiras horas da manhã. (b) Manual de manga para exportação da Embrapa: **transportar** pela manhã ou no fim da tarde. (c) Notícia da Embrapa Semiárido (2026): uma exportadora passou a colher nas horas mais frescas para reduzir o escurecimento da polpa | [FONTE 80] (2002 e manual sem data no trecho); [FONTE 50] (21/09/2026) | Média para as recomendações; **nenhuma para o costume do pequeno** | Hora real de colheita e de chegada. **Se a colheita for das 10h às 15h, parte da fruta chega depois das 14h** (limite da decisão D2) |
+| 5 | Temperatura da fruta recém-colhida (12) | **Não encontrado** | — | Nenhuma | Medir com termômetro de espeto |
+| 6 | Para quem vende e por quanto (5) | Vende na roça, ao comprador que vai ao pomar e classifica em primeira, segunda e "arrastão"; é tomador de preço. Preço na roça em Petrolina em 10/11/2026: R$ 1,05/kg (palmer) e R$ 1,20/kg (tommy), segundo o doc 10 (Cepea/Agrolink) | [FONTE 10] (2023); doc 10, seção 4.2 | Média | Preço de cada classe; nome dos compradores |
+| 7 | Quanto se perde (6) | **Não encontrado** para o Vale. Estimativa nacional antiga: 27,5% para manga (1992, citada pela Embrapa em 1997) | doc 10, seção 3.1 | Baixa | Perda real do grupo |
+| 8 | **Existe câmara fria por perto? Em uso ou parada? (7, 15)** | Há frio no polo, mas não achei situação atual de nenhuma unidade: (a) Cooperativa do N-6 (Petrolina) e Manga Brasil (Juazeiro) têm packing house com câmara fria, de programas federais — estudo antigo, sem dizer se funcionam; (b) Aprovale e exportadores têm frio próprio; (c) em 2026 um senador disse ter indicado, pela Codevasf, uma câmara fria para a cooperativa CoopGrapes, do Projeto Maria Tereza — anúncio, não confirmação de instalação; (d) um vereador denunciou equipamentos da Codevasf parados em pátio no Núcleo 3 (caminhões, tratores, caixas-d'água; não cita câmara fria). **Procurei notícia de câmara parada ou abandonada e não achei** | [FONTE 9]; [FONTE 11]; [FONTE 78] (blog, 2026); RedeGN, sem data: https://redegn.com.br/?cod_noticia=198252&sessao=noticia | Baixa | **Tudo: é o eliminatório E1.** Quais câmaras existem no núcleo, se estão ligadas, se têm vaga, quanto cobram, e por que as paradas pararam |
+| 9 | **Quais associações e cooperativas existem nos núcleos (10, 14)** | Lista parcial, sem confirmação de atividade: **Coopexvale** — Cooperativa de Produtores Exportadores do Vale do São Francisco, fundada em 2004, sede no **Núcleo 8**; contato divulgado em diretório de exportadores: coopexvale@uol.com.br, (87) 3031-8702, site coopexvale.com.br. **COANA** — Cooperativa Agrícola Nova Aliança, fundada em 2005, **Núcleo 2, lote 551**; sac@coanabr.com.br, (87) 3986-1542. **COOAPINC-04** — Cooperativa Agrícola dos Produtores Irrigantes do Núcleo 4 (citada em estudo do Banco Mundial e em cadastro de certificadora de orgânicos); contato não encontrado. **Cooperativa do N-6** (packing house com câmara fria); nome completo e contato não encontrados. **AAFPMN3** — Associação dos Agricultores Familiares do N-3, site aafpmn3.org. **CoopGrapes** (Projeto Maria Tereza). Associação de Pequenos Produtores do **Núcleo 2** (Asa Branca): cadastro "inapto". Associação do **Núcleo 5**: CNPJ baixado em 2008. Um artigo da Univasf contou 4 associações só de produtores com 766 sócios no perímetro, mais associações mistas; a tabela com os nomes não apareceu | [FONTE 74]; [FONTE 76]; [FONTE 9]; [FONTE 48]; [FONTE 78]; [FONTE 77]; [FONTE 75] | Média (existência), baixa (contatos e situação atual) | Quais estão ativas, quantos sócios com manga, se aceitam operar. **Não sei se Coopexvale e COANA trabalham manga de pequeno produtor** (são exportadoras). Pedir a lista atual ao DINC |
+| 10 | Assembleia cederia terreno; quem operaria (16, 17) | **Não encontrado** (não é coisa que se ache em pesquisa) | — | Nenhuma | **Tudo: eliminatório E2** |
+| 11 | Furto de cabo, bomba, painel (18) | **Não encontrado** nada específico dos núcleos | — | Nenhuma | Perguntar aos vizinhos |
+| 12 | De onde vem a água (19) | O projeto tem 39 estações de bombeamento e distribui água do São Francisco por canais; é água de irrigação. Água tratada nos núcleos: não encontrado | [FONTE 7] (trecho) | Média | Se há água tratada no terreno |
+| 13 | **Há rede elétrica nos lotes? (20a)** | **Não confirmado.** O que achei: onze núcleos com escolas, postos de saúde e comércio (logo, rede no núcleo, por dedução); a energia das estações de bombeamento é paga pelos usuários na conta mensal de água do distrito; em maio de 2026 houve corte de energia da Neoenergia em **outros** projetos (Brígida, em Orocó, e Caraíbas, em Santa Maria da Boa Vista), e o mesmo texto diz que os produtores do Nilo Coelho pagam em dia | [FONTE 69]; [FONTE 84] (DINC e blog de maio/2026) | Baixa | Se o terreno tem poste, se é trifásico, se cai. Define o sentido do teste (seção 4.4) |
+| 14 | **Há frigoristas e empresas de refrigeração? Quanto cobram? (20)** | Empresas que anunciam câmaras frigoríficas em Petrolina: **China Refrigeração** (câmaras e baús frigoríficos; diz ser autorizada Carrier e Thermo King; BR-428, km 183, Jardim Amazonas; site chinarefrigeracaope.com.br); **Grupo Hermonex** (anuncia projeto, instalação e manutenção de câmaras em Petrolina; não sei se tem base na cidade); **Climafrio** (listada em diretório com serviços de refrigeração e câmaras frias). Há também oficinas pequenas de refrigeração em listas telefônicas, sem indicação de que atendam câmara fria. **Preço de visita, hora técnica ou manutenção: preço não encontrado** | [FONTE 79] (sites e diretórios, sem data) | Baixa | Quem atende os packing houses, quanto cobra, se trabalha com o gás escolhido |
+| 15 | **Quem compra manga de pequeno produtor (21 a 24)** | **Mercado do Produtor de Juazeiro** (AMA): 1.620.627 t em 2025, 2º do país; horário divulgado: segunda a sexta das 2h às 22h, sábado das 2h às 17h, domingo a partir das 21h (a mesma página traz outro horário, de 8h às 14h — confirmar); telefone 74 98846-0016; cotação diária no Instagram @mercadodoprodutorjuazeirooficial. Nomes de boxes ou atacadistas: **não encontrado** | [FONTE 63] (2025, aberta); [FONTE 83] (prefeitura de Juazeiro, sem data) | Alta (volume), média (horário e contato) | **Se pagam mais por manga resfriada: eliminatório E3.** Quais boxes compram de pequeno |
+| 16 | Indústria de polpa, com nome (26) | **Nome não encontrado.** Só um estudo da Embrapa sobre "uma indústria de polpas de Petrolina" com 14 funcionários, sem nome, que vende polpa de acerola, goiaba, manga, cajá e maracujá. Preço pago pela manga: **não encontrado** | [FONTE 37] (estudo antigo) | Baixa | Nomes, preço e exigências |
+| 17 | **Chamadas públicas do PNAE e do PAA, com preço e data (25)** | (a) **IFSertãoPE, campus Petrolina Zona Rural, Chamada Pública PNAE nº 01/2026**: publicada em 29/10/2026; propostas até **18/11/2026, 16h**; abertura em 19/11/2026, 10h; retificação em 09/11/2026; exige DAP ou CAF. (b) **IFSertãoPE, campus Petrolina**: 27 itens (frutas, verduras, polpas, entre outros), 4 meses de fornecimento, valor estimado de **R$ 155.854,69**, propostas até **01/12/2026** pela plataforma Contrata+Brasil. (c) **Prefeitura de Petrolina, Chamada nº 001/2026**: pesquisa de preços com agricultores familiares, para futura compra da merenda; data divergente entre fontes (abril ou agosto de 2026). **Preço por kg da manga em qualquer delas: não encontrado** (os anexos não apareceram). Referência de fora: R$ 5,06/kg na pesquisa da Emater-RN de maio de 2026 (doc 10). **PAA:** o governo federal abriu em 20/05/2026 a seleção de municípios para executar o PAA em 2026; **não achei se Petrolina foi selecionada**, nem preço | [FONTE 71]; [FONTE 72]; [FONTE 73]; [FONTE 85]; doc 10, seção 4.2 | Média (existência e datas), nenhuma (preço) | Abrir os anexos dos editais e ver se há manga e a que preço; quanto a prefeitura compra por ano |
+| 18 | **Licenças: prefeitura e vigilância sanitária (29)** | Alvará sanitário: pela **Agência Municipal de Vigilância Sanitária (AMVS)**, por sistema online; envio de documentos, visita técnica, alvará provisório e depois definitivo; WhatsApp divulgado (87) 99190-7667. Alvará de licença: na sede da prefeitura, Av. Guararapes, 2114, Centro; carta de serviços informa taxa de R$ 5,00. **Lista de documentos e exigências técnicas para armazenar fruta: não encontrado.** Licença ambiental municipal: não encontrado | [FONTE 81] (prefeitura; notícias de 2019 a 2021 e carta de serviços sem data) | Média | Se um protótipo sem CNPJ, em terreno de associação, precisa de alvará próprio ou entra no da associação [VALIDAR] |
+| 19 | **Licenças: Adagro (28)** | A Adagro inscreve e fiscaliza **Unidades de Produção e Unidades de Consolidação** e emite a Permissão de Trânsito de Vegetais (PTV) pelo sistema Siapec3; o pedido online exige cadastro atualizado do produtor e da propriedade. Emitiu 45.291 PTVs em 2024, com 161 mil t de manga. Mantém escritório e plantão em Petrolina. **Requisitos para cadastrar um ponto que consolida fruta de vários produtores, e exigência para entrar na Bahia: não encontrado** | [FONTE 82] (relatório de gestão e notícias da Adagro, 2023 a 2025) | Média | Se o protótipo é "unidade de consolidação"; o que a Bahia (ADAB) exige para manga vinda de Petrolina |
+| 20 | Autorização do DINC e da Codevasf (27) | **Não encontrado** nada sobre instalar equipamento de terceiros no perímetro | — | Nenhuma | Perguntar ao DINC |
+| 21 | Frutas complementares de abril a julho (20b) | Em Petrolina, 2025: banana 41.600 t, goiaba 48.000 t, acerola 30.000 t, maracujá 1.980 t; mamão não aparece | [IBGE], tabela 1613, 2025 | Alta | Se o núcleo escolhido tem essas frutas, em que meses, e se alguém pagaria para guardá-las |
+| 22 | Distâncias, obstrução da Starlink, sombras, alagamento, fio baixo (31 a 35) | **Não encontrado** (dependem do terreno) | — | Nenhuma | Tudo, no terreno |
+| 23 | De quem é a manga de Belém do São Francisco e de São José do Belmonte (30, 42) | **Não encontrado** | — | Nenhuma | Só importa se Petrolina cair |
+| 24 | Caju: Buíque e São José do Belmonte (36 a 45) | Só os volumes do IBGE (seção 10). Em Buíque, parte do caju é do povo Kapinawá [FONTE 61]. Associações, compradores, estradas: **não encontrado** | [IBGE] 2024 e 2025 | Alta (volume), nenhuma (o resto) | Estudo futuro |
+
+### O que a pesquisa mudou
+
+1. **Horário de colheita:** há recomendação técnica de colher manga **entre 10h e 15h**. Isso enfraquece a minha suposição de chegada "entre 9h e 15h" e ameaça a janela de recepção até as 14h. Não reabro a decisão D2; aviso que ela precisa de confirmação em campo antes de fechar o tamanho do gelo.
+2. **Há venda pública aberta agora:** duas chamadas do IFSertãoPE em Petrolina com prazo em novembro e dezembro de 2026. Não servem para o protótipo (não há tempo), mas mostram que o canal existe e dão o tamanho: R$ 155.854,69 em quatro meses para 27 itens, em um campus.
+3. **Há cooperativas com endereço nos núcleos 2, 4, 6 e 8** e uma associação no núcleo 3. A visita já pode começar com uma lista, em vez de sair procurando.
+4. **Continuo sem nenhum dado sobre os três eliminatórios.** Pesquisa de mesa não os resolve.
+
+### O que realmente sobra para o dono perguntar pessoalmente, em ordem de importância
+
+1. **Ao comprador (merenda de Petrolina, IFSertãoPE, dois ou três boxes do Mercado do Produtor):** o senhor compraria manga resfriada, em dia certo, de um grupo de dez famílias? Quanto por semana, a que preço, e põe isso por escrito?
+2. **Às cooperativas dos núcleos 4, 6 e 8 e à associação do núcleo 3:** existe câmara fria aqui? Está ligada? Tem vaga? Se está parada, por quê?
+3. **À mesma associação:** cederia 600 a 800 m² por escrito e indicaria quem abre a porta das 7h às 14h?
+4. **A dez produtores:** a que horas o senhor colhe e a que horas a fruta sai da roça? (E medir a temperatura de uma manga recém-colhida.)
+5. **Aos mesmos:** em quantos dias colhe um talhão, e aceitaria uma cota diária? Pagaria R$ 1,20 por caixa por dia?
+6. **No terreno:** tem poste de energia? É trifásico? Cai muito?
+7. **Ao DINC:** posso instalar no perímetro? Tem a lista atual de associações e cooperativas?
+8. **À Adagro de Petrolina:** juntar fruta de vários produtores exige cadastro de unidade de consolidação? O que é preciso para vender em Juazeiro?
+9. **À vigilância sanitária (AMVS):** um protótipo em terreno de associação precisa de alvará próprio?
+10. **A uma empresa de refrigeração da cidade:** atende câmara fria em zona rural? Quanto cobra a visita? Trabalha com o gás do projeto?
+11. **Aos sócios:** que outras frutas colhem de abril a julho, e para quem vendem?
+12. **No terreno:** teste de obstrução da Starlink, fotos de sombra, alagamento, fio baixo, vizinho mais próximo.
+
+---
+
+## 10. Estudo futuro — caju (fora do protótipo)
 
 Por decisão do dono (D1) o caju não entra no protótipo nem na pontuação. Fica registrado o que apurei, **corrigido com o IBGE**, para quando o assunto voltar. Tabela 5457 do IBGE, mesma consulta da seção 1.
 
@@ -590,7 +664,7 @@ A frase da versão 1 — "uma associação de 80 famílias com 25 cajueiros cada
 
 ---
 
-## 10. Discordâncias com a revisão
+## 11. Discordâncias com a revisão
 
 Aceitei e corrigi a maior parte do parecer, inclusive o item bloqueante. Onde não concordo, ou não fiz, registro as duas posições. **O dono é o mediador.**
 
@@ -610,21 +684,21 @@ Os conflitos A (horário), B (uma ou duas zonas) e C (Agreste ou sertão) **fora
 
 ---
 
-## 11. Acordo com frutas e demanda
+## 12. Acordo com frutas e demanda
 
 O texto completo está em `docs/_trabalho/acordo-logistica-demanda.md` (acordado, divergências que restam e perguntas ao dono). Resumo do que este documento passou a usar do doc 10:
 
 | Item | Número adotado | Dono do número |
 |---|---|---|
-| Fruta | Manga a 12 °C, uma zona, 5 t; complementares só em segunda fase, se o dono autorizar | Frutas e demanda (e D1) |
-| Calendário de uso | Agosto a março; parado de abril a julho | Frutas e demanda |
-| Toneladas por ano | 108 t (faixa de 25 a 289) | Frutas e demanda |
+| Fruta | Manga a 12 °C, uma zona, 5 t; complementares autorizadas (D6): banana, acerola, goiaba e maracujá existem em Petrolina; mamão não | Frutas e demanda (D1 e D6) |
+| Calendário de uso | Manga de agosto a março; complementares de fevereiro a setembro (seção 1.5) | Frutas e demanda |
+| Toneladas por ano | 108 t de manga + cerca de 54 t de complementares [SUPOSTO meu, a confirmar por ele] | Frutas e demanda |
 | Entrada diária | Média de 0,45 t/dia; teto de 1 t/dia | Frutas e demanda (média); logística (teto e cota) |
 | Permanência | 5 dias | Frutas e demanda |
 | Grupo | 10 famílias (5 a 15), com comprador fixo, via associação | Os dois |
 | Operador | Pessoa da associação, com ajuda de custo | Frutas e demanda, com ressalva minha |
 | Taxa de referência | R$ 0,06 por kg por dia | Frutas e demanda |
-| Dados de 2025 do IBGE | Incorporados (seções 1.1 e 9) | Frutas e demanda; conferidos por mim |
+| Dados de 2025 do IBGE | Incorporados (seções 1.1 e 10) | Frutas e demanda; conferidos por mim |
 | Local, municípios, horário, modelo de operação | Os deste documento | Logística |
 
 **Divergências que restam** (detalhe no arquivo do acordo): (1) dimensionar a entrada pelo teto de 1 t/dia ou pela média; (2) quais frutas complementares fazem sentido em Petrolina — há banana e acerola, **não há mamão** [IBGE 2025], e não há prova de que alguém pagaria para guardá-las; (3) operador com ou sem pagamento certo; (4) o calendário é suposição dos dois lados; (5) lotes familiares são muitos, mas só 17% do volume.
@@ -633,10 +707,10 @@ O texto completo está em `docs/_trabalho/acordo-logistica-demanda.md` (acordado
 
 ---
 
-## 12. Fechamento
+## 13. Fechamento
 
 ### Decisões do dono aplicadas
-- D1: protótipo só de manga, uma zona a 12 °C, 5 t. Caju como estudo futuro (seção 9).
+- D1: protótipo só de manga, uma zona a 12 °C, 5 t. Caju como estudo futuro (seção 10).
 - D2: recepção das 7h às 14h.
 - D5: um protótipo, sem CNPJ.
 
@@ -649,13 +723,13 @@ O texto completo está em `docs/_trabalho/acordo-logistica-demanda.md` (acordado
 6. Retirado o Pajeú como lugar do caju; registrados Buíque e São José do Belmonte para estudo futuro.
 
 ### Pendências para o dono
-0. **O protótipo serve para provar a tecnologia ou a necessidade de estar fora da rede?** (seção 4.4). E: aceita frutas complementares numa segunda fase, para não ficar parado de abril a julho? As perguntas completas estão em `docs/_trabalho/acordo-logistica-demanda.md`.
+0. **O protótipo serve para provar a tecnologia ou a necessidade de estar fora da rede?** (seção 4.4). (As frutas complementares já foram autorizadas: D6.) As perguntas completas estão em `docs/_trabalho/acordo-logistica-demanda.md`.
 1. Fazer a visita com as perguntas da seção 8, **começando pelos três eliminatórios** (perguntas 15, 16 e 21).
 2. Escolher a associação ou cooperativa operadora e o núcleo.
 3. Definir por escrito: cessão do terreno, **valor da taxa por caixa** e **quem responde por fruta perdida se o equipamento falhar**.
 4. Consultar um contador sobre como ceder o equipamento e ser remunerado sem CNPJ.
 5. Obter do DINC/Codevasf a autorização para instalar no perímetro.
-6. Mediar as discordâncias da seção 10.
+6. Mediar as discordâncias da seção 11.
 
 ### O que não consegui verificar
 - Câmaras frias existentes e preço do frio em qualquer dos locais (eliminatório E1).
@@ -729,5 +803,21 @@ Abertas nesta versão: 1, 15, 51 (página "Pedúnculo") e 63. As demais: **só o
 
 69. DINC — Projeto Irrigado Senador Nilo Coelho celebra 36 anos: https://www.dinc.org.br/noticias/projeto-irrigado-nilo-coelho-celebra-36-anos-de-desenvolvimento-no-vale-do-sao-francisco/
 70. Embrapa — Desempenho do Distrito de Irrigação Senador Nilo Coelho (Revista Brasileira de Engenharia Agrícola e Ambiental): https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/134430/1/RevistaBrasileiradeEngenhariaAgricolaeAmbientalv.5n.2p.2042092001.pdf
+
+71. IFSertãoPE, campus Petrolina Zona Rural — Chamada Pública PNAE nº 01/2026 (29/10/2026): https://ifsertaope.edu.br/zonarural/2026/10/29/ifsertaope-abre-chamada-publica-para-aquisicao-de-alimentos-da-agricultura-familiar-2/ ; edital: https://ifsertaope.edu.br/zonarural/editais/edital-de-chamada-publica-pnae-n-o-01-2026/
+72. IFSertãoPE, campus Petrolina — chamada pública pela plataforma Contrata+Brasil: https://ifsertaope.edu.br/petrolina/campus-petrolina-do-ifsertaope-abre-chamada-publica-para-aquisicao-de-alimentos-da-agricultura-familiar/
+73. Prefeitura de Petrolina, Chamada nº 001/2026, pesquisa de preços (notícia): https://didigalvao.com.br/prefeitura-de-petrolina-abre-chamada-publica-para-pesquisa-de-precos-da-agricultura-familiar-destinada-a-alimentacao-escolar/
+74. Frutas do Brasil, diretório de exportadores — Coopexvale: https://frutasdobrasil.org/exportadores/coop-de-prod-exportadores-do-vale-do-sao-francisco-coopexvale/ ; COANA: https://frutasdobrasil.org/exportadores/cooperativa-agricola-nova-alianca-coana/
+75. Univasf, revista Extramuros — formas associativas no perímetro: https://www.periodicos.univasf.edu.br/index.php/extramuros/article/download/794/555/2731
+76. Banco Mundial — Desafios da gestão social dos perímetros públicos de irrigação: https://documents1.worldbank.org/curated/en/841601467995400382/pdf/106301-PORTUGUESE-PUB-P146301-ADD-SERIES-ISBN-PUBLIC-Agua-Brasil-series-no-9.pdf ; Ecocert, COOAPINC 04: https://certificat.ecocert.com/company/30813848-2C82-4606-8248-0A98AFC2E4F0
+77. IPEA, Mapa das OSC — associação do Núcleo 2: https://mapaosc.ipea.gov.br/detalhar/1197786 ; Casa dos Dados — associação do Núcleo 5: https://casadosdados.com.br/solucao/cnpj/assoc-dos-peq-prod-rur-do-nucleo-5-proj-sen-nilo-coelho-00796012000174
+78. Blog do Mário Martins — câmara fria indicada para a CoopGrapes: https://mariomartins.blog.br/em-petrolina-humberto-reforca-defesa-da-fruticultura-irrigada-do-sertao-do-sao-francisco/
+79. Refrigeração em Petrolina — China Refrigeração: https://www.chinarefrigeracaope.com.br/ ; Grupo Hermonex: https://grupohermonex.com.br/cidades/petrolina/camaras-frigorificas ; Climafrio (diretório): https://brasilhvac.com/refrigeration-cool-rooms/climafrio-refrigera-o-ar-condicionado-automotivo-petrolina-p ; TeleListas: https://www.telelistas.net/pe/petrolina/produtos+equipamentos+e+conserto+para+refrigeracao
+80. Embrapa — A Cultura da Mangueira, capítulo 17, Colheita e pós-colheita (2002): https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/150626/1/AculturadaMangueira2002c.17p.381405.pdf ; Manga para exportação, procedimentos: https://ainfo.cnptia.embrapa.br/digital/bitstream/item/185568/1/Manga-para-exportacao-procedimentos.pdf
+81. Prefeitura de Petrolina — alvará sanitário online: https://petrolina.pe.gov.br/sistema-online-permite-emissao-de-alvara-sanitario-sem-burocracia-em-petrolina/ ; alvará de licença: https://petrolina.pe.gov.br/cartadeservico/alvara-de-licenca/
+82. Adagro — relatório de gestão: https://www.lai.pe.gov.br/adagro/wp-content/uploads/sites/10/2024/03/2023-RELATORIO-DE-GESTAO-EXERCICIO-2022.pdf ; plantão em Petrolina: https://www.adagro.pe.gov.br/blog/11-blog/blog/1974-plantao-de-carnaval-da-adagro-garante-exportacao-de-mais-de-5-mil-toneladas-de-frutas
+83. Prefeitura de Juazeiro — Mercado do Produtor, horário e contato: https://www.juazeiro.ba.gov.br/mercado-do-produtor-de-juazeiro-nao-tera-alteracao-no-horario-de-funcionamento-durante-o-feriado-de-natal/
+84. DINC — O Projeto Público Irrigado: https://www.dinc.org.br/empresa/ ; Blog Carlos Britto — cortes de energia no Brígida e no Caraíbas (maio/2026): https://www.carlosbritto.com/a-exemplo-do-brigida-produtores-do-caraibas-sofrem-sem-energia/
+85. Agência Brasil — municípios podem manifestar interesse em executar o PAA em 2026: https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/municipios-ja-podem-manifestar-interesse-em-executar-paa-em-2026
 
 (A numeração tem saltos porque fontes da versão 1 que deixaram de ser usadas foram retiradas.)
