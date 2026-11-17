@@ -408,5 +408,89 @@ def main():
         print(f"{brl(x):>18}" + "".join(f"{brl(x*fator(i)):>18}" for i in JUROS.values()))
     print("Limites do Pronaf Mais Alimentos (doc 10 s.7): R$ 250 mil por familia; R$ 450 mil para fruticultura.")
 
+# =============================================================================
+# 7. BASE TERMICA REFEITA (doc 01 v2, secoes 6 e 15.3 a 15.5; em 2a revisao) [PROVISORIO]
+# =============================================================================
+T2 = dict(frio_dia=82.2,
+          conjuntos={"(a) selada, minimo": (12, 500), "(b) R513A, minimo": (10, 500), "referencia": (12, 700)},
+          eng_kwh_vida={"gelo": 0.54, "painel": 1.08, "bateria": 4.37})   # doc 01 s.6.3 [CALCULADO sobre SUPOSTO]
+# Precos que faltam: reservas [C] do financeiro, SEM FONTE
+C2 = dict(compressor_semi=(6000, 15000),      # BITZER 2CES/4FES: preco nao encontrado (doc 01 s.13.1, item 3b)
+          resfriador_selado=None,             # Elgin EcoTherm Duo: nao publicado -> calcula-se preco de empate
+          perifericos_b=(5000, 15000),        # condensador, tanque de liquido, valvulas, pressostatos (item 5b)
+          gas_r513a_kg=(80, 200),             # R$/kg [C], 12 a 20 kg (item 6)
+          cobre_banco_b=(4000, 10000),        # 258 m de cobre 1/2" + distribuidores [C]
+          trocador_p1_a=(4000, 10000),        # so na (a): bomba P1 + separador hidraulico + glicol [C]
+          banco_por_100kg=(1000, 2000))       # doc 01 s.6.3: R$ 1.000 a 2.000 por 100 kg [SUPOSTO pelo engenheiro]
+
+def sec7():
+    ck = custo_kwp()
+    sec("7. COMPARACOES COM A BASE TERMICA REFEITA (doc 01 v2) — PROVISORIO")
+    print(f"Frio de projeto: {T2['frio_dia']} kWh/dia. Preco por kWp (modulo+estrutura): {brl(ck[0])} a {brl(ck[1])}. "
+          f"Banco de gelo: R$ {C2['banco_por_100kg'][0]} a {C2['banco_por_100kg'][1]} por 100 kg [SUPOSTO, doc 01 s.6.3].")
+    bat = P["bat_modulo"]
+
+    print("\n7.1 Rota A (maquina de rede + inversor hibrido + bateria 10-15 kWh) x Rota B (compressor + inversor solar direto + 5 kWh)")
+    # A: 2 condensadoras de rede; inversor hibrido grande ~ 2 inversores 48 V [B]; 2 a 3 modulos; +1 kWp
+    A = [("2 unidades condensadoras de rede", 2*P["cond_nacional"][0], 2*P["cond_nacional"][1], "B"),
+         ("inversor hibrido p/ compressor (ref.: 2 inversores 48 V)", 2*P["inversor_aux"][0], 2*P["inversor_aux"][1], "B"),
+         ("bateria 10 a 15 kWh (2 a 3 modulos)", 2*bat[0], 3*bat[1], "B"),
+         ("+1 kWp (perdas do inversor/bateria, doc 01 s.15.3)", ck[0], ck[1], "B")]
+    B = [("2 compressores semi-hermeticos", 2*C2["compressor_semi"][0], 2*C2["compressor_semi"][1], "C"),
+         ("2 inversores solares diretos", 2*P["drive"][0], 2*P["drive"][1], "B"),
+         ("perifericos de frigorista (condensador, valvulas...)", *C2["perifericos_b"], "C"),
+         ("bateria 5 kWh (1 modulo)", bat[0], bat[1], "B")]
+    for nome, L in (("Rota A", A), ("Rota B", B)):
+        mn = sum(x[1] for x in L); mx = sum(x[2] for x in L)
+        print(f"  {nome}: {brl(mn)} a {brl(mx)}")
+        for it in L: print(f"     - {it[0]:<58}{brl(it[1]):>12} a {brl(it[2]):>12}  {it[3]}")
+    amn = sum(x[1] for x in A); amx = sum(x[2] for x in A); bmn = sum(x[1] for x in B); bmx = sum(x[2] for x in B)
+    repA = (2*bat[0]/10, 3*bat[1]/10)
+    print(f"  Diferenca de investimento (A - B): {brl(amn-bmx)} a {brl(amx-bmn)}")
+    print(f"  Reposicao de bateria em 10 anos: A +{brl(repA[0]*10)} a +{brl(repA[1]*10)}; B +{brl(bat[0])} a +{brl(bat[1])} (vida de 10 anos [SUPOSTO])")
+    print(f"  Custo em 10 anos (invest. + 1 reposicao de bateria): A {brl(amn+2*bat[0])} a {brl(amx+3*bat[1])}; B {brl(bmn+bat[0])} a {brl(bmx+bat[1])}")
+    print("  Nao entra (sem dado): garantia do conjunto na Rota B (duas confirmacoes por escrito pendentes); custo de uma parada.")
+
+    print("\n7.2 Arquitetura (a) resfriador selado + glicol, 12 kWp + 500 kg  x  (b) R513A expansao direta, 10 kWp + 500 kg")
+    gas = (12*C2["gas_r513a_kg"][0], 20*C2["gas_r513a_kg"][1])
+    b_eq = (2*C2["compressor_semi"][0] + 2*P["drive"][0] + C2["perifericos_b"][0] + gas[0] + C2["cobre_banco_b"][0],
+            2*C2["compressor_semi"][1] + 2*P["drive"][1] + C2["perifericos_b"][1] + gas[1] + C2["cobre_banco_b"][1])
+    b_mo = (15*P["diaria_frigorista"][0], 25*P["diaria_frigorista"][1])
+    a_mo = (4*P["diaria_frigorista"][0], 8*P["diaria_frigorista"][1])
+    a_extra = (2*ck[0] + C2["trocador_p1_a"][0], 2*ck[1] + C2["trocador_p1_a"][1])
+    print(f"  (b) equipamento {brl(b_eq[0])} a {brl(b_eq[1])} (inclui {brl(gas[0])} a {brl(gas[1])} de gas, 12 a 20 kg) + montagem {brl(b_mo[0])} a {brl(b_mo[1])} (15 a 25 diarias [SUPOSTO])")
+    print(f"  (a) precisa de +2 kWp e P1/glicol: {brl(a_extra[0])} a {brl(a_extra[1])}; montagem {brl(a_mo[0])} a {brl(a_mo[1])}")
+    emp = (b_eq[0]+b_mo[0]-a_extra[0]-a_mo[0], b_eq[1]+b_mo[1]-a_extra[1]-a_mo[1])
+    vaz = (gas[0]*0.05*10, gas[1]*0.10*10)
+    print(f"  Preco de EMPATE do(s) resfriador(es) selado(s), instalado(s), so investimento: {brl(emp[0])} a {brl(emp[1])}")
+    print(f"  Somando 10 anos de gas reposto na (b) (5 a 10 %/ano): empate sobe para {brl(emp[0]+vaz[0])} a {brl(emp[1]+vaz[1])}")
+
+    print("\n7.3 Arranjo: 10 kWp + 500 kg x 12 kWp + 700 kg")
+    d = (2*ck[0] + 2*C2["banco_por_100kg"][0], 2*ck[1] + 2*C2["banco_por_100kg"][1])
+    print(f"  Diferenca: +2 kWp e +200 kg = {brl(d[0])} a {brl(d[1])}  (engenheiro: R$ 3.480 so de modulos)")
+    tmn, tmx, *_ = total(CFG)
+    print(f"  = {d[0]/tmx*100:.1f} % a {d[1]/tmn*100:.1f} % do custo total do prototipo")
+    print("  O que compra: fecha nas DUAS arquiteturas, 1 dia nublado com recepcao normal, folga para respiracao maior e frutas de D6 (doc 01 s.15.3).")
+    print("  10 kWp + 500 kg: fecha so na (b), sem folga e sem dia nublado (doc 01 s.6.2: nao atende nem 1 dia).")
+    vr = (CFG["capacidade_t"]*1000*PRECO_ROCA, CFG["capacidade_t"]*1000*PRECO_CANAL)
+    print(f"  Paga-se se evitar {d[0]/(vr[1]*FRACAO_PERDIDA):.1f} a {d[1]/(vr[0]*FRACAO_PERDIDA):.1f} perda(s) de fruta em 10 anos (perda = {FRACAO_PERDIDA*100:.0f} % de 5 t [SUPOSTO])")
+
+    print("\n7.4 Bateria (doc 01 s.6.2 e 6.4)")
+    opc = [("12 kWp + 700 kg + 5 kWh, meia carga no nublado", 12, 1, "2 dias; 3o quase (polpa 14,2 C)"),
+           ("12 kWp + 700 kg + 10 kWh, recepcao normal", 12, 2, "2 dias"),
+           ("14 kWp + 700 kg + 5 kWh, recepcao normal", 14, 1, "2 dias"),
+           ("14 kWp + 700 kg + 15 kWh, recepcao normal", 14, 3, "3 dias")]
+    base = 12*meio(ck) + 1*meio(bat)
+    print(f"  {'opcao':<50}{'invest. (min-max)':>28}{'10 anos c/ 1 repos. bat. (meio)':>34}  cobre")
+    for nome, kwp, nb, cobre in opc:
+        mn = kwp*ck[0] + nb*bat[0]; mx = kwp*ck[1] + nb*bat[1]
+        dez = kwp*meio(ck) + 2*nb*meio(bat)
+        print(f"  {nome:<50}{brl(mn):>13} a {brl(mx):>11}{brl(dez):>34}  {cobre}")
+    print("  (so painel e bateria; gelo de 700 kg igual em todas)")
+    print("  Custo por kWh de frio ao longo da vida (engenheiro, doc 01 s.6.3): " +
+          ", ".join(f"{k} R$ {v:.2f}" for k, v in T2["eng_kwh_vida"].items()) +
+          f"  -> bateria = {T2['eng_kwh_vida']['bateria']/T2['eng_kwh_vida']['gelo']:.0f}x o gelo e {T2['eng_kwh_vida']['bateria']/T2['eng_kwh_vida']['painel']:.0f}x o painel")
+
 if __name__ == "__main__":
     main()
+    sec7()
