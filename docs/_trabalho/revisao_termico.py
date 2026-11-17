@@ -121,3 +121,62 @@ for gas, LFL in (("R290", 0.038), ("R600a", 0.043)):
     for h0, nm in ((0.6,"piso"),(1.8,"parede"),(2.2,"teto")):
         print(f"   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0={h0} ({nm}) -> {2.5*LFL**1.25*h0*math.sqrt(A)*1000:.0f} g")
     print(f"   IEC 60335-2-89:2019 teto por circuito: 13*LFL = {13*LFL*1000:.0f} g (~500 g), em aparelho de fabrica ensaiado; 150 g sem restricao de sala")
+
+# ====================================================================
+# PARTE B - escrita DEPOIS de ler o documento do autor: conferencias pontuais
+# ====================================================================
+print("\n\n######## PARTE B: conferencias sobre os numeros do autor ########")
+print("\n=== B1. Minha conta refeita com as entradas do autor (UA 33 W/K, respiracao 77 W/t manga / 60 caju) ===")
+UA = 33.0
+m10 = cargas(10, 77, "MANGA com UA=33 e 77 mW/kg (entradas do autor)")
+c5 = cargas(5, 60, "CAJU com UA=33 (entradas do autor)")
+print(f"-> manga: {m10['tot']*1.1:.1f} kWh/dia com folga (autor 69,8); caju: {c5['tot']*1.1:.1f} (autor 79,5)")
+for rot, d, aut in (("manga", m10, 69.8), ("caju", c5, 79.5)):
+    print(f"   kWp p/ {rot} (minha producao especifica {5.6*PR*cop_med:.2f} kWh frio/kWp.dia): {d['tot']*1.1/(5.6*PR*cop_med):.1f} kWp ; com a carga do autor {aut}: {aut/(5.6*PR*cop_med):.1f} kWp")
+gelo(m10, 10, "MANGA UA=33"); gelo(c5, 5, "CAJU UA=33")
+
+print("\n=== B2. Serpentina do tanque: potencia no fim da carga ===")
+r_i, r_o, r_g = 0.006, 0.008, 0.018
+for Nu, nome in ((4.36, "Nu 4,36 (autor, fluxo constante)"), (3.66, "Nu 3,66 (parede isotermica = gelo a 0 C)")):
+    h = Nu*0.40/(2*r_i)
+    R = 1/(h*2*math.pi*r_i) + math.log(r_o/r_i)/(2*math.pi*0.40) + math.log(r_g/r_o)/(2*math.pi*2.2)
+    lm = (6-2)/math.log(6/2)
+    print(f"  {nome}: R={R:.3f} m.K/W | autor usa DT=4,5 K -> {1070*4.5/R/1000:.1f} kW | media aritmetica 4,0 K -> {1070*4.0/R/1000:.1f} kW | DTML(-6/-2 contra 0)={lm:.2f} K -> {1070*lm/R/1000:.1f} kW")
+print(f"  gelo por metro (16->36 mm): {math.pi/4*(0.036**2-0.016**2)*917:.3f} kg/m -> 800 kg = {800/(math.pi/4*(0.036**2-0.016**2)*917):.0f} m ; 500 kg = {500/(math.pi/4*(0.036**2-0.016**2)*917):.0f} m (reducao {1070-500/(math.pi/4*(0.036**2-0.016**2)*917):.0f} m, autor diz 670 m)")
+print(f"  dilatacao: 800/917-800/1000 = {(800/917-0.8)*1000:.0f} L (autor 79 L) -> {(800/917-0.8)/1.9*100:.1f} cm em 1,9 m2")
+print(f"  passes de tubo na secao: 1070/1,9 = {1070/1.9:.0f} passes; grade 40 mm em 1,0x1,0 m = 625 posicoes; curvas de 180 graus: ~{1070/1.9-22:.0f}; raio de curva exigido 20 mm x raio minimo PEX16 ~5xD = 80 mm")
+print(f"  empuxo do gelo preso ao feixe: {800/917*1000-800:.0f} kgf para cima (precisa de ancoragem)")
+
+print("\n=== B3. Hidraulica: P2 e P1 dividem a serpentina do tanque de dia ===")
+for q in (0.9, 3.2, 3.2+2.4):
+    print(f"  vazao na serpentina {q:.1f} m3/h -> perda (laminar, proporcional) {32*q/3.2:.0f} kPa = {32*q/3.2/10.2:.1f} m de coluna de glicol")
+print("  P2 especificada com 4 m: so a serpentina do tanque, de dia (5,6 m3/h), ja pede ~5,4 m, fora serpentinas de ar, VM1 (15 kPa) e tubos")
+
+print("\n=== B4. Descarga noturna no caso de dimensionamento (tudo a 5 C) ===")
+ua_caju, ua_manga = 1540, 615
+def lmtd(a, b): return (a-b)/math.log(a/b) if abs(a-b) > 1e-6 else a
+# ar 5 -> ~3,5 C ; glicol +1 -> +3 C
+dt = lmtd(5-3, 3.5-1)
+print(f"  DTML ar 5->3,5 C x glicol +1->+3 C = {dt:.2f} K -> caju {ua_caju*dt/1000:.1f} kW + manga {ua_manga*dt/1000:.1f} kW = {(ua_caju+ua_manga)*dt/1000:.1f} kW (UA de vazao cheia de ar)")
+carga_noite = [8.34, 6.87, 4.88, 4.41, 3.99, 3.62, 3.29, 3.01, 2.78, 2.58, 2.43, 2.31, 2.23, 2.53]
+cap = (ua_caju+ua_manga)*dt/1000
+nao = sum(max(0, c-cap) for c in carga_noite)
+print(f"  carga do autor 17h-06h: {sum(carga_noite):.1f} kWh; nao atendido na hora com {cap:.1f} kW: {nao:.1f} kWh -> 5 t x 3,77 kJ/kgK = 5,2 kWh/K -> ar/fruta sobem ~{nao/5.2:.1f} K se fosse so inercia")
+# ventiladores
+for q_kw, dT in ((5.0, 2.5), (4.0, 3.0)):
+    vaz = q_kw/(1.25*1.006*dT)
+    print(f"  serpentina {q_kw} kW com ar caindo {dT} K: {vaz:.2f} m3/s = {vaz*3600:.0f} m3/h; com 40 Pa e rendimento 35%: {vaz*40/0.35:.0f} W eletricos")
+print("  autor: 90 W + 60 W de dia, 50 W a noite (40% de rotacao = ~40% de vazao => capacidade e UA caem junto)")
+
+print("\n=== B5. CO2 no conteiner fechado a noite (seguranca de quem abre a porta de manha) ===")
+for nome, ml in (("manga 10 C, 14 ml/kg.h (UC Davis)", 14), ("fruta a 5 C, ~10 ml/kg.h (20 mg, suposicao do autor p/ caju)", 10.7)):
+    vco2 = ml*5000/1e6   # m3/h
+    for V in (10, 19, 23):
+        print(f"  {nome}: {vco2*1000:.0f} L/h; 14 h fechado, ar livre {V} m3 -> {vco2*14/V*100:.1f} % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)")
+    print(f"    ar novo p/ segurar 0,5 %: {vco2/0.005:.0f} m3/h ; p/ 1 %: {vco2/0.01:.0f} m3/h")
+ho, _ = (lambda T,UR: (1.006*T + 0.622*UR*610.94*math.exp(17.625*T/(T+243.04))/(97000-UR*610.94*math.exp(17.625*T/(T+243.04)))*(2501+1.86*T), 0))(33, 0.40)
+print(f"  carga termica de 10 m3/h de ar novo (33 C/40% medio -> camara ~25 kJ/kg): ~{10*1.12*(ho-25)/3600*24:.1f} kWh/dia")
+
+print("\n=== B6. Pressostato de baixa x congelamento do glicol ===")
+print("  PSL do autor: 2,0 bar (evaporacao -25 C). Glicol 35% congela perto de -16 C -> o trocador de placas congela ANTES de o PSL atuar.")
+print("  R290 na evaporacao 3,45 bar abs > pressao do circuito de glicol (~1,5-2,5 bar abs): placa rompida => propano entra no glicol e segue para dentro da camara.")
