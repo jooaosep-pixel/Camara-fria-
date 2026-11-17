@@ -105,6 +105,10 @@ CEN = {  # doc 10 s.6.1 (versao so manga, 5 t): receitas R$ 4.500 / 32.400 / 115
     "medio":      dict(ocup=0.45, dias=240, taxa=0.06),
     "otimista":   dict(ocup=0.70, dias=330, taxa=0.10),
 }
+# Leitura do revisor (docs/_trabalho/revisao-10-demanda.md), receitas copiadas, nao refeitas
+REC_REVISOR = {"rev. pessimista": 3000, "rev. medio": 15000, "rev. otimista": 50000,
+               "merenda (min)": 14200, "merenda (max)": 23700}
+# D6: o cenario "otimista" do autor depende de frutas complementares (abril a julho)
 OPEX_SEM_OPERADOR, OPEX_COM_OPERADOR = 12000, 36000   # doc 10 s.6.3 [SUPOSTO]
 JUROS = {"sem juros": 0.0, "Pronaf 2% a.a.": 0.02, "7,5% a.a.": 0.075}
 
@@ -348,6 +352,11 @@ def main():
         for op, rot in ((OPEX_SEM_OPERADOR, "sem operador"), (OPEX_COM_OPERADOR, "com operador")):
             xs = "; ".join(f"{k}: " + (brl((r - op) / fator(i)) if r > op else "nao paga") for k, i in JUROS.items())
             print(f"  {nome:<11}{rot:<13}{xs}")
+    print("  -- leitura do revisor (revisao-10-demanda.md) --")
+    for nome, r in REC_REVISOR.items():
+        xs = "; ".join(f"{k}: " + (brl((r - OPEX_SEM_OPERADOR) / fator(i)) if r > OPEX_SEM_OPERADOR else "nao paga") for k, i in JUROS.items())
+        pb = f"{tmn/(r-OPEX_SEM_OPERADOR):.0f} / {tmx/(r-OPEX_SEM_OPERADOR):.0f} anos" if r > OPEX_SEM_OPERADOR else "nunca"
+        print(f"  {nome:<16}{brl(r):>10} sem operador: {xs} | retorno simples (custo min/max): {pb}")
     print(f"  Quadro de custos desta rodada: {brl(tmn)} a {brl(tmx)}")
     print("\nReceita anual necessaria para empatar (parcela de 10 anos + operacao):")
     print(f"{'Custo':>12}" + "".join(f"{k + ', op 12k':>24}{k + ', op 36k':>24}" for k in JUROS))

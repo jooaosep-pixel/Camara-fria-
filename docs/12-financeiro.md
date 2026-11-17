@@ -266,7 +266,7 @@ O painel só empata com o gelo em sequências de cerca de 10 dias nublados; mas 
 | **Investimento** | **R$ 44.304 a R$ 55.152** | **R$ 23.568 a R$ 46.904** |
 | Manutenção por ano [SUPOSTO] | 2 % | 3 %, mais 5 a 10 % do gás por ano |
 | **Custo em 10 anos** | **R$ 52.861 a R$ 65.462** | **R$ 29.998 a R$ 61.275** |
-| Por kWh de frio (204.000 kWh em 10 anos) | R$ 0,26 a R$ 0,32 | R$ 0,15 a R$ 0,30 |
+| Por kWh de frio (163.200 kWh em 10 anos: 68 kWh × 240 dias × 10) | R$ 0,32 a R$ 0,40 | R$ 0,18 a R$ 0,38 |
 | Efeito no solar | — | Se permitir gelo por expansão direta (+10 % de COP [SUPOSTO]): 1 kWp a menos, R$ 2.022 a R$ 3.355 |
 | Prazo | 75 a 120 dias (`docs/11`) [SUPOSTO] | peças de pronta entrega [SUPOSTO] |
 
@@ -307,28 +307,41 @@ Fora isso, para a bateria tocar o compressor seria preciso um inversor maior e u
 
 ## 4. Receita e retorno
 
-A receita é a do `docs/10`, seção 6.2 (só manga, 5 t), **copiada, não refeita**: R$ 4.500 (pessimista), R$ 32.400 (médio) e R$ 115.500 (otimista) por ano, só da taxa de armazenagem; taxa média de R$ 0,30 por quilo; 108 t por ano passando no cenário médio. Todas as hipóteses de lá são [SUPOSTO].
+Duas leituras da receita, **lado a lado, sem refazer nenhuma**:
+- **Autor** (`docs/10`, seção 6.2, só manga, 5 t): R$ 4.500 / R$ 32.400 / R$ 115.500 por ano, só da taxa de armazenagem; taxa média de R$ 0,30 por quilo; 108 t por ano no cenário médio.
+- **Revisor** (`docs/_trabalho/revisao-10-demanda.md`): a aritmética do autor confere, mas a estimativa independente dele é **R$ 3 mil / R$ 15 mil / R$ 50 mil** por ano (taxa de R$ 0,10 a R$ 0,20 por quilo que passa, contra R$ 0,30 a R$ 0,40 do autor). Ancorada no único comprador quantificado (merenda escolar, no teto legal) dá **R$ 14.200 a R$ 23.700** por ano. Para o revisor, o cenário otimista do autor **não tem sustentação**.
 
-**Confronto com o quadro de custos.** O `docs/10` (seção 6.3) calcula o maior custo que cada cenário paga em 10 anos; o script repete a conta e chega aos mesmos valores:
+**Decisão D6 do dono:** outras frutas que convivem com a manga a 12 °C podem entrar para completar a ocupação de abril a julho. Por isso o cenário **otimista do autor (R$ 115.500) passa a ser permitido**, mas **depende das frutas complementares** (banana, mamão, acerola; goiaba e maracujá em giro rápido), cujo calendário e preço o revisor diz que ainda não têm fonte (achado 4 dele). Os cenários pessimista e médio do autor são só manga.
 
-| Cenário | Sem operador pago (operação de R$ 12 mil/ano) — sem juros / 2 % / 7,5 % ao ano | Com operador pago (R$ 36 mil/ano) |
-|---|---|---|
-| Pessimista (R$ 4.500) | não paga nem a operação | não paga |
-| Médio (R$ 32.400) | R$ 204 mil / **R$ 183 mil** / R$ 140 mil | não paga |
-| Otimista (R$ 115.500) | R$ 1.035 mil / R$ 930 mil / R$ 710 mil | R$ 795 mil / R$ 714 mil / R$ 546 mil |
-| **Custo do protótipo nesta rodada** | **R$ 173 mil a R$ 518 mil** | |
+**Confronto com o quadro de custos** — maior custo que cada receita paga em 10 anos = (receita − operação) ÷ fator; operação de R$ 12 mil por ano (sem operador pago) [CALCULADO; nas linhas do autor bate com o `docs/10`, seção 6.3]:
 
-**Leitura:** no cenário médio, a taxa de armazenagem paga um equipamento de até R$ 183 mil. **O piso da minha faixa (R$ 173 mil) cabe por pouco; o ponto médio (R$ 346 mil) e o teto não cabem.** Só o cenário otimista paga o protótipo em qualquer ponto da faixa.
+| Receita anual | Origem | Só manga? | Sem juros | 2 % ao ano | 7,5 % ao ano | Retorno simples (custo mín. / máx.) |
+|---|---|---|---|---|---|---|
+| R$ 3.000 | Revisor, pessimista | sim | não paga a operação | — | — | nunca |
+| R$ 4.500 | Autor, pessimista | sim | não paga a operação | — | — | nunca |
+| R$ 14.200 a R$ 23.700 | Revisor, ancorado na merenda | sim | R$ 22 mil a R$ 117 mil | R$ 20 mil a R$ 105 mil | R$ 15 mil a R$ 80 mil | 15 a 235 anos |
+| R$ 15.000 | Revisor, médio | — | R$ 30 mil | R$ 27 mil | R$ 21 mil | 58 / 173 anos |
+| R$ 32.400 | Autor, médio | sim | R$ 204 mil | **R$ 183 mil** | R$ 140 mil | 8 / 25 anos |
+| R$ 50.000 | Revisor, otimista | — | R$ 380 mil | R$ 341 mil | R$ 261 mil | 5 / 14 anos |
+| R$ 115.500 | Autor, otimista | **não: depende das frutas complementares (D6)** | R$ 1.035 mil | R$ 930 mil | R$ 710 mil | 2 / 5 anos |
+| **Custo do protótipo nesta rodada** | | | **R$ 173 mil a R$ 518 mil** | | | |
 
-| Indicador [CALCULADO] | Pessimista | Médio | Otimista |
+Com operador pago (R$ 36 mil por ano), só o otimista do autor paga alguma coisa (R$ 714 mil a 2 % ao ano).
+
+**Leitura:** pela conta do autor, o cenário médio paga um protótipo de até R$ 183 mil — o piso da minha faixa cabe por pouco; o ponto médio (R$ 346 mil) não. **Pela conta do revisor, nenhum cenário só de manga paga o protótipo**: o médio dele paga R$ 27 mil, e a merenda no teto, no máximo R$ 105 mil. Só os otimistas (o do revisor, R$ 50 mil, e o do autor, que exige outras frutas) pagam parte ou o todo da faixa.
+
+Indicadores com a receita do autor (os do revisor ficam todos abaixo destes):
+
+| Indicador [CALCULADO] | Pessimista | Médio | Otimista (com frutas complementares) |
 |---|---|---|---|
 | Sobra anual sem operador pago | −R$ 7.500 | R$ 20.400 | R$ 103.500 |
 | Sobra anual com operador pago | −R$ 31.500 | −R$ 3.600 | R$ 79.500 |
-| Retorno simples, sem operador (custo mín. / máx.) | nunca | 8 / 25 anos | 2 / 5 anos |
-| Retorno simples, com operador | nunca | nunca | 2 / 7 anos |
+| Retorno simples com operador | nunca | nunca | 2 / 7 anos |
 | Taxa de empate por kg por dia (2 % a.a., sem operador; custo mín. / máx.) | R$ 0,21 / R$ 0,46 | R$ 0,058 / R$ 0,129 | R$ 0,027 / R$ 0,060 |
 | A mesma, por caixa de 20 kg por dia | R$ 4,17 / R$ 9,29 | R$ 1,16 / R$ 2,58 | R$ 0,54 / R$ 1,21 |
 | Taxa do cenário, por kg por dia (`docs/10`) | R$ 0,03 | R$ 0,06 | R$ 0,10 |
+
+O revisor também alerta (achado 8) que a taxa de R$ 0,06 a R$ 0,10 por kg por dia não tem referência brasileira. Isso pesa: a taxa de empate do cenário médio, com o custo médio, fica acima de R$ 0,06.
 
 **Ponto de equilíbrio em ocupação** (taxa de R$ 0,06/kg·dia, 240 dias, 2 % ao ano, sem operador): 43 % com o custo mínimo, 70 % com o custo médio, 97 % com o custo máximo. O cenário médio supõe 45 %.
 
@@ -346,7 +359,7 @@ A receita é a do `docs/10`, seção 6.2 (só manga, 5 t), **copiada, não refei
 
 As três alavancas pesam parecido: ocupação, taxa e custo. Câmbio pesa pouco.
 
-**O que a taxa não mostra:** o `docs/10` estima que, no cenário médio, as famílias ganham R$ 108 mil por ano se venderem R$ 1,00/kg mais caro. Esse dinheiro não é receita do dono (pedido FD-5). E, por D5, o protótipo é um só e sem CNPJ: o `docs/10` propõe tratá-lo como instrumento para **medir** ocupação e ganho por quilo numa safra (pergunta DN-1).
+**O que a taxa não mostra:** o `docs/10` estima (e o revisor questiona, achados 7 e 12) que, no cenário médio, as famílias ganham R$ 108 mil por ano se venderem R$ 1,00/kg mais caro. Esse dinheiro não é receita do dono (pedido FD-5). E, por D5, o protótipo é um só e sem CNPJ: o `docs/10` propõe tratá-lo como instrumento para **medir** ocupação e ganho por quilo numa safra (pergunta DN-1).
 
 ---
 
@@ -401,9 +414,11 @@ Linhas encontradas pelo analista de demanda (`docs/10`, seção 7; condições [
 - Não é questão de segurança de pessoas; é risco de perder fruta de terceiros (pedido FD-3: quem responde).
 
 **Conflito 4 — custo do protótipo x o que a receita paga.**
-- `docs/10`: no cenário médio a taxa paga até R$ 183 mil, e só sem operador pago.
+- `docs/10` (autor): no cenário médio a taxa paga até R$ 183 mil, e só sem operador pago.
+- Revisor do `docs/10`: médio de R$ 15 mil por ano, que paga cerca de R$ 27 mil; otimista do autor sem sustentação.
 - Este documento: R$ 173 mil a R$ 518 mil.
 - Não é erro de nenhum dos dois: é o resultado. Leva à pergunta DN-1.
+
 
 **⚠ SEGURANÇA — economias que eu NÃO recomendo, mesmo reduzindo custo.** Estão no quadro e somam de R$ 9,5 mil a R$ 33 mil; nenhuma comparação deste documento as corta:
 - renovação de ar e sensor de CO₂ na câmara (espaço fechado; achado 2 do revisor);
@@ -447,7 +462,7 @@ O que o dono precisa decidir (quando chegarem os números): DN-1 (medir ou se pa
 - Custo total do protótipo: **R$ 170 mil a R$ 520 mil (preliminar; metade sem preço)**.
 - Custo de operação: R$ 6 mil a R$ 18 mil por ano sem operador pago; mais R$ 24 mil com operador.
 - Prazo: **sem dado.** O único prazo com referência é o de importação, 75 a 120 dias [SUPOSTO no `docs/11`].
-- Retorno: só com a taxa de armazenagem de manga, o protótipo se paga apenas perto do piso da faixa de custo e sem operador pago, ou no cenário otimista.
+- Retorno: pela conta do autor do `docs/10`, só com manga o protótipo se paga apenas perto do piso da faixa e sem operador pago; pela do revisor, não se paga só com manga. O cenário otimista (permitido por D6) exige frutas complementares.
 
 ---
 
@@ -642,6 +657,12 @@ Maior custo que cada cenario paga em 10 anos = (receita - operacao) / fator   [m
   medio      com operador sem juros: nao paga; Pronaf 2% a.a.: nao paga; 7,5% a.a.: nao paga
   otimista   sem operador sem juros: R$ 1.035.000; Pronaf 2% a.a.: R$ 929.698; 7,5% a.a.: R$ 710.432
   otimista   com operador sem juros: R$ 795.000; Pronaf 2% a.a.: R$ 714.116; 7,5% a.a.: R$ 545.694
+  -- leitura do revisor (revisao-10-demanda.md) --
+  rev. pessimista   R$ 3.000 sem operador: sem juros: nao paga; Pronaf 2% a.a.: nao paga; 7,5% a.a.: nao paga | retorno simples (custo min/max): nunca
+  rev. medio       R$ 15.000 sem operador: sem juros: R$ 30.000; Pronaf 2% a.a.: R$ 26.948; 7,5% a.a.: R$ 20.592 | retorno simples (custo min/max): 58 / 173 anos
+  rev. otimista    R$ 50.000 sem operador: sem juros: R$ 380.000; Pronaf 2% a.a.: R$ 341.338; 7,5% a.a.: R$ 260.835 | retorno simples (custo min/max): 5 / 14 anos
+  merenda (min)    R$ 14.200 sem operador: sem juros: R$ 22.000; Pronaf 2% a.a.: R$ 19.762; 7,5% a.a.: R$ 15.101 | retorno simples (custo min/max): 79 / 235 anos
+  merenda (max)    R$ 23.700 sem operador: sem juros: R$ 117.000; Pronaf 2% a.a.: R$ 105.096; 7,5% a.a.: R$ 80.310 | retorno simples (custo min/max): 15 / 44 anos
   Quadro de custos desta rodada: R$ 173.357 a R$ 517.865
 
 Receita anual necessaria para empatar (parcela de 10 anos + operacao):
