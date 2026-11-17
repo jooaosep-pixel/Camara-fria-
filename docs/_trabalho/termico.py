@@ -362,6 +362,14 @@ if __name__ == "__main__":
         c1 = next((bb for bb in range(0, 151, 5) if ok(seq(n, kwp=14, bat=float(bb)))), None)
         c2 = next((bb for bb in range(0, 151, 5) if ok(seq(n, kg=1000, bat=float(bb)))), None)
         print(f"| {n} | {g} | {bt} | {pv} | {c1} | {c2} |")
+    print("\n### Combinacoes conferidas (atende = polpa do estoque <= 14 C e ar <= 15 C)")
+    cabec("kWp", "kg de gelo", "bateria de apoio kWh uteis", "recepcao nos dias nublados", "1 dia", "2 dias", "3 dias", "polpa max em 3 dias C")
+    for kw_, kg_, bb, rec in ((10, 500, 0, "ate14h"), (10, 500, 5, "ate14h"), (12, 700, 0, "ate14h"), (12, 700, 5, "ate14h"), (12, 700, 10, "ate14h"),
+                              (12, 700, 0, "meia"), (12, 700, 5, "meia"), (12, 700, 10, "meia"), (12, 700, 0, "nada"),
+                              (14, 700, 0, "ate14h"), (14, 700, 5, "ate14h"), (14, 700, 15, "ate14h"), (14, 700, 0, "meia"), (14, 700, 5, "meia"),
+                              (14, 1000, 0, "ate14h"), (14, 1000, 5, "ate14h"), (12, 1000, 0, "meia")):
+        rs = [seq(n, kwp=kw_, kg=kg_, bat=float(bb), rec=rec) for n in (1, 2, 3)]
+        print(f"| {kw_} | {kg_} | {bb} | {rec} | " + " | ".join("sim" if ok(r) else "NAO" for r in rs) + f" | {max(x['test_max'] for x in rs[2]):.1f} |")
     print("\nFrio que cada recurso entrega num dia nublado (referencia):")
     cn = cop(AR, 27.0)
     print(f"- 100 kg de gelo: {100 * L_GELO:.1f} kWh de frio, uma vez por sequencia")
