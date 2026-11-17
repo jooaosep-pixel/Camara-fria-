@@ -150,7 +150,7 @@ class Planta:
              "TT1": self.Tar, "TT2": self.tt2(), "TT3": self.tt3(),
              "UR1": 88.0, "CO2": self.co2, "TT4": self.Tb,
              "TT5": max(self.Tb, 3.0), "LT1": self.lt1(), "TT6": self.Text,
-             "G": self.G, "EI1": self.lt1() >= 101.0,
+             "G": self.G, "EI1": self.lt1() >= 99.5,
              "porta": False, "botao_entrada": False, "pessoa_presa": False,
              "gas": False, "fluxo_ok": True, "com_inversor": com_inversor,
              "aux_kw": self.aux_kw, "carga_kw": self.carga_kw, "pv_kw": self.pv_kw,
@@ -170,7 +170,7 @@ class Planta:
                 pt1 = 0.8
             else:
                 pt1 = psat_rel(max(self.Tb, 0.0))
-            tc = self.Text + (10.0 if rod else 0.0) + (14.0 if (rod and self.falha_vent_cond) else 0.0)
+            tc = self.Text + (10.0 if rod else 0.0) + (20.0 if (rod and self.falha_vent_cond and i == 0) else 0.0)
             e["comp"].append({"PT1": pt1, "PT2": psat_rel(tc),
                               "cadeia_ok": not self.psh_aberto[i],
                               "inversor_falha": self.falha_inv[i] > 0})
@@ -235,15 +235,21 @@ class Planta:
         p_el = [0.0] * n
         bat_saida_comp = 0.0
         if self.rota == "B":
-            grp = self.kwp / n * self.G / 1000.0 * PR
+            comum = r.get("barramento_comum", True)
+            grp = (self.kwp if comum else self.kwp / n) * self.G / 1000.0 * PR
             # carregador/inversor de 48 V no grupo 1: atende auxiliares e carrega a bateria
             soc = self.bat / self.bat_cap
             falta = (self.bat_cap - self.bat)
-            carga_bat = min(1.5, falta * 3600.0 / dt) if falta > 0.01 else 0.0
+            carga_bat = min(1.0, falta * 3600.0 / dt) if falta > 0.01 else 0.0
             pedido = aux_int + aux_dia + carga_bat
             carregador = min(grp, pedido)
             self.aux_kw = carregador
-            disp = [grp - carregador] + [grp] * (n - 1)
+            if comum:
+                rod = [i for i in range(n) if liga[i] and not (i == 0 and bat_comp)]
+                sh = (grp - carregador) / max(1, len(rod))
+                disp = [sh] * n
+            else:
+                disp = [grp - carregador] + [grp] * (n - 1)
             for i in range(n):
                 if not liga[i]:
                     continue
@@ -298,7 +304,7 @@ class Planta:
         # PSH de hardware (independente do controlador)
         for i in range(n):
             if p_el[i] > 0:
-                tc = self.Text + 10.0 + (14.0 if self.falha_vent_cond else 0.0)
+                tc = self.Text + 10.0 + (20.0 if (self.falha_vent_cond and i == 0) else 0.0)
                 if psat_rel(tc) >= PSH_BAR:
                     self.psh_aberto[i] = True
                     p_el[i] = 0.0

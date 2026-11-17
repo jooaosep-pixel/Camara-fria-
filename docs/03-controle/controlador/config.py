@@ -113,10 +113,11 @@ ROTA_B = {
     "p_queda_kw": 1.3,            # abaixo disso por 20 s o inversor nao sustenta: parada forcada
     "p_queda_atraso_s": 20,
     "pr": 0.75,                   # desempenho global do arranjo (doc 01, secao 4)
-    "aux_no_grupo": 1,            # o carregador das cargas 24 h fica no grupo do compressor 1
+    "barramento_comum": True,     # S2: os dois inversores no mesmo arranjo [VALIDAR com o integrador]
+    "aux_no_grupo": 1,            # so se barramento_comum = False            # o carregador das cargas 24 h fica no grupo do compressor 1
     "bateria_kwh_util": 4.6,      # 1 modulo de 5,12 kWh
-    "bat_comp_soc_min_liga": 50.0,  # bateria so toca compressor com gelo 0 e camara > 13 C
-    "bat_comp_soc_desliga": 35.0,
+    "bat_comp_soc_min_liga": 85.0,  # bateria so toca compressor com gelo 0 e camara > 13 C
+    "bat_comp_soc_desliga": 60.0,   # guarda o resto para as cargas da noite
     "bat_comp_t_camara": 13.0,
 }
 

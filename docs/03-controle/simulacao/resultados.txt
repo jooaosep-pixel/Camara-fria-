@@ -1,0 +1,91 @@
+Resultados da simulacao (gerado por simulacao/cenarios.py, passo de 30 s)
+
+### C1 - Dia tipico (23-34 C, 5,8 kWh/m2, 1 t a 35 C entre 10 h e 14 h); 4o dia de uma sequencia
+
+| Conjunto | Ar max/min (C) | Polpa estoque max (C) | Lote de ontem as 9h30 (C) | Gelo min (%) | Bateria min (%) | CO2 max (%) | Frio produzido (kWh) | Serpentina (kWh) | FV disp./usada (kWh) | Partidas/h max | Paradas curtas | Recebido (kg) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B 12 kWp + 700 kg + 5 kWh | 12.4 / 11.4 | 12.8 | 14.9 | 49.2 | 64.6 | 0.39 | 56.7 | 63.0 | 52.2 / 28.0 | 2 | 0 | 1000 |
+| B 10 kWp + 500 kg + 5 kWh | 12.4 / 11.4 | 12.8 | 14.9 | 25.0 | 64.3 | 0.39 | 53.6 | 51.2 | 43.5 / 26.8 | 1 | 0 | 500 |
+| B 11 kWp + 500 kg + 5 kWh | 12.4 / 11.4 | 12.8 | 14.9 | 28.9 | 64.5 | 0.39 | 56.8 | 62.7 | 47.8 / 28.2 | 4 | 0 | 1000 |
+| B 12 kWp + 700 kg + 10 kWh (5 aux + 5 apoio) | 12.4 / 11.4 | 12.8 | 14.9 | 49.2 | 82.3 | 0.39 | 56.7 | 63.0 | 52.2 / 28.0 | 2 | 0 | 1000 |
+| A 12 kWp + 700 kg + 15 kWh | 12.4 / 11.4 | 12.8 | 15.4 | 40.7 | 74.3 | 0.39 | 69.4 | 67.0 | 52.2 / 39.6 | 2 | 0 | 1000 |
+| A 10 kWp + 500 kg + 10 kWh | 12.4 / 11.4 | 12.8 | 15.4 | 13.4 | 65.0 | 0.39 | 64.0 | 55.2 | 43.5 / 37.0 | 2 | 0 | 500 |
+| B 12+700, sensibilidade: 2 grupos de 6 kWp separados | 12.4 / 11.4 | 12.8 | 15.4 | 22.7 | 59.6 | 0.39 | 67.2 | 55.2 | 52.2 / 32.2 | 1 | 0 | 500 |
+
+### C2 - Dia de 41 C (27-41 C) com 1 t de uma vez as 13 h, e o dia seguinte (41 C, entrega normal)
+
+| Conjunto | Ar max (C) | Polpa estoque max (C) | Lote das 13 h no fim do dia (C) | Lote das 13 h as 9h30 do dia seguinte (C) | Gelo min dia 1 / dia 2 (%) | Bateria min (%) | Frio produzido dia 1 (kWh) | Serpentina dia 1 (kWh) | Alarmes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B 12 kWp + 700 kg + 5 kWh | 12.7 | 12.8 | 20.1 | 15.4 | 46.2 / 18.0 | 56.8 | 58.7 | 69.3 | nenhum |
+| B 10 kWp + 500 kg + 5 kWh | 12.5 | 12.8 | 20.1 | 15.4 | 20.4 / 7.0 | 62.9 | 55.1 | 57.2 | nenhum |
+| B 11 kWp + 500 kg + 5 kWh | 12.5 | 12.8 | 20.1 | 15.4 | 24.5 / 9.3 | 63.2 | 54.4 | 57.2 | nenhum |
+| B 12 kWp + 700 kg + 10 kWh (5 aux + 5 apoio) | 12.7 | 12.8 | 20.1 | 15.4 | 46.2 / 18.0 | 78.4 | 58.7 | 69.3 | nenhum |
+| A 12 kWp + 700 kg + 15 kWh | 12.7 | 12.8 | 20.1 | 15.4 | 37.8 / 25.4 | 68.0 | 69.6 | 73.3 | nenhum |
+| A 10 kWp + 500 kg + 10 kWh | 12.5 | 12.8 | 20.1 | 15.4 | 9.1 / 13.1 | 53.2 | 63.9 | 61.2 | nenhum |
+
+### C3 - 1, 2 e 3 dias nublados seguidos (22-32 C, 2,0 kWh/m2), depois 2 dias tipicos; o operador segue o aviso de recepcao
+
+| Conjunto | Dias nublados | Avisos 6h30/10h30 por dia (N=normal, M=meia, X=nao receber) | Recebido por dia (kg) | Ar max (C) | Polpa estoque max (C) | Gelo min (%) | Bateria min (%) | Apagoes | Atende? (polpa <= 14 C e ar <= 15 C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B 12 kWp + 700 kg + 5 kWh | 1 | NM XM NN | 500/500/1000 | 12.5 | 12.8 | 0.0 | 63.5 | 0 | sim |
+| B 12 kWp + 700 kg + 5 kWh | 2 | NM XX XX NN | 500/0/0/1000 | 13.3 | 12.8 | 0.0 | 62.3 | 0 | sim |
+| B 12 kWp + 700 kg + 5 kWh | 3 | NM XX XX XX NN | 500/0/0/0/1000 | 16.4 | 15.7 | 0.0 | 5.6 | 0 | NAO |
+| B 10 kWp + 500 kg + 5 kWh | 1 | NX XX NN | 0/0/1000 | 15.0 | 14.0 | 0.0 | 57.1 | 0 | NAO |
+| B 10 kWp + 500 kg + 5 kWh | 2 | NX XX XX XX | 0/0/0/0 | 18.2 | 17.4 | 0.0 | 24.8 | 0 | NAO |
+| B 10 kWp + 500 kg + 5 kWh | 3 | NX XX XX XX XX | 0/0/0/0/0 | 22.1 | 21.8 | 0.0 | 24.0 | 0 | NAO |
+| B 11 kWp + 500 kg + 5 kWh | 1 | NX XX NN | 0/0/1000 | 13.0 | 12.8 | 0.0 | 63.4 | 0 | sim |
+| B 11 kWp + 500 kg + 5 kWh | 2 | NX XX XX NN | 0/0/0/1000 | 16.7 | 15.9 | 0.0 | 16.3 | 0 | NAO |
+| B 11 kWp + 500 kg + 5 kWh | 3 | NX XX XX XX XX | 0/0/0/0/0 | 20.5 | 20.0 | 0.0 | 15.6 | 0 | NAO |
+| B 12 kWp + 700 kg + 10 kWh (5 aux + 5 apoio) | 1 | NM XM NN | 500/500/1000 | 12.5 | 12.8 | 0.0 | 81.8 | 0 | sim |
+| B 12 kWp + 700 kg + 10 kWh (5 aux + 5 apoio) | 2 | NM XX XX NN | 500/0/0/1000 | 13.0 | 12.8 | 0.0 | 81.2 | 0 | sim |
+| B 12 kWp + 700 kg + 10 kWh (5 aux + 5 apoio) | 3 | NM XX XX XX NN | 500/0/0/0/1000 | 16.3 | 15.6 | 0.0 | 48.6 | 0 | NAO |
+| A 12 kWp + 700 kg + 15 kWh | 1 | NM XX NN | 500/0/1000 | 12.5 | 12.8 | 0.0 | 39.9 | 0 | sim |
+| A 12 kWp + 700 kg + 15 kWh | 2 | NM XX XX NN | 500/0/0/1000 | 12.6 | 12.8 | 0.0 | 39.8 | 0 | sim |
+| A 12 kWp + 700 kg + 15 kWh | 3 | NM XX XX XX NN | 500/0/0/0/1000 | 13.1 | 13.1 | 0.0 | 37.0 | 0 | sim |
+| A 10 kWp + 500 kg + 10 kWh | 1 | XX XX NN | 0/0/1000 | 13.1 | 12.9 | 0.0 | 61.3 | 0 | sim |
+| A 10 kWp + 500 kg + 10 kWh | 2 | XX XX XX XX | 0/0/0/0 | 16.5 | 15.7 | 0.0 | 13.7 | 0 | NAO |
+| A 10 kWp + 500 kg + 10 kWh | 3 | XX XX XX XX XX | 0/0/0/0/0 | 19.7 | 19.1 | 0.0 | 5.6 | 0 | NAO |
+
+#### C3b - Mesmo cenario, mas o operador IGNORA o aviso e recebe 1 t todo dia (efeito da regra)
+
+| Conjunto | Dias nublados | Recebido por dia (kg) | Ar max (C) | Polpa estoque max (C) | Gelo min (%) | Atende? |
+| --- | --- | --- | --- | --- | --- | --- |
+| B 12 kWp + 700 kg + 5 kWh | 2 | 1000/1000/1000/1000 | 22.2 | 21.6 | 0.0 | NAO |
+| B 12 kWp + 700 kg + 5 kWh | 3 | 1000/1000/1000/1000/1000 | 29.9 | 30.6 | 0.0 | NAO |
+| A 12 kWp + 700 kg + 15 kWh | 2 | 1000/1000/1000/1000 | 18.6 | 17.6 | 0.0 | NAO |
+| A 12 kWp + 700 kg + 15 kWh | 3 | 1000/1000/1000/1000/1000 | 24.7 | 24.4 | 0.0 | NAO |
+
+### C4 - Falhas de sensor e de comunicacao (Rota B 12 kWp + 700 kg, salvo indicacao); falha do 4o dia (tipico) as 10 h ate o fim do 5o dia
+
+| Falha | Ar max/min (C) | Polpa estoque max (C) | Gelo min (%) | Alarmes gerados | Comportamento observado |
+| --- | --- | --- | --- | --- | --- |
+| Nenhuma (referencia) | 12.4 / 11.4 | 12.8 | 30.6 | nenhum |  |
+| TT1 (ar da camara) | 13.3 / 10.5 | 13.0 | 32.8 | S-TT1 | controla pela polpa TT2 - 0,8 K |
+| TT1 e TT2 juntos | 16.5 / 11.4 | 16.2 | 39.0 | S-TT1, S-TT2 | ventilador no minimo, agua 8 C (sem risco de dano por frio) |
+| LT1 (nivel do gelo) | 12.4 / 11.4 | 12.8 | 35.0 | S-LT1 | carga ate a sonda de espessura EI1 (ou sucao baixa); aviso meia carga |
+| CO2 | 12.4 / 11.4 | 12.8 | 26.8 | S-CO2 | ar novo no maximo (60 m3/h), luz vermelha |
+| G (irradiancia) | 12.4 / 11.4 | 12.8 | 39.6 | S-G | partida so na janela 9-15 h; o inversor desarma se faltar sol |
+| PT1 do compressor 1 | 12.4 / 11.4 | 12.8 | 30.6 | A09-1 | compressor 1 bloqueado; o 2 continua |
+| Comunicacao com o inversor hibrido (Rota A) | 12.4 / 11.4 | 12.8 | 21.6 | S-soc | sem SOC: so com sol forte 9-15 h |
+
+### C5 - Queda de internet por 24 h (do 2o dia 8 h ao 3o dia 8 h), Rota B 12 kWp + 700 kg
+
+| Item | Resultado |
+| --- | --- |
+| Saidas do controlador identicas com e sem internet (11520 passos comparados) | SIM |
+| Registros de 5 min gerados / enviados ao fim | 1152 / 1152 |
+| Alertas gerados / enviados ao fim | 2 / 2 |
+| Registros descartados por fila cheia | 0 |
+| Alertas recebidos no celular (hora do envio -> texto) | 08:00 dia 3 -> [camara-01] 12:00 CRITICO ATIVO: Sensor CO2 em falha; 08:00 dia 3 -> [camara-01] 13:00 CRITICO normalizado: Sensor CO2 em falha |
+| Temperatura do ar max nos 4 dias (com / sem internet) | 12.4 / 12.4 C |
+
+### C6 - Outras falhas (Rota B 12 kWp + 700 kg salvo indicacao)
+
+| Caso | Ar max (C) | Polpa estoque max (C) | Gelo min (%) | Bateria min (%) | Apagoes | Observacao |
+| --- | --- | --- | --- | --- | --- | --- |
+| Controlador parado 24 h no 4o dia (rele de watchdog cai) | 13.0 | 12.8 | 0.0 | 58.3 | 0 | compressores parados; bomba e ventiladores fixos pelo contato NF; fruta recebida normalmente |
+| Ventilador do condensador parado (41 C, 9 h do 4o dia ao fim do 5o) | 12.4 | 12.8 | 22.7 | 59.0 | 0 | software bloqueia por alta (16,5 bar) antes do PSH de hardware (18 bar): PSH aberto=[False, False]; estado final=['TRAVADO', 'PARADO'] |
+| 3 dias nublados com Starlink Mini (30 W), bateria 5 kWh | 16.4 | 15.7 | 0.0 | 5.6 | 0 | auxiliares a noite: 2.2 kWh (media dos dias) |
+| 3 dias nublados com Starlink Standard V4 (87 W), bateria 5 kWh | 20.7 | 20.4 | 0.0 | 0.0 | 1 | auxiliares a noite: 3.1 kWh (media dos dias) |
+
+Tempo de execucao: 40 s

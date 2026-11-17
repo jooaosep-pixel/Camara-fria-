@@ -454,6 +454,35 @@ Custo por kWh de frio efetivamente entregue ao longo da vida, supondo 15 dias nu
 
 O integrador solar deve refazer esta comparação com preços reais de bateria e inversor no Brasil.
 
+### 6.5 Resposta ao conflito CE-1 (integrador solar): na Rota B a bateria não chega ao compressor
+
+O integrador (`docs/02-projeto-eletrico-solar.md`, seções 6 e 13) mostra que, na Rota B, a bateria de 48 V só alimenta os auxiliares: o inversor do compressor recebe 400 a 750 V contínuos dos painéis. Ligar a bateria ao compressor custaria **R$ 11 a 27 mil a mais** (inversor da classe 220 V e arranjo refeito). O arranjo dele é de **13,2 kWp** (2 fileiras de 12 × 550 W; 10 e 11 kWp não formam fileiras válidas) mais 2,2 kWp no barramento de 48 V. Com isso as linhas "bateria de apoio" das seções 6.2 a 6.4 **não valem para a Rota B**.
+
+Refeito com 13,2 kWp, arquitetura (b): menor gelo que atravessa os dias nublados (polpa até 14 °C, ar até 15 °C), depois de dias quentes típicos [CALCULADO sobre SUPOSTO; script `docs/_trabalho/termico_ce1.py`]:
+
+| Bateria que alimenta o compressor | Recepção nos dias nublados | 1 dia | 2 dias | 3 dias |
+|---|---|---|---|---|
+| **Nenhuma (Rota B como está)** | **meia carga** | **600 kg** | **900 kg** | 1.200 kg |
+| Nenhuma | normal | 700 kg | 1.200 kg | 1.700 kg |
+| 5 kWh úteis (Rota B + R$ 11–27 mil, ou Rota A) | meia carga | 500 kg | 500 kg | 600 kg |
+| 5 kWh úteis | normal | 600 kg | 1.100 kg | 1.600 kg |
+| 10 kWh úteis | meia carga | 500 kg | 500 kg | 500 kg |
+| 10 kWh úteis | normal | 500 kg | 700 kg | 1.200 kg |
+
+No dia de projeto, 13,2 kWp fecham com 500 kg (gelo mínimo de 0,7 kWh, no limite) e com 700 kg (gelo mínimo de 19,3 kWh e 14,7 kWh de geração sobrando).
+
+Opções lado a lado para atravessar **2 dias nublados com meia carga** (o dono escolhe):
+
+| Opção | Painel | Gelo | Bateria para o compressor | Custo a mais sobre "13,2 kWp + 700 kg" | Risco |
+|---|---|---|---|---|---|
+| **B1 — Rota B, mais gelo** | 13,2 kWp | **900 kg** | nenhuma | +200 kg de gelo: R$ 2 a 4 mil [SUPOSTO, sem cotação]; banco cerca de 30 % maior | Baixo; o banco maior precisa caber no abrigo e na base (cerca de 4 t) |
+| B2 — Rota B com bateria ligada ao compressor | 13,2 kWp | 500 a 700 kg | 5 kWh | R$ 11 a 27 mil (integrador) + 1 módulo de bateria (R$ 8.331, custo posto de importado; preço no Brasil não encontrado) | Mais conversões; inversor de compressor ligado a bateria vira, na prática, a Rota A |
+| A — Rota A | cerca de 14 kWp (perdas de conversão) | 500 a 700 kg | 10 a 15 kWh (já exigida pela rota) | 2 a 3 módulos de bateria (R$ 17 a 25 mil) + inversor híbrido de 8 a 10 kW (preço não encontrado) | Menor risco de integração; maior custo |
+
+Leitura do autor (não é decisão): na Rota B, **gelo é o que substitui a bateria**, e 900 kg com meia carga cobrem 2 dias pelo menor custo encontrado. A bateria só "faz frio" nas opções B2 e A. Para 3 dias nublados, a regra "terceiro dia sem fruta nova" continua sendo a resposta de custo zero em todas as opções.
+
+Com isso a recomendação 6.4 fica assim, por rota: **Rota B — bateria de 48 V só para os auxiliares (dimensionada pelo integrador) e banco de gelo de 900 kg**; Rota A — bateria de 10 a 15 kWh e 500 a 700 kg de gelo. Registrado como conflito CE-1 na seção 15.3.
+
 ---
 
 ## 7. Gás e arquitetura (D3)
@@ -735,7 +764,7 @@ Correntes de partida "direta" são de memória (4 a 7 vezes a nominal, como o re
 
 **Consumo noturno da parte térmica (achados 7 e N3).** Refeito com a água a 6 °C das 17 h às 7 h (antes o modelo usava 3 °C): **82 a 173 W, 1,51 kWh por noite** no dia de projeto (antes 79 a 109 W e 1,22 kWh); pico do dia de 221 W às 13 h; noite depois de dia ruim com recepção normal: 5,1 kWh (ventilador no máximo, situação de falta de gelo). **Valor de interface confirmado: 150 W médios das 17 h às 7 h (2,1 kWh) e 300 W de pico**, mais as resistências de cárter se ficarem ligadas (até 1,4 kWh). Sobe para cerca de 170 W médios com ar novo a 60 m³/h (frutas de D6).
 
-**Bateria de apoio térmico (seção 6):** 5 kWh úteis na Rota B; 10 a 15 kWh na Rota A.
+**Bateria de apoio térmico:** na Rota B a bateria de 48 V só alimenta os auxiliares (CE-1); o apoio para dias nublados vem do banco de gelo (900 kg para 2 dias com meia carga, seção 6.5). Rota A: 10 a 15 kWh.
 
 ### 12.2 Sensores
 
@@ -925,6 +954,7 @@ Alternativas a investigar, não verificadas: unidades condensadoras "solares" de
 | **C2 — Banco de gelo** | Artesanal (cobre ou plástico), com desenho na seção 8.3 | Comercial | Nenhum tem preço; o comercial não tem fornecedor identificado. Decidir com cotações |
 | **C4 — Tamanho do arranjo** | 11 kWp + 500 kg: fecha só na arquitetura (b), sem folga (usa 83 % do gelo), sem dia nublado, sem frutas de D6 | 12 kWp + 700 kg: fecha nas duas arquiteturas (na (a) no limite); 1 dia nublado com 5 kWh de bateria | Diferença: 2 módulos (R$ 1.740) mais estrutura, e 200 kg de gelo. Na (a) com frutas de D6, 13 kWp. O revisor sugere esperar catálogo e SunData antes de comprar os módulos finais; eu sugiro dimensionar estrutura e inversores para 12 a 14 kWp desde já |
 | **D4 — Bateria de apoio** | 5 kWh + regra de meia carga em dia nublado | 14 kWp + 5 kWh (2 dias com recepção normal) ou 14 kWp + 15 kWh (3 dias) | Seção 6.4 |
+| **CE-1 — Bateria na Rota B** (integrador x térmico) | B1: 13,2 kWp + **900 kg**, bateria só nos auxiliares | B2: 13,2 kWp + 500–700 kg + bateria ligada ao compressor (+R$ 11–27 mil + módulo); ou Rota A (10–15 kWh) | B1 é a mais barata (+R$ 2–4 mil de gelo, suposto); B2 e A têm a bateria fazendo frio, a custo bem maior. Seção 6.5 |
 
 ### 15.4 Discordâncias com a revisão (as duas posições; o dono medeia)
 
@@ -988,7 +1018,7 @@ Pontos em que **aceitei** a correção sem ressalva: achados 1, 2, 4, 5, 6, 8, 9
 
 | Para quem | Dado |
 |---|---|
-| Integrador solar | Referência de 12 kWp (em aberto: 10 a 14) em dois grupos; Rota B: dois inversores de 5,5 kW, motor de 220 V com inversor de 380 V, 30 a 70 Hz, 9,8 A, tensão contínua de 400 V ou mais em operação, um compressor parte com 2,0 kW de geração; Rota A: inversor híbrido de 8 a 10 kW com 10 a 15 kWh. Auxiliares de dia: 360 W (b) ou 560 W (a). Auxiliares internos de 24 h: 150 W médios à noite, pico de 300 W (confirmado com água a 6 °C). Tipos e correntes de partida por rota na tabela 12.1. Bateria de apoio térmico: 5 kWh úteis (Rota B). Sobra típica de geração: 12 a 21 kWh/dia em dia de sol. Starlink: 25 a 100 W, 24 h |
+| Integrador solar | Referência de 12 kWp (em aberto: 10 a 14) em dois grupos; Rota B: dois inversores de 5,5 kW, motor de 220 V com inversor de 380 V, 30 a 70 Hz, 9,8 A, tensão contínua de 400 V ou mais em operação, um compressor parte com 2,0 kW de geração; Rota A: inversor híbrido de 8 a 10 kW com 10 a 15 kWh. Auxiliares de dia: 360 W (b) ou 560 W (a). Auxiliares internos de 24 h: 150 W médios à noite, pico de 300 W (confirmado com água a 6 °C). Tipos e correntes de partida por rota na tabela 12.1. Bateria de apoio térmico: na Rota B não alimenta o compressor (CE-1); o apoio é o banco de gelo de 900 kg (seção 6.5). Sobra típica de geração: 12 a 21 kWh/dia em dia de sol. Starlink: 25 a 100 W, 24 h |
 | Programador de controle | Seções 12.2 e 12.3; estados: carga, banco cheio (liga-desliga), descarga, meia carga, não receber; CO₂ com luz na porta; LT1 com rotina de zero; bateria de apoio só com gelo em 0 % |
 | Frigorista | Seções 7.3, 8.3, 9 e 10; ajustes em bar relativo; testes 2, 3 e 6 |
 | Logística | Recepção das 7 h às 14 h; depois, meia carga; dia nublado, meia carga; terceiro dia nublado, sem fruta nova; resfriamento lento (polpa a 15 °C em cerca de 20 h); 5 t com corredor estreito; abrigo de máquinas de cerca de 4 × 2,5 m ao lado do contêiner e base para 3,2 t |

@@ -178,6 +178,7 @@ class Controlador:
         self.comps = [Compressor(i, self.cc, t0) for i in range(n)]
         self.t_ant = None
         self.integral = 0.0
+        self.agua_extra = 0.0
         self.p2_on = True
         self.ar_alto = False
         self.t_botao = -1e9
@@ -273,7 +274,7 @@ class Controlador:
                 self.aviso = AV_MEIA
             elif lt1 < sp["lt1_nao_receber"] or self.nublados >= 2:
                 self.aviso = AV_NAO
-            elif self.nublados == 1 or lt1 < sp["lt1_meia_carga_9h"]:
+            elif self.nublados == 1:
                 self.aviso = AV_MEIA
             else:
                 self.aviso = AV_NORMAL
@@ -305,7 +306,9 @@ class Controlador:
             tc = v["TT2"] - 0.8          # polpa do estoque fica ~0,8 K acima do ar
         if tc is None:
             # sem nenhuma temperatura da camara: posicao fixa conservadora
-            return 0.6, True, sp["agua_noite"]
+            # sem TT1 e TT2: posicao fixa que nao causa dano por frio
+            # (camara pode esquentar ate ~14 C; alarme critico ja ativo)
+            return sp["vent_min"], True, 8.0
         err = tc - sp["t_camara"]
         self.integral += sp["vent_kp"] * err * dt / sp["vent_ti_s"]
         self.integral = limitar(self.integral, -0.2, 0.7)
@@ -316,13 +319,26 @@ class Controlador:
             self.p2_on = False
         elif tc > sp["corte_frio_pump"] + 1.0:
             self.p2_on = True
-        if not self.p2_on:
+        # agua do banco ja mais quente que o ar (gelo acabou): circular so aquece
+        # e gasta bateria -> bomba parada, ventilador no minimo
+        inutil = v["TT4"] is not None and v["TT4"] > tc - 1.0
+        if not self.p2_on or inutil:
             f = sp["vent_min"]
             self.integral = 0.0
+            return f, False, sp["agua_dia"]
         noite = hora >= sp["agua_noite_ini_h"] or hora < sp["agua_noite_fim_h"]
         agua = sp["agua_noite"] if noite else sp["agua_dia"]
+        # 2o estagio: com o ventilador no minimo e a camara abaixo do setpoint,
+        # a valvula misturadora sobe a agua (ate +6 K) para nao esfriar demais
+        if f <= sp["vent_min"] + 1e-6 and err < 0:
+            self.agua_extra += -err * dt / 600.0
+        else:
+            self.agua_extra -= max(err, 0.05) * dt / 300.0
+        self.agua_extra = limitar(self.agua_extra, 0.0, 6.0)
+        agua += self.agua_extra
         if f > 0.9 or (lt1 is not None and lt1 <= 1.0):
             agua = sp["agua_dia"]        # falta frio: maxima descarga (prioridade camara)
+            self.agua_extra = 0.0
         return f, self.p2_on, agua
 
     # ------------------------------------------------------------------
@@ -338,17 +354,32 @@ class Controlador:
             aux = 0.36
         lider = (self.dia or 0) % n          # rodizio diario
         soc = v["soc"]
+        comum = r.get("barramento_comum", True)
+        if v["G"] is not None:
+            g_ok = True
+            p_tot = self.cfg["kwp"] * v["G"] / 1000.0 * r["pr"] - aux
+        else:
+            g_ok = False
+            p_tot = 0.0
+        rodando = [i for i in range(n) if self.comps[i].ligado() and not (i == 0 and self.bat_comp)]
         for i in range(n):
             c = self.comps[i]
-            if v["G"] is not None:
+            if not g_ok:
+                # sem irradiancia: janela 9-15 h e deixa o inversor decidir
+                p = r["p_partida_kw"] if 9.0 <= hora <= 15.0 else 0.0
+            elif comum:
+                # um so arranjo para os dois inversores (suposicao S2 do LEIAME)
+                outros = [j for j in rodando if j != i]
+                if c.ligado():
+                    p = p_tot / max(1, len(rodando))
+                    if len(rodando) == 2 and i == lider:
+                        p = 99.0       # quem cede primeiro e o outro
+                else:
+                    p = p_tot - len(outros) * r["p_min_kw"]
+            else:
                 p = kg * v["G"] / 1000.0 * r["pr"]
                 if i == r["aux_no_grupo"] - 1:
                     p -= aux
-                g_ok = True
-            else:
-                # sem irradiancia: janela 9-15 h e deixa o inversor decidir
-                g_ok = False
-                p = r["p_partida_kw"] if 9.0 <= hora <= 15.0 else 0.0
             # condicao de partida sustentada
             if p >= r["p_partida_kw"]:
                 if self.t_cond_partida[i] is None:
@@ -373,16 +404,17 @@ class Controlador:
                 self.t_cond_baixa[i] = None
                 baixa = False
             q = self.precisa_carga
-            if lt1 is None or (lt1 is not None and lt1 >= self.sp["lt1_so_um"]):
-                q = q and (i == lider)        # perto de cheio ou sem LT1: so 1
+            if lt1 is not None and lt1 >= self.sp["lt1_so_um"]:
+                q = q and (i == lider)        # perto de cheio: so 1 (rodizio)
             c.modo_cheio = lt1 is not None and lt1 >= self.sp["lt1_so_um"]
             if c.ligado():
                 quer[i] = q and not baixa
             else:
                 quer[i] = q and cond_partida
-            fr = r["f_min_hz"] + (p - r["p_min_kw"]) / max(0.1, r["p_max_kw"] - r["p_min_kw"]) * (r["f_max_hz"] - r["f_min_hz"])
+            pf = p if p < 50 else p_tot / max(1, len(rodando))
+            fr = r["f_min_hz"] + (pf - r["p_min_kw"]) / max(0.1, r["p_max_kw"] - r["p_min_kw"]) * (r["f_max_hz"] - r["f_min_hz"])
             fr = limitar(fr, r["f_min_hz"], r["f_max_hz"])
-            if c.modo_cheio or lt1 is None:
+            if c.modo_cheio:
                 fr = r["f_min_hz"]
             freq[i] = fr
         # Bateria -> compressor 1 (so com gelo zerado e camara quente; doc 01, 12.3)
@@ -498,10 +530,9 @@ class Controlador:
             elif lt1 < sp["lt1_religa"]:
                 self.precisa_carga = True
         else:
-            # sem LT1: carrega com 1 compressor ate a sonda de espessura EI1
-            # ou a sucao baixa indicarem gelo grosso
-            if ei1:
-                self.precisa_carga = False
+            # sem LT1: carrega ate a sonda de espessura EI1 (ou a sucao baixa)
+            # indicar gelo grosso; volta a carregar quando EI1 solta
+            self.precisa_carga = not ei1
 
         self._recepcao(t, hora, dia, v, dt)
         f_vent, p2, agua = self._serpentina(hora, v, dt, lt1)
