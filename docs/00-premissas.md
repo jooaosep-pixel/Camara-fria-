@@ -50,3 +50,12 @@ iniciais e DEVEM ser refeitos e corrigidos.
 7. Não ter acesso a uma página (bloqueio, PDF ilegível) deve ser dito, não contornado com chute.
 8. Ao final, listar: decisões tomadas, pendências para humanos e os dados de
    interface que as outras disciplinas precisam.
+
+## Conflitos entre agentes: o dono é o mediador
+- Quando dois agentes discordarem (autor x revisor, ou duas disciplinas com
+  exigências incompatíveis), nenhum agente nem o orquestrador decide.
+- O agente registra o conflito sem resolvê-lo: as duas posições, os números e
+  fontes de cada uma, e o que cada escolha custa ou arrisca.
+- O orquestrador leva o conflito ao dono em linguagem simples e espera a decisão.
+  A decisão fica registrada em `docs/07-revisao.md`.
+- Não é conflito: erro de conta ou de fonte que o autor reconhece e corrige.
