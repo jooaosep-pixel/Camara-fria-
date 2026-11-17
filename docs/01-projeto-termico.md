@@ -732,6 +732,31 @@ Preço e prazo: só onde a busca mostrou. Datas dos anúncios não informadas; c
 3. Só manga (sem zona de 5 °C): 10 kWp, 600 kg, uma serpentina de ar, sem divisória.
 4. R513A com banco de gelo de expansão direta no lugar do glicol: menos trocadores e uma bomba a menos; perde a vantagem ambiental.
 
+### 12.1 Especificações para cotação (para o agente de importação)
+
+O dono autorizou importar componentes. A tabela acima continua sendo a opção brasileira (com as lacunas de modelo e preço já declaradas). Abaixo, a especificação genérica de cada item principal para cotar o equivalente importado. **Não pesquisei preços na China e não escolho entre Brasil e China.**
+
+Condições comuns a todos os itens de refrigeração: gás R290 (propano, classe A3); evaporação de −10 °C (3,45 bar abs) a −4 °C (4,19 bar abs); condensação de 50 °C (17,1 bar abs) com ar a 40 °C, devendo operar até ar a 43 °C (18,3 bar abs); pressão de projeto do lado de alta de pelo menos 25 bar e do lado de baixa de pelo menos 15 bar [SUPOSTO; VALIDAR com a norma]; uso ao ar livre, clima quente e seco com poeira. Certificações a exigir: declaração do fabricante de aptidão para R290; componentes elétricos próprios para uso com gás inflamável (por exemplo conforme IEC 60335-2-89 ou IEC 60079 [VALIDAR qual se aplica]); certificado de teste de pressão; folha de dados com curvas de desempenho; para itens elétricos, verificar exigência de certificação brasileira (INMETRO) [VALIDAR].
+
+| Item | Especificação para cotação |
+|---|---|
+| **Compressor** (2 unidades) | Semi-hermético alternativo ou scroll, para R290, aprovado pelo fabricante para inversor de frequência. Frio de 7,0 kW a −10/+50 °C na rotação máxima e cerca de 3,0 kW na mínima (faixa de pelo menos 43 a 100 %; ideal 30 a 100 %). Deslocamento de cerca de 18 m³/h na rotação máxima (13 m³/h a 50 Hz se a faixa for 30 a 70 Hz). Potência absorvida máxima de 3,7 kW; COP de pelo menos 1,9 a −10/+50 °C e 2,2 a −4/+50 °C. Motor trifásico 220 ou 380 V (informar), isolamento apto a inversor, protetor térmico. Fornecer: envelope de aplicação com R290, frequências mínima e máxima, número máximo de partidas por hora, tipo e carga de óleo, resistência de cárter, dimensões e peso |
+| **Inversor / drive solar** (2 unidades) | Entrada direta de painéis em corrente contínua, sem bateria, com rastreamento de máxima potência; saída trifásica para motor de 3,7 a 4 kW (escolher 5,5 kW para folga), 0 a 70 Hz, **modo de torque constante**; frequência mínima programável (30 Hz) com parada abaixo dela e religamento com atraso programável (5 min); entradas para pressostatos de alta e baixa e para comando externo; comunicação Modbus; saída de potência disponível; grau de proteção IP54 ou maior ou montagem em quadro ventilado para 45 °C; faixa de tensão contínua de entrada a informar (o integrador define o arranjo). Certificação: IEC 61800 [VALIDAR] |
+| **Condensador a ar** (2 unidades) | Rejeição de 10,7 kW com ar a 40 °C e condensação a 50 °C, R290; tubos de pequeno diâmetro (5 a 7 mm) ou microcanal para carga interna mínima — informar o volume interno em litros; aletas com proteção contra corrosão; ventilador EC sem escovas, até 150 W, 220 V monofásico, controle de 0 a 10 V; pressão de projeto de pelo menos 25 bar |
+| **Evaporador** (trocador de placas, 2 unidades) | Placas brasadas em aço inoxidável, R290 evaporando a −10 °C contra propilenoglicol a 35 %, de −2 para −6 °C, vazão de 1,6 m³/h; 7,0 kW; perda de pressão no glicol de até 30 kPa; com distribuidor de refrigerante; pressão de projeto de pelo menos 25 bar; informar volume interno do lado do gás. Isolado de fábrica |
+| **Unidade pronta (alternativa aos quatro itens acima)** | Resfriador de líquido (chiller) monobloco a ar, R290, para glicol a −6 °C, 7 kW a 40 °C de ar externo, compressor de velocidade variável, carga de gás de até 1,0 kg, com válvula de expansão eletrônica e proteções; 2 unidades. Informar se aceita alimentação direta de painéis |
+| **Banco de gelo / serpentina** | Opção 1, tanque completo: armazenamento de gelo de fusão interna com glicol, capacidade latente de 74 kWh (267 MJ, 800 kg de gelo), carga em até 6 h com glicol entrando a −6 °C e 13,5 kW no fim da carga, descarga de até 8 kW com glicol saindo a no máximo +3 °C, perda de pressão de até 40 kPa a 3,2 m³/h, isolamento com perda de até 4 % por dia a 35 °C, indicador de nível ou de quantidade de gelo, dimensões externas de até 2,3 × 1,3 × 1,4 m. Opção 2, só materiais: 1.100 m de tubo PE-RT ou PEX 16 × 2 mm com barreira de oxigênio, 2 coletores de 22 saídas, tanque de 1,9 × 1,0 × 1,0 m internos em polietileno ou inox com 100 mm de poliuretano |
+| **Serpentinas de ar a glicol** (2 unidades) | Zona do caju: 5 kW com glicol de −1 para +2 °C e ar de 5 para 2,5 °C, UA de pelo menos 1.540 W/K, aletas a 6 mm ou mais, 2 ventiladores EC (total de até 90 W na rotação máxima, controle de 0 a 10 V). Zona da manga: 4 kW com glicol de +2 para +6 °C e ar de 12 para 9 °C, UA de pelo menos 615 W/K, aletas a 4 mm ou mais, 1 ventilador EC. Ambas: bandeja de condensado em inox ou alumínio com dreno, montagem no teto, largura de até 2,0 m, altura de até 0,45 m |
+| **Válvulas** | Válvula de expansão eletrônica para R290, 2 a 8 kW a −10/+50 °C, com controlador de superaquecimento e sensores; solenoide de líquido para R290 com bobina apta a gás inflamável; pressostato de alta com rearme manual e de baixa automático; válvula de segurança conforme a pressão de projeto. Lado do glicol: misturadora de 3 vias com atuador de 0 a 10 V (Kvs de cerca de 6,3 [CALCULADO para 2,4 m³/h com 15 kPa]), 2 válvulas de zona de 2 vias liga-desliga 24 V, retenção |
+| **Bombas** | P1: 3,2 m³/h a 12 m, propilenoglicol a 35 % a −10 °C, selo adequado, até 300 W. P2: circuladora eletrônica de 0,9 a 2,4 m³/h a 4 m, fluido a 0 °C, até 120 W, comando de 0 a 10 V ou PWM. Informar tensão (preferência a definir com o integrador) |
+| **Invólucro** | Opção 1: contêiner refrigerado de 20 pés (ou 40 pés, ver pendência 8), usado ou novo, sem a máquina, com perda de calor de até 24 W/K (20 pés) comprovada por relatório, piso em T de alumínio, porta com vedação íntegra. Opção 2: kit de câmara em painéis de poliuretano ou PIR de 100 mm (condutividade de até 0,023 W/m·K, densidade de 40 kg/m³), dimensões internas de 5,8 × 2,3 × 2,4 m, com piso isolado para 1.500 kg/m², porta frigorífica de 1,2 × 2,0 m com abertura interna, e divisória de 50 mm com porta |
+
+**Alternativas a investigar, que mudariam o projeto** (não verifiquei; apenas sei que existem ofertas desse tipo):
+
+- **Compressores de corrente contínua para solar e unidades condensadoras solares prontas** de fabricantes chineses (anunciadas como "solar DC inverter condensing unit", em geral com compressor rotativo ou scroll sem escovas e alimentação direta dos painéis). A busca mostrou um exemplo de câmara solar chinesa de 5 a 10 t em contêiner ([Made-in-China, Jiate](https://jiatecoldroom.en.made-in-china.com/product/qTEpQHJVTmWy/China-5mt-10mt-Container-Freezer-Solar-Powered-Cold-Room.html)), com 7 kWp citados para 5 t. Se existir unidade de 7 kW a −10/+50 °C com R290 e entrada direta de painéis, ela substituiria compressor, inversor e condensador de cada circuito. Conferir: gás, carga, faixa de modulação, potência mínima de partida, assistência técnica.
+- **Chiller monobloco R290 de baixa carga** (existem na Europa, por exemplo [INTARCON](https://intarcon.com/en/?p=48555); no Brasil a busca achou a [Mayekawa](https://americas.mayekawa.com/mch/downloads/pdf/Chiller/Chiller%20Microcanal%20Propano_ESP%202024.pdf), voltada a porte maior). Equivalente chinês substituiria os itens 4 a 9 da lista.
+- **Banco de gelo ou módulos de PCM prontos**, comuns nos produtos indianos e chineses de câmara solar.
+
 ---
 
 ## 13. Fechamento
@@ -775,6 +800,19 @@ Preço e prazo: só onde a busca mostrou. Datas dos anúncios não informadas; c
 11. **Revisão do tanque de gelo** por quem já construiu banco de gelo; alternativa de produto pronto.
 12. **Cotar todos os itens marcados "preço não encontrado"** (quase a lista toda).
 13. Conferir GWP e classes de segurança da seção 7.1 e as medidas internas do reefer comprado.
+
+### 13.3.1 Discordâncias registradas (o dono é o mediador; não resolvidas aqui)
+
+| Assunto | Premissa ou outra disciplina | Posição deste documento |
+|---|---|---|
+| Potência solar | Cerca de 5 kWp | 12 kWp (mínimo de 10 a 11) |
+| Gelo e autonomia | 200 kg para 14 h | 800 kg; 200 kg dão 12 a 13 h sem fruta nova |
+| Temperatura da manga | Caso-base de 10 °C | 12 °C para manga verde-madura |
+| Capacidade | 5 t em 20 pés | 5 t cabem só sem corredor e com uma zona; com duas zonas, cerca de 4 t |
+| "Compressor de velocidade variável direto no painel" | Um compressor | Dois compressores trifásicos comuns com inversor solar; produto pronto não encontrado no Brasil |
+| Local | A definir pela logística | Projeto vale para irradiação de 5,2 kWh/m²·dia ou mais na época quente e 40 °C; outro local pede recálculo |
+
+Não li os documentos das outras disciplinas; se algum deles assumir 5 kWp, um compressor único ou evaporador de gás dentro da câmara, há conflito com este e ele deve ser levado ao dono.
 
 ### 13.4 Dados de interface para as outras disciplinas
 
