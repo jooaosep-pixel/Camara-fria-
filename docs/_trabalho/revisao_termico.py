@@ -180,3 +180,84 @@ print(f"  carga termica de 10 m3/h de ar novo (33 C/40% medio -> camara ~25 kJ/k
 print("\n=== B6. Pressostato de baixa x congelamento do glicol ===")
 print("  PSL do autor: 2,0 bar (evaporacao -25 C). Glicol 35% congela perto de -16 C -> o trocador de placas congela ANTES de o PSL atuar.")
 print("  R290 na evaporacao 3,45 bar abs > pressao do circuito de glicol (~1,5-2,5 bar abs): placa rompida => propano entra no glicol e segue para dentro da camara.")
+
+# ====================================================================
+# PARTE C - RODADA 2: base nova (D1-D6). Conta independente do revisor,
+# escrita antes de comparar com a tabela 5.3 do autor (eu ja tinha lido o texto).
+# ====================================================================
+print("\n\n######## PARTE C: RODADA 2 - so manga 12 C, 5 t, recepcao ate 14 h ########")
+T_SET = 12.0
+Tmax, Tmin = 41.0, 27.0
+Tamb = [(Tmax+Tmin)/2 + (Tmax-Tmin)/2*math.cos(2*math.pi*(h-15)/24) for h in range(24)]
+def resp_wt(T): return 83*2.5**((min(T,38)-10)/10)     # W/t
+def h_ar(T, UR, p=97000):
+    ps = 610.94*math.exp(17.625*T/(T+243.04)); w = 0.622*UR*ps/(p-UR*ps)
+    return 1.006*T + w*(2501+1.86*T)
+def dia(UA, tau, arnovo_m3h, t_entrada, T_fruta=35.0, vent_W=110):
+    E = dict(env=0, porta=0, arnovo=0, campo=0, resp=0, aux=0)
+    noite = 0.0
+    # lotes: 250 kg por hora nas horas de entrada; simula 3 dias para regime
+    lotes = []
+    for d in range(3):
+        for h in range(24):
+            for th in t_entrada:
+                if th == h: lotes.append([1000/len(t_entrada), T_fruta])
+            q = {}
+            q['env'] = UA*((Tamb[h] + (2 if 8 <= h <= 17 else 0)) - T_SET)/1000
+            trocas_h = 12*(0.6/len(t_entrada) if h in t_entrada else 0.4/(24-len(t_entrada)))
+            q['porta'] = trocas_h*28*1.15*(h_ar(Tamb[h],0.30)-h_ar(T_SET,0.88))/3600
+            q['arnovo'] = arnovo_m3h*1.15*(h_ar(Tamb[h],0.30)-h_ar(T_SET,0.88))/3600
+            qc = 0; qr = 4000*resp_wt(T_SET+0.8)/1e6
+            novos = []
+            for l in lotes:
+                m, T = l
+                dT = (T-T_SET)*(1-math.exp(-1/tau))
+                qc += m*(3.77+0.09*1.9)*dT/3600
+                qr += m*resp_wt(T)/1e6 - m*resp_wt(T_SET+0.8)/1e6
+                l[1] = T-dT
+                if l[1]-T_SET > 0.3: novos.append(l)
+            lotes = novos
+            q['campo'] = qc; q['resp'] = qr
+            q['aux'] = (vent_W + 60 + 3.5*Tamb[h])/1000   # ventiladores + bomba P2 + ganho do banco
+            if d == 2:
+                for k in E: E[k] += q[k]
+                if h >= 17 or h < 7: noite += sum(q.values())
+    tot = sum(E.values())
+    return tot, E, noite
+L = 334/3600
+for UA_ in (33, 23):
+  for nome, ent in (("ate 14 h (10,11,12,13 h), 35 C", [10,11,12,13]), ("ate 10 h (7,8,9 h), 35 C", [7,8,9])):
+    for ar in (10, 25):
+        tot, E, noite = dia(UA_, 6.0, ar, ent)
+        print(f"UA {UA_} | {nome} | ar novo {ar} m3/h: total {tot:.1f} kWh, com folga 10% {tot*1.1:.1f} | noite 17-7 h {noite:.1f} kWh -> gelo liquido {noite/L:.0f} kg, construido (util 85%) {noite/L/0.85:.0f} kg | " + ", ".join(f"{k} {v:.1f}" for k,v in E.items()))
+tot8, _, noite8 = dia(33, 8.0, 10, [10,11,12,13])
+print(f"mesma base com tau 8 h (autor): total {tot8:.1f}, com folga {tot8*1.1:.1f}; noite {noite8:.1f}")
+
+print("\n--- C2. COP estimado pelo revisor (eta Carnot 0,55 compressor, x0,90 auxiliares de condensacao) ---")
+cop_b = cop(-7, 51, 0.55)*0.90
+cop_a = cop(-10.5, 51, 0.53)*0.90*0.94
+print(f"(b) R513A DX no banco -7/+51: {cop_b:.2f} (autor 1,98) | (a) resfriador glicol -10,5/+51, x0,94 inversor de rede: {cop_a:.2f} (autor 1,70)")
+for arq, c in (("(b)", cop_b), ("(a)", cop_a)):
+    for hsp in (5.8, 4.7):
+        tot, _, _ = dia(33, 6.0, 10, [10,11,12,13])
+        need = tot*1.1
+        # PR 0,75 x aproveitamento 0,88 (limiar de partida, banco cheio)
+        print(f"  {arq} HSP {hsp}: kWp = {need:.1f}/({hsp} x 0,75 x 0,88 x {c:.2f}) = {need/(hsp*0.75*0.88*c):.1f} kWp")
+print("  Obs.: o mes critico nao e junho (carga menor); e o dia quente com irradiacao ainda nao confirmada pelo SunData.")
+
+print("\n--- C3. CO2 com a logica de setpoints do autor ---")
+g = 5000*17/1e6   # m3/h
+for q in (10, 20, 30):
+    print(f"  ar novo {q} m3/h -> equilibrio {g/q*100+0.04:.2f} % CO2 ; carga termica ~{q*1.15*(h_ar(34,0.30)-h_ar(12,0.88))/3600*24:.1f} kWh/dia")
+print("  Setpoints do autor: ventilador no maximo acima de 0,39 %. Com 10 m3/h o equilibrio e 0,89 % > 0,39 % -> o ventilador fica no MAXIMO quase sempre (30 m3/h -> 0,32 %). A carga somada (10 m3/h, 2,4 kWh) nao corresponde a logica: ~6 kWh/dia.")
+
+print("\n--- C4. Banco (b): grades de cobre ---")
+kgm = math.pi/4*(0.0627**2-0.0127**2)*917
+print(f"  gelo por metro (tubo 12,7 -> cilindro 62,7 mm): {kgm:.2f} kg/m x 260 m = {kgm*260:.0f} kg (autor 700)")
+print(f"  volume interno 1/2 pol (ID ~10,9 mm) x 258 m = {math.pi/4*0.0109**2*258*1000:.0f} L")
+print(f"  13 grades x 90 mm = {13*0.09:.2f} m na largura de 1,25 m; 10 passes x 90 mm = 0,90 m de altura")
+print(f"  tanque 2,30x1,25x1,05 = {2.3*1.25*1.05:.2f} m3; agua ~2,6 t; base 3,2 t em 3,0x1,8 m = {3200*9.81/(3.0*1.8)/1000:.1f} kPa no solo")
+
+print("\n--- C5. Bateria de apoio na Rota B ---")
+print("  Bateria 48 V (Elgin BAT-48V-5KWH) x inversor solar de bombeamento com entrada CC de 400-750 V: incompativel sem um inversor 48 V -> 220 V CA (ou conversor CC/CC elevador).")
+print(f"  5 kWh x 0,92 (inversor) / 1,6-2,0 kW de compressor minimo = {4.6*0.92/1.8:.1f} h de compressor ; frio {4.6*0.92*2.9:.1f} kWh a COP 2,9")

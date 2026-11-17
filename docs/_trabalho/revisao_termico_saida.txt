@@ -141,3 +141,39 @@ CAJU UA=33: noite 14 h base 20.7 kWh (transm 12.0); fruta de manha 25.7; fruta 1
 === B6. Pressostato de baixa x congelamento do glicol ===
   PSL do autor: 2,0 bar (evaporacao -25 C). Glicol 35% congela perto de -16 C -> o trocador de placas congela ANTES de o PSL atuar.
   R290 na evaporacao 3,45 bar abs > pressao do circuito de glicol (~1,5-2,5 bar abs): placa rompida => propano entra no glicol e segue para dentro da camara.
+
+
+######## PARTE C: RODADA 2 - so manga 12 C, 5 t, recepcao ate 14 h ########
+UA 33 | ate 14 h (10,11,12,13 h), 35 C | ar novo 10 m3/h: total 68.8 kWh, com folga 10% 75.7 | noite 17-7 h 30.7 kWh -> gelo liquido 331 kg, construido (util 85%) 390 kg | env 18.1, porta 3.7, arnovo 2.3, campo 24.9, resp 12.9, aux 6.9
+UA 33 | ate 14 h (10,11,12,13 h), 35 C | ar novo 25 m3/h: total 72.2 kWh, com folga 10% 79.4 | noite 17-7 h 32.3 kWh -> gelo liquido 348 kg, construido (util 85%) 410 kg | env 18.1, porta 3.7, arnovo 5.7, campo 24.9, resp 12.9, aux 6.9
+UA 33 | ate 10 h (7,8,9 h), 35 C | ar novo 10 m3/h: total 67.9 kWh, com folga 10% 74.7 | noite 17-7 h 26.2 kWh -> gelo liquido 283 kg, construido (util 85%) 332 kg | env 18.1, porta 2.9, arnovo 2.3, campo 24.9, resp 12.9, aux 6.9
+UA 33 | ate 10 h (7,8,9 h), 35 C | ar novo 25 m3/h: total 71.3 kWh, com folga 10% 78.5 | noite 17-7 h 27.8 kWh -> gelo liquido 300 kg, construido (util 85%) 353 kg | env 18.1, porta 2.9, arnovo 5.7, campo 24.9, resp 12.9, aux 6.9
+UA 23 | ate 14 h (10,11,12,13 h), 35 C | ar novo 10 m3/h: total 63.3 kWh, com folga 10% 69.7 | noite 17-7 h 27.9 kWh -> gelo liquido 301 kg, construido (util 85%) 354 kg | env 12.6, porta 3.7, arnovo 2.3, campo 24.9, resp 12.9, aux 6.9
+UA 23 | ate 14 h (10,11,12,13 h), 35 C | ar novo 25 m3/h: total 66.7 kWh, com folga 10% 73.4 | noite 17-7 h 29.5 kWh -> gelo liquido 318 kg, construido (util 85%) 375 kg | env 12.6, porta 3.7, arnovo 5.7, campo 24.9, resp 12.9, aux 6.9
+UA 23 | ate 10 h (7,8,9 h), 35 C | ar novo 10 m3/h: total 62.4 kWh, com folga 10% 68.7 | noite 17-7 h 23.4 kWh -> gelo liquido 253 kg, construido (util 85%) 297 kg | env 12.6, porta 2.9, arnovo 2.3, campo 24.9, resp 12.9, aux 6.9
+UA 23 | ate 10 h (7,8,9 h), 35 C | ar novo 25 m3/h: total 65.8 kWh, com folga 10% 72.4 | noite 17-7 h 25.0 kWh -> gelo liquido 270 kg, construido (util 85%) 317 kg | env 12.6, porta 2.9, arnovo 5.7, campo 24.9, resp 12.9, aux 6.9
+mesma base com tau 8 h (autor): total 69.5, com folga 76.5; noite 32.8
+
+--- C2. COP estimado pelo revisor (eta Carnot 0,55 compressor, x0,90 auxiliares de condensacao) ---
+(b) R513A DX no banco -7/+51: 2.27 (autor 1,98) | (a) resfriador glicol -10,5/+51, x0,94 inversor de rede: 1.91 (autor 1,70)
+  (b) HSP 5.8: kWp = 75.7/(5.8 x 0,75 x 0,88 x 2.27) = 8.7 kWp
+  (b) HSP 4.7: kWp = 75.7/(4.7 x 0,75 x 0,88 x 2.27) = 10.7 kWp
+  (a) HSP 5.8: kWp = 75.7/(5.8 x 0,75 x 0,88 x 1.91) = 10.3 kWp
+  (a) HSP 4.7: kWp = 75.7/(4.7 x 0,75 x 0,88 x 1.91) = 12.7 kWp
+  Obs.: o mes critico nao e junho (carga menor); e o dia quente com irradiacao ainda nao confirmada pelo SunData.
+
+--- C3. CO2 com a logica de setpoints do autor ---
+  ar novo 10 m3/h -> equilibrio 0.89 % CO2 ; carga termica ~2.2 kWh/dia
+  ar novo 20 m3/h -> equilibrio 0.47 % CO2 ; carga termica ~4.4 kWh/dia
+  ar novo 30 m3/h -> equilibrio 0.32 % CO2 ; carga termica ~6.6 kWh/dia
+  Setpoints do autor: ventilador no maximo acima de 0,39 %. Com 10 m3/h o equilibrio e 0,89 % > 0,39 % -> o ventilador fica no MAXIMO quase sempre (30 m3/h -> 0,32 %). A carga somada (10 m3/h, 2,4 kWh) nao corresponde a logica: ~6 kWh/dia.
+
+--- C4. Banco (b): grades de cobre ---
+  gelo por metro (tubo 12,7 -> cilindro 62,7 mm): 2.72 kg/m x 260 m = 706 kg (autor 700)
+  volume interno 1/2 pol (ID ~10,9 mm) x 258 m = 24 L
+  13 grades x 90 mm = 1.17 m na largura de 1,25 m; 10 passes x 90 mm = 0,90 m de altura
+  tanque 2,30x1,25x1,05 = 3.02 m3; agua ~2,6 t; base 3,2 t em 3,0x1,8 m = 5.8 kPa no solo
+
+--- C5. Bateria de apoio na Rota B ---
+  Bateria 48 V (Elgin BAT-48V-5KWH) x inversor solar de bombeamento com entrada CC de 400-750 V: incompativel sem um inversor 48 V -> 220 V CA (ou conversor CC/CC elevador).
+  5 kWh x 0,92 (inversor) / 1,6-2,0 kW de compressor minimo = 2.4 h de compressor ; frio 12.3 kWh a COP 2,9
