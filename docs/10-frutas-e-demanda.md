@@ -184,55 +184,59 @@ Preço da manga no ano (ajuda a ler o calendário): no Vale, a tommy valeu R$ 1,
 
 ### 2.1 Quais frutas servem a 12 °C
 
-| Fruta | Serve a 12 °C? | Ideal dela | Comentário |
-|---|---|---|---|
-| **Manga** | **Sim — é a fruta do protótipo** | 13 °C verde-madura; 10 °C madura | Sem dano por frio; 2 a 3 semanas de vida [F7] |
-| Banana | **Sim, com cuidado** | 13 a 14 °C | Fica 1 a 2 °C abaixo do ideal. Um estudo viu dano por frio a 10,5 °C, menor na banana prata [F20]. Testar com a variedade local [VALIDAR]. Muito sensível ao etileno da manga madura: empilhar longe e ventilar [SUPOSTO] |
-| Mamão | **Sim** | 7 a 13 °C | Bom para mamão ainda verde-maduro |
-| Acerola | **Sim** | 10 a 12 °C (estudo feito em Petrolina) | Fruta frágil, caixa baixa. Boa parte vai direto para a indústria (seção 8) |
-| Abacaxi | **Sim** | 7 a 13 °C | Em PE fica no Agreste, longe do sertão |
-| Limão | **Sim** | 12 a 14 °C | Não levantei volume no polo |
-| Umbu | **Sim, perto do ideal** | cerca de 14 °C | Coleta de dezembro a março; volume pequeno em PE (587 t em 2025 [F5]) |
-| Goiaba | **Aguenta, mas não é o ideal** | 8 a 10 °C | A 12 °C não sofre dano por frio, mas amadurece mais depressa: vida menor que os 16 dias do ensaio a 10 °C [SUPOSTO]. Serve para giro de poucos dias |
-| Maracujá | **Aguenta, mas não é o ideal** | 7 a 10 °C | Mesmo raciocínio da goiaba [SUPOSTO] |
-| Melão amarelo | Aguenta; precisa pouco | 7 a 10 °C [SUPOSTO] | Dura semanas fora do frio |
-| Caju | **Não** | 5 °C | A 12 °C estraga em poucos dias [SUPOSTO]. Fora do protótipo (seção 2.5) |
-| Uva | **Não** | –1 a 0 °C | E é fruta de empresa, com estrutura própria |
-| Coco verde, melancia | Não compensa | — | Volumosos, baratos por quilo, duram sem frio [SUPOSTO] |
+"Serve" = tem fonte de que 12 °C é aceitável. "Candidata a testar" = não sofre dano por frio conhecido a 12 °C, mas não achei vida útil nessa temperatura.
 
-### 2.2 A escolha "só manga a 12 °C" se sustenta?
+| Fruta | Situação a 12 °C | Ideal dela | Vida útil a 12 °C | Comentário |
+|---|---|---|---|---|
+| **Manga** | **Fruta do protótipo (D1)** | 13 °C [F7] | 2 a 3 semanas é o dado a 13 °C [F7]; a 12 °C [VALIDAR] | Abaixo de cerca de 13 °C a manga é sensível; a Embrapa viu escurecimento entre 8 e 10 °C (doc 01, seção 2.1) |
+| **Acerola** | **Serve** | 12 °C para fruta colhida verde, logo antes de avermelhar [F36] | não encontrado em dias | A fonte mais forte entre os complementos, e feita em Petrolina. Fruta frágil, caixa baixa. Boa parte vai direto para a indústria (seção 8) |
+| **Mamão** | **Serve** | 9 a 12 °C (faixa mais usada) [F36] | não encontrado em dias | Em Petrolina o IBGE não registra mamão em 2025 (doc 09); a oferta está em Cabrobó, Lagoa Grande e Orocó [F3] |
+| Goiaba | Candidata a testar, giro curto | 8 a 10 °C [F20] | não encontrado (16 dias é o ensaio a 10 °C) | Sem dano por frio a 12 °C, mas amadurece mais depressa que a 10 °C [SUPOSTO]. Produz etileno [SUPOSTO] |
+| Maracujá | Candidato a testar, giro curto | 7 a 10 °C [F7] | não encontrado | Produz muito etileno ao amadurecer (seção 2.6) |
+| Abacaxi | Serve | 7 a 13 °C [F7] | dentro dos 2 a 8 semanas da tabela [F7] | Em PE está no Agreste, longe do sertão |
+| Umbu | Serve, perto do ideal | cerca de 14 °C [F20] | até 19 dias a 14 °C [F20] | Coleta de pouco volume em PE (587 t em 2025 [F5]) |
+| Limão | Serve se for o de tabela internacional | 12 a 14 °C [F7] | — | O Tahiti, que é o do Nordeste, pode pedir menos [VALIDAR] |
+| **Banana** | **Não, antes de ensaio** | 13,3 a 14,4 °C [F35] | — | Abaixo de 13 °C pode haver dano por frio em 2 a 24 horas, conforme variedade e maturação [F35]. É também a mais sensível ao etileno da manga. E é vendida verde e viaja sem frio: não está demonstrado que precise de câmara. **Só depois de ensaio com a variedade local a 12 °C [VALIDAR com a Embrapa Semiárido]; fora de todos os cenários de receita** |
+| Melão amarelo | Aguenta; precisa pouco | 7 a 10 °C [SUPOSTO] | — | Dura semanas fora do frio |
+| Caju | **Não** | 5 °C | — | Fora do protótipo (seção 2.5) |
+| Uva | **Não** | –1 a 0 °C [F7] | — | Fruta de empresa, com estrutura própria |
+| Coco verde, melancia | Não compensa | — | — | Volumosos, baratos por quilo, duram sem frio [SUPOSTO] |
+
+### 2.2 A escolha "manga a 12 °C" se sustenta?
 
 **Tecnicamente, sim. Comercialmente, só em parte do ano.**
 
-- A favor: 12 °C é a temperatura certa para manga verde-madura; uma zona só devolve a capacidade de 5 t; o equipamento fica mais simples.
-- A favor: a 12 °C a manga pode ficar até 2 a 3 semanas, o que dá folga para juntar carga e esperar o dia do comprador.
-- Contra: **manga é só 17% familiar em PE** [F4] e um único lote familiar produz o que a câmara gira no ano (doc 09, seção 1.4). O público é um grupo pequeno.
-- Contra: **de abril a julho quase não há manga para guardar** (seção 2.4). Só manga significa câmara parada um terço do ano.
+- A favor: 12 °C fica perto dos 13 °C de referência para manga verde-madura e longe da faixa de dano (8 a 10 °C); uma zona só devolve a capacidade de 5 t; o equipamento fica mais simples.
+- A favor: mesmo que a 12 °C a manga dure menos de 3 semanas, a operação precisa de só 2 a 5 dias (doc 09, seção 6).
+- Contra: **manga é só 17% familiar em PE** [F4]. Um lote familiar produz cerca de 64 t de manga por ano e a câmara atende de 2 a 6 lotes, valor central perto de 4, pela conta do doc 09 (versão atual, seção 1.4); pelo Censo, um estabelecimento familiar de Petrolina produz 21 t por ano [F4]. A diferença entre 64 t e 21 t é ponto a fechar com a logística (seção 11).
+- Contra: **de abril a julho quase não há manga para guardar** (seção 2.4).
 
-### 2.3 O que pode completar a ocupação
+### 2.3 O que pode completar a ocupação (D6)
 
-Frutas que estão nos mesmos municípios da manga, servem a cerca de 12 °C e são de pequeno produtor:
+| Complemento | Volume no entorno (2025) [F3] | Fatia familiar em PE [F4] | Situação a 12 °C | Preço encontrado | Calendário do pequeno |
+|---|---|---|---|---|---|
+| **Acerola** | Petrolina 30.000 t; Orocó 7.000 t; Santa Maria da Boa Vista 6.500 t | 62% | Serve | **não encontrado** | **não encontrado** |
+| Mamão | Cabrobó 4.950 t; Lagoa Grande 3.680 t; Orocó 3.360 t; Petrolina: não registrado | 61% | Serve | não encontrado | não encontrado |
+| Goiaba | Santa Maria da Boa Vista 80.000 t; Petrolina 48.000 t | 62% | Testar, giro curto | Caixa de 20 kg de goiaba paluma a R$ 60 (19/10/2026) e R$ 90 (registro de outubro, página atualizada até 13/11/2026), em Juazeiro: R$ 3,00 a R$ 4,50/kg. No atacado da AMA de Juazeiro, R$ 4,00/kg (06/07/2026) [F37] | não encontrado |
+| Maracujá | Santa Maria da Boa Vista 2.800 t; Petrolina 1.980 t | 81% | Testar, giro curto | não encontrado | não encontrado |
+| Banana | Santa Maria da Boa Vista 210.000 t; Petrolina 41.600 t | 71% | Não antes de ensaio | Cotação em Juazeiro existe, mas o valor não apareceu [F37] | não encontrado |
 
-| Complemento | Volume no entorno (2025) [F3] | Fatia familiar em PE [F4] | Serve a 12 °C? |
-|---|---|---|---|
-| **Banana** | Santa Maria da Boa Vista 210.000 t; Petrolina 41.600 t; Orocó 31.450 t | 71% | Sim, com teste de variedade |
-| Acerola | Petrolina 30.000 t; Orocó 7.000 t; Santa Maria da Boa Vista 6.500 t | 62% | Sim |
-| Mamão | Cabrobó 4.950 t; Lagoa Grande 3.680 t; Orocó 3.360 t | 61% | Sim |
-| Goiaba | Santa Maria da Boa Vista 80.000 t; Petrolina 48.000 t | 62% | Aguenta, vida menor |
-| Maracujá | Santa Maria da Boa Vista 2.800 t; Petrolina 1.980 t | 81% | Aguenta, vida menor |
+**Ordem de prioridade para completar a entressafra da manga:** acerola; mamão se houver oferta no raio de coleta; goiaba e maracujá verdoengos e por poucos dias; banana só depois de ensaio. **Sem calendário nem preço, as frutas complementares não entram em nenhum cenário de receita** (seção 6); a pergunta vai para o roteiro de campo (seção 9.1, pergunta 13).
 
-**Ordem de prioridade sugerida para completar a entressafra da manga:** banana, mamão, acerola; depois goiaba e maracujá de giro rápido. Não achei estudo de manga e banana guardadas juntas; o risco é o etileno [VALIDAR com a Embrapa Semiárido].
+### 2.4 Calendário anual de ocupação
 
-### 2.4 Calendário anual de ocupação (só manga, e com complemento)
-
-Para um ponto no polo irrigado do São Francisco (o local é do doc 09). A ocupação esperada é [SUPOSTO] e depende de haver comprador.
+Para um ponto no polo irrigado do São Francisco (o local é do doc 09). Níveis [SUPOSTO]; dependem de haver comprador.
 
 | Meses | Manga | Ocupação só com manga | Complemento possível a 12 °C | Ocupação com complemento |
 |---|---|---|---|---|
-| Out–Jan | Pico de oferta, preço baixo | **Alta** | Não precisa | Alta |
-| Fev–Mar | Fim do pico | Média | Banana, mamão | Média a alta |
-| Abr–Jul | Pouca fruta, preço alto, vende-se na hora | **Muito baixa** | Banana, mamão, acerola, goiaba, maracujá (coincide com o ano letivo: merenda escolar) | Média |
-| Ago–Set | Oferta voltando | Média | Banana, acerola | Média |
+| Out–Jan | Pico de oferta, preço baixo | Alta | Não precisa | Alta |
+| Fev–Mar | Fim do pico | Média | Acerola, mamão | Média, se o campo confirmar |
+| Abr–Jul | Pouca fruta, preço alto (R$ 2,79/kg no início de abril e R$ 4,94/kg em junho de 2026 [F17]), vende-se na hora | **Parada** | Acerola, mamão, goiaba e maracujá de giro curto (coincide com o ano letivo) | **Desconhecida**: calendário e preço dos complementos não encontrados |
+| Ago–Set | Oferta voltando | Média | Acerola | Média |
+
+Tradução em números, só manga (acordada com a logística; arquivo `docs/_trabalho/acordo-logistica-demanda.md`, item 4) [SUPOSTO]: estoque médio de 3 t de outubro a janeiro, 1,5 t em fevereiro, março, agosto e setembro, zero de abril a julho; 0,6 t/dia × 120 dias + 0,3 t/dia × 120 dias = **108 t por ano** [CALCULADO]. A logística propôs mais 54 t de complementos (0,3 t/dia de abril a julho e 0,15 t/dia em quatro meses). **Aceito como hipótese de trabalho para o projeto térmico, não como receita**, até o campo dar calendário e preço.
+
+### 2.5 Caju
 
 ### 2.5 Caju — estudo futuro (fora do protótipo)
 
@@ -241,6 +245,33 @@ Para um ponto no polo irrigado do São Francisco (o local é do doc 09). A ocupa
 - **Por que vale estudar:** é a fruta que mais ganha com o frio (de menos de 2 dias para cerca de 15, embalada [F6]) e é de pequeno produtor (77% da castanha de PE é familiar [F4]).
 - **Por que é arriscado:** cerca de 88% a 90% do pedúnculo não é aproveitado hoje [F6][F11]; a renda vem da castanha. Caju de mesa é nicho, de bandeja (caixa padrão de 1,2 kg na Ceagesp [F29]), com clone próprio. A safra oscila: a castanha do país caiu 32% de 2024 para 2025 [F1].
 - **O que estudar se o protótipo de manga der certo:** uma segunda unidade a 5 °C em Buíque e Tupanatinga, ou em polo de caju do Ceará, Piauí ou Rio Grande do Norte; antes, confirmar quem compra caju de mesa e a que preço (não achei).
+
+### 2.6 Etileno e mistura com a manga (D6 manda verificar)
+
+Etileno é o gás que a fruta solta ao amadurecer e que faz as vizinhas amadurecerem mais depressa. **O risco vai nos dois sentidos:**
+- **Manga → vizinhas:** manga amadurecendo solta etileno; banana verde é a mais sensível (conserva-se com menos de 1 ppm [F35]).
+- **Vizinhas → manga:** fruta madura dos complementos (maracujá, goiaba, mamão) solta etileno e **faz a manga verde-madura amadurecer antes**, encurtando o tempo de câmara de que o projeto depende.
+
+**Números que achei:**
+- Maracujá roxo colhido com 50% de cor: pico de **505 µL de etileno por kg por hora** (em temperatura de laboratório) [F38]. É muito: dezenas a centenas de vezes o que se costuma atribuir à manga [SUPOSTO].
+- Manga: **não achei taxa medida**. Uso a ordem de grandeza do revisor: 0,5 a 1 µL/kg·h [SUPOSTO].
+- Goiaba e acerola: a própria classificação (fruta que amadurece depois de colhida ou não) é discutida na literatura [F38]; acerola não respondeu ao etileno no estudo da UNIVASF [F20].
+- Regra geral de pós-colheita, quando não dá para separar: manter a temperatura certa e renovar o ar **pelo menos uma vez por hora** [F21].
+
+**Ordem de grandeza** (1 ppm = 1 mL de gás por m³ de ar; ar livre na câmara cheia ≈ 25 m³ [SUPOSTO]) [CALCULADO sobre SUPOSTO]:
+
+| Situação | Etileno produzido | Sobe, com a porta fechada e sem renovação | Ar novo para ficar abaixo de 1 ppm |
+|---|---|---|---|
+| 2.000 kg de manga a 0,5–1 µL/kg·h | 1 a 2 mL/h | 0,04 a 0,08 ppm por hora: 1 ppm em 12 a 25 horas | 1 a 2 m³/h |
+| 200 kg de maracujá maduro, supondo a 12 °C só um décimo do pico (50 µL/kg·h) | 10 mL/h | 0,4 ppm por hora: 1 ppm em 2,5 horas | 10 m³/h (para 0,1 ppm, 100 m³/h) |
+
+**Regra de mistura proposta** [SUPOSTO; validar no protótipo]:
+1. Manga verde-madura não divide a câmara com fruta **madura** de outra espécie.
+2. Maracujá e goiaba só entram verdoengos e saem em até 3 dias.
+3. Banana: fora até haver ensaio (dano por frio e etileno).
+4. Fruta madura de qualquer espécie, inclusive manga madura, em pilha separada perto da porta e da saída de ar.
+5. Com mistura, renovar o ar uma vez por hora (cerca de 25 m³/h) [F21]. Esse ar entra quente e úmido: **é carga térmica a mais, que o engenheiro tem de calcular** (seção 10.2).
+6. Não há estudo de manga guardada junto com essas frutas que eu tenha achado. O primeiro mês com mistura é ensaio: medir amadurecimento da manga com e sem vizinhas [VALIDAR com a Embrapa Semiárido].
 
 ---
 
@@ -281,64 +312,66 @@ Para um ponto no polo irrigado do São Francisco (o local é do doc 09). A ocupa
 | Quem | Pagaria? | Por quê | Base |
 |---|---|---|---|
 | Produtor sozinho, que vende na roça | **Provavelmente não** | O comprador vai ao pomar, classifica e leva no dia; o produtor é "tomador de preço" (doc 09, seção 1.2). Não há o que guardar | doc 09 |
-| **Grupo de 5 a 15 famílias com comprador fixo** (merenda, PAA, mercado, restaurante) | **Sim: é o cliente natural** | Precisa entregar em dia certo, fruta no ponto, em quantidade combinada. Sem frio, não consegue | doc 09, seções 1.4 e 2.4 |
+| **Grupo de 5 a 15 famílias com comprador fixo** (merenda, PAA, mercado, restaurante) | **É o cliente mais provável** | Precisa entregar em dia certo, fruta no ponto, em quantidade combinada. **Que sem frio ele não consegue é hipótese [SUPOSTO]**: não achei caso de venda perdida por falta de câmara, e há grupos que entregam à merenda sem câmara, colhendo no dia da entrega (seção 8, item 5) | doc 09, seções 1.4 e 2.4 |
 | Cooperativa ou associação | Sim, como dona ou gestora | Já tem operador, CNPJ, acesso a crédito e a compras públicas | [F8] |
 | Atravessador ou feirante | Talvez, por dia | É o usuário típico do ColdHubs, que fica dentro de mercados e feiras [F12]. No estudo da Índia, quem mais usou foram os comerciantes maiores [F14] | [F12][F14] |
 | Agroindústria de polpa | Pouco provável | Trabalha com fruta congelada e tem frio próprio; compra o refugo barato [SUPOSTO] | — |
-| Comprador público (PAA/PNAE) | Não paga a câmara, mas **é quem cria a demanda** | Paga preço bem acima da roça e exige regularidade | [F18][F19] |
+| Comprador público (PAA/PNAE) | Não paga a câmara, mas **é quem pode criar a demanda** | Paga, em geral, mais que a roça e exige regularidade | [F18][F19] |
 | Exportador | Não | Tem packing house (galpão de embalagem) e câmara próprios (doc 09, seção 1.2) | doc 09 |
 
 ### 4.2 Quanto ganha a mais quem guarda
 
-Três ganhos diferentes. É importante não misturar.
+Quatro ganhos diferentes. É importante não misturar.
 
 **(a) Esperar o preço subir entre safra e entressafra: não dá.**
-- Manga tommy no Vale: R$ 0,99/kg (fev/2026) e R$ 4,94/kg (jun/2026) [F17]. Diferença de 5 vezes.
-- Mas entre fevereiro e junho passam 4 meses, e a manga dura 2 a 3 semanas [F7]. **A câmara não atravessa a entressafra.** Quem faz isso é a indústria, congelando polpa.
+- Manga tommy no Vale: R$ 0,99/kg (fev/2026) e R$ 4,94/kg (jun/2026) [F17].
+- Entre fevereiro e junho passam 4 meses; a manga dura 2 a 3 semanas a 13 °C [F7]. **A câmara não atravessa a entressafra.** Quem faz isso é a indústria, congelando polpa.
 
 **(b) Esperar alguns dias: ganho possível, mas incerto.**
-- As notas semanais do Cepea mostram o preço da tommy variando +24%, –19%, +26% e +34% **de uma semana para a outra** [F17].
-- Para quem pode segurar a fruta uma ou duas semanas isso é oportunidade, mas a variação vai nos dois sentidos. Não é renda garantida [CALCULADO a partir das variações citadas].
+- As notas semanais do Cepea mostram o preço da tommy variando +24%, –19%, +26% e +34% de uma semana para a outra [F17].
+- A variação vai nos dois sentidos. Não é renda garantida.
 
-**(c) Vender para um comprador melhor: é o ganho que sustenta o projeto.**
+**(c) Vender para um comprador melhor: pode ser o ganho que sustenta o projeto, mas o valor por quilo é desconhecido.**
 
-| Canal | Preço da manga | Fonte |
-|---|---|---|
-| Na roça, Petrolina (10/11/2026) | R$ 1,05/kg (palmer) e R$ 1,20/kg (tommy) | [F17] |
-| Pesquisa de preços para compras da agricultura familiar, Emater-RN (maio/2026) | R$ 5,06/kg | [F18] |
-| CEASA do Recife | **não encontrei valor em R$/kg** | — |
+| Canal | Preço da manga | Mês | Fonte |
+|---|---|---|---|
+| Na roça, Vale do São Francisco | R$ 2,79/kg (tommy) | início de abril de 2026 | [F17] |
+| Na roça, Vale do São Francisco | R$ 4,94/kg (tommy) | 23/06/2026 | [F17] |
+| Na roça, Petrolina | R$ 1,05/kg (palmer) e R$ 1,20/kg (tommy) | 10/11/2026 (pico da safra) | [F17] |
+| Referência de compra da agricultura familiar, **Rio Grande do Norte** (Emater-RN; 92 pesquisas em 42 municípios) | R$ 5,06/kg | publicada em maio de 2026 | [F18] |
+| Chamada pública do PNAE do IF Sertão-PE, campus Serra Talhada (**Pernambuco**) | R$ 11,81/kg de manga tommy, para 15 kg no ano | 2025 | [F39] |
+| CEASA do Recife; chamada pública de Petrolina | **não encontrado** | — | — |
 
-- Diferença entre a roça e a referência de compra pública: 5,06 – 1,20 = **R$ 3,86/kg** [CALCULADO]. Atenção: o preço público é do Rio Grande do Norte, não de Pernambuco, e inclui classificação, embalagem e entrega na escola. Serve como ordem de grandeza. [VALIDAR com a chamada pública do município escolhido]
-- Teto da merenda escolar: R$ 40.000 por agricultor, por ano, por entidade compradora; e desde 2026 pelo menos 45% do dinheiro federal da merenda tem de ir para a agricultura familiar [F19].
-- Conta: 10 famílias × R$ 40.000 = R$ 400.000 por ano por prefeitura (igual ao doc 09, seção 2.4). A R$ 5,06/kg isso é 400.000 ÷ 5,06 = **79 t de fruta por ano** [CALCULADO]: cerca de 0,3 t por dia em 270 dias. **É um terço da entrada diária que a câmara aceita.** Um contrato de merenda com uma prefeitura ocupa a câmara só em parte.
-- A merenda não compra só manga, e o ano letivo pega justamente os meses de pouca manga (abril a julho). Um contrato de merenda puxa para dentro da câmara as outras frutas da seção 2.3 [SUPOSTO].
-- Sem CNPJ (decisão D5), o protótipo não vende: quem vende para a prefeitura são as famílias com CAF ou a associação [SUPOSTO; VALIDAR com a chamada pública].
+- **Comparação justa é no mesmo mês.** Em abril a junho de 2026 a roça pagou R$ 2,79 a R$ 4,94/kg; a referência do RN, publicada em maio, é R$ 5,06/kg. Diferença: **R$ 0,12 a R$ 2,27/kg** [CALCULADO]. A diferença de R$ 3,86/kg da versão anterior misturava novembro (pico, preço baixo) com maio: estava errada.
+- Essa diferença ainda não é ganho: o preço público inclui classificar, embalar, entregar escola por escola e esperar o pagamento.
+- O RN tem pouca manga; em Petrolina, onde há muita, a pesquisa de preço da prefeitura deve sair menor [SUPOSTO]. O R$ 11,81/kg de Serra Talhada é de uma compra de 15 kg, longe do polo: não serve de base.
+- **Conclusão: o ganho por quilo de vender no canal melhor é desconhecido. Pode render; tem de ser medido** (roteiro, seção 9.3, pergunta 2).
 
-**(d) Perder menos.** Se a perda cai de 27,5% para a metade [SUPOSTO, seção 3.2], o grupo vende 13,75% a mais da mesma colheita. Em 100 t a R$ 1,20/kg são 13,75 t × 1.200 = **R$ 16.500 por ano** [CALCULADO]. A preço de roça é pouco; só pesa quando a fruta salva é vendida no canal melhor.
+**Merenda escolar, o único comprador quantificado:**
+- Teto: R$ 40.000 por agricultor (CAF), por ano, por entidade compradora; pelo menos 45% do dinheiro federal da merenda para a agricultura familiar desde 2026 [F19]. Segundo a imprensa, a Resolução CD/FNDE nº 17, de 22/10/2026, alterou a nº 04/2026 mantendo o teto (doc 09, seção 2.4) [não conferi].
+- 10 famílias × R$ 40.000 = R$ 400.000 por ano; a R$ 5,06/kg, 79 t por ano [CALCULADO]. **É teto legal, não demanda** (igual ao doc 09): nada indica que uma prefeitura gaste isso em fruta de um grupo.
+- Ano letivo de cerca de 200 dias [SUPOSTO]: 79 ÷ 200 = **0,40 t/dia**. Janeiro, pico da manga, não tem aula; abril a julho, quando falta manga, tem.
+- Sem CNPJ (D5), o protótipo não vende: quem vende para a prefeitura são as famílias com CAF ou a associação [VALIDAR com a chamada pública].
+
+**(d) Perder menos.** Se a perda cai de 27,5% para a metade [SUPOSTO, seção 3.2], o grupo vende 13,75% a mais da mesma colheita. Em 100 t a R$ 1,20/kg são 13,75 t × 1.200 = **R$ 16.500 por ano** [CALCULADO sobre SUPOSTO]. **Para as mesmas 100 t, a taxa de referência (R$ 0,20/kg, seção 6) custaria R$ 20.000: maior que esse ganho a preço de roça.** A perda evitada só paga a câmara se a fruta salva for vendida mais caro.
 
 ### 4.3 Tamanho do mercado em número de câmaras
 
+Todos os resultados abaixo são **[CALCULADO sobre SUPOSTO]**: a aritmética é conferível, mas a fatia de mercado (1%, 3%, 10%) e o giro de 150 t são escolhas minhas.
+
 Método: (manga da agricultura familiar) × (fatia que passaria por câmara comunitária) ÷ (toneladas que uma câmara gira por ano).
 
-**Passo 1 — manga familiar**, aplicando a fatia familiar de 2017 [F4] ao volume de 2025 [F1]. Supõe que a fatia não mudou [SUPOSTO].
-- Pernambuco: 609.940 × 17,3% = **105.520 t** [CALCULADO]
-- Nordeste: 1.593.235 × 25,4% = **404.682 t** [CALCULADO]
+- Manga familiar, aplicando a fatia de 2017 [F4] ao volume de 2025 [F1]: Pernambuco 609.940 × 17,3% = **105.520 t**; Nordeste 1.593.235 × 25,4% = **404.682 t**. Como o Censo enxergou só 54% do volume, a fatia real pode ser outra [SUPOSTO].
+- Giro adotado: 150 t por câmara por ano [SUPOSTO; entre o cenário de referência, 79 t, e o médio, 108 t, com alguma fruta complementar].
 
-**Passo 2 — giro de uma câmara:** 108 a 289 t por ano nos cenários médio e otimista (seção 6). Adoto 150 t/ano [SUPOSTO].
+| Fatia da manga familiar | Pernambuco | Nordeste | Teste: famílias atendidas em PE (10 por câmara) ÷ 1.650 estabelecimentos familiares com manga [F4] |
+|---|---|---|---|
+| 1% | 105.520 × 1% ÷ 150 = **7 câmaras** | 404.682 × 1% ÷ 150 = **27** | 70 ÷ 1.650 = 4% |
+| 3% | **21** | **81** | 210 ÷ 1.650 = 13% |
+| 10% | **70** | **270** | 700 ÷ 1.650 = 42% (pouco plausível) |
 
-**Passo 3 — fatia que passaria por câmara comunitária.** **Este é o número que ninguém tem.** Três hipóteses [SUPOSTO]:
-
-| Fatia da manga familiar | Pernambuco | Nordeste |
-|---|---|---|
-| 1% | 105.520 × 1% ÷ 150 = **7 câmaras** | 404.682 × 1% ÷ 150 = **27 câmaras** |
-| 3% | **21** | **81** |
-| 10% | **70** | **270** |
-
-[CALCULADO]
-
-**Se as frutas complementares entrarem** (banana, mamão, acerola, goiaba, maracujá), a base cresce. Produção familiar estimada em PE: banana 649.265 × 70,5% = 457.732 t; goiaba 127.271 t; acerola 35.458 t; maracujá 21.777 t; mamão 10.146 t [CALCULADO do mesmo jeito]. Somadas à manga: cerca de 758 mil t; a 1%, 3% e 10% seriam 51, 152 e 505 câmaras em Pernambuco [CALCULADO]. Atenção: a banana é vendida verde e viaja sem frio; a fatia dela que precisaria de câmara deve ser bem menor que a das outras [SUPOSTO].
-
-**Como ler:** a conta mostra que, se o modelo funcionar, há espaço para alguma dezena de unidades só com manga em Pernambuco. Ela **não prova** que alguém vai pagar. Quem decide entre 1% e 10% são as entrevistas da seção 9.
+- Com frutas complementares **sem a banana** (goiaba 127.271 t, acerola 35.458 t, maracujá 21.777 t, mamão 10.146 t de produção familiar estimada em PE): base de 300.172 t; a 1%, 3% e 10%, **20, 60 e 200 câmaras** em PE. Com a banana (457.732 t) a base iria a 757.904 t, mas a banana viaja sem frio e está fora até haver ensaio: não somo.
+- **Como ler:** se o modelo funcionar, há espaço para algumas unidades a algumas dezenas em Pernambuco. A conta **não prova** que alguém vai pagar.
 
 ---
 
@@ -352,7 +385,15 @@ Método: (manga da agricultura familiar) × (fatia que passaria por câmara comu
 | **Ecozen Ecofrost** (Índia) | Três modelos: **venda** a produtores médios e grandes; **aluguel mensal** do equipamento; **pagamento por uso**, por caixa, direto ou via cooperativa | Venda: 5 a 15 lakh de rupias conforme o tamanho; uso: 1 a 2 rupias por quilo | Fontes de 2018 a 2022. Não achei tabela atual nem preço por caixa por dia | [F13] (busca; o site não abriu) |
 | **Oorja** (Índia, Bihar) | Por caixa por dia, sem o produtor comprar nada | não encontrado | | [F13] |
 
-Conversão para reais: não fiz. O câmbio da naira mudou muito desde essas reportagens e eu não tenho cotação com fonte. Em ordem de grandeza, as referências ficam entre **alguns centavos e cerca de 15 centavos de real por quilo por dia** [SUPOSTO]. Use como faixa, não como preço.
+**Conversão para reais** [CALCULADO, câmbio com fonte e data]:
+- Naira: cerca de ₦ 1.335 por dólar em 7/10/2026 (o Banco Mundial cita ₦ 1.425 em 9/3/2026 e valorização de cerca de 6,5% até 7/10) [F40]. Dólar: R$ 5,65 em 13/11/2026 [F40].
+- ColdHubs, 200 nairas por caixa de 20 kg por dia: 200 ÷ 1.335 = US$ 0,15 × 5,65 = **R$ 0,85 por caixa por dia = R$ 0,042 por kg por dia**. Com o preço antigo (100 nairas), metade disso.
+- Ecozen, 1 a 2 rupias por kg (por quilo, não por dia): rupia a 94,24 por dólar em 13/11/2026 [F40]; 1 ÷ 94,24 × 5,65 = **R$ 0,06 a R$ 0,12 por kg**.
+- Índia (estudo de Rourkela): os feirantes que pagavam davam US$ 0,03 a US$ 0,10 por dia [F14]; a unidade (por feirante ou por caixa) não está clara no trecho.
+
+**Referência brasileira: não encontrei** tarifa pública de câmara fria por palete ou por caixa em Petrolina, Juazeiro ou Recife, nem tabela da Conab para armazenagem frigorificada. Pedir orçamento a uma câmara de terceiros ou packing house do Vale é pergunta de campo (seção 9.2).
+
+**Taxa adotada como referência neste documento: R$ 0,20 por quilo movimentado** (≈ R$ 0,04 por kg por dia × 5 dias, o preço do ColdHubs convertido) [SUPOSTO]. A taxa de R$ 0,06 por kg por dia das versões anteriores foi escolha minha, sem base: fica 1,4 vez acima do ColdHubs e de 2,5 a 5 vezes acima do Ecozen.
 
 ### 5.2 Opções de cobrança para este projeto
 
@@ -387,73 +428,93 @@ Conversão para reais: não fiz. O câmbio da naira mudou muito desde essas repo
 
 ---
 
-## 6. Conta simples de viabilidade (só manga, 12 °C, 5 t)
+## 6. Conta simples de viabilidade (manga principal, 12 °C, 5 t)
 
-Só o lado da receita. O custo do protótipo (aqui chamado **X**) ainda não está fechado.
+Só o lado da receita. O custo do protótipo (aqui chamado **X**) ainda não está fechado. Frutas complementares ficam fora da receita até haver calendário e preço (seção 2.3).
 
-### 6.1 Hipóteses (todas [SUPOSTO]; trocar pelas do campo)
+### 6.1 Fórmula e cenários
 
-| Hipótese | Pessimista | Médio | Otimista |
-|---|---|---|---|
-| O que entra | Só manga, só no pico | Só manga, agosto a março | Manga + frutas complementares, ano quase todo |
-| Capacidade útil | 5 t | 5 t | 5 t |
-| Ocupação média nos dias de operação | 20% | 45% | 70% |
-| Dias de operação por ano | 150 | 240 | 330 |
-| Taxa por quilo por dia | R$ 0,03 | R$ 0,06 | R$ 0,10 |
-| Equivale a, por caixa de 20 kg por dia | R$ 0,60 | R$ 1,20 | R$ 2,00 |
-| Permanência média da fruta | 6 dias | 5 dias | 4 dias |
+**Receita por ano = toneladas movimentadas × 1.000 × taxa por quilo movimentado.**
+(Taxa por quilo movimentado = taxa por quilo por dia × dias de permanência.)
 
-### 6.2 Receita [CALCULADO]
+| Cenário | Toneladas por ano | De onde vem a tonelagem | Taxa por kg movimentado | Receita por ano [CALCULADO] |
+|---|---|---|---|---|
+| Pessimista | 25 t | Só manga, só no pico, pouco uso (versão anterior) | R$ 0,20 | 25.000 × 0,20 = **R$ 5.000** |
+| Metade do teto de 1 prefeitura | 40 t | Prefeitura compra metade do teto legal | R$ 0,20 | **R$ 8.000** |
+| **Referência: 1 comprador no teto** | **79 t** | Teto da merenda de 10 famílias em 1 prefeitura (seção 4.2): é o único comprador quantificado | **R$ 0,20** (≈ ColdHubs convertido, seção 5.1) | **79.000 × 0,20 = R$ 15.800** |
+| Referência com taxa alta | 79 t | idem | R$ 0,30 (R$ 0,06/kg·dia × 5 dias; escolha minha anterior, sem base) | R$ 23.700 |
+| Médio: mais de um comprador | 108 t | Calendário de manga acordado com a logística (seção 2.4) | R$ 0,20 | R$ 21.600 |
+| Médio com taxa alta (versão anterior) | 108 t | idem | R$ 0,30 | R$ 32.400 |
+| **Teto teórico, não cenário** | 289 t | 70% de ocupação, 330 dias, 4 dias de permanência, frutas complementares sem calendário nem preço | R$ 0,40 | R$ 115.500 (a R$ 0,20: R$ 57.800) |
 
-Receita anual = capacidade (kg) × ocupação × dias × taxa.
+O teto teórico empilha as três hipóteses favoráveis (mais ocupação, mais dias, taxa mais alta), quando taxa alta tende a reduzir o uso. Fica na tabela só para mostrar o limite físico; **não usar para decidir**.
 
-| | Pessimista | Médio | Otimista |
-|---|---|---|---|
-| Conta | 5.000 × 0,20 × 150 × 0,03 | 5.000 × 0,45 × 240 × 0,06 | 5.000 × 0,70 × 330 × 0,10 |
-| **Receita por ano** | **R$ 4.500** | **R$ 32.400** | **R$ 115.500** |
-| Receita por mês (média dos 12 meses) | R$ 375 | R$ 2.700 | R$ 9.625 |
-| Receita por mês em operação | R$ 900 (5 meses) | R$ 4.050 (8 meses) | R$ 10.500 (11 meses) |
-| Estoque médio | 1,0 t | 2,25 t | 3,5 t |
-| Fruta que passa por dia (estoque ÷ permanência) | 0,17 t | 0,45 t | 0,88 t |
-| Fruta que passa por ano | 25 t | 108 t | 289 t |
-| Taxa total por quilo (taxa × permanência) | R$ 0,18 | R$ 0,30 | R$ 0,40 |
+**Sensibilidade, uma variável por vez**, a partir do médio da versão anterior (5 t × 45% × 240 dias × R$ 0,06/kg·dia = R$ 32.400) [CALCULADO]:
 
-**Teste de realidade da taxa:** no cenário médio o produtor paga R$ 0,30 por quilo. Manga na roça vale R$ 1,20/kg [F17]: a taxa come 0,30 ÷ 1,20 = **25% do valor da fruta**. Só se paga se a venda depois do frio render bem mais que R$ 1,50/kg. Com o canal de merenda (referência de R$ 5,06/kg [F18]) rende; vendendo ao mesmo comprador da roça, não [CALCULADO].
+| Variável que muda | Valor baixo → receita | Valor alto → receita |
+|---|---|---|
+| Ocupação (45%) | 20% → R$ 14.400 | 70% → R$ 50.400 |
+| Taxa por kg por dia (R$ 0,06) | R$ 0,03 → R$ 16.200 | R$ 0,10 → R$ 54.000 |
+| Dias de operação (240) | 150 → R$ 20.250 | 330 → R$ 44.550 |
 
-**Limite físico:** com 5 t e permanência de 5 dias, a câmara gira 5 ÷ 5 = 1 t por dia, igual à entrada máxima da premissa. Se a manga ficar 2 semanas (o que 12 °C permite), o giro cai para 5 ÷ 14 = 0,36 t por dia [CALCULADO]. **Guardar por mais tempo e receber 1 t por dia não cabem juntos.**
+**Teste de realidade da taxa de referência** (R$ 0,20/kg) [CALCULADO]: é 17% da manga na roça em novembro (R$ 1,20/kg), 7% em abril (R$ 2,79/kg) e 4% em junho (R$ 4,94/kg) [F17]. No pico da safra, quando a câmara mais trabalha, a taxa pesa mais.
+
+**Escala:** 79 t por ano são a produção de cerca de 4 estabelecimentos familiares de Petrolina pelo Censo (79 ÷ 21) ou 1,2 lote pela conta da logística (79 ÷ 64) [CALCULADO]. Com 10 famílias, cerca de 8 t por família por ano: cada uma separa uma parte pequena da colheita.
+
+**Limite físico:** com 5 t e 5 dias de permanência a câmara gira 1 t por dia; se a manga ficar 14 dias, 0,36 t por dia [CALCULADO]. O cenário de referência usa 0,40 t/dia nos dias letivos: cabe com folga.
+
+### 6.2 Custo de operação, aberto
+
+| Item | R$ por ano | Base |
+|---|---|---|
+| Ajuda de custo para quem opera (pessoa da associação que já está no local) | 6.000 (R$ 500 por mês) | [SUPOSTO] |
+| Produtos de limpeza e sanitização | 600 | [SUPOSTO] |
+| Reposição de caixas (cerca de 25 de 250 por ano) | preço não encontrado | — |
+| Visitas de manutenção do frio (frigorista) | preço não encontrado | — |
+| Internet Starlink (carga de 24 h da premissa) | preço não encontrado | — |
+| Seguro do equipamento | depende de X | — |
+| Troca da bateria de apoio dentro dos 10 anos (D4) | depende do projeto elétrico | — |
+| Reserva para fruta perdida em falha e para inadimplência | 5% da receita [SUPOSTO] (R$ 790 no cenário de referência) | — |
+| **Soma do que tem valor** | **cerca de R$ 7.400** | [CALCULADO sobre SUPOSTO] |
+| **Hipótese usada nas contas** | **R$ 12.000** (os R$ 7.400 mais cerca de R$ 4.600 para os itens sem preço) | [SUPOSTO] |
+| Alternativa: operador dedicado | **R$ 36.000**: salário médio de operador de câmara fria em Petrolina, R$ 1.777 por mês [F41], × 13,33 (13º e férias) = R$ 23.700, mais cerca de 50% de encargos [SUPOSTO] | [F41] + [SUPOSTO] |
+
+**Ressalva da logística, que eu registro:** abrir das 7 h às 14 h todos os dias com uma pessoa sem salário certo é risco de porta fechada (doc 09). A hipótese de R$ 12 mil supõe que essa pessoa existe e aceita; se não existir, vale a de R$ 36 mil.
 
 ### 6.3 Ponto de equilíbrio em função do custo X
 
-Custo anual = parcela do investimento + custo de operação.
+Parcela anual = X × fator. Em 10 anos: **sem juros 0,1000** (é o caso do protótipo pago com dinheiro do dono, D5); a 2% ao ano (Pronaf, armazenagem [F8]) 0,02 ÷ (1 – 1,02⁻¹⁰) = **0,1113**; a 7,5% ao ano (Pronaf "demais investimentos" e faixa do FNE [F8][F25]) 0,075 ÷ (1 – 1,075⁻¹⁰) = **0,1457** [CALCULADO]. Sem CNPJ (D5), o crédito só vale para quando uma associação for a compradora.
 
-- Parcela anual = X × fator. Em 10 anos: a 2% ao ano (Pronaf, armazenagem [F8]) o fator é 0,02 ÷ (1 – 1,02⁻¹⁰) = **0,1113**; a 7,5% ao ano (Pronaf "demais investimentos" e faixa do FNE [F8][F25]) é 0,075 ÷ (1 – 1,075⁻¹⁰) = **0,1457** [CALCULADO]. Sem juros, X ÷ 10.
-- Custo de operação por ano, duas hipóteses [SUPOSTO]: **R$ 12.000** (sem operador dedicado: manutenção, limpeza, internet, caixas; quem opera é alguém da associação que já está lá) ou **R$ 36.000** (com uma pessoa paga só para isso).
-- O protótipo, sem CNPJ (decisão D5), provavelmente não acessa essas linhas em nome do dono; os juros servem para comparar e para o dia em que uma associação for a compradora [SUPOSTO].
+**Receita anual necessária para empatar** = X × fator + operação [CALCULADO]:
 
-**Receita anual necessária para empatar** [CALCULADO]:
+| Custo X | Sem juros, op. R$ 12 mil | 2%, op. R$ 12 mil | 7,5%, op. R$ 12 mil | Sem juros, op. R$ 36 mil | 2%, op. R$ 36 mil | 7,5%, op. R$ 36 mil |
+|---|---|---|---|---|---|---|
+| R$ 50.000 | R$ 17.000 | R$ 17.566 | R$ 19.284 | R$ 41.000 | R$ 41.566 | R$ 43.284 |
+| R$ 100.000 | R$ 22.000 | R$ 23.133 | R$ 26.569 | R$ 46.000 | R$ 47.133 | R$ 50.569 |
+| R$ 200.000 | R$ 32.000 | R$ 34.265 | R$ 41.137 | R$ 56.000 | R$ 58.265 | R$ 65.137 |
+| R$ 400.000 | R$ 52.000 | R$ 56.531 | R$ 70.274 | R$ 76.000 | R$ 80.531 | R$ 94.274 |
 
-| Custo X | 2% a.a., operação R$ 12 mil | 2% a.a., operação R$ 36 mil | 7,5% a.a., operação R$ 12 mil | 7,5% a.a., operação R$ 36 mil |
+**Maior custo X que cada cenário paga** = (receita – operação) ÷ fator [CALCULADO]:
+
+| Cenário | Sem juros, op. R$ 12 mil | 2%, op. R$ 12 mil | 7,5%, op. R$ 12 mil | Qualquer juro, op. R$ 36 mil |
 |---|---|---|---|---|
-| R$ 150.000 | R$ 28.699 | R$ 52.699 | R$ 33.853 | R$ 57.853 |
-| R$ 300.000 | R$ 45.398 | R$ 69.398 | R$ 55.706 | R$ 79.706 |
-| R$ 500.000 | R$ 67.663 | R$ 91.663 | R$ 84.843 | R$ 108.843 |
-| R$ 800.000 | R$ 101.061 | R$ 125.061 | R$ 128.549 | R$ 152.549 |
+| Pessimista (R$ 5.000) | não paga a operação | não paga | não paga | não paga |
+| Metade do teto (R$ 8.000) | não paga a operação | não paga | não paga | não paga |
+| **Referência (R$ 15.800)** | **R$ 38 mil** | R$ 34 mil | R$ 26 mil | não paga |
+| Referência com taxa alta (R$ 23.700) | R$ 117 mil | R$ 105 mil | R$ 80 mil | não paga |
+| Médio (R$ 21.600) | R$ 96 mil | R$ 86 mil | R$ 66 mil | não paga |
+| Médio com taxa alta (R$ 32.400) | R$ 204 mil | R$ 183 mil | R$ 140 mil | não paga |
+| Teto teórico (R$ 115.500) — **não usar para decidir** | R$ 1.035 mil | R$ 930 mil | R$ 710 mil | R$ 546 a 795 mil |
 
-**Maior custo X que cada cenário de receita paga** = (receita – operação) ÷ fator [CALCULADO]:
-
-| Cenário (5 t) | 2% a.a., operação R$ 12 mil | 2% a.a., operação R$ 36 mil | 7,5% a.a., operação R$ 12 mil | 7,5% a.a., operação R$ 36 mil |
-|---|---|---|---|---|
-| Pessimista (R$ 4.500) | não paga nem a operação | não paga | não paga | não paga |
-| Médio (R$ 32.400) | **R$ 183 mil** | não paga a operação | R$ 140 mil | não paga |
-| Otimista (R$ 115.500) | **R$ 930 mil** | R$ 714 mil | R$ 710 mil | R$ 546 mil |
+Se a operação custar só a ajuda de custo e a limpeza (R$ 6 mil por ano), a referência paga até R$ 98 mil sem juros [CALCULADO].
 
 ### 6.4 O que a conta diz
 
-1. **Só com taxa de armazenagem e só com manga, o negócio fecha apenas se o equipamento custar menos de cerca de R$ 180 mil e não houver operador pago** (cenário médio). O cenário otimista exige completar a ocupação com outras frutas.
-2. Não tenho o custo do protótipo. Se X ficar acima de R$ 180 mil, **a taxa de armazenagem de manga sozinha não paga o equipamento** no cenário médio.
-3. O valor que a câmara gera está no ganho de quem vende melhor. No cenário médio passam 108 t por ano. Se o grupo ganha R$ 1,00/kg a mais por vender no canal melhor, são R$ 108.000 por ano de ganho para as famílias, contra R$ 32.400 de taxa [CALCULADO]. O modelo que faz sentido é **a câmara como bem de uma associação ou cooperativa, sustentada pela margem da venda**, não um aluguel avulso de espaço.
-4. As alavancas, em ordem de peso: **ocupação** (ter comprador, e ter outra fruta de abril a julho), **quem opera** (não ter folha de pagamento própria) e **custo X**.
-5. Para o protótipo (um só, sem CNPJ), a pergunta certa não é "dá lucro?" e sim **"quanto de ocupação e de ganho por quilo eu consigo medir numa safra?"**. Esses dois números, medidos, substituem as hipóteses da seção 6.1.
+1. **No cenário de referência a taxa de armazenagem paga um equipamento de até cerca de R$ 38 mil** (sem juros, 10 anos, operação de R$ 12 mil). Com operador pago, não paga nenhum. Mesmo no médio com a taxa alta, o teto é de cerca de R$ 200 mil.
+2. Um protótipo solar fora da rede com o equipamento do doc 01 dificilmente sai por menos que isso [SUPOSTO; o custo é de outra disciplina]. **A taxa sozinha não paga o protótipo.**
+3. O valor que a câmara pode gerar está no ganho de quem vende melhor, e esse ganho **não está medido** (seção 4.2). Exemplo, só para mostrar a ordem: se as famílias ganhassem R$ 1,00/kg a mais nas 79 t, seriam R$ 79.000 por ano para elas, contra R$ 15.800 de taxa [CALCULADO sobre SUPOSTO]. Se o ganho for R$ 0,12/kg (o mínimo da comparação justa), seriam R$ 9.500, menos que a taxa.
+4. O modelo que faz sentido, se o ganho existir, é **a câmara como bem de uma associação ou cooperativa, sustentada pela margem da venda**, não aluguel avulso.
+5. Para o protótipo (um, sem CNPJ), a pergunta certa é **"quanto de ocupação e de ganho por quilo eu consigo medir numa safra?"**. Esses dois números, medidos, substituem as hipóteses desta seção.
 
 ---
 
