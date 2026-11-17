@@ -1,0 +1,143 @@
+=== 1. INVOLUCRO: conteiner 20 pes isolado ===
+A_ext=73.6 m2  A_int=59.9 m2  A_media=66.4 m2  V_int=28.2 m3
+  U=0.26 W/m2K (novo/otimista) -> UA=17.3 W/K
+  U=0.35 W/m2K (usado realista) -> UA=23.2 W/K
+  U=0.45 W/m2K (usado ruim) -> UA=29.9 W/K
+UA adotado pelo revisor = 23.2 W/K (reefer 20' novo certifica ~22-27 W/K; usado piora)
+
+=== 2. CARGA DIARIA - MANGA (camara 10 C) ===
+Transmissao: 13.5 kWh/dia (perfil 26-40 C)  | 16.7 kWh/dia (40 C constante, conservador)
+Calor de campo 1 t 30->10 C: 21.3 kWh/dia (fruta 20.6 + caixas)
+Respiracao: 45 mW/kg frio -> 315 W -> 7.6 kWh/dia
+Infiltracao: h_ext=77.5 h_int=28.0 kJ/kg, 12 trocas/dia -> 5.4 kWh/dia; agua condensada 2.9 kg/dia
+Ventiladores 4.8  pessoas+luz 0.9  bomba 1.9 kWh/dia
+TOTAL sem folga: 55.4 kWh/dia (perfil) | 58.6 (40 C constante); com folga 10%: 60.9 | 64.4
+PICO: campo 3.55 kW (tau 6.0 h) + transm 0.77 + resp 0.32 + vent/bomba 0.28 + infiltr 0.67 = 5.58 kW
+
+=== 2. CARGA DIARIA - CAJU (camara 5 C) ===
+Transmissao: 16.3 kWh/dia (perfil 26-40 C)  | 19.5 kWh/dia (40 C constante, conservador)
+Calor de campo 1 t 30->5 C: 26.6 kWh/dia (fruta 25.7 + caixas)
+Respiracao: 60 mW/kg frio -> 420 W -> 10.1 kWh/dia
+Infiltracao: h_ext=77.5 h_int=17.7 kJ/kg, 12 trocas/dia -> 6.5 kWh/dia; agua condensada 3.7 kg/dia
+Ventiladores 4.8  pessoas+luz 0.9  bomba 1.9 kWh/dia
+TOTAL sem folga: 67.1 kWh/dia (perfil) | 70.3 (40 C constante); com folga 10%: 73.8 | 77.3
+PICO: campo 4.44 kW (tau 6.0 h) + transm 0.88 + resp 0.42 + vent/bomba 0.28 + infiltr 0.81 = 6.83 kW
+
+=== 3. SOLAR E FRIO PRODUZIDO ===
+COP (compressor) a Tcond 52 C: camara DX(0 C)=2.89  camara via glicol(-5 C)=2.59  gelo(-10 C)=2.21
+COP de sistema (x0.9 auxiliares): 2.60 / 2.33 / 1.99
+  media anual Petrolina ~5,6: 5.0 kWp x 5.6 x PR 0.70 = 19.7 kWh el -> frio ~42.5 kWh (50% modo camara, 50% modo gelo)
+  pior mes (jun) ~4,7: 5.0 kWp x 4.7 x PR 0.70 = 16.5 kWh el -> frio ~35.7 kWh (50% modo camara, 50% modo gelo)
+  dia ruim ~2,5: 5.0 kWp x 2.5 x PR 0.70 = 8.8 kWh el -> frio ~19.0 kWh (50% modo camara, 50% modo gelo)
+  kWp necessario manga, HSP 5.6: 60.9/( 5.6 x 0.70 x 2.16) = 7.2 kWp
+  kWp necessario manga, HSP 4.7: 60.9/( 4.7 x 0.70 x 2.16) = 8.5 kWp
+  kWp necessario caju, HSP 5.6: 73.8/( 5.6 x 0.70 x 2.16) = 8.7 kWp
+  kWp necessario caju, HSP 4.7: 73.8/( 4.7 x 0.70 x 2.16) = 10.3 kWp
+
+=== 4. GELO ===
+MANGA: noite 14 h base 14.0 kWh (transm 6.8); fruta de manha 18.1; fruta 17 h 33.3 kWh
+   sem fruta nova: gelo liquido 151 kg -> a construir (util 80%) 189 kg
+   fruta de manha: gelo liquido 195 kg -> a construir (util 80%) 243 kg
+   fruta 17 h: gelo liquido 359 kg -> a construir (util 80%) 448 kg
+   1 dia inteiro sem sol e SEM receber fruta: 31.4 kWh -> 423 kg; recebendo 1 t: 55.4 kWh -> 746 kg
+   200 kg de gelo = 18.6 kWh brutos, 14.8 uteis -> cobre 14.8 h de noite sem fruta nova
+CAJU: noite 14 h base 17.1 kWh (transm 8.4); fruta de manha 22.2; fruta 17 h 41.2 kWh
+   sem fruta nova: gelo liquido 185 kg -> a construir (util 80%) 231 kg
+   fruta de manha: gelo liquido 239 kg -> a construir (util 80%) 299 kg
+   fruta 17 h: gelo liquido 444 kg -> a construir (util 80%) 555 kg
+   1 dia inteiro sem sol e SEM receber fruta: 37.2 kWh -> 502 kg; recebendo 1 t: 67.1 kWh -> 904 kg
+   200 kg de gelo = 18.6 kWh brutos, 14.8 uteis -> cobre 12.1 h de noite sem fruta nova
+
+=== 5. BANCO DE GELO: executabilidade (conta de ordem de grandeza) ===
+  200 kg de gelo: 3.24 kg/m de tubo -> 62 m de tubo; agua total ~333 L (60% congelado)
+  400 kg de gelo: 3.24 kg/m de tubo -> 123 m de tubo; agua total ~667 L (60% congelado)
+  600 kg de gelo: 3.24 kg/m de tubo -> 185 m de tubo; agua total ~1000 L (60% congelado)
+  resistencia do gelo cheio (25 mm): 0.091 m.K/W -> com DT 8 K: 88 W/m no fim da carga (media ~2x)
+
+=== 6. LIMITE DE CARGA DE INFLAMAVEL (A3) no conteiner fechado ===
+ R290 vazio: V=28.2 m3 | LFL inteiro 1072 g | 20% LFL 214 g | 25% LFL 268 g
+ R290 com 5 t de fruta+caixas (~-9 m3): V=19.2 m3 | LFL inteiro 730 g | 20% LFL 146 g | 25% LFL 182 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=0.6 (piso) -> 89 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=1.8 (parede) -> 267 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=2.2 (teto) -> 326 g
+   IEC 60335-2-89:2019 teto por circuito: 13*LFL = 494 g (~500 g), em aparelho de fabrica ensaiado; 150 g sem restricao de sala
+ R600a vazio: V=28.2 m3 | LFL inteiro 1213 g | 20% LFL 243 g | 25% LFL 303 g
+ R600a com 5 t de fruta+caixas (~-9 m3): V=19.2 m3 | LFL inteiro 826 g | 20% LFL 165 g | 25% LFL 206 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=0.6 (piso) -> 104 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=1.8 (parede) -> 311 g
+   EN378/ISO5149 m_max=2,5*LFL^1,25*h0*sqrt(A): h0=2.2 (teto) -> 380 g
+   IEC 60335-2-89:2019 teto por circuito: 13*LFL = 559 g (~500 g), em aparelho de fabrica ensaiado; 150 g sem restricao de sala
+
+
+######## PARTE B: conferencias sobre os numeros do autor ########
+
+=== B1. Minha conta refeita com as entradas do autor (UA 33 W/K, respiracao 77 W/t manga / 60 caju) ===
+
+=== 2. CARGA DIARIA - MANGA com UA=33 e 77 mW/kg (entradas do autor) (camara 10 C) ===
+Transmissao: 19.2 kWh/dia (perfil 26-40 C)  | 23.8 kWh/dia (40 C constante, conservador)
+Calor de campo 1 t 30->10 C: 21.3 kWh/dia (fruta 20.6 + caixas)
+Respiracao: 77 mW/kg frio -> 539 W -> 12.9 kWh/dia
+Infiltracao: h_ext=77.5 h_int=28.0 kJ/kg, 12 trocas/dia -> 5.4 kWh/dia; agua condensada 2.9 kg/dia
+Ventiladores 4.8  pessoas+luz 0.9  bomba 1.9 kWh/dia
+TOTAL sem folga: 66.4 kWh/dia (perfil) | 71.0 (40 C constante); com folga 10%: 73.0 | 78.1
+PICO: campo 3.55 kW (tau 6.0 h) + transm 1.09 + resp 0.54 + vent/bomba 0.28 + infiltr 0.67 = 6.13 kW
+
+=== 2. CARGA DIARIA - CAJU com UA=33 (entradas do autor) (camara 5 C) ===
+Transmissao: 23.2 kWh/dia (perfil 26-40 C)  | 27.7 kWh/dia (40 C constante, conservador)
+Calor de campo 1 t 30->5 C: 26.6 kWh/dia (fruta 25.7 + caixas)
+Respiracao: 60 mW/kg frio -> 420 W -> 10.1 kWh/dia
+Infiltracao: h_ext=77.5 h_int=17.7 kJ/kg, 12 trocas/dia -> 6.5 kWh/dia; agua condensada 3.7 kg/dia
+Ventiladores 4.8  pessoas+luz 0.9  bomba 1.9 kWh/dia
+TOTAL sem folga: 74.0 kWh/dia (perfil) | 78.5 (40 C constante); com folga 10%: 81.4 | 86.4
+PICO: campo 4.44 kW (tau 6.0 h) + transm 1.25 + resp 0.42 + vent/bomba 0.28 + infiltr 0.81 = 7.20 kW
+-> manga: 73.0 kWh/dia com folga (autor 69,8); caju: 81.4 (autor 79,5)
+   kWp p/ manga (minha producao especifica 8.51 kWh frio/kWp.dia): 8.6 kWp ; com a carga do autor 69.8: 8.2 kWp
+   kWp p/ caju (minha producao especifica 8.51 kWh frio/kWp.dia): 9.6 kWp ; com a carga do autor 79.5: 9.3 kWp
+MANGA UA=33: noite 14 h base 20.0 kWh (transm 9.7); fruta de manha 24.1; fruta 17 h 39.3 kWh
+   sem fruta nova: gelo liquido 216 kg -> a construir (util 80%) 270 kg
+   fruta de manha: gelo liquido 259 kg -> a construir (util 80%) 324 kg
+   fruta 17 h: gelo liquido 423 kg -> a construir (util 80%) 529 kg
+   1 dia inteiro sem sol e SEM receber fruta: 42.4 kWh -> 572 kg; recebendo 1 t: 66.4 kWh -> 895 kg
+   200 kg de gelo = 18.6 kWh brutos, 14.8 uteis -> cobre 10.4 h de noite sem fruta nova
+CAJU UA=33: noite 14 h base 20.7 kWh (transm 12.0); fruta de manha 25.7; fruta 17 h 44.7 kWh
+   sem fruta nova: gelo liquido 223 kg -> a construir (util 80%) 279 kg
+   fruta de manha: gelo liquido 277 kg -> a construir (util 80%) 346 kg
+   fruta 17 h: gelo liquido 482 kg -> a construir (util 80%) 603 kg
+   1 dia inteiro sem sol e SEM receber fruta: 44.1 kWh -> 594 kg; recebendo 1 t: 74.0 kWh -> 996 kg
+   200 kg de gelo = 18.6 kWh brutos, 14.8 uteis -> cobre 10.1 h de noite sem fruta nova
+
+=== B2. Serpentina do tanque: potencia no fim da carga ===
+  Nu 4,36 (autor, fluxo constante): R=0.356 m.K/W | autor usa DT=4,5 K -> 13.5 kW | media aritmetica 4,0 K -> 12.0 kW | DTML(-6/-2 contra 0)=3.64 K -> 11.0 kW
+  Nu 3,66 (parede isotermica = gelo a 0 C): R=0.391 m.K/W | autor usa DT=4,5 K -> 12.3 kW | media aritmetica 4,0 K -> 11.0 kW | DTML(-6/-2 contra 0)=3.64 K -> 10.0 kW
+  gelo por metro (16->36 mm): 0.749 kg/m -> 800 kg = 1068 m ; 500 kg = 668 m (reducao 402 m, autor diz 670 m)
+  dilatacao: 800/917-800/1000 = 72 L (autor 79 L) -> 3.8 cm em 1,9 m2
+  passes de tubo na secao: 1070/1,9 = 563 passes; grade 40 mm em 1,0x1,0 m = 625 posicoes; curvas de 180 graus: ~541; raio de curva exigido 20 mm x raio minimo PEX16 ~5xD = 80 mm
+  empuxo do gelo preso ao feixe: 72 kgf para cima (precisa de ancoragem)
+
+=== B3. Hidraulica: P2 e P1 dividem a serpentina do tanque de dia ===
+  vazao na serpentina 0.9 m3/h -> perda (laminar, proporcional) 9 kPa = 0.9 m de coluna de glicol
+  vazao na serpentina 3.2 m3/h -> perda (laminar, proporcional) 32 kPa = 3.1 m de coluna de glicol
+  vazao na serpentina 5.6 m3/h -> perda (laminar, proporcional) 56 kPa = 5.5 m de coluna de glicol
+  P2 especificada com 4 m: so a serpentina do tanque, de dia (5,6 m3/h), ja pede ~5,4 m, fora serpentinas de ar, VM1 (15 kPa) e tubos
+
+=== B4. Descarga noturna no caso de dimensionamento (tudo a 5 C) ===
+  DTML ar 5->3,5 C x glicol +1->+3 C = 2.24 K -> caju 3.5 kW + manga 1.4 kW = 4.8 kW (UA de vazao cheia de ar)
+  carga do autor 17h-06h: 53.3 kWh; nao atendido na hora com 4.8 kW: 5.6 kWh -> 5 t x 3,77 kJ/kgK = 5,2 kWh/K -> ar/fruta sobem ~1.1 K se fosse so inercia
+  serpentina 5.0 kW com ar caindo 2.5 K: 1.59 m3/s = 5726 m3/h; com 40 Pa e rendimento 35%: 182 W eletricos
+  serpentina 4.0 kW com ar caindo 3.0 K: 1.06 m3/s = 3817 m3/h; com 40 Pa e rendimento 35%: 121 W eletricos
+  autor: 90 W + 60 W de dia, 50 W a noite (40% de rotacao = ~40% de vazao => capacidade e UA caem junto)
+
+=== B5. CO2 no conteiner fechado a noite (seguranca de quem abre a porta de manha) ===
+  manga 10 C, 14 ml/kg.h (UC Davis): 70 L/h; 14 h fechado, ar livre 10 m3 -> 9.8 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+  manga 10 C, 14 ml/kg.h (UC Davis): 70 L/h; 14 h fechado, ar livre 19 m3 -> 5.2 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+  manga 10 C, 14 ml/kg.h (UC Davis): 70 L/h; 14 h fechado, ar livre 23 m3 -> 4.3 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+    ar novo p/ segurar 0,5 %: 14 m3/h ; p/ 1 %: 7 m3/h
+  fruta a 5 C, ~10 ml/kg.h (20 mg, suposicao do autor p/ caju): 54 L/h; 14 h fechado, ar livre 10 m3 -> 7.5 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+  fruta a 5 C, ~10 ml/kg.h (20 mg, suposicao do autor p/ caju): 54 L/h; 14 h fechado, ar livre 19 m3 -> 3.9 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+  fruta a 5 C, ~10 ml/kg.h (20 mg, suposicao do autor p/ caju): 54 L/h; 14 h fechado, ar livre 23 m3 -> 3.3 % CO2 (limite 8 h 0,5 %; perigo imediato 4 %; limite da manga 5 %)
+    ar novo p/ segurar 0,5 %: 11 m3/h ; p/ 1 %: 5 m3/h
+  carga termica de 10 m3/h de ar novo (33 C/40% medio -> camara ~25 kJ/kg): ~3.1 kWh/dia
+
+=== B6. Pressostato de baixa x congelamento do glicol ===
+  PSL do autor: 2,0 bar (evaporacao -25 C). Glicol 35% congela perto de -16 C -> o trocador de placas congela ANTES de o PSL atuar.
+  R290 na evaporacao 3,45 bar abs > pressao do circuito de glicol (~1,5-2,5 bar abs): placa rompida => propano entra no glicol e segue para dentro da camara.
