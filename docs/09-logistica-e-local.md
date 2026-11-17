@@ -34,7 +34,7 @@ Consequência: produção por município agora é dado conferido. Clima oficial,
 
 1. **Recomendação para o protótipo (só manga): zona rural de Petrolina-PE, em um núcleo do Projeto Senador Nilo Coelho, em terreno de associação ou cooperativa de colonos.** Nota 86,4 de 100; o segundo colocado tem 69,8. A conferência no IBGE reforçou a escolha.
 2. **Petrolina tem pequeno produtor de manga**, e muito: cerca de 1.950 lotes familiares, que vendem na roça pelo preço do comprador. O comprador está ao lado (Mercado do Produtor de Juazeiro, 2º do país).
-3. **Escala e uso esperado (acordado com o doc 10):** giro esperado de **108 t de manga por ano**, média de 0,45 t/dia em 240 dias (agosto a março); o 1 t/dia é teto, garantido por cota. Serve a um **grupo de cerca de 10 famílias** (faixa de 5 a 15), cada uma separando parte da colheita. De abril a julho quase não há manga para guardar; por isso o dono autorizou frutas complementares (D6). Com elas a estimativa sobe para cerca de **160 t por ano** [SUPOSTO]. Em Petrolina há banana, goiaba e acerola em volume; **não há mamão** [IBGE 2025].
+3. **Escala e uso esperado (acordado com o doc 10):** giro esperado de **108 t de manga por ano**, média de 0,45 t/dia em 240 dias (agosto a março); o 1 t/dia é teto, garantido por cota. Serve a um **grupo de cerca de 10 famílias** (faixa de 5 a 15), cada uma separando parte da colheita. De abril a julho quase não há manga para guardar; por isso o dono autorizou frutas complementares (D6). Com elas o uso pode chegar a cerca de **160 t por ano**, mas isso supõe mais de um comprador; o **cenário-base, ancorado em um contrato de merenda, é de até 79 t/ano** de todas as frutas [CALCULADO sobre SUPOSTO]. Em Petrolina há goiaba, acerola e banana em volume; **não há mamão**; e a **banana sofre dano por frio abaixo de cerca de 13 °C**, então fica fora até um ensaio [IBGE 2025; revisor do doc 10].
 4. **Três perguntas eliminam o local, e só a visita responde:** já existe câmara fria com vaga? há quem opere e ceda terreno por escrito? o comprador paga mais por manga resfriada? Nenhuma foi verificada.
 5. **Recepção das 7h às 14h (D2) — com um alerta novo.** Um capítulo da Embrapa sobre colheita da manga diz que o horário mais conveniente para colher é **entre 10h e 15h**, quando escorre menos látex, e manda evitar o começo da manhã (seção 9, linha 4). Se o produtor seguir isso, boa parte da manga chega **depois das 14h** e dorme fora da câmara. É o ponto mais importante a medir na visita.
 6. **Sem CNPJ (D5),** quem vende, emite nota e assina com a merenda escolar é o produtor ou a associação, não o dono do equipamento. O dono cede o uso. A forma de cobrar pelo serviço sem empresa precisa de contador.
@@ -131,6 +131,8 @@ Quantos lotes familiares a câmara atende, em um ano:
 
 **O que limita de verdade é o pico, não o ano.** A manga irrigada é colhida por talhão, em poucas semanas. Se um lote colhe suas 64 t em 3 semanas [SUPOSTO — não achei fonte para a duração da colheita do pequeno]: 64 ÷ 21 = **3 t/dia, três vezes o que a câmara aceita**. Por isso a operação precisa de **cota diária por produtor** (seção 6) e a pergunta 3 da seção 8 ("em quantos dias o senhor colhe um talhão?") é a mais importante da visita.
 
+**Outra medida da família (Censo 2017):** em Petrolina, 734 estabelecimentos familiares colheram 15.646 t de manga, cerca de **21 t cada** (conta do revisor do doc 10, tabela 6955 do IBGE). É bem menos que as 64 t acima, porque inclui pomar pequeno e de sequeiro e é de 2017. Fico com 64 t para o colono irrigado e registro 21 t como limite inferior (divergência 6 do acordo).
+
 **Giro esperado (número do doc 10, adotado aqui):** os 250 t acima são o **teto**. O que se espera de fato, no cenário médio do analista de frutas e demanda, é **108 t por ano** (estoque médio de 2,25 t, permanência de 5 dias, 240 dias de operação) [SUPOSTO; doc 10, seção 6.2]; a faixa vai de 25 t (pessimista) a 289 t (otimista, só com outras frutas). Com 10 famílias: 108 ÷ 10 = cerca de **11 t por família por ano, um sexto das 64 t de um lote** [CALCULADO sobre SUPOSTO].
 
 Conclusão que continua de pé: no polo irrigado a câmara serve a um grupo pequeno que separa **parte** da fruta para vender melhor. Para comparar: Petrolina colhe 282.000 t/ano; 250 t são 0,09%.
@@ -155,13 +157,15 @@ Os níveis (alto, médio, muito baixo) são do doc 10. Os números por mês são
 | Complementares, entrada (t/dia) | 0 | 0,15 | 0,15 | 0,3 | 0,3 | 0,3 | 0,3 | 0,15 | 0,15 | 0 | 0 | 0 |
 | Total (t/dia) | 0,6 | 0,45 | 0,45 | 0,3 | 0,3 | 0,3 | 0,3 | 0,45 | 0,45 | 0,6 | 0,6 | 0,6 |
 | Estoque médio (t), 5 dias | 3,0 | 2,25 | 2,25 | 1,5 | 1,5 | 1,5 | 1,5 | 2,25 | 2,25 | 3,0 | 3,0 | 3,0 |
-| Quais complementares | — | banana | banana | banana, acerola, goiaba | idem | idem | idem | banana, acerola | banana, acerola | — | — | — |
+| Quais complementares | — | acerola, goiaba | acerola, goiaba | acerola, goiaba, maracujá | idem | idem | idem | acerola, goiaba | acerola, goiaba | — | — | — |
 
-Soma: manga 108 t + complementares (0,3 × 120 + 0,15 × 120 = 54 t) = **162 t por ano**, ocupação média de 45% nos 12 meses [CALCULADO sobre SUPOSTO]. Fica entre o cenário médio (108 t) e o otimista (289 t) do doc 10. Goiaba e maracujá só em giro rápido, porque a 12 °C duram menos (doc 10).
+Soma: manga 108 t + complementares (0,3 × 120 + 0,15 × 120 = 54 t) = **162 t por ano**, ocupação média de 45% nos 12 meses [CALCULADO sobre SUPOSTO]. **É teto de uso com mais de um comprador, não previsão.** Acerola, goiaba e maracujá só em giro rápido, porque a 12 °C ficam fora do ideal delas, e todas são "candidatas a testar": nenhuma tem vida útil a 12 °C com fonte, e fruta madura solta etileno que adianta a manga verde-madura (revisor do doc 10). **Banana fora** até ensaio: dano por frio abaixo de cerca de 13 °C.
+
+**Cenário-base (acordado):** um contrato de merenda escolar com teto de **79 t por ano** (10 famílias × R$ 40.000 ÷ R$ 5,06/kg), cerca de **0,40 t por dia letivo** em cerca de 200 dias, sem janeiro. Quanto a prefeitura compra de fato é a pergunta 1 da visita (seção 9).
 
 **De onde viriam, no raio de coleta do local recomendado** [IBGE, tabela 1613, Petrolina, 2025, conferida]: banana 41.600 t; goiaba 48.000 t; acerola 30.000 t; maracujá 1.980 t. **Mamão: não há produção registrada em Petrolina**; o mais próximo é Lagoa Grande (3.680 t, segundo o doc 10), a cerca de 55 km [SUPOSTO], fora do raio de 10 a 15 km. São culturas dos mesmos lotes irrigados do Nilo Coelho (o distrito cita goiaba entre as principais [FONTE 7]); **se o núcleo escolhido as tem, e em que meses, é pergunta de campo** (pergunta 20b).
 
-**Muda o horário de chegada?** Pouco, e para melhor: acerola e banana costumam ser colhidas cedo [SUPOSTO], então chegam dentro da janela de 7h às 14h. **Muda o grupo?** O tamanho não (cerca de 10 famílias); a composição pode mudar de abril a julho, se quem tem banana ou acerola não for quem tem manga. Ressalvas de logística que mantenho: banana viaja verde e sem frio, e boa parte da acerola vai para a indústria no mesmo dia — não há prova de que alguém pague para guardá-las.
+**Muda o horário de chegada?** Pouco, e para melhor: acerola e goiaba costumam ser colhidas cedo [SUPOSTO], então chegam dentro da janela de 7h às 14h. **Muda o grupo?** O tamanho não (cerca de 10 famílias); a composição pode mudar de abril a julho, se quem tem banana ou acerola não for quem tem manga. Ressalvas de logística que mantenho: banana viaja verde e sem frio, e boa parte da acerola vai para a indústria no mesmo dia — não há prova de que alguém pague para guardá-las.
 
 Consequência prática: **o protótipo precisa estar instalado antes de outubro** para ser testado no pico da manga.
 
@@ -442,8 +446,8 @@ Não abri as normas. A lista é do que **perguntar**. Tudo [VALIDAR COM PROFISSI
 | Horário provável de chegada | **Entre 9h e 16h.** Se o produtor colher entre 10h e 15h, como recomenda um capítulo da Embrapa [FONTE 80], a maior parte chega entre 11h e 16h, isto é, **parte depois do fechamento das 14h**. Caso a verificar pelo térmico: 1 t inteira entrando entre 13h e 14h | **[SUPOSTO]**, com apoio parcial de fonte |
 | Temperatura da fruta na chegada | **30 °C** (valor único de projeto). Sensibilidade a 35 °C: 1.000 kg × 3,77 kJ/kg·K × 5 K = 18.850 kJ = **5,2 kWh de frio a mais por dia** | [SUPOSTO] + [CALCULADO pelo revisor] |
 | Meses de uso | Manga: **agosto a março** (alto de outubro a janeiro). Abril a julho: só frutas complementares (D6), uso médio a baixo | [SUPOSTO; doc 10] |
-| Fruta por ano | **108 t de manga** (cenário médio do doc 10) + cerca de **54 t de complementares** = cerca de 162 t; faixa de 25 a 289 t | [SUPOSTO] |
-| Frutas complementares disponíveis em Petrolina | Banana, goiaba, acerola, maracujá. **Mamão não** | [IBGE 2025] |
+| Fruta por ano | **Base: até 79 t** (um contrato de merenda). Com mais de um comprador: 108 t de manga + cerca de 54 t de complementares = cerca de 162 t | [CALCULADO sobre SUPOSTO] |
+| Frutas complementares | Acerola, goiaba, maracujá (giro rápido), todas a testar. **Mamão não há em Petrolina. Banana fora até ensaio** (dano por frio abaixo de cerca de 13 °C) | [IBGE 2025]; revisor do doc 10 |
 | Entrada diária | Média de **0,45 t/dia**; pico de safra 0,6 t/dia; **teto de 1 t/dia** por cota. A logística recomenda manter 1 t/dia como entrada de projeto, porque a fruta chega em dias de colheita, não espalhada por igual | [SUPOSTO] |
 | Estoque médio | 2,25 t (3 t no pico) | [SUPOSTO; doc 10] |
 | Rede elétrica no local | Provável no núcleo; **não confirmada** no terreno | [SUPOSTO] |
@@ -690,9 +694,9 @@ O texto completo está em `docs/_trabalho/acordo-logistica-demanda.md` (acordado
 
 | Item | Número adotado | Dono do número |
 |---|---|---|
-| Fruta | Manga a 12 °C, uma zona, 5 t; complementares autorizadas (D6): banana, acerola, goiaba e maracujá existem em Petrolina; mamão não | Frutas e demanda (D1 e D6) |
+| Fruta | Manga a 12 °C, uma zona, 5 t; complementares (D6) a testar: acerola, goiaba, maracujá. Mamão não há em Petrolina; banana fora até ensaio | Frutas e demanda (D1 e D6), revisor do doc 10 |
 | Calendário de uso | Manga de agosto a março; complementares de fevereiro a setembro (seção 1.5) | Frutas e demanda |
-| Toneladas por ano | 108 t de manga + cerca de 54 t de complementares [SUPOSTO meu, a confirmar por ele] | Frutas e demanda |
+| Toneladas por ano | Base: até 79 t (merenda). Com mais de um comprador: 108 t de manga + cerca de 54 t de complementares | Frutas e demanda; base proposta pelo revisor |
 | Entrada diária | Média de 0,45 t/dia; teto de 1 t/dia | Frutas e demanda (média); logística (teto e cota) |
 | Permanência | 5 dias | Frutas e demanda |
 | Grupo | 10 famílias (5 a 15), com comprador fixo, via associação | Os dois |
