@@ -70,3 +70,12 @@ iniciais e DEVEM ser refeitos e corrigidos.
 - O orquestrador leva o conflito ao dono em linguagem simples e espera a decisão.
   A decisão fica registrada em `docs/07-revisao.md`.
 - Não é conflito: erro de conta ou de fonte que o autor reconhece e corrige.
+
+## Decisões do dono (mediação) — valem sobre qualquer texto anterior
+| Nº | Decisão | Efeito |
+|---|---|---|
+| D1 | Fruta do protótipo: SÓ MANGA. | Uma zona só, a 12 °C (dano por frio entre 8 e 10 °C). Sem divisória, sem zona a 5 °C. Capacidade-alvo volta a 5 t. Caju fica fora do protótipo (pode constar como estudo futuro). |
+| D2 | Recepção da fruta das 7h às 14h. | Dimensionar gelo e painéis para fruta quente entrando até as 14h. Não vale a regra "só até as 10h". |
+| D3 | Sem circuito de propano montado/soldado no local. | Restam: unidade selada de fábrica (com o gás que tiver) ou gás não inflamável (ex.: R513A) montado no local. O engenheiro compara as duas. |
+| D4 | Bateria de apoio no lugar de gerador; capacidade pelo que compensa. | Sem gerador no projeto. |
+| D5 | Um protótipo (não lote). CNPJ só no futuro, se der certo. | Compras do protótipo sem CNPJ: priorizar o que se compra no Brasil; importação formal própria fica fora por ora (só via importadora/revenda ou remessa de peça pequena). |
