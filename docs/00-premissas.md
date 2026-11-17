@@ -10,7 +10,13 @@ iniciais e DEVEM ser refeitos e corrigidos.
 - Cerca de 5 kWp de painéis acionando direto um compressor de velocidade variável.
 - O frio vai primeiro para a câmara; a sobra vira gelo (estimativa inicial: 200 kg),
   que deve manter a câmara por 14 horas sem sol.
-- Só uma bateria pequena para ventiladores, bomba e controle à noite.
+- Bateria: além das cargas noturnas (ventiladores, bomba, controle, Starlink), o dono
+  decidiu que HAVERÁ BATERIA DE APOIO para os dias sem sol, no lugar de gerador.
+  A capacidade não está fixada: "depende do que compensa". O engenheiro e o
+  integrador solar devem comparar, com custo por kWh de frio entregue e vida útil,
+  as combinações de mais gelo x mais bateria x mais painel para cobrir 1, 2 e 3
+  dias nublados seguidos, e recomendar o tamanho de bateria que compensa (inclusive
+  se a resposta for "só a mínima"). A escolha final é do dono.
 - Entrada de até 1 t de fruta por dia a 30 °C.
 - Telemetria: o local terá internet por Starlink (não contar com 4G). A antena
   Starlink é uma carga elétrica de 24 h que entra no dimensionamento da bateria.
