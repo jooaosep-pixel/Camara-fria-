@@ -1,329 +1,211 @@
-## 0. Ciclo R290 (CoolProp 8.0.0)
-| modo | Tevap C | Tamb C | Tcond C | p_evap bar | p_cond bar | efeito frig. kJ/kg | dens. succao kg/m3 | COP eletrico |
+## 0. Ciclo (propriedades do R134a pelo CoolProp 8.0.0; COP x 0.97 para R513A; eficiencia global 0.60 SUPOSTA)
+| arquitetura | T evap C | T ext C | T cond C | p evap bar abs | p evap bar rel | p cond bar abs | p cond bar rel | COP eletrico |
 |---|---|---|---|---|---|---|---|---|
-| gelo | -10 | 26 | 36 | 3.45 | 12.47 | 290 | 7.34 | 2.77 |
-| gelo | -10 | 33 | 43 | 3.45 | 14.67 | 270 | 7.34 | 2.28 |
-| gelo | -10 | 40 | 50 | 3.45 | 17.13 | 249 | 7.34 | 1.90 |
-| gelo | -10 | 43 | 53 | 3.45 | 18.28 | 240 | 7.34 | 1.76 |
-| camara | -4 | 26 | 36 | 4.19 | 12.47 | 297 | 8.82 | 3.34 |
-| camara | -4 | 33 | 43 | 4.19 | 14.67 | 277 | 8.82 | 2.71 |
-| camara | -4 | 40 | 50 | 4.19 | 17.13 | 256 | 8.82 | 2.23 |
-| camara | -4 | 43 | 53 | 4.19 | 18.28 | 247 | 8.82 | 2.06 |
-Q=8 kW a -10/+50: vazao massica 116 kg/h; volume aspirado 15.7 m3/h; deslocamento necessario com rend. vol. 0,75: 21.0 m3/h; potencia 4.20 kW
-Q=10 kW a -10/+50: vazao massica 144 kg/h; volume aspirado 19.7 m3/h; deslocamento necessario com rend. vol. 0,75: 26.2 m3/h; potencia 5.25 kW
-Q=12 kW a -10/+50: vazao massica 173 kg/h; volume aspirado 23.6 m3/h; deslocamento necessario com rend. vol. 0,75: 31.5 m3/h; potencia 6.30 kW
+| b | -7.0 | 27 | 37 | 2.25 | 1.28 | 9.37 | 8.40 | 2.90 |
+| b | -7.0 | 34 | 44 | 2.25 | 1.28 | 11.30 | 10.33 | 2.38 |
+| b | -7.0 | 41 | 51 | 2.25 | 1.28 | 13.51 | 12.54 | 1.98 |
+| b | -7.0 | 43 | 53 | 2.25 | 1.28 | 14.20 | 13.23 | 1.88 |
+| a | -10.5 | 27 | 37 | 1.97 | 1.00 | 9.37 | 8.40 | 2.45 |
+| a | -10.5 | 34 | 44 | 1.97 | 1.00 | 11.30 | 10.33 | 2.03 |
+| a | -10.5 | 41 | 51 | 1.97 | 1.00 | 13.51 | 12.54 | 1.70 |
+| a | -10.5 | 43 | 53 | 1.97 | 1.00 | 14.20 | 13.23 | 1.62 |
+R134a saturado a -18 C: 1.45 bar abs = 0.48 bar rel (atm local 0,97 bar)
+R134a saturado a -12 C: 1.85 bar abs = 0.88 bar rel (atm local 0,97 bar)
+R134a saturado a -7 C: 2.25 bar abs = 1.28 bar rel (atm local 0,97 bar)
+R134a saturado a 51 C: 13.51 bar abs = 12.54 bar rel (atm local 0,97 bar)
+R134a saturado a 60 C: 16.82 bar abs = 15.85 bar rel (atm local 0,97 bar)
+R134a saturado a 65 C: 18.90 bar abs = 17.93 bar rel (atm local 0,97 bar)
+arquitetura b, Q=6 kW a -7/+51 C: 163 kg/h; aspirado 15.1 m3/h; deslocamento com rend. vol. 0,75: 20.1 m3/h na rotacao maxima = 14.3 m3/h a 50 Hz; potencia 3.03 kW
+arquitetura b, Q=7 kW a -7/+51 C: 190 kg/h; aspirado 17.6 m3/h; deslocamento com rend. vol. 0,75: 23.4 m3/h na rotacao maxima = 16.7 m3/h a 50 Hz; potencia 3.53 kW
+arquitetura b, Q=8 kW a -7/+51 C: 217 kg/h; aspirado 20.1 m3/h; deslocamento com rend. vol. 0,75: 26.8 m3/h na rotacao maxima = 19.1 m3/h a 50 Hz; potencia 4.03 kW
 
-## 1. Cargas
+## 1. Carga termica diaria em regime (kWh/dia), 12 kWp + 700 kg, arquitetura b
+| dia | recepcao | involucro | porta | ar novo (CO2) | calor de campo | respiracao | ventiladores | pessoas+luz | bomba+banco | soma | tirado do banco c/ folga 10 % | pico na serpentina kW |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| recorde | ate14h | 18.1 | 4.1 | 2.4 | 24.2 | 19.1 | 0.7 | 2.0 | 4.2 | 74.7 | 82.2 | 6.0 |
+| recorde | ate10h | 18.1 | 3.2 | 2.4 | 18.8 | 18.0 | 0.6 | 1.4 | 4.1 | 66.5 | 73.1 | 5.0 |
+| recorde | tudo13h | 18.1 | 4.4 | 2.4 | 24.3 | 25.7 | 0.9 | 0.7 | 4.2 | 80.6 | 88.6 | 8.5 |
+| quente | ate14h | 13.7 | 2.4 | 1.3 | 24.2 | 19.1 | 0.6 | 2.0 | 3.6 | 66.9 | 73.6 | 5.3 |
+| junho | ate14h | 11.3 | 1.7 | 0.7 | 24.2 | 19.1 | 0.6 | 2.0 | 3.3 | 62.9 | 69.2 | 5.0 |
+| recorde | nada | 18.1 | 2.0 | 2.4 | 0.0 | 12.9 | 0.4 | 0.2 | 3.8 | 39.7 | 43.7 | 2.1 |
 
-### Carga hora a hora - reefer usado, tudo manga a 10 C, fruta entra as 17 h (kW)
-| h | Tamb | transm | infiltr | campo | respir | ventil | pessoas+luz | bomba+tanque | TOTAL c/ folga |
-|---|---|---|---|---|---|---|---|---|---|
-| 00 | 27.4 | 0.58 | 0.00 | 1.13 | 0.47 | 0.05 | 0.00 | 0.15 | 2.61 |
-| 01 | 26.5 | 0.55 | 0.00 | 1.00 | 0.46 | 0.05 | 0.00 | 0.14 | 2.41 |
-| 02 | 26.1 | 0.53 | 0.00 | 0.88 | 0.45 | 0.05 | 0.00 | 0.14 | 2.25 |
-| 03 | 26.1 | 0.53 | 0.00 | 0.78 | 0.44 | 0.05 | 0.00 | 0.14 | 2.13 |
-| 04 | 26.5 | 0.55 | 0.00 | 0.68 | 0.43 | 0.05 | 0.00 | 0.14 | 2.04 |
-| 05 | 27.4 | 0.58 | 0.00 | 0.60 | 0.42 | 0.05 | 0.00 | 0.15 | 1.98 |
-| 06 | 28.7 | 0.62 | 0.17 | 0.53 | 0.42 | 0.15 | 0.00 | 0.15 | 2.25 |
-| 07 | 30.3 | 0.74 | 0.17 | 0.47 | 0.41 | 0.15 | 0.00 | 0.16 | 2.31 |
-| 08 | 32.1 | 0.79 | 0.17 | 0.42 | 0.41 | 0.15 | 0.25 | 0.16 | 2.59 |
-| 09 | 33.9 | 0.86 | 0.17 | 0.37 | 0.41 | 0.15 | 0.00 | 0.17 | 2.33 |
-| 10 | 35.7 | 0.91 | 0.17 | 0.32 | 0.40 | 0.15 | 0.00 | 0.17 | 2.35 |
-| 11 | 37.3 | 0.97 | 0.17 | 0.29 | 0.40 | 0.15 | 0.00 | 0.18 | 2.37 |
-| 12 | 38.6 | 1.01 | 0.17 | 0.25 | 0.40 | 0.15 | 0.00 | 0.18 | 2.39 |
-| 13 | 39.5 | 1.04 | 0.17 | 0.22 | 0.40 | 0.15 | 0.00 | 0.19 | 2.39 |
-| 14 | 39.9 | 1.05 | 0.17 | 0.20 | 0.40 | 0.15 | 0.25 | 0.19 | 2.65 |
-| 15 | 39.9 | 1.05 | 0.17 | 0.17 | 0.39 | 0.15 | 0.00 | 0.19 | 2.35 |
-| 16 | 39.5 | 1.04 | 0.17 | 0.15 | 0.39 | 0.15 | 0.00 | 0.19 | 2.31 |
-| 17 | 38.6 | 0.94 | 1.22 | 2.71 | 0.75 | 0.15 | 0.46 | 0.18 | 7.06 |
-| 18 | 37.3 | 0.90 | 1.05 | 2.39 | 0.67 | 0.05 | 0.00 | 0.18 | 5.76 |
-| 19 | 35.7 | 0.85 | 0.00 | 2.11 | 0.61 | 0.05 | 0.00 | 0.17 | 4.17 |
-| 20 | 33.9 | 0.79 | 0.00 | 1.86 | 0.56 | 0.05 | 0.00 | 0.17 | 3.78 |
-| 21 | 32.1 | 0.73 | 0.00 | 1.64 | 0.53 | 0.05 | 0.00 | 0.16 | 3.43 |
-| 22 | 30.3 | 0.67 | 0.00 | 1.45 | 0.51 | 0.05 | 0.00 | 0.16 | 3.11 |
-| 23 | 28.7 | 0.62 | 0.00 | 1.28 | 0.49 | 0.05 | 0.00 | 0.15 | 2.84 |
-| **kWh/dia** | | 18.9 | 4.2 | 21.9 | 11.2 | 2.4 | 1.0 | 4.0 | **69.8** |
+## 2. Os numeros do dono (5 kWp + 200 kg), dia recorde, recepcao ate 14 h
+arquitetura b: FV 21.8 kWh; frio produzido 37.3 kWh; frio pedido 1110.8 kWh; nao atendido 484.5 kWh/dia; ar ate 61.4 C; polpa do estoque ate 63.3 C
+arquitetura a: FV 21.8 kWh; frio produzido 27.2 kWh; frio pedido 1337.2 kWh; nao atendido 591.2 kWh/dia; ar ate 71.4 C; polpa do estoque ate 73.8 C
 
-Carga das 17 h as 7 h (14 h sem sol util): 45.8 kWh  -> gelo equivalente 494 kg
+## 3. Varredura: frio nao atendido (kWh/dia) em regime, dia recorde (27-41 C; 5,8 kWh/m2)
 
-### Carga hora a hora - CASO DE DIMENSIONAMENTO: reefer usado, tudo a 5 C (caju), fruta entra as 17 h (pior horario) (kW)
-| h | Tamb | transm | infiltr | campo | respir | ventil | pessoas+luz | bomba+tanque | TOTAL c/ folga |
-|---|---|---|---|---|---|---|---|---|---|
-| 00 | 27.4 | 0.74 | 0.00 | 1.41 | 0.39 | 0.05 | 0.00 | 0.15 | 3.01 |
-| 01 | 26.5 | 0.71 | 0.00 | 1.24 | 0.38 | 0.05 | 0.00 | 0.14 | 2.78 |
-| 02 | 26.1 | 0.69 | 0.00 | 1.10 | 0.36 | 0.05 | 0.00 | 0.14 | 2.58 |
-| 03 | 26.1 | 0.69 | 0.00 | 0.97 | 0.35 | 0.05 | 0.00 | 0.14 | 2.43 |
-| 04 | 26.5 | 0.71 | 0.00 | 0.86 | 0.35 | 0.05 | 0.00 | 0.14 | 2.31 |
-| 05 | 27.4 | 0.74 | 0.00 | 0.76 | 0.34 | 0.05 | 0.00 | 0.15 | 2.23 |
-| 06 | 28.7 | 0.78 | 0.22 | 0.67 | 0.33 | 0.15 | 0.00 | 0.15 | 2.53 |
-| 07 | 30.3 | 0.90 | 0.22 | 0.59 | 0.33 | 0.15 | 0.00 | 0.16 | 2.58 |
-| 08 | 32.1 | 0.96 | 0.22 | 0.52 | 0.32 | 0.15 | 0.25 | 0.16 | 2.84 |
-| 09 | 33.9 | 1.02 | 0.22 | 0.46 | 0.32 | 0.15 | 0.00 | 0.17 | 2.57 |
-| 10 | 35.7 | 1.08 | 0.22 | 0.40 | 0.32 | 0.15 | 0.00 | 0.17 | 2.58 |
-| 11 | 37.3 | 1.13 | 0.22 | 0.36 | 0.32 | 0.15 | 0.00 | 0.18 | 2.59 |
-| 12 | 38.6 | 1.17 | 0.22 | 0.31 | 0.31 | 0.15 | 0.00 | 0.18 | 2.59 |
-| 13 | 39.5 | 1.20 | 0.22 | 0.28 | 0.31 | 0.15 | 0.00 | 0.19 | 2.58 |
-| 14 | 39.9 | 1.22 | 0.22 | 0.25 | 0.31 | 0.15 | 0.25 | 0.19 | 2.84 |
-| 15 | 39.9 | 1.22 | 0.22 | 0.22 | 0.31 | 0.15 | 0.00 | 0.19 | 2.53 |
-| 16 | 39.5 | 1.20 | 0.22 | 0.19 | 0.31 | 0.15 | 0.00 | 0.19 | 2.49 |
-| 17 | 38.6 | 1.11 | 1.53 | 3.38 | 0.77 | 0.15 | 0.46 | 0.18 | 8.34 |
-| 18 | 37.3 | 1.06 | 1.31 | 2.99 | 0.65 | 0.05 | 0.00 | 0.18 | 6.87 |
-| 19 | 35.7 | 1.01 | 0.00 | 2.64 | 0.57 | 0.05 | 0.00 | 0.17 | 4.88 |
-| 20 | 33.9 | 0.95 | 0.00 | 2.33 | 0.51 | 0.05 | 0.00 | 0.17 | 4.41 |
-| 21 | 32.1 | 0.89 | 0.00 | 2.05 | 0.47 | 0.05 | 0.00 | 0.16 | 3.99 |
-| 22 | 30.3 | 0.84 | 0.00 | 1.81 | 0.43 | 0.05 | 0.00 | 0.16 | 3.62 |
-| 23 | 28.7 | 0.78 | 0.00 | 1.60 | 0.41 | 0.05 | 0.00 | 0.15 | 3.29 |
-| **kWh/dia** | | 22.8 | 5.2 | 27.4 | 9.5 | 2.4 | 1.0 | 4.0 | **79.5** |
+arquitetura b, recepcao ate10h:
+| kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
+|---|---|---|---|---|---|---|---|
+| 5 | 305.4 | 264.3 | 254.3 | 232.5 | 214.7 | 198.3 | 160.3 |
+| 8 | 48.1 | 33.7 | 19.1 | 3.1 | 0.0 | 0.0 | 0.0 |
+| 9 | 9.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 10 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 11 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
-Carga das 17 h as 7 h (14 h sem sol util): 53.3 kWh  -> gelo equivalente 574 kg
+arquitetura b, recepcao ate14h:
+| kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
+|---|---|---|---|---|---|---|---|
+| 5 | 462.4 | 421.3 | 389.2 | 338.5 | 316.4 | 285.4 | 239.9 |
+| 8 | 153.1 | 129.7 | 103.2 | 81.5 | 62.0 | 44.6 | 6.0 |
+| 9 | 64.0 | 45.9 | 31.3 | 15.6 | 2.5 | 0.0 | 0.0 |
+| 10 | 29.1 | 8.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 11 | 27.8 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 26.5 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
-### Carga hora a hora - CASO DE DIMENSIONAMENTO: reefer usado, tudo a 5 C (caju), fruta entra as 7 h (melhor horario) (kW)
-| h | Tamb | transm | infiltr | campo | respir | ventil | pessoas+luz | bomba+tanque | TOTAL c/ folga |
-|---|---|---|---|---|---|---|---|---|---|
-| 00 | 27.4 | 0.74 | 0.00 | 0.40 | 0.32 | 0.05 | 0.00 | 0.15 | 1.83 |
-| 01 | 26.5 | 0.71 | 0.00 | 0.36 | 0.32 | 0.05 | 0.00 | 0.14 | 1.73 |
-| 02 | 26.1 | 0.69 | 0.00 | 0.31 | 0.31 | 0.05 | 0.00 | 0.14 | 1.67 |
-| 03 | 26.1 | 0.69 | 0.00 | 0.28 | 0.31 | 0.05 | 0.00 | 0.14 | 1.62 |
-| 04 | 26.5 | 0.71 | 0.00 | 0.25 | 0.31 | 0.05 | 0.00 | 0.14 | 1.61 |
-| 05 | 27.4 | 0.74 | 0.00 | 0.22 | 0.31 | 0.05 | 0.00 | 0.15 | 1.61 |
-| 06 | 28.7 | 0.78 | 0.22 | 0.19 | 0.31 | 0.15 | 0.00 | 0.15 | 1.98 |
-| 07 | 30.3 | 0.90 | 1.53 | 3.38 | 0.77 | 0.15 | 0.46 | 0.16 | 8.09 |
-| 08 | 32.1 | 0.96 | 1.53 | 2.99 | 0.65 | 0.15 | 0.25 | 0.16 | 7.36 |
-| 09 | 33.9 | 1.02 | 0.22 | 2.64 | 0.57 | 0.15 | 0.00 | 0.17 | 5.24 |
-| 10 | 35.7 | 1.08 | 0.22 | 2.33 | 0.51 | 0.15 | 0.00 | 0.17 | 4.90 |
-| 11 | 37.3 | 1.13 | 0.22 | 2.05 | 0.47 | 0.15 | 0.00 | 0.18 | 4.62 |
-| 12 | 38.6 | 1.17 | 0.22 | 1.81 | 0.43 | 0.15 | 0.00 | 0.18 | 4.37 |
-| 13 | 39.5 | 1.20 | 0.22 | 1.60 | 0.41 | 0.15 | 0.00 | 0.19 | 4.14 |
-| 14 | 39.9 | 1.22 | 0.22 | 1.41 | 0.39 | 0.15 | 0.25 | 0.19 | 4.21 |
-| 15 | 39.9 | 1.22 | 0.22 | 1.25 | 0.38 | 0.15 | 0.00 | 0.19 | 3.74 |
-| 16 | 39.5 | 1.20 | 0.22 | 1.10 | 0.36 | 0.15 | 0.00 | 0.19 | 3.54 |
-| 17 | 38.6 | 1.11 | 0.22 | 0.97 | 0.35 | 0.15 | 0.00 | 0.18 | 3.28 |
-| 18 | 37.3 | 1.06 | 0.00 | 0.86 | 0.35 | 0.05 | 0.00 | 0.18 | 2.75 |
-| 19 | 35.7 | 1.01 | 0.00 | 0.76 | 0.34 | 0.05 | 0.00 | 0.17 | 2.56 |
-| 20 | 33.9 | 0.95 | 0.00 | 0.67 | 0.33 | 0.05 | 0.00 | 0.17 | 2.39 |
-| 21 | 32.1 | 0.89 | 0.00 | 0.59 | 0.33 | 0.05 | 0.00 | 0.16 | 2.22 |
-| 22 | 30.3 | 0.84 | 0.00 | 0.52 | 0.32 | 0.05 | 0.00 | 0.16 | 2.07 |
-| 23 | 28.7 | 0.78 | 0.00 | 0.46 | 0.32 | 0.05 | 0.00 | 0.15 | 1.94 |
-| **kWh/dia** | | 22.8 | 5.2 | 27.4 | 9.5 | 2.4 | 1.0 | 4.0 | **79.5** |
+arquitetura a, recepcao ate10h:
+| kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
+|---|---|---|---|---|---|---|---|
+| 5 | 480.7 | 451.7 | 398.1 | 359.0 | 321.9 | 287.6 | 259.8 |
+| 8 | 169.9 | 149.1 | 125.2 | 103.1 | 80.8 | 61.6 | 18.8 |
+| 9 | 91.3 | 71.7 | 54.5 | 37.6 | 18.9 | 1.1 | 0.0 |
+| 10 | 30.7 | 18.0 | 4.8 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 11 | 9.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 12 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 9.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
-Carga das 17 h as 7 h (14 h sem sol util): 29.3 kWh  -> gelo equivalente 315 kg
+arquitetura a, recepcao ate14h:
+| kWp \ kg de gelo | 300 | 400 | 500 | 600 | 700 | 800 | 1000 |
+|---|---|---|---|---|---|---|---|
+| 5 | 562.0 | 543.6 | 502.1 | 468.5 | 454.5 | 422.5 | 353.2 |
+| 8 | 270.4 | 238.8 | 215.2 | 195.6 | 178.6 | 160.9 | 116.2 |
+| 9 | 194.0 | 173.2 | 154.2 | 133.2 | 109.1 | 85.2 | 46.6 |
+| 10 | 128.9 | 100.7 | 78.5 | 60.4 | 42.8 | 25.1 | 0.0 |
+| 11 | 55.9 | 37.2 | 23.8 | 8.3 | 0.0 | 0.0 | 0.0 |
+| 12 | 29.3 | 8.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 13 | 28.1 | 8.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 14 | 27.0 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
-### Carga diaria por caso de fruta e involucro (kWh/dia; Tamb 26-40 C; 1 t/dia a 30 C)
-| caso | reefer usado 33 W/K | reefer novo ou seco isolado 22 W/K | painel PIR 100 mm 16,6 W/K | noite 17-7 h, entrada 17 h (reefer usado) | noite 17-7 h, entrada 7 h (reefer usado) |
+## 3b. Tabela unica de variantes: menor conjunto que fecha (nao atendido < 0,05 kWh/dia) no dia recorde
+| arquitetura | recepcao | frio tirado do banco kWh/dia | menor kWp (com o gelo que ele pede) | menor gelo com 12 kWp | gelo gasto das 17 h as 7 h (kWh) |
 |---|---|---|---|---|---|
-| manga10 | 69.8 | 62.9 | 59.5 | 45.8 | 26.4 |
-| manga12 | 66.6 | 60.4 | 57.4 | 43.1 | 25.9 |
-| caju5 | 79.5 | 71.1 | 67.0 | 53.3 | 29.3 |
-| compromisso8 | 74.0 | 66.5 | 62.8 | 49.0 | 27.7 |
-| duas_zonas_caju_entra | 75.9 | 68.4 | 64.7 | 50.6 | 28.3 |
-| duas_zonas_manga_entra | 70.2 | 62.7 | 59.0 | 45.5 | 27.1 |
+| b | ate10h | 73.1 | 8 kWp + 700 kg | 400 kg | 28.7 |
+| b | ate14h | 82.2 | 9 kWp + 800 kg | 500 kg | 35.9 |
+| b | tudo13h | 88.6 | 9 kWp + 1000 kg | 600 kg | 43.0 |
+| a | ate10h | 73.1 | 9 kWp + 1000 kg | 400 kg | 28.7 |
+| a | ate14h | 82.2 | 10 kWp + 1000 kg | 500 kg | 35.9 |
+| a | tudo13h | 88.6 | 11 kWp + 800 kg | 600 kg | 43.0 |
 
-## 2. Os numeros do dono: 5 kWp + 200 kg de gelo (reefer usado, dia de projeto H=5,8, 26-40 C)
-manga10, entrada 17 h: carga 69.8 kWh | frio produzido 30.4 kWh | FV 21.8 kWh | deficit 39.5 kWh/dia
-manga10, entrada 07 h: carga 69.8 kWh | frio produzido 30.4 kWh | FV 21.8 kWh | deficit 39.5 kWh/dia
-caju5, entrada 17 h: carga 79.5 kWh | frio produzido 30.4 kWh | FV 21.8 kWh | deficit 49.1 kWh/dia
-caju5, entrada 07 h: carga 79.5 kWh | frio produzido 30.4 kWh | FV 21.8 kWh | deficit 49.1 kWh/dia
+## 4. Conjunto de referencia: 12 kWp + 700 kg de gelo (64.9 kWh), arquitetura b, 2 compressores somando 7.4 kW (minimo de 1 compressor: 1.6 kW)
 
-## 3. Varredura: deficit (kWh/dia) em regime - caju5, reefer_usado, dia de projeto, entrada as 17 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 |
-| 8 | 37.2 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 |
-| 10 | 37.2 | 18.7 | 9.4 | 5.0 | 5.0 | 1.6 | 0.0 | 0.0 | 0.0 |
-| 11 | 37.2 | 18.7 | 9.4 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 37.2 | 18.7 | 9.4 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 37.2 | 18.7 | 9.4 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 37.2 | 18.7 | 9.4 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 37.2 | 18.7 | 9.4 | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+### Hora a hora, dia recorde, recepcao ate14h, em regime
+| h | T ext | FV kW | compr. kW | frio prod. kW | serpentina kW | ar C (max) | polpa lote mais quente C | polpa estoque C | gelo kWh | auxiliares internos W |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 00 | 28.5 | 0.00 | 0.00 | 0.00 | 2.07 | 12.0 | 18.9 | 12.8 | 34.9 | 82 |
+| 01 | 27.6 | 0.00 | 0.00 | 0.00 | 1.94 | 12.0 | 18.2 | 12.8 | 32.6 | 81 |
+| 02 | 27.1 | 0.00 | 0.00 | 0.00 | 1.84 | 12.0 | 17.6 | 12.8 | 30.5 | 80 |
+| 03 | 27.1 | 0.00 | 0.00 | 0.00 | 1.77 | 12.0 | 17.1 | 12.8 | 28.4 | 79 |
+| 04 | 27.5 | 0.00 | 0.00 | 0.00 | 1.73 | 12.0 | 16.6 | 12.8 | 26.3 | 79 |
+| 05 | 28.4 | 0.10 | 0.00 | 0.00 | 1.71 | 12.0 | 16.2 | 12.8 | 24.3 | 79 |
+| 06 | 29.7 | 1.21 | 0.00 | 0.00 | 1.95 | 12.0 | 15.9 | 12.8 | 22.0 | 81 |
+| 07 | 31.2 | 2.87 | 2.51 | 6.45 | 2.00 | 12.0 | 15.5 | 12.8 | 26.0 | 81 |
+| 08 | 33.0 | 4.53 | 4.17 | 10.22 | 1.93 | 12.0 | 15.2 | 12.8 | 34.0 | 81 |
+| 09 | 34.8 | 5.94 | 5.58 | 13.02 | 1.98 | 12.0 | 15.0 | 12.8 | 44.6 | 81 |
+| 10 | 36.6 | 6.90 | 6.54 | 14.54 | 3.65 | 12.0 | 32.9 | 12.8 | 54.9 | 113 |
+| 11 | 38.2 | 7.29 | 6.93 | 14.77 | 4.48 | 12.0 | 32.9 | 12.8 | 64.6 | 140 |
+| 12 | 39.5 | 7.05 | 3.09 | 6.37 | 5.22 | 12.1 | 32.9 | 12.8 | 64.9 | 171 |
+| 13 | 40.4 | 6.23 | 3.33 | 6.71 | 5.87 | 12.1 | 32.9 | 12.8 | 64.9 | 204 |
+| 14 | 40.9 | 4.92 | 2.59 | 5.14 | 4.46 | 12.0 | 31.0 | 12.8 | 64.9 | 140 |
+| 15 | 40.9 | 3.30 | 2.53 | 5.01 | 4.34 | 12.0 | 29.2 | 12.8 | 64.9 | 135 |
+| 16 | 40.5 | 1.61 | 0.00 | 0.00 | 3.97 | 12.0 | 27.6 | 12.8 | 60.3 | 123 |
+| 17 | 39.6 | 0.26 | 0.00 | 0.00 | 3.47 | 12.0 | 26.1 | 12.8 | 56.3 | 109 |
+| 18 | 38.3 | 0.00 | 0.00 | 0.00 | 3.24 | 12.0 | 24.7 | 12.8 | 52.5 | 103 |
+| 19 | 36.8 | 0.00 | 0.00 | 0.00 | 3.00 | 12.0 | 23.5 | 12.8 | 49.0 | 97 |
+| 20 | 35.0 | 0.00 | 0.00 | 0.00 | 2.78 | 12.0 | 22.4 | 12.8 | 45.8 | 93 |
+| 21 | 33.2 | 0.00 | 0.00 | 0.00 | 2.57 | 12.0 | 21.3 | 12.8 | 42.8 | 88 |
+| 22 | 31.4 | 0.00 | 0.00 | 0.00 | 2.39 | 12.0 | 20.4 | 12.8 | 40.0 | 85 |
+| 23 | 29.8 | 0.00 | 0.00 | 0.00 | 2.22 | 12.0 | 19.6 | 12.8 | 37.4 | 84 |
+| dia | | 52.2 kWh | 37.3 kWh | 82.2 kWh | 74.7 kWh | max 12.1 | | max 12.8 | min 22.0 | noite 1.22 kWh |
+COP medio do dia 2.21; FV nao aproveitada 11.7 kWh; consumo dos auxiliares internos das 17 h as 7 h: 1.22 kWh
 
-## 3. Varredura: deficit (kWh/dia) em regime - caju5, reefer_usado, dia de projeto, entrada as 7 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 | 49.1 |
-| 8 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 22.0 | 20.9 |
-| 10 | 17.8 | 5.0 | 5.0 | 0.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 17.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 16.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 16.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 15.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 14.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+### Cenarios com o conjunto de referencia (em regime)
+| dia | recepcao | arq. | frio tirado kWh | frio produzido kWh | nao atendido kWh | gelo minimo kWh | ar max C | polpa estoque max C | FV sobrando kWh | aux. noite kWh |
+|---|---|---|---|---|---|---|---|---|---|---|
+| recorde | ate14h | b | 82.2 | 82.2 | 0.0 | 22.0 | 12.1 | 12.8 | 11.7 | 1.22 |
+| recorde | ate10h | b | 73.1 | 73.1 | 0.0 | 30.4 | 12.0 | 12.8 | 16.2 | 1.12 |
+| recorde | tudo13h | b | 88.6 | 87.6 | 0.0 | 15.1 | 12.4 | 12.8 | 9.0 | 1.34 |
+| quente | ate14h | b | 73.6 | 73.6 | 0.0 | 25.9 | 12.1 | 12.8 | 21.1 | 1.18 |
+| junho | ate14h | b | 69.2 | 69.2 | 0.0 | 28.2 | 12.0 | 12.8 | 14.9 | 1.15 |
+| recorde-10% | ate14h | b | 82.2 | 82.2 | 0.0 | 22.0 | 12.1 | 12.8 | 6.0 | 1.22 |
+| ruim | ate14h | b | 154.7 | 51.3 | 91.2 | 0.0 | 19.8 | 18.5 | 4.8 | 2.60 |
+| ruim | meia | b | 54.5 | 51.3 | 0.0 | 23.5 | 12.0 | 12.8 | 4.8 | 1.08 |
+| ruim | nada | b | 35.5 | 35.5 | 0.0 | 41.3 | 12.0 | 12.8 | 11.2 | 1.01 |
+| recorde | ate14h | a | 82.2 | 81.7 | 0.0 | 20.7 | 12.1 | 12.8 | 3.2 | 1.22 |
+| junho | ate14h | a | 69.2 | 69.2 | 0.0 | 28.2 | 12.0 | 12.8 | 8.3 | 1.15 |
 
-## 3. Varredura: deficit (kWh/dia) em regime - caju5, painel_PIR100, dia de projeto, entrada as 17 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 |
-| 8 | 30.1 | 11.6 | 9.5 | 9.5 | 9.5 | 9.5 | 3.4 | 0.0 | 0.0 |
-| 10 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 30.1 | 11.6 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+### Sensibilidades (dia recorde, ate 14 h, arquitetura b, 12 kWp + 700 kg): nao atendido kWh/dia | gelo minimo kWh
+- base: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
+- UA 22 W/K (reefer bom ou painel): 0.0 | 25.7 | frio tirado 75.4 | ar max 12.1 C | pico serpentina 5.6 kW
+- UA 40 W/K: 0.0 | 19.6 | frio tirado 86.5 | ar max 12.1 C | pico serpentina 6.2 kW
+- respiracao 137 W/t (teto USDA): 0.0 | 11.6 | frio tirado 98.1 | ar max 12.1 C | pico serpentina 6.5 kW
+- respiracao 68 W/t: 0.0 | 24.6 | frio tirado 78.2 | ar max 12.1 C | pico serpentina 5.8 kW
+- constante de tempo 6 h: 0.0 | 24.6 | frio tirado 81.1 | ar max 12.1 C | pico serpentina 6.6 kW
+- PR 0,70: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
+- eficiencia 0,55: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
+- eficiencia 0,65: 0.0 | 22.0 | frio tirado 82.2 | ar max 12.1 C | pico serpentina 6.0 kW
+- serpentina com metade do K: 0.0 | 17.7 | frio tirado 85.0 | ar max 13.8 C | pico serpentina 4.9 kW
 
-## 3. Varredura: deficit (kWh/dia) em regime - caju5, painel_PIR100, dia de projeto, entrada as 7 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 | 36.6 |
-| 8 | 12.5 | 9.6 | 9.6 | 9.6 | 4.3 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 10 | 10.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 9.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 9.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 8.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 7.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 7.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+## 5. Dias nublados seguidos (2,0 kWh/m2; 22-32 C) depois de dias quentes tipicos; recepcao normal ate 14 h continua
+Criterio: polpa do estoque nao passa de 14 C e ar nao passa de 15 C.
+| dias nublados | recepcao | nao atendido total kWh | polpa estoque max C | ar max C | atende? |
+|---|---|---|---|---|---|
+| 1 | ate14h | 5.4 | 13.5 | 14.9 | sim |
+| 1 | meia | 0.0 | 12.8 | 12.0 | sim |
+| 1 | nada | 0.0 | 12.8 | 12.0 | sim |
+| 2 | ate14h | 103.2 | 19.5 | 20.8 | NAO |
+| 2 | meia | 31.1 | 15.4 | 16.2 | NAO |
+| 2 | nada | 0.0 | 12.8 | 12.0 | sim |
+| 3 | ate14h | 305.2 | 27.3 | 28.2 | NAO |
+| 3 | meia | 126.2 | 19.5 | 20.3 | NAO |
+| 3 | nada | 3.3 | 13.1 | 13.8 | sim |
 
-## 3. Varredura: deficit (kWh/dia) em regime - manga10, reefer_usado, dia de projeto, entrada as 17 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 |
-| 8 | 29.5 | 12.4 | 12.4 | 12.4 | 12.4 | 12.4 | 12.4 | 4.9 | 0.0 |
-| 10 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 29.5 | 11.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+### Quanto falta acrescentar para atender (recepcao normal continuando), partindo de 12 kWp + 700 kg, sem bateria de apoio
+| dias nublados | so mais gelo (kg totais) | so mais bateria (kWh uteis) | so mais painel (kWp totais) | combinado: +2 kWp e bateria (kWh) | combinado: +300 kg e bateria (kWh) |
+|---|---|---|---|---|---|
+| 1 | 700 | 0 | 12 | 0 | 0 |
+| 2 | 1200 | 10 | 16 | 5 | 10 |
+| 3 | 1700 | 25 | 19 | 15 | 20 |
 
-## 3. Varredura: deficit (kWh/dia) em regime - manga10, reefer_usado, dia de projeto, entrada as 7 h
-| kWp \ kg gelo | 200 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|
-| 5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 | 39.5 |
-| 8 | 15.1 | 12.4 | 12.4 | 12.4 | 12.4 | 9.1 | 0.0 | 0.0 | 0.0 |
-| 10 | 13.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 11 | 12.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 12 | 12.2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 13 | 11.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 14 | 11.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| 16 | 11.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+Frio que cada recurso entrega num dia nublado (referencia):
+- 100 kg de gelo: 9.3 kWh de frio, uma vez por sequencia
+- 5,12 kWh de bateria (4,6 uteis): 12.7 kWh de frio por descarga (COP 2.90 a 27 C)
+- 1 kWp a mais: 1.50 kWh eletricos = 4.3 kWh de frio em cada dia nublado; 10.4 kWh em dia de sol (se houver onde guardar)
 
-## 4. Projeto escolhido: 12 kWp + 800 kg de gelo (74.2 kWh), 2 compressores somando ate 7.4 kW eletricos (minimo de partida 1.6 kW), caso caju5
+## 6. Banco de gelo
+### 6.1 arquitetura b: serpentina de cobre com expansao direta, gelo por fora, agua circulando (fusao externa)
+tubo 15.9 mm, gelo 25 mm: 2.94 kg/m -> 238 m para 700 kg; fim da carga com evaporacao a -6 C: 12.1 kW; volume interno 38.1 L
+tubo 15.9 mm, gelo 25 mm: 2.94 kg/m -> 238 m para 700 kg; fim da carga com evaporacao a -8 C: 16.1 kW; volume interno 38.1 L
+tubo 15.9 mm, gelo 30 mm: 3.96 kg/m -> 177 m para 700 kg; fim da carga com evaporacao a -6 C: 8.3 kW; volume interno 28.3 L
+tubo 15.9 mm, gelo 30 mm: 3.96 kg/m -> 177 m para 700 kg; fim da carga com evaporacao a -8 C: 11.0 kW; volume interno 28.3 L
+tubo 12.7 mm, gelo 25 mm: 2.72 kg/m -> 258 m para 700 kg; fim da carga com evaporacao a -6 C: 11.5 kW; volume interno 24.9 L
+tubo 12.7 mm, gelo 25 mm: 2.72 kg/m -> 258 m para 700 kg; fim da carga com evaporacao a -8 C: 15.3 kW; volume interno 24.9 L
+dilatacao: 700/917 - 700/1000 = 63 L; empuxo liquido do gelo: 63 kgf
+### 6.2 arquitetura a: tubo PE-RT 16x2 com glicol por dentro (fusao interna), em espirais
+935 m de tubo para 700 kg; Nu 3,66 -> h 122 W/m2K; R 0.391 m.K/W; media logaritmica (glicol -6/-2 C contra 0 C) 3.64 K; potencia no fim da carga 8.7 kW
+espiral em tanque redondo de 1,5 m: raio de 0,15 a 0,72 m, passo 40 mm -> 38.9 m por camada; 24 camadas; altura do feixe 0.96 m
 
-### Balanco hora a hora, dia de projeto em regime, fruta as 17 h
-| h | Tamb | FV kW | compressor kW | COP | frio produzido kW | carga kW | estoque de gelo kWh (fim da hora) | falta kWh |
-|---|---|---|---|---|---|---|---|---|
-| 00 | 27.4 | 0.00 | 0.00 | 2.66 | 0.00 | 3.01 | 33.3 | 0.0 |
-| 01 | 26.5 | 0.00 | 0.00 | 2.73 | 0.00 | 2.78 | 30.6 | 0.0 |
-| 02 | 26.1 | 0.00 | 0.00 | 2.76 | 0.00 | 2.58 | 28.0 | 0.0 |
-| 03 | 26.1 | 0.00 | 0.00 | 2.76 | 0.00 | 2.43 | 25.5 | 0.0 |
-| 04 | 26.5 | 0.00 | 0.00 | 2.73 | 0.00 | 2.31 | 23.2 | 0.0 |
-| 05 | 27.4 | 0.10 | 0.00 | 2.66 | 0.00 | 2.23 | 21.0 | 0.0 |
-| 06 | 28.7 | 1.21 | 0.00 | 2.57 | 0.00 | 2.53 | 18.5 | 0.0 |
-| 07 | 30.3 | 2.87 | 2.31 | 2.46 | 5.68 | 2.58 | 21.6 | 0.0 |
-| 08 | 32.1 | 4.53 | 3.97 | 2.34 | 9.30 | 2.84 | 28.0 | 0.0 |
-| 09 | 33.9 | 5.94 | 5.38 | 2.23 | 12.00 | 2.57 | 37.4 | 0.0 |
-| 10 | 35.7 | 6.90 | 6.34 | 2.13 | 13.48 | 2.58 | 48.3 | 0.0 |
-| 11 | 37.3 | 7.29 | 6.73 | 2.04 | 13.72 | 2.59 | 59.5 | 0.0 |
-| 12 | 38.6 | 7.05 | 6.49 | 1.97 | 12.81 | 2.59 | 69.7 | 0.0 |
-| 13 | 39.5 | 6.23 | 3.69 | 1.93 | 7.11 | 2.58 | 74.2 | 0.0 |
-| 14 | 39.9 | 4.92 | 1.49 | 1.91 | 2.84 | 2.84 | 74.2 | 0.0 |
-| 15 | 39.9 | 3.30 | 1.33 | 1.91 | 2.53 | 2.53 | 74.2 | 0.0 |
-| 16 | 39.5 | 1.61 | 0.00 | 1.93 | 0.00 | 2.49 | 71.7 | 0.0 |
-| 17 | 38.6 | 0.26 | 0.00 | 1.97 | 0.00 | 8.34 | 63.4 | 0.0 |
-| 18 | 37.3 | 0.00 | 0.00 | 2.04 | 0.00 | 6.87 | 56.5 | 0.0 |
-| 19 | 35.7 | 0.00 | 0.00 | 2.13 | 0.00 | 4.88 | 51.6 | 0.0 |
-| 20 | 33.9 | 0.00 | 0.00 | 2.23 | 0.00 | 4.41 | 47.2 | 0.0 |
-| 21 | 32.1 | 0.00 | 0.00 | 2.34 | 0.00 | 3.99 | 43.2 | 0.0 |
-| 22 | 30.3 | 0.00 | 0.00 | 2.46 | 0.00 | 3.62 | 39.6 | 0.0 |
-| 23 | 28.7 | 0.00 | 0.00 | 2.57 | 0.00 | 3.29 | 36.3 | 0.0 |
-| **dia** | | 52.2 kWh | 37.7 kWh | 2.11 | 79.5 kWh | 79.5 kWh | min 18.5 | 0.0 |
-energia FV nao aproveitada (tanque cheio, acima do maximo ou abaixo do minimo do compressor): 8.0 kWh
+## 7. CO2 da respiracao (seguranca) e ar novo
+5 t x 17 ml/kg.h = 85 L/h de CO2; em 14 h fechada: 1.19 m3 = 7.9 % em 15 m3 de ar livre (sem renovacao)
+   com 5 m3/h de ar novo: equilibrio em 1.74 %
+   com 10 m3/h de ar novo: equilibrio em 0.89 %
+   com 20 m3/h de ar novo: equilibrio em 0.47 %
+   com 33 m3/h de ar novo: equilibrio em 0.30 %
+5 t x 22 ml/kg.h = 110 L/h de CO2; em 14 h fechada: 1.54 m3 = 10.3 % em 15 m3 de ar livre (sem renovacao)
+   com 5 m3/h de ar novo: equilibrio em 2.24 %
+   com 10 m3/h de ar novo: equilibrio em 1.14 %
+   com 20 m3/h de ar novo: equilibrio em 0.59 %
+   com 33 m3/h de ar novo: equilibrio em 0.37 %
+custo termico de 10 m3/h com ar a 34 C: 2.1 kWh/dia
 
-### Balanco hora a hora, dia de projeto em regime, fruta as 7 h
-| h | Tamb | FV kW | compressor kW | COP | frio produzido kW | carga kW | estoque de gelo kWh (fim da hora) | falta kWh |
-|---|---|---|---|---|---|---|---|---|
-| 00 | 27.4 | 0.00 | 0.00 | 2.66 | 0.00 | 1.83 | 51.6 | 0.0 |
-| 01 | 26.5 | 0.00 | 0.00 | 2.73 | 0.00 | 1.73 | 49.9 | 0.0 |
-| 02 | 26.1 | 0.00 | 0.00 | 2.76 | 0.00 | 1.67 | 48.2 | 0.0 |
-| 03 | 26.1 | 0.00 | 0.00 | 2.76 | 0.00 | 1.62 | 46.6 | 0.0 |
-| 04 | 26.5 | 0.00 | 0.00 | 2.73 | 0.00 | 1.61 | 45.0 | 0.0 |
-| 05 | 27.4 | 0.10 | 0.00 | 2.66 | 0.00 | 1.61 | 43.4 | 0.0 |
-| 06 | 28.7 | 1.21 | 0.00 | 2.57 | 0.00 | 1.98 | 41.4 | 0.0 |
-| 07 | 30.3 | 2.87 | 2.31 | 2.46 | 5.68 | 8.09 | 39.0 | 0.0 |
-| 08 | 32.1 | 4.53 | 3.97 | 2.34 | 9.30 | 7.36 | 40.9 | 0.0 |
-| 09 | 33.9 | 5.94 | 5.38 | 2.23 | 12.00 | 5.24 | 47.7 | 0.0 |
-| 10 | 35.7 | 6.90 | 6.34 | 2.13 | 13.48 | 4.90 | 56.3 | 0.0 |
-| 11 | 37.3 | 7.29 | 6.73 | 2.04 | 13.72 | 4.62 | 65.4 | 0.0 |
-| 12 | 38.6 | 7.05 | 6.49 | 1.97 | 12.81 | 4.37 | 73.8 | 0.0 |
-| 13 | 39.5 | 6.23 | 2.35 | 1.93 | 4.53 | 4.14 | 74.2 | 0.0 |
-| 14 | 39.9 | 4.92 | 2.21 | 1.91 | 4.21 | 4.21 | 74.2 | 0.0 |
-| 15 | 39.9 | 3.30 | 1.96 | 1.91 | 3.74 | 3.74 | 74.2 | 0.0 |
-| 16 | 39.5 | 1.61 | 0.00 | 1.93 | 0.00 | 3.54 | 70.7 | 0.0 |
-| 17 | 38.6 | 0.26 | 0.00 | 1.97 | 0.00 | 3.28 | 67.4 | 0.0 |
-| 18 | 37.3 | 0.00 | 0.00 | 2.04 | 0.00 | 2.75 | 64.7 | 0.0 |
-| 19 | 35.7 | 0.00 | 0.00 | 2.13 | 0.00 | 2.56 | 62.1 | 0.0 |
-| 20 | 33.9 | 0.00 | 0.00 | 2.23 | 0.00 | 2.39 | 59.7 | 0.0 |
-| 21 | 32.1 | 0.00 | 0.00 | 2.34 | 0.00 | 2.22 | 57.5 | 0.0 |
-| 22 | 30.3 | 0.00 | 0.00 | 2.46 | 0.00 | 2.07 | 55.4 | 0.0 |
-| 23 | 28.7 | 0.00 | 0.00 | 2.57 | 0.00 | 1.94 | 53.5 | 0.0 |
-| **dia** | | 52.2 kWh | 37.7 kWh | 2.11 | 79.5 kWh | 79.5 kWh | min 39.0 | 0.0 |
-energia FV nao aproveitada (tanque cheio, acima do maximo ou abaixo do minimo do compressor): 7.9 kWh
-
-### Cenarios com o projeto escolhido (em regime, mesmo dia repetido)
-| cenario | caso | H kWh/m2 | Tmax | entrada | carga kWh | frio produzido kWh | falta kWh/dia | estoque min kWh | estoque fim kWh |
-|---|---|---|---|---|---|---|---|---|---|
-| projeto, pior horario | caju5 | 5.8 | 40 | 17 h | 79.5 | 79.5 | 0.0 | 18.5 | 36.3 |
-| projeto, melhor horario | caju5 | 5.8 | 40 | 7 h | 79.5 | 79.5 | 0.0 | 39.0 | 53.5 |
-| duas zonas, entra caju | duas_zonas_caju_entra | 5.8 | 40 | 17 h | 75.9 | 75.9 | 0.0 | 21.2 | 38.6 |
-| duas zonas, entra manga | duas_zonas_manga_entra | 5.8 | 40 | 17 h | 70.2 | 70.2 | 0.0 | 26.3 | 42.3 |
-| so manga 10 C | manga10 | 5.8 | 40 | 17 h | 69.8 | 69.8 | 0.0 | 26.1 | 41.8 |
-| junho medio | caju5 | 4.7 | 32 | 17 h | 70.5 | 70.5 | 0.0 | 23.9 | 40.0 |
-| junho medio, manha | caju5 | 4.7 | 32 | 7 h | 70.5 | 70.5 | 0.0 | 43.8 | 56.0 |
-| irradiacao -10 % | caju5 | 5.2 | 40 | 17 h | 79.5 | 79.5 | 0.0 | 18.5 | 36.3 |
-| irradiacao -10 %, manha | caju5 | 5.2 | 40 | 7 h | 79.5 | 79.5 | 0.0 | 38.3 | 53.5 |
-| irradiacao +10 % | caju5 | 6.4 | 40 | 17 h | 79.5 | 79.5 | 0.0 | 18.5 | 36.3 |
-| dia ruim repetido, 17 h | caju5 | 3.0 | 36 | 17 h | 75.4 | 41.4 | 34.0 | 0.0 | 0.0 |
-| dia ruim repetido | caju5 | 3.0 | 36 | 7 h | 75.4 | 41.4 | 34.0 | 0.0 | 0.0 |
-| dia ruim repetido, meia carga 0,5 t | caju5 | 3.0 | 36 | 7 h | 59.0 | 41.4 | 17.6 | 0.0 | 0.0 |
-| dia ruim repetido, sem fruta nova | caju5 | 3.0 | 36 | 7 h | 38.5 | 38.5 | 0.0 | 49.6 | 59.9 |
-
-### Sequencia: 2 dias de projeto, 3 dias nublados (H=2,0; 24-34 C), 2 dias de projeto - caso caju5
-
-fruta continua entrando as 17 h:
-| dia | H | carga kWh | frio produzido kWh | falta kWh | estoque min kWh | estoque fim kWh |
-|---|---|---|---|---|---|---|
-| 1 | 5.8 | 79.5 | 41.6 | 0.0 | 36.3 | 36.3 |
-| 2 | 5.8 | 79.5 | 79.5 | 0.0 | 18.5 | 36.3 |
-| 3 | 2.0 | 73.9 | 13.3 | 24.3 | 0.0 | 0.0 |
-| 4 | 2.0 | 73.9 | 13.3 | 60.6 | 0.0 | 0.0 |
-| 5 | 2.0 | 73.9 | 13.3 | 60.6 | 0.0 | 0.0 |
-| 6 | 5.8 | 79.5 | 91.5 | 17.9 | 0.0 | 29.9 |
-| 7 | 5.8 | 79.5 | 86.0 | 0.0 | 12.0 | 36.3 |
-
-fruta entra as 7 h e continua nos nublados:
-| dia | H | carga kWh | frio produzido kWh | falta kWh | estoque min kWh | estoque fim kWh |
-|---|---|---|---|---|---|---|
-| 1 | 5.8 | 79.5 | 58.7 | 0.0 | 53.5 | 53.5 |
-| 2 | 5.8 | 79.5 | 79.5 | 0.0 | 39.0 | 53.5 |
-| 3 | 2.0 | 73.9 | 13.3 | 7.2 | 0.0 | 0.0 |
-| 4 | 2.0 | 73.9 | 13.3 | 60.6 | 0.0 | 0.0 |
-| 5 | 2.0 | 73.9 | 13.3 | 60.6 | 0.0 | 0.0 |
-| 6 | 5.8 | 79.5 | 91.5 | 14.5 | 0.0 | 26.4 |
-| 7 | 5.8 | 79.5 | 91.5 | 0.0 | 12.0 | 38.4 |
-
-fruta entra as 7 h, suspensa nos nublados:
-| dia | H | carga kWh | frio produzido kWh | falta kWh | estoque min kWh | estoque fim kWh |
-|---|---|---|---|---|---|---|
-| 1 | 5.8 | 79.5 | 58.7 | 0.0 | 53.5 | 53.5 |
-| 2 | 5.8 | 79.5 | 79.5 | 0.0 | 39.0 | 53.5 |
-| 3 | 2.0 | 37.2 | 13.3 | 0.0 | 29.5 | 29.5 |
-| 4 | 2.0 | 37.2 | 13.3 | 0.0 | 5.5 | 5.5 |
-| 5 | 2.0 | 37.2 | 13.3 | 18.5 | 0.0 | 0.0 |
-| 6 | 5.8 | 79.5 | 91.5 | 14.5 | 0.0 | 26.4 |
-| 7 | 5.8 | 79.5 | 91.5 | 0.0 | 12.0 | 38.4 |
-
-### Autonomia real do tanque cheio, sem sol nenhum, sem fruta nova (Tamb 24-36 C)
-- caju5: carga media 1.60 kW -> 46 h com 800 kg; 200 kg dariam 12 h
-- manga10: carga media 1.47 kW -> 50 h com 800 kg; 200 kg dariam 13 h
-- duas_zonas_caju_entra: carga media 1.52 kW -> 49 h com 800 kg; 200 kg dariam 12 h
-- inercia da fruta: 5 t x 3.77 kJ/kg.K = 5.2 kWh por K de subida
-
-### Pico de carga do resfriador de ar (kW) e respiracao do caju em dobro
-- caju5: pico horario 8.3 kW
-- manga10: pico horario 7.1 kW
-- se a respiracao do caju for o dobro do suposto: +10.4 kWh/dia
-
-## 5. Serpentina do tanque (PE-RT/PEX 16x2 mm, gelo crescendo por fora, glicol por dentro)
-gelo 10 mm, 22 circuitos: 1068 m no total (49 m/circuito); v=0.36 m/s; Re=536; h_int=145 W/m2K; R=0.356 m.K/W; potencia no fim da carga com glicol medio a -4,5 C: 13.5 kW; perda de carga 32 kPa; passo entre tubos 40 mm; volume do feixe 1.71 m3
-gelo 15 mm, 12 circuitos: 597 m no total (50 m/circuito); v=0.65 m/s; Re=982; h_int=145 W/m2K; R=0.373 m.K/W; potencia no fim da carga com glicol medio a -4,5 C: 7.2 kW; perda de carga 60 kPa; passo entre tubos 50 mm; volume do feixe 1.49 m3
-gelo 20 mm, 8 circuitos: 386 m no total (48 m/circuito); v=0.98 m/s; Re=1474; h_int=145 W/m2K; R=0.388 m.K/W; potencia no fim da carga com glicol medio a -4,5 C: 4.5 kW; perda de carga 88 kPa; passo entre tubos 60 mm; volume do feixe 1.39 m3
-gelo: 800 kg = 0.87 m3; dilatacao ao congelar (9 %): 79 L -> subida de nivel que serve de medidor de gelo
+## 8. Serpentina de ar (agua gelada), conta de efetividade
+ar 6000 m3/h, UA 2000 W/K, agua 1.4 m3/h: NTU 1.23; efetividade 0.58; K = 946 W/K; com ar a 12 C e agua a 3 C: 8.5 kW
+ar 3000 m3/h, UA 1400 W/K, agua 1.4 m3/h: NTU 1.39; efetividade 0.65; K = 651 W/K; com ar a 12 C e agua a 3 C: 5.9 kW
+ar 1800 m3/h, UA 1000 W/K, agua 0.7 m3/h: NTU 1.66; efetividade 0.67; K = 407 W/K; com ar a 12 C e agua a 3 C: 3.7 kW
+ventilador a 100 %: 6000 m3/h x 50 Pa / 0,35 = 238 W

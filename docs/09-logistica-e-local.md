@@ -1,6 +1,6 @@
 # 09 — Logística e escolha do local
 
-Autor: agente-logistica. Versão 3, de 17/11/2026: refeita depois do parecer do revisor (`docs/_trabalho/revisao-09-logistica.md`) e ajustada às decisões do dono (tabela "Decisões do dono" em `docs/00-premissas.md`).
+Autor: agente-logistica. Versão 4, de 17/11/2026 (inclui os números acordados com o analista de frutas e demanda; ver `docs/_trabalho/acordo-logistica-demanda.md`). Histórico: refeita depois do parecer do revisor (`docs/_trabalho/revisao-09-logistica.md`) e ajustada às decisões do dono (tabela "Decisões do dono" em `docs/00-premissas.md`).
 
 **Decisões do dono que valem aqui:** D1 — o protótipo é **só manga**, uma zona a 12 °C, 5 t; o caju fica como estudo futuro. D2 — recepção da fruta **das 7h às 14h**. D5 — **um protótipo só, sem CNPJ** por enquanto.
 Base: `docs/00-premissas.md`. Este documento não projeta equipamento.
@@ -34,11 +34,12 @@ Consequência: produção por município agora é dado conferido. Clima oficial,
 
 1. **Recomendação para o protótipo (só manga): zona rural de Petrolina-PE, em um núcleo do Projeto Senador Nilo Coelho, em terreno de associação ou cooperativa de colonos.** Nota 86,4 de 100; o segundo colocado tem 69,8. A conferência no IBGE reforçou a escolha.
 2. **Petrolina tem pequeno produtor de manga**, e muito: cerca de 1.950 lotes familiares, que vendem na roça pelo preço do comprador. O comprador está ao lado (Mercado do Produtor de Juazeiro, 2º do país).
-3. **Escala:** a câmara (1 t/dia) equivale à manga de cerca de **4 lotes familiares** (faixa de 2 a 6), e um só lote em colheita entrega cerca de 3 t/dia. Ela serve a um **grupo pequeno, com cota diária**, não a uma comunidade.
+3. **Escala e uso esperado (acordado com o doc 10):** giro esperado de **108 t de manga por ano**, média de 0,45 t/dia em 240 dias (agosto a março); o 1 t/dia é teto, garantido por cota. Serve a um **grupo de cerca de 10 famílias** (faixa de 5 a 15), cada uma separando parte da colheita. De **abril a julho a câmara fica parada** se for só manga.
 4. **Três perguntas eliminam o local, e só a visita responde:** já existe câmara fria com vaga? há quem opere e ceda terreno por escrito? o comprador paga mais por manga resfriada? Nenhuma foi verificada.
 5. **Recepção das 7h às 14h (D2).** A manga deve chegar entre 9h e 15h [SUPOSTO]: o que chegar depois das 14h espera à sombra e entra na manhã seguinte.
 6. **Sem CNPJ (D5),** quem vende, emite nota e assina com a merenda escolar é o produtor ou a associação, não o dono do equipamento. O dono cede o uso. A forma de cobrar pelo serviço sem empresa precisa de contador.
-7. **Caju: estudo futuro (seção 9).** A versão 1 apontava o Pajeú como lugar do caju; **estava errado**. Pelo IBGE, 81% da castanha do estado está em Buíque (Agreste) e não há caju onde há manga irrigada. O único município com as duas frutas é São José do Belmonte, em volume pequeno.
+7. **Rede elétrica:** o núcleo recomendado provavelmente tem rede [SUPOSTO, não confirmado]. Isso não muda a pontuação, mas muda o sentido do teste: em Petrolina o protótipo prova a tecnologia, não a necessidade de estar fora da rede. Opções na seção 4.4; a decisão é do dono.
+8. **Caju: estudo futuro (seção 9).** A versão 1 apontava o Pajeú como lugar do caju; **estava errado**. Pelo IBGE, 81% da castanha do estado está em Buíque (Agreste) e não há caju onde há manga irrigada. O único município com as duas frutas é São José do Belmonte, em volume pequeno.
 
 ---
 
@@ -72,6 +73,7 @@ Pernambuco, 2024: **560.977 t em 20.246 ha**. Brasil: 1.861.362 t. Participaçã
 - Sete municípios da beira do São Francisco: 282.000 + 179.200 + 42.500 + 30.000 + 8.750 + 4.375 + 4.000 = **550.825 t = 98,2% do estado** [CALCULADO]. Todo o resto de Pernambuco: 560.977 − 550.825 = **10.152 t**.
 - Correções em relação à versão 1: Lagoa Grande tinha 10.000 t (o certo é 30.000 t); o total do estado tinha 540.977 t (o certo é 560.977 t).
 - A produção de Petrolina oscila muito de um ano para o outro (376 mil t em 2023, 282 mil t em 2024).
+- **Dados de 2025** [IBGE, mesma tabela, conferidos; são os que o doc 10 usa]: Pernambuco 609.940 t em 23.276 ha; Petrolina 286.250 t (11.450 ha); Belém do São Francisco 179.200 t; **Lagoa Grande 66.500 t** (1.900 ha — mais que dobrou em um ano); Santa Maria da Boa Vista 42.500 t; Orocó 10.500 t; Cabrobó 7.400 t; Petrolândia 4.375 t; São José do Belmonte 400 t. A ordem dos municípios muda (Lagoa Grande passa Santa Maria da Boa Vista); a conclusão não.
 
 **O lado baiano do mesmo polo** (a ponte liga Petrolina a Juazeiro) [IBGE, 2024]:
 
@@ -98,6 +100,8 @@ Soma: **691.078 t** [CALCULADO], mais que os sete municípios pernambucanos. Nen
 | Rendimento do pequeno | média de 25 t/ha em estudo com 75 produtores do distrito (2014–2018) | [FONTE 60] |
 
 - 12.520 ha ÷ 1.954 lotes = **6,4 ha por lote** [CALCULADO sobre SUPOSTO: fontes de anos diferentes]. Conferência por outro caminho: 2.326 × 0,845 = 1.965 lotes; 12.520 ÷ 1.965 = 6,4 ha.
+
+**Lotes não são toneladas.** Pelo Censo Agropecuário de 2017, só **17% do volume** de manga de Pernambuco saiu da agricultura familiar (doc 10, seção 1.3, tabela 6955 do IBGE). Há muitos lotes familiares, mas a maior parte da fruta é de médios e grandes. Para o protótipo isso não é problema — sobram famílias para formar um grupo de 10 —, mas pesa na hora de pensar em escala.
 
 **Como o pequeno vende hoje** [FONTE 10, estudo da Embrapa de 2023, trecho de busca]: é "tomador de preço"; o comprador vai ao pomar e classifica em primeira, segunda e "arrastão" ou refugo; o pequeno diz não ter estrutura para vender sozinho.
 
@@ -127,19 +131,23 @@ Quantos lotes familiares a câmara atende, em um ano:
 
 **O que limita de verdade é o pico, não o ano.** A manga irrigada é colhida por talhão, em poucas semanas. Se um lote colhe suas 64 t em 3 semanas [SUPOSTO — não achei fonte para a duração da colheita do pequeno]: 64 ÷ 21 = **3 t/dia, três vezes o que a câmara aceita**. Por isso a operação precisa de **cota diária por produtor** (seção 6) e a pergunta 3 da seção 8 ("em quantos dias o senhor colhe um talhão?") é a mais importante da visita.
 
+**Giro esperado (número do doc 10, adotado aqui):** os 250 t acima são o **teto**. O que se espera de fato, no cenário médio do analista de frutas e demanda, é **108 t por ano** (estoque médio de 2,25 t, permanência de 5 dias, 240 dias de operação) [SUPOSTO; doc 10, seção 6.2]; a faixa vai de 25 t (pessimista) a 289 t (otimista, só com outras frutas). Com 10 famílias: 108 ÷ 10 = cerca de **11 t por família por ano, um sexto das 64 t de um lote** [CALCULADO sobre SUPOSTO].
+
 Conclusão que continua de pé: no polo irrigado a câmara serve a um grupo pequeno que separa **parte** da fruta para vender melhor. Para comparar: Petrolina colhe 282.000 t/ano; 250 t são 0,09%.
 
-### 1.5 Calendário de safra da manga
+### 1.5 Calendário de uso (número do doc 10, adotado aqui)
 
-O calendário de ocupação da câmara é do analista de frutas e demanda (`docs/10-frutas-e-demanda.md`). O que eu tenho:
+O calendário de ocupação é do analista de frutas e demanda (`docs/10-frutas-e-demanda.md`, seção 2.4). A versão anterior deste documento dizia "manga o ano todo"; **corrijo**: há manga irrigada o ano todo, mas de abril a julho ela é pouca, cara (R$ 4,94/kg em junho de 2026 contra R$ 0,99/kg em fevereiro, segundo o Cepea citado no doc 10) e vendida na hora. Não há o que guardar.
 
-| Região | Meses | Marcação |
-|---|---|---|
-| Manga irrigada, Vale do São Francisco | Oferta o ano todo; pico de outubro a janeiro | [SUPOSTO]. Apoio fraco: boletim do Cepea de 2007 (pico a partir da 2ª quinzena de outubro) [FONTE 30] e site comercial [FONTE 31] |
-| Manga em São José do Belmonte | Não encontrado. 20 t/ha sugere pomar irrigado | [SUPOSTO] |
-| Manga de sequeiro | Outubro a janeiro | [SUPOSTO] |
+| Mês | Jan | Fev | Mar | Abr | Mai | Jun | Jul | Ago | Set | Out | Nov | Dez |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Uso (só manga) | alto | médio | médio | parado | parado | parado | parado | médio | médio | alto | alto | alto |
+| Estoque médio (t) | 3,0 | 1,5 | 1,5 | 0 | 0 | 0 | 0 | 1,5 | 1,5 | 3,0 | 3,0 | 3,0 |
+| Entrada média (t/dia) | 0,6 | 0,3 | 0,3 | 0 | 0 | 0 | 0 | 0,3 | 0,3 | 0,6 | 0,6 | 0,6 |
 
-Não achei calendário de manga específico para o pequeno produtor de Petrolina. A irrigação e a indução floral permitem colher em vários meses, mas **em que meses o colono de fato colhe** é pergunta de campo (pergunta 3 da seção 8).
+Os níveis (alto, médio, muito baixo) são do doc 10. Os números por mês são a minha tradução deles, feita para fechar com o cenário médio dele: ocupação média de (4 × 60% + 4 × 30%) ÷ 8 = 45% e 0,6 × 120 + 0,3 × 120 = **108 t no ano** [CALCULADO sobre SUPOSTO]. Tudo [SUPOSTO]: nenhum de nós achou calendário de colheita do pequeno produtor de Petrolina (pergunta 3 da seção 8).
+
+Consequência prática: **o protótipo precisa estar instalado antes de outubro** para ser testado no pico.
 
 ---
 
@@ -229,7 +237,7 @@ Pesos são decisão minha [SUPOSTO]; o dono pode mudar. Como o protótipo é só
 
 | | Local | Manga 2024 [IBGE] | A favor | Contra |
 |---|---|---|---|---|
-| A | **Petrolina — núcleo do Projeto Senador Nilo Coelho** | 282.000 t em 9.400 ha | Cerca de 1.950 lotes familiares; Mercado do Produtor ao lado; manga em muitos meses [SUPOSTO]; asfalto; água de canal; técnico de refrigeração na cidade [SUPOSTO] | Frio já existe na região (E1 em dúvida); câmara pequena para o colono; concorrência do lado baiano |
+| A | **Petrolina — núcleo do Projeto Senador Nilo Coelho** | 282.000 t em 9.400 ha | Cerca de 1.950 lotes familiares; Mercado do Produtor ao lado; uso de agosto a março [SUPOSTO]; asfalto; água de canal; técnico de refrigeração na cidade [SUPOSTO] | Frio já existe na região (E1 em dúvida); câmara pequena para o colono; concorrência do lado baiano |
 | B | **Belém do São Francisco** | 179.200 t em 6.400 ha | Segundo do estado; associações de agricultores familiares, uma em ilha [FONTE 46] | **Não sei se a manga é de empresa ou de pequeno**; longe dos compradores; fruta de ilha depende de barco |
 | C | **Santa Maria da Boa Vista / Lagoa Grande** | 42.500 t e 30.000 t (72.500 t) | Mesmo polo, a cerca de 55 a 110 km de Petrolina [SUPOSTO]; área de manga em crescimento (Lagoa Grande dobrou de 2022 a 2024) | **Não levantei quem produz** (colonos, assentados ou empresas); menos estrutura e menos técnicos que Petrolina [SUPOSTO] |
 | D | **São José do Belmonte** | 400 t em 20 ha | Produção pequena, do tamanho da câmara: 400 t em cerca de 120 dias de safra [SUPOSTO] = 3 t/dia no município; merenda compra da agricultura familiar [FONTE 44]; é o único com caju também (estudo futuro) | Poucos meses de uso; longe dos mercados; não sei de quem é a manga; água [SUPOSTO] escassa |
@@ -268,11 +276,11 @@ Conferência da coluna A: (5×20 + 5×15 + 5×15 + 2×20 + 5×5 + 5×7 + 3×3 + 
 **Por quê:**
 1. É onde há, com dado, muitos pequenos produtores de manga juntos e vendendo em posição fraca.
 2. O comprador está ao lado.
-3. Há manga em muitos meses do ano [SUPOSTO]: o protótipo trabalha e gera dados quase o ano todo.
+3. Há manga para guardar em cerca de oito meses do ano, de agosto a março [SUPOSTO; doc 10]. Os outros candidatos do mesmo polo têm o mesmo calendário; São José do Belmonte teria menos.
 4. Para um **protótipo único** (D5), pesa ter asfalto, água, técnico de refrigeração e loja de peças na cidade [SUPOSTO]: o primeiro equipamento vai precisar de ajuste.
 5. É o clima mais quente e ensolarado entre os candidatos: se funciona lá, funciona nos outros.
 
-**Para que ele serve nesse local:** para um **grupo de 5 a 15 famílias, com cota diária**, tirar 1 t por dia do circuito "vende na roça" e entregar manga resfriada, em dia marcado, a quem paga mais: merenda escolar, PAA, varejo local, boxes do Mercado do Produtor.
+**Para que ele serve nesse local:** para um **grupo de cerca de 10 famílias (5 a 15), com cota diária**, tirar 1 t por dia do circuito "vende na roça" e entregar manga resfriada, em dia marcado, a quem paga mais: merenda escolar, PAA, varejo local, boxes do Mercado do Produtor.
 
 **O que derruba a recomendação:**
 - Qualquer dos três eliminatórios (E1, E2, E3) dar errado na visita.
@@ -280,7 +288,28 @@ Conferência da coluna A: (5×20 + 5×15 + 5×15 + 2×20 + 5×5 + 5×7 + 3×3 + 
 - A visita mostrar que o colono colhe tudo em poucos dias e não aceita cota.
 - Os compradores do mercado interno não valorizarem manga resfriada (muita manga de mercado interno viaja sem frio [SUPOSTO]).
 
+**Condições combinadas com o doc 10 para seguir:** um comprador com compromisso por escrito (pelo menos 50 t por ano), uma associação que opere e ceda o terreno, pelo menos 8 de 15 produtores dispostos a pagar, e nenhuma câmara fria com vaga por perto.
+
 **Alternativas, em ordem:** C (Santa Maria da Boa Vista / Lagoa Grande), se em Petrolina o frio já sobrar; D (São José do Belmonte), se o dono preferir um lugar onde a câmara seja do tamanho da produção local e onde o caju possa ser estudado depois; B (Belém do São Francisco), só depois de uma visita para descobrir quem são os pequenos.
+
+---
+
+### 4.4 O local recomendado tem rede elétrica? O que isso muda
+
+O analista de frutas e demanda perguntou, com razão, se um protótipo "fora da rede" faz sentido num polo irrigado que tem energia.
+
+**O que sei:** não confirmei. Os onze núcleos habitacionais do projeto têm escolas, postos de saúde e comércio [FONTE 69, trecho de busca], então **é razoável supor que o núcleo tem rede** [SUPOSTO]. A energia do bombeamento é do distrito e é rateada na tarifa de água [FONTE 70, trecho de busca]; isso não diz se cada lote tem ligação própria, se é trifásica ou se é estável. A página da Codevasf não abriu. Quem responde é o DINC ou a visita (pergunta 20a).
+
+**O que isso significa:** nenhum critério da minha pontuação mede "falta de rede". Petrolina ganhou por fruta, comprador e acesso. Se houver rede no terreno, ali o protótipo **prova a tecnologia** (funcionar só com sol e gelo), mas **não prova a necessidade**: uma câmara comum na tomada seria mais barata, como aponta o doc 10. As opções, sem escolher:
+
+| Opção | A favor | Contra |
+|---|---|---|
+| A. Petrolina, fora da rede mesmo com rede perto | Fruta, comprador, asfalto e técnico à mão; a rede próxima serve de plano B se o protótipo falhar com fruta dentro; clima mais severo | Não prova o mercado do "fora da rede"; o usuário pode perguntar por que não ligar na tomada |
+| B. Mesmo polo, em ponto de rede fraca ou ausente (ilhas de Belém do São Francisco, ponta de linha, assentamentos) | Testa tecnologia e necessidade juntas, sem sair da manga | **Não sei se esses pontos existem com manga de pequeno produtor**; exige visita; mais longe de comprador e de técnico |
+| C. Município de sertão com rede pior (por exemplo São José do Belmonte) | Necessidade mais crível; produtor do tamanho da câmara | Pouca manga, poucos meses, longe do comprador; a rede de lá também não foi verificada |
+| D. Petrolina, solar com a rede como apoio | Mais barato e mais seguro para a fruta | Deixa de ser "fora da rede": muda a razão de ser do projeto; a decisão D4 do dono (bateria, sem gerador) aponta no sentido contrário |
+
+Se o dono quiser que a falta de rede pese na escolha, é preciso criar esse critério e levantar a qualidade da rede em cada candidato. **Esse dado hoje não existe para nenhum deles.**
 
 ---
 
@@ -348,22 +377,23 @@ Não abri as normas. A lista é do que **perguntar**. Tudo [VALIDAR COM PROFISSI
 
 | Pergunta | Resposta | Marcação |
 |---|---|---|
-| Quem entrega | 5 a 15 famílias, raio de 10 a 15 km, em carro, moto com carreta ou trator, em caixas de 20 kg da associação | [SUPOSTO] |
+| Quem entrega | Cerca de 10 famílias com CAF (faixa de 5 a 15), raio de 10 a 15 km, em carro, moto com carreta ou trator, em caixas de 20 kg da associação | [SUPOSTO] |
 | Quanto cada um entrega | **Cota diária** combinada na véspera, somando no máximo 1 t (50 caixas de 20 kg). Sem cota, um só lote em colheita entrega 3 t/dia (seção 1.4) | [CALCULADO sobre SUPOSTO] |
+| Quanto entra de fato | **Média de 0,45 t/dia** nos 240 dias de operação (0,6 t/dia de outubro a janeiro; 0,3 t/dia em fevereiro, março, agosto e setembro); **1 t/dia é teto, não rotina** | [SUPOSTO; doc 10] |
 | A que horas colhem | Do amanhecer ao fim da manhã [SUPOSTO]; uma exportadora do Vale passou a priorizar as horas mais frescas do dia [FONTE 50] | |
 | **A que horas a manga chega** | **Entre 9h e 15h**, com a maior parte entre 10h e 14h | **[SUPOSTO]** — não achei nenhuma fonte; só a visita responde |
 | **Horário de recepção** | **Das 7h às 14h** | **Decisão D2 do dono** |
 | Manga que chega depois das 14h | Espera à sombra, em caixa aberta, e entra na manhã seguinte a partir das 7h. Regra combinada com o grupo: **colher cedo e sair da roça até as 13h** | regra proposta |
 | Temperatura da fruta na chegada | **30 °C** como valor de projeto (o da premissa); pode chegar a 35 °C em manga colhida perto do meio-dia | [SUPOSTO] — medir na visita |
-| Quanto tempo fica | 2 a 5 dias. Vida útil: usar a do projeto térmico e a do analista de frutas | [SUPOSTO] |
+| Quanto tempo fica | **5 dias em média** (faixa de 2 a 5). A manga aguenta 2 a 3 semanas a 12 °C, mas guardar 14 dias derruba o giro para 5 t ÷ 14 = 0,36 t/dia | [SUPOSTO; doc 10] |
 | Quem busca | Comprador com caminhão em dias fixos (por exemplo segunda, quarta e sexta), ou frete do grupo até o Mercado do Produtor e as escolas | [SUPOSTO] |
-| Quem opera | Uma pessoa paga da associação, com substituto treinado: abre, pesa, anota, confere temperatura, limpa | [SUPOSTO] |
+| Quem opera | Uma pessoa da associação que já trabalha no local, **sem salário dedicado**, com ajuda de custo saída da taxa, e substituto treinado: abre, pesa, anota, confere temperatura, limpa. (Acordado com o doc 10; minha ressalva: abrir das 7h às 14h todo dia sem pagamento certo é risco de porta fechada — divergência 3 do acordo) | [SUPOSTO] |
 | Quem vende e emite nota | O produtor ou a associação. O dono do equipamento não tem CNPJ (D5) e não compra nem vende fruta | D5 + [VALIDAR com contador] |
-| Quem paga a operação | Taxa por caixa. **Valor: pendência**, a cargo do analista de frutas e demanda | pendência |
+| Quem paga a operação | O grupo, pela associação: taxa por quilo movimentado ou desconto na venda. Referência do doc 10: **R$ 0,06 por kg por dia** (R$ 1,20 por caixa de 20 kg por dia; R$ 0,30 por kg em 5 dias). Produtor isolado que vende na roça não é cliente | [SUPOSTO; doc 10] |
 
 **Como isso encaixa em 1 t/dia e 5 t:**
-- Estoque = entrada diária × dias de permanência. 1 t/dia × 3 dias = 3 t; × 5 dias = 5 t, câmara cheia [CALCULADO].
-- Retirada três vezes por semana: 2 a 3 t por caminhão. Retirada uma vez por semana: 5 t de uma vez, câmara no limite e nenhuma folga para atraso [CALCULADO].
+- Estoque = entrada diária × dias de permanência. No teto: 1 t/dia × 5 dias = 5 t, câmara cheia. No esperado: 0,45 t/dia × 5 dias = 2,25 t; no pico, 0,6 × 5 = 3 t [CALCULADO].
+- Retirada três vezes por semana: cerca de 1 t por viagem no esperado (0,45 t/dia × 7 ÷ 3), 2 a 3 t no teto. **É carga de caminhonete ou caminhão pequeno, não de caminhão toco** [CALCULADO]. Retirada uma vez por semana: 5 t de uma vez, câmara no limite e nenhuma folga para atraso [CALCULADO].
 - **Regra: marcar a retirada antes de aceitar a fruta.** Fruta sem comprador marcado não entra.
 
 **Efeito da janela de 7h às 14h para o projeto térmico:** a carga de fruta quente entra junto com o sol alto, o que é bom para um sistema movido direto pelos painéis; mas a fruta que entra às 13h ou 14h ainda está esfriando quando o sol acaba. O gelo tem de ser dimensionado para isso (é o que D2 determina). Se a visita mostrar que quase tudo chega antes das 11h, há folga; se mostrar que quase tudo chega depois das 13h, a regra "sair da roça até as 13h" passa a ser essencial.
@@ -395,9 +425,13 @@ Não abri as normas. A lista é do que **perguntar**. Tudo [VALIDAR COM PROFISSI
 | Horário de recepção | 7h às 14h | Decisão D2 |
 | Horário provável de chegada | 9h às 15h; maior parte entre 10h e 14h. Caso a verificar pelo térmico: 1 t inteira entrando entre 13h e 14h | **[SUPOSTO]** |
 | Temperatura da fruta na chegada | **30 °C** (valor único de projeto). Sensibilidade a 35 °C: 1.000 kg × 3,77 kJ/kg·K × 5 K = 18.850 kJ = **5,2 kWh de frio a mais por dia** | [SUPOSTO] + [CALCULADO pelo revisor] |
-| Meses de uso | O ano todo, com pico de outubro a janeiro | [SUPOSTO] |
+| Meses de uso | **Agosto a março** (alto de outubro a janeiro; médio em fevereiro, março, agosto e setembro). **Abril a julho: parado**, se for só manga | [SUPOSTO; doc 10] |
+| Fruta por ano | **108 t** (cenário médio); faixa de 25 a 289 t | [SUPOSTO; doc 10] |
+| Entrada diária | Média de **0,45 t/dia**; pico de safra 0,6 t/dia; **teto de 1 t/dia** por cota. A logística recomenda manter 1 t/dia como entrada de projeto, porque a fruta chega em dias de colheita, não espalhada por igual | [SUPOSTO] |
+| Estoque médio | 2,25 t (3 t no pico) | [SUPOSTO; doc 10] |
+| Rede elétrica no local | Provável no núcleo; **não confirmada** no terreno | [SUPOSTO] |
 | Caixa | 20 kg; 50 por tonelada; 250 para 5 t (a do projeto térmico) | alinhado ao 01 |
-| Permanência média | 2 a 5 dias | [SUPOSTO] |
+| Permanência média | 5 dias (faixa de 2 a 5) | [SUPOSTO; doc 10] |
 | Aberturas de porta | Concentradas das 7h às 14h e na retirada, em dias fixos | D2 + [SUPOSTO] |
 | Área do terreno | 600 a 800 m² | [SUPOSTO] |
 | Água | Provável água de canal, não potável | [SUPOSTO] |
@@ -436,6 +470,8 @@ Leve: este documento, termômetro de espeto, celular com o aplicativo da Starlin
 18. Já houve furto de cabo, bomba ou painel solar?
 19. De onde vem a água? É tratada?
 20. Há eletricista e frigorista de confiança por perto?
+20a. **Há rede elétrica no terreno? Monofásica ou trifásica? Cai muito? Quanto é a conta de luz do galpão da associação?** (Define o sentido do teste: ver seção 4.4.)
+20b. Que outras frutas os sócios colhem de abril a julho (banana, acerola, goiaba)? Para quem vendem?
 
 ### 8.3 Para os compradores
 
@@ -451,11 +487,9 @@ Leve: este documento, termômetro de espeto, celular com o aplicativo da Starlin
 27. **DINC e Codevasf:** posso instalar dentro do perímetro? Qual a área de manga dos lotes familiares e quantos colonos plantam manga? Algum planta caju?
 28. **Adagro:** um ponto que recebe fruta de vários produtores precisa de cadastro? O que é preciso para levar manga a Juazeiro-BA?
 29. **Vigilância sanitária:** o que exige para armazenar fruta de terceiros?
-30. **IPA, Embrapa Semiárido e escritório do IBGE:** o rendimento de 1,8 t de castanha por hectare em Buíque é real? De quem é a manga de Belém do São Francisco e a de São José do Belmonte? Existe caju irrigado no Vale?
 
 ### 8.5 No terreno escolhido
 
-31. Verificação de obstrução no aplicativo da Starlink.
 32. Fotos do horizonte ao norte, leste e oeste às 8h e às 16h.
 33. Medir terreno, portão e estrada; procurar fio baixo.
 34. Perguntar a um vizinho se alaga.
@@ -505,6 +539,8 @@ Leituras [CALCULADO]:
 - Buíque: 2.521 ÷ 3.099 = **81%** do estado. Buíque + Tupanatinga: 2.686 t = **87%**.
 - Pajeú (nove municípios, soma do revisor): 118 t = **3,8%**. Carnaíba + Flores: 92 t.
 - São José do Belmonte é o único município com mais de 100 t das duas culturas.
+
+**Em 2025** [IBGE, conferido; doc 10]: a castanha de Pernambuco caiu para 1.894 t; Buíque 1.662 t (88%), São José do Belmonte 77 t, Tupanatinga 56 t, Flores 28 t, Carnaíba 10 t. No país a safra caiu de 169.210 t para 114.749 t. O caju oscila muito de um ano para o outro, e a posição de Buíque se manteve.
 
 **Três cuidados com esses números:**
 1. **O rendimento de Buíque é estranho.** 1,82 t de castanha por hectare é cinco vezes a média do Brasil (169.210 ÷ 463.177 = 0,37 t/ha) e três vezes a dos vizinhos de sequeiro (0,5 a 0,6). Pode ser pomar de cajueiro-anão bem cuidado ou pode ser estimativa alta do levantamento. Com a média brasileira, Buíque teria 1.385 ha × 0,37 = **506 t** — ainda de longe o maior do estado, mas cinco vezes menos. Uso os dois valores nas contas abaixo.
@@ -576,16 +612,24 @@ Os conflitos A (horário), B (uma ou duas zonas) e C (Agreste ou sertão) **fora
 
 ## 11. Acordo com frutas e demanda
 
-O documento `docs/10-frutas-e-demanda.md` ainda está em rascunho (só o cabeçalho na hora desta revisão). Não há números dele para usar. Pontos comuns que ficam **em aberto até a rodada de acordo**:
+O texto completo está em `docs/_trabalho/acordo-logistica-demanda.md` (acordado, divergências que restam e perguntas ao dono). Resumo do que este documento passou a usar do doc 10:
 
-| Ponto | O que este documento usa por enquanto | Dono do número |
+| Item | Número adotado | Dono do número |
 |---|---|---|
-| Vida útil e temperatura de cada fruta | Não fixo; remeto ao 01 e ao 10 | Frutas e demanda |
-| Calendário de ocupação mês a mês | Seção 1.5, quase tudo [SUPOSTO] | Frutas e demanda |
-| Caju (estudo futuro): parte do pedúnculo que serve para mesa | 10% a 30% [SUPOSTO] | Frutas e demanda |
-| Taxa por caixa, receita, quem paga | Pendência | Frutas e demanda |
-| Municípios, volumes, distâncias, compradores por local, horário de chegada, modelo de operação | Este documento | Logística |
-| Outras frutas além da manga | Não tratei. Se o 10 propuser outras para ocupar a câmara fora do pico, a tabela de candidatos precisa ser conferida com o IBGE | a combinar |
+| Fruta | Manga a 12 °C, uma zona, 5 t; complementares só em segunda fase, se o dono autorizar | Frutas e demanda (e D1) |
+| Calendário de uso | Agosto a março; parado de abril a julho | Frutas e demanda |
+| Toneladas por ano | 108 t (faixa de 25 a 289) | Frutas e demanda |
+| Entrada diária | Média de 0,45 t/dia; teto de 1 t/dia | Frutas e demanda (média); logística (teto e cota) |
+| Permanência | 5 dias | Frutas e demanda |
+| Grupo | 10 famílias (5 a 15), com comprador fixo, via associação | Os dois |
+| Operador | Pessoa da associação, com ajuda de custo | Frutas e demanda, com ressalva minha |
+| Taxa de referência | R$ 0,06 por kg por dia | Frutas e demanda |
+| Dados de 2025 do IBGE | Incorporados (seções 1.1 e 9) | Frutas e demanda; conferidos por mim |
+| Local, municípios, horário, modelo de operação | Os deste documento | Logística |
+
+**Divergências que restam** (detalhe no arquivo do acordo): (1) dimensionar a entrada pelo teto de 1 t/dia ou pela média; (2) quais frutas complementares fazem sentido em Petrolina — há banana e acerola, **não há mamão** [IBGE 2025], e não há prova de que alguém pagaria para guardá-las; (3) operador com ou sem pagamento certo; (4) o calendário é suposição dos dois lados; (5) lotes familiares são muitos, mas só 17% do volume.
+
+**Ponto do doc 10 que ficou desatualizado:** ele ainda cita "150 a 180 t por lote" e "1,4 a 1,7 lote", que eram da versão 1 deste documento. O número corrigido é cerca de 64 t de manga por lote (seção 1.4).
 
 ---
 
@@ -605,6 +649,7 @@ O documento `docs/10-frutas-e-demanda.md` ainda está em rascunho (só o cabeça
 6. Retirado o Pajeú como lugar do caju; registrados Buíque e São José do Belmonte para estudo futuro.
 
 ### Pendências para o dono
+0. **O protótipo serve para provar a tecnologia ou a necessidade de estar fora da rede?** (seção 4.4). E: aceita frutas complementares numa segunda fase, para não ficar parado de abril a julho? As perguntas completas estão em `docs/_trabalho/acordo-logistica-demanda.md`.
 1. Fazer a visita com as perguntas da seção 8, **começando pelos três eliminatórios** (perguntas 15, 16 e 21).
 2. Escolher a associação ou cooperativa operadora e o núcleo.
 3. Definir por escrito: cessão do terreno, **valor da taxa por caixa** e **quem responde por fruta perdida se o equipamento falhar**.
@@ -618,6 +663,7 @@ O documento `docs/10-frutas-e-demanda.md` ainda está em rascunho (só o cabeça
 - Normais do INMET, irradiação do CRESESB e a página da Codevasf (não abriram).
 - De quem é a manga de Belém do São Francisco, de Santa Maria da Boa Vista, de Lagoa Grande e de São José do Belmonte.
 - Em que meses o pequeno produtor de Petrolina colhe.
+- **Se há rede elétrica no terreno do núcleo recomendado**, e de que qualidade.
 - Para o estudo futuro do caju: tudo sobre Buíque além do IBGE, e se o rendimento de lá é real.
 - Central de abastecimento de Petrolina e feiras da agricultura familiar.
 - Estruturas de frio e cooperativas do lado baiano.
@@ -637,7 +683,7 @@ Tabela da seção 7.
 - PE, BA e Brasil: https://apisidra.ibge.gov.br/values/t/5457/n3/26,29/n1/all/v/214,216/p/2024/c782/40143,40262?formato=json
 - Municípios baianos: https://apisidra.ibge.gov.br/values/t/5457/n6/2918407,2907202,2909901,2930774,2930204/v/214,216/p/2024/c782/40143,40262?formato=json
 
-Abertas nesta versão: 1, 15, 51 (página "Pedúnculo") e 63. As demais: **só o trecho mostrado pela busca**. Nas fontes 31 e 62 a busca não deixou claro de qual link do resultado saiu o número; tratar como [SUPOSTO].
+Abertas nesta versão: 1, 15, 51 (página "Pedúnculo") e 63. As demais: **só o trecho mostrado pela busca**. Na fonte 62 a busca não deixou claro de qual link do resultado saiu o número; tratar como [SUPOSTO].
 
 1. Embrapa — Atualização dos dados sobre a cultura da manga com dados da PAM/IBGE até 2024: https://www.embrapa.br/documents/1355026/60636822/Boletim+Manga+-+PAM+2024/ae831b0a-98e1-c106-26c3-1372d5d2a933
 5. Embrapa — Produção Integrada de Manga: https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/160990/1/OPB1949.pdf
@@ -653,8 +699,6 @@ Abertas nesta versão: 1, 15, 51 (página "Pedúnculo") e 63. As demais: **só o
 18. Prefeitura de Carnaíba — Cajucultura é discutida em associação de Serra Branca: https://carnaiba.pe.gov.br/cajucultura-e-discutida-em-associacao-de-serra-branca/
 24. BNB — Agricultura familiar em Pernambuco, Censo Agropecuário de 2017: https://app.bnb.gov.br/documents/80223/8054629/E_1263.pdf/84ffff26-e71b-6df3-b6d6-bfc9dc4983ad
 26. CEASA-PE — Cotação de frutas: https://www.ceasape.org.br/cotacao/frutas
-30. CEPEA / Hortifruti Brasil — Manga, pico de safra no Nordeste (2007): https://www.cepea.org.br/hfbrasil/edicoes/62/manga.pdf
-31. (link incerto) https://distribuidorasdealimentos.com.br/calendario-safras-alimentos/manga ; ou https://gulosoesaudavel.com.br/epoca-de-manga-palmer-no-brasil/
 35. Prefeitura de Caruaru — Central de Abastecimento: https://caruaru.pe.gov.br/central-de-abastecimento-de-caruaru-oferta-alimentos-com-precos-mais-acessiveis/
 36. Em Sampa — Rotas rodoviárias: https://www.emsampa.com.br/rotas_rodoviarias_VII/recife_petrolina.htm ; https://www.emsampa.com.br/rotas_rodoviarias_VIII/petrolina_caruaru.htm
 37. Embrapa — Coordenação da qualidade de frutas para produção de polpas: https://ainfo.cnptia.embrapa.br/digital/bitstream/item/44761/1/1-177-2.pdf
@@ -682,5 +726,8 @@ Abertas nesta versão: 1, 15, 51 (página "Pedúnculo") e 63. As demais: **só o
 66. Canal Rural — Resolução do PNAE (citada pelo revisor): https://www.canalrural.com.br/politica/resolucao-do-pnae-redefine-compras-da-agricultura-familiar/
 67. Folha de Pernambuco — Com 41 °C, Petrolina bate recorde: https://www.folhape.com.br/noticias/com-41oc-petrolina-bate-recorde-de-temperatura-registrada-em/198898/ ; Diario de Pernambuco (2019): https://www.diariodepernambuco.com.br/noticia/vidaurbana/2019/12/registrando-40-7-c-pernambuco-chega-proximo-do-recorde-historico-de-a.html
 68. Climatempo — Climatologia de Buíque: https://www.climatempo.com.br/climatologia/5674/buique-pe
+
+69. DINC — Projeto Irrigado Senador Nilo Coelho celebra 36 anos: https://www.dinc.org.br/noticias/projeto-irrigado-nilo-coelho-celebra-36-anos-de-desenvolvimento-no-vale-do-sao-francisco/
+70. Embrapa — Desempenho do Distrito de Irrigação Senador Nilo Coelho (Revista Brasileira de Engenharia Agrícola e Ambiental): https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/134430/1/RevistaBrasileiradeEngenhariaAgricolaeAmbientalv.5n.2p.2042092001.pdf
 
 (A numeração tem saltos porque fontes da versão 1 que deixaram de ser usadas foram retiradas.)

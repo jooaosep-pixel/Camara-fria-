@@ -78,4 +78,5 @@ iniciais e DEVEM ser refeitos e corrigidos.
 | D2 | Recepção da fruta das 7h às 14h. | Dimensionar gelo e painéis para fruta quente entrando até as 14h. Não vale a regra "só até as 10h". |
 | D3 | Sem circuito de propano montado/soldado no local. | Restam: unidade selada de fábrica (com o gás que tiver) ou gás não inflamável (ex.: R513A) montado no local. O engenheiro compara as duas. |
 | D4 | Bateria de apoio no lugar de gerador; capacidade pelo que compensa. | Sem gerador no projeto. |
+| D6 | Outras frutas PODEM entrar no protótipo para completar a ocupação, desde que convivam com a manga a 12 °C (candidatas do estudo de demanda: banana, mamão, acerola; goiaba e maracujá em giro rápido). | A manga continua a fruta principal e a câmara continua em uma zona a 12 °C. Verificar etileno e mistura com a manga. Caju continua fora (pede 5 °C). |
 | D5 | Um protótipo (não lote). CNPJ só no futuro, se der certo. | Compras do protótipo sem CNPJ: priorizar o que se compra no Brasil; importação formal própria fica fora por ora (só via importadora/revenda ou remessa de peça pequena). |
