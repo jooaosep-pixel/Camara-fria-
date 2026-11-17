@@ -171,3 +171,62 @@ Criterio: polpa do estoque nao passa de 14 C e ar nao passa de 15 C.
 |---|---|---|---|---|---|
 | 1 | 700 | 0 | 12 | 0 | 0 |
 | 2 | 1200 | 10 | 16 | 5 | 10 |
+| 3 | 1700 | 25 | 19 | 15 | 20 |
+
+### Combinacoes conferidas (atende = polpa do estoque <= 14 C e ar <= 15 C)
+| kWp | kg de gelo | bateria de apoio kWh uteis | recepcao nos dias nublados | 1 dia | 2 dias | 3 dias | polpa max em 3 dias C |
+|---|---|---|---|---|---|---|---|
+| 10 | 500 | 0 | ate14h | NAO | NAO | NAO | 43.7 |
+| 10 | 500 | 5 | ate14h | NAO | NAO | NAO | 26.7 |
+| 12 | 700 | 0 | ate14h | sim | NAO | NAO | 27.3 |
+| 12 | 700 | 5 | ate14h | sim | NAO | NAO | 19.5 |
+| 12 | 700 | 10 | ate14h | sim | sim | NAO | 17.4 |
+| 12 | 700 | 0 | meia | sim | NAO | NAO | 19.5 |
+| 12 | 700 | 5 | meia | sim | sim | NAO | 14.2 |
+| 12 | 700 | 10 | meia | sim | sim | sim | 12.8 |
+| 12 | 700 | 0 | nada | sim | sim | sim | 13.1 |
+| 14 | 700 | 0 | ate14h | sim | NAO | NAO | 22.2 |
+| 14 | 700 | 5 | ate14h | sim | sim | NAO | 16.3 |
+| 14 | 700 | 15 | ate14h | sim | sim | sim | 12.8 |
+| 14 | 700 | 0 | meia | sim | sim | NAO | 15.3 |
+| 14 | 700 | 5 | meia | sim | sim | sim | 12.8 |
+| 14 | 1000 | 0 | ate14h | sim | sim | NAO | 18.0 |
+| 14 | 1000 | 5 | ate14h | sim | sim | NAO | 14.2 |
+| 12 | 1000 | 0 | meia | sim | sim | NAO | 15.5 |
+
+Frio que cada recurso entrega num dia nublado (referencia):
+- 100 kg de gelo: 9.3 kWh de frio, uma vez por sequencia
+- 5,12 kWh de bateria (4,6 uteis): 12.7 kWh de frio por descarga (COP 2.90 a 27 C)
+- 1 kWp a mais: 1.50 kWh eletricos = 4.3 kWh de frio em cada dia nublado; 10.4 kWh em dia de sol (se houver onde guardar)
+
+## 6. Banco de gelo
+### 6.1 arquitetura b: serpentina de cobre com expansao direta, gelo por fora, agua circulando (fusao externa)
+tubo 15.9 mm, gelo 25 mm: 2.94 kg/m -> 238 m para 700 kg; fim da carga com evaporacao a -6 C: 12.1 kW; volume interno 38.1 L
+tubo 15.9 mm, gelo 25 mm: 2.94 kg/m -> 238 m para 700 kg; fim da carga com evaporacao a -8 C: 16.1 kW; volume interno 38.1 L
+tubo 15.9 mm, gelo 30 mm: 3.96 kg/m -> 177 m para 700 kg; fim da carga com evaporacao a -6 C: 8.3 kW; volume interno 28.3 L
+tubo 15.9 mm, gelo 30 mm: 3.96 kg/m -> 177 m para 700 kg; fim da carga com evaporacao a -8 C: 11.0 kW; volume interno 28.3 L
+tubo 12.7 mm, gelo 25 mm: 2.72 kg/m -> 258 m para 700 kg; fim da carga com evaporacao a -6 C: 11.5 kW; volume interno 24.9 L
+tubo 12.7 mm, gelo 25 mm: 2.72 kg/m -> 258 m para 700 kg; fim da carga com evaporacao a -8 C: 15.3 kW; volume interno 24.9 L
+dilatacao: 700/917 - 700/1000 = 63 L; empuxo liquido do gelo: 63 kgf
+### 6.2 arquitetura a: tubo PE-RT 16x2 com glicol por dentro (fusao interna), em espirais
+935 m de tubo para 700 kg; Nu 3,66 -> h 122 W/m2K; R 0.391 m.K/W; media logaritmica (glicol -6/-2 C contra 0 C) 3.64 K; potencia no fim da carga 8.7 kW
+espiral em tanque redondo de 1,5 m: raio de 0,15 a 0,72 m, passo 40 mm -> 38.9 m por camada; 24 camadas; altura do feixe 0.96 m
+
+## 7. CO2 da respiracao (seguranca) e ar novo
+5 t x 17 ml/kg.h = 85 L/h de CO2; em 14 h fechada: 1.19 m3 = 7.9 % em 15 m3 de ar livre (sem renovacao)
+   com 5 m3/h de ar novo: equilibrio em 1.74 %
+   com 10 m3/h de ar novo: equilibrio em 0.89 %
+   com 20 m3/h de ar novo: equilibrio em 0.47 %
+   com 33 m3/h de ar novo: equilibrio em 0.30 %
+5 t x 22 ml/kg.h = 110 L/h de CO2; em 14 h fechada: 1.54 m3 = 10.3 % em 15 m3 de ar livre (sem renovacao)
+   com 5 m3/h de ar novo: equilibrio em 2.24 %
+   com 10 m3/h de ar novo: equilibrio em 1.14 %
+   com 20 m3/h de ar novo: equilibrio em 0.59 %
+   com 33 m3/h de ar novo: equilibrio em 0.37 %
+custo termico de 10 m3/h com ar a 34 C: 2.1 kWh/dia
+
+## 8. Serpentina de ar (agua gelada), conta de efetividade
+ar 6000 m3/h, UA 2000 W/K, agua 1.4 m3/h: NTU 1.23; efetividade 0.58; K = 946 W/K; com ar a 12 C e agua a 3 C: 8.5 kW
+ar 3000 m3/h, UA 1400 W/K, agua 1.4 m3/h: NTU 1.39; efetividade 0.65; K = 651 W/K; com ar a 12 C e agua a 3 C: 5.9 kW
+ar 1800 m3/h, UA 1000 W/K, agua 0.7 m3/h: NTU 1.66; efetividade 0.67; K = 407 W/K; com ar a 12 C e agua a 3 C: 3.7 kW
+ventilador a 100 %: 6000 m3/h x 50 Pa / 0,35 = 238 W
