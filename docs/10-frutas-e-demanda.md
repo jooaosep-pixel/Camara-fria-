@@ -12,7 +12,11 @@ O dono decidiu, como mediador (tabela "Decisões do dono" em `docs/00-premissas.
 - **D2 — recepção da fruta das 7 h às 14 h.**
 - **D5 — um protótipo só, sem CNPJ por enquanto.** Consequência para a demanda: quem vende a fruta e emite documento é o produtor ou a associação, não o dono do protótipo (seção 5.2).
 
+- **D6 — outras frutas podem entrar no protótipo** para completar a ocupação, desde que convivam com a manga a 12 °C; a manga continua a principal; verificar etileno e mistura. Tratado nas seções 2.3 e 2.6.
+
 O panorama das frutas do Nordeste (seção 1) foi mantido inteiro.
+
+**Revisão de 17/11/2026:** o revisor aprovou com correções (`docs/_trabalho/revisao-10-demanda.md`, 13 achados importantes, nenhum bloqueante). As correções estão incorporadas; os quatro conflitos que ele levantou estão na seção 12.2 com a minha posição ao lado da dele.
 
 ## Como ler
 
@@ -32,15 +36,15 @@ O panorama das frutas do Nordeste (seção 1) foi mantido inteiro.
 
 ## Resumo em uma página
 
-1. **O Nordeste colhe 84% da manga do país, mas a manga é a fruta menos "de pequeno produtor" da lista.** Em Pernambuco, só 17% do volume vem da agricultura familiar (Censo 2017). Banana, goiaba, acerola e maracujá são muito mais "de pequeno" (62% a 81% em PE) [F1][F4].
-2. **Só manga, a 12 °C, é uma escolha coerente com os dados** (decisão D1). A 12 °C a manga verde-madura dura 2 a 3 semanas sem dano por frio. O caju não está no polo da manga: 88% da castanha de PE em 2025 saiu de Buíque, no Agreste [F3].
-3. **Frutas que podem completar a ocupação a cerca de 12 °C:** banana (a mais promissora: muito volume no mesmo lugar e 71% familiar), mamão, acerola, abacaxi, limão e umbu. Goiaba e maracujá aguentam 12 °C sem dano, mas duram menos que na temperatura ideal delas.
-4. **Guardar manga para "esperar a entressafra" não funciona.** A manga dura 2 a 3 semanas no frio; o preço muda em ciclos de meses (R$ 0,99/kg em fevereiro e R$ 4,94/kg em junho de 2026, no Vale) [F17]. O ganho real do frio é **vender para um comprador melhor** (merenda escolar, PAA, varejo), que exige entrega em dia certo, e **perder menos fruta**.
-5. **A demanda é fraca como "aluguel de espaço" e pode ser forte como "ferramenta de um grupo que já tem comprador".** Cinco dias de câmara a R$ 0,06/kg·dia custam R$ 0,30/kg: 25% do valor da manga na roça (R$ 1,20/kg) [CALCULADO].
-6. **Receita só da taxa de armazenagem, 5 t, só manga:** R$ 4.500 por ano (pessimista), R$ 32.400 (médio) e R$ 115.500 (otimista, que só se alcança completando com outras frutas) [CALCULADO sobre hipóteses SUPOSTAS]. No cenário médio a taxa não paga um operador dedicado.
-7. **A câmara fica quase vazia de abril a julho** se for só manga: é quando falta manga e o preço está alto.
-8. **Há evidência contrária séria:** na Índia, em um estudo controlado, só 1% a 2% dos feirantes que tinham de pagar uma pequena taxa usaram a câmara solar em um dia qualquer [F14]. No Brasil não achei nenhum caso em operação para copiar.
-9. **Antes de comprar equipamento:** fazer as entrevistas da seção 9. Regra proposta: seguir só com pelo menos um comprador com compromisso por escrito e pelo menos 8 de 15 produtores dispostos a pagar.
+1. **O Nordeste colhe 84% da manga do país, mas a manga é a fruta menos "de pequeno produtor" da lista.** Em Pernambuco, só 17% do volume vem da agricultura familiar (Censo 2017; o Censo enxergou só 54% do volume daquele ano). Mesmo assim, só em Petrolina há 734 estabelecimentos familiares com manga, cerca de 21 t cada por ano [F1][F4].
+2. **Manga a 12 °C é coerente com os dados** (D1). A referência da Embrapa é 13 °C, 85% a 90% de umidade, 2 a 3 semanas [F7]; a 12 °C a vida útil precisa ser confirmada por variedade [VALIDAR]. O caju não está no polo da manga: 88% da castanha de PE em 2025 saiu de Buíque, no Agreste [F3].
+3. **Complementos a 12 °C (D6), em ordem:** acerola (estudos indicam 12 °C como a melhor temperatura e dano por frio a 8 e 10 °C), mamão (9 a 12 °C é a faixa mais usada, mas quase não há mamão em Petrolina), goiaba e maracujá só verdoengos e por poucos dias. **Banana não entra antes de ensaio:** abaixo de 13 °C ela pode sofrer dano por frio em 2 a 24 horas [F35]. A mistura com a manga pede regra de etileno e renovação de ar (seção 2.6).
+4. **Guardar manga para "esperar a entressafra" não funciona** (dura semanas; o preço muda em meses). O ganho possível é **vender para um comprador melhor** e **perder menos**. Quanto se ganha por quilo **não se sabe**: na mesma época do ano a diferença entre a roça e a referência de compra pública vai de R$ 0,10 a R$ 2,30/kg, antes do custo de entregar (seção 4.2).
+5. **Cenário de referência (ancorado no único comprador quantificado):** uma prefeitura comprando do grupo no teto legal da merenda (79 t por ano) e taxa de R$ 0,20 por quilo movimentado (equivalente ao preço do ColdHubs convertido) dão **cerca de R$ 15.800 por ano** [CALCULADO sobre SUPOSTO]. O cenário "médio" (108 t, R$ 32.400) exige mais de um comprador; o "otimista" (R$ 115.500) é **teto teórico, não cenário**.
+6. **Em linguagem direta, para o custo do protótipo:** a taxa de armazenagem do cenário de referência paga um equipamento de **até cerca de R$ 38 mil** em 10 anos sem juros, e só se a operação custar R$ 12 mil por ano; com operador pago, não paga nenhum equipamento. Mesmo no cenário médio o teto é de cerca de R$ 200 mil. **Um protótipo de câmara solar fora da rede não se paga com a taxa;** o retorno, se houver, está no ganho de venda das famílias, que ainda precisa ser medido. Todos esses números são hipótese até a validação de campo.
+7. **A câmara fica parada de abril a julho** se for só manga; com complementos a ocupação desses meses é hipótese, porque não achei calendário de colheita do pequeno nem preço de banana e acerola.
+8. **Evidência externa, nos dois sentidos:** num experimento na Índia, o acesso grátis à câmara solar aumentou de 20% a 30% as vendas dos feirantes; mas, entre os que tinham de pagar uma pequena taxa diária, só 1% a 2% usavam a câmara num dia qualquer [F14]. Vale contra o aluguel avulso por dia, não contra um grupo com comprador fixo. No Brasil não achei caso em operação para copiar.
+9. **Antes de comprar equipamento:** fazer as entrevistas da seção 9. Regra proposta: seguir só com comprador comprometido por escrito para pelo menos 50 t por ano.
 
 ---
 
@@ -110,7 +114,11 @@ Fatia da quantidade produzida que saiu de estabelecimentos classificados como ag
 | **Manga** | **25%** | **17%** | **Dominada por médio e grande** |
 | Mamão | 12% | 61% | No NE é de empresa; em PE o volume é pequeno |
 | Uva de mesa | 10% | 11% | Fruta de empresa |
-| Melão, abacaxi, melancia | sem dado | sem dado | A tabela que consultei (6957) veio sem o recorte familiar para esses produtos |
+| Melão, abacaxi, melancia | sem dado | sem dado | A tabela de lavoura temporária que consultei (6957; a das permanentes é a 6955) veio sem o recorte familiar para esses produtos |
+
+**Ressalvas** (apontadas pelo revisor, conferidas na mesma tabela):
+- O Censo 2017 registrou 131.639 t de manga em PE; a PAM do mesmo ano, 241.914 t. O Censo enxerga **54%** do volume da PAM (só pomares com 50 pés ou mais, entre outras diferenças). A fatia de 17% vale para essa metade [CALCULADO].
+- Petrolina: 734 estabelecimentos familiares com manga (de 1.383), produzindo 15.646 t: **15,1%** do volume do município e **21 t por estabelecimento por ano**. Pernambuco: 1.650 estabelecimentos familiares, 13,8 t cada [F4][CALCULADO].
 
 **Leitura direta:** das duas frutas escolhidas pelo dono, a manga é a menos "de pequeno produtor" de toda a lista, e o caju é de pequeno mas quase não existe em Pernambuco. Se o público do projeto é o pequeno, goiaba, acerola, maracujá e banana têm mais gente dentro.
 
@@ -143,18 +151,18 @@ Preço da manga no ano (ajuda a ler o calendário): no Vale, a tommy valeu R$ 1,
 
 | Fruta | Temperatura | Umidade | Vida útil no frio | Vida útil sem frio | Dano por frio | Etileno | Fonte |
 |---|---|---|---|---|---|---|---|
-| **Manga** | 13 °C (verde-madura); 10 °C (madura). **Protótipo: 12 °C (D1)** | 85–90% | 2 a 3 semanas | cerca de 1 semana [SUPOSTO] | **Sim**, abaixo de 10 a 13 °C; a Embrapa viu escurecimento da polpa entre 8 e 10 °C | Produz e é sensível [SUPOSTO] | [F7] tabela 5; doc 01, seção 2.1 |
+| **Manga** | 13 °C [F7]; 10 °C para fruta madura (UC Davis, citado no doc 01, seção 2.1). **Protótipo: 12 °C (D1); vida útil a 12 °C [VALIDAR] por variedade e ponto de colheita** | 85–90% | 2 a 3 semanas a 13 °C | cerca de 1 semana [SUPOSTO] | **Sim**, abaixo de 10 a 13 °C; a Embrapa viu escurecimento da polpa entre 8 e 10 °C | Produz e é sensível [SUPOSTO] | [F7] tabela 5; doc 01, seção 2.1 |
 | **Caju (pedúnculo)** | 5 °C | 85–90% | cerca de 15 dias embalado em bandeja com filme; 10 a 25 dias conforme o clone | **menos de 2 dias** [SUPOSTO; a Embrapa fala em "reduzido período de pós-colheita" sem dar número no trecho lido] | Clones de pedúnculo vermelho sofrem a 5 °C | Não amadurece depois de colhido; produz pouco [SUPOSTO] | [F6]; doc 01, seção 2.1 |
 | Goiaba | 8 a 10 °C | 85–90% | até 16 dias (ensaio com Paluma a 10 °C) | 3 a 5 dias [SUPOSTO] | Sim, abaixo de 8 °C [SUPOSTO] | Produz e é sensível [SUPOSTO] | [F20] |
-| Acerola | 8 °C (um estudo); 10 a 12 °C (outro, feito em Petrolina) | 90% | até 11 dias a 8 °C no melhor genótipo | 2 a 3 dias [SUPOSTO] | Indícios abaixo de 10 °C (por isso o segundo estudo recomenda 10 a 12 °C) | Não respondeu ao etileno | [F20] |
+| Acerola | **12 °C** para fruta colhida ainda verde, logo antes de avermelhar; estudo da UNIVASF (Petrolina) achou 10 e 12 °C bons para Flor Branca e 12 °C para Junko, e **dano por frio a 8 e 10 °C** em alguns casos [F36] | 90% | até 11 dias a 8 °C no melhor de 16 genótipos (outro estudo [F20]); dias a 12 °C: não encontrado | 2 a 3 dias [SUPOSTO] | Indícios abaixo de 10 °C (por isso o segundo estudo recomenda 10 a 12 °C) | Não respondeu ao etileno | [F20] |
 | Maracujá | 7 a 10 °C | 85–90% | 3 a 5 semanas | 3 a 7 dias | Sim, abaixo de 7 °C [SUPOSTO] | Produz [SUPOSTO] | [F7] tabela 5; [F20] |
-| Mamão | 7 °C (maduro) a 13 °C | 85–90% | 1 a 3 semanas | 4 a 7 dias [SUPOSTO] | Sim | Sensível | [F7] tabela 5; [F21] |
+| Mamão | 7 °C (maduro) a 13 °C; **9 a 12 °C é a faixa mais usada**, limitada pelo dano por frio [F36] | 85–90% | 1 a 3 semanas | 4 a 7 dias [SUPOSTO] | Sim | Sensível | [F7] tabela 5; [F21] |
 | Abacaxi | 7 a 13 °C | 85–90% | 2 a 8 semanas | 1 a 2 semanas [SUPOSTO] | Sim, abaixo de 7 °C | Pouco sensível [SUPOSTO] | [F7] tabela 5 |
 | Melão | 2 a 5 °C (cantaloupe); 7 a 10 °C para o amarelo [SUPOSTO] | 85–95% [SUPOSTO] | Amarelo: semanas; ensaios da Embrapa foram até 54 e 59 dias | Amarelo: 2 a 4 semanas [SUPOSTO] | Imaturos sofrem | Cantaloupe produz e é sensível | [F21]; [F20] |
 | Uva | –1 a –0,5 °C | 90–95% | 1 a 6 meses | poucos dias [SUPOSTO] | Não | Pouco sensível [SUPOSTO] | [F7] tabela 5 |
-| Banana | 13 a 14 °C | 85–90% [SUPOSTO] | 1 a 3 semanas [SUPOSTO] | 1 semana [SUPOSTO] | **Sim**: já aparece a 10,5 °C; nanicão e maçã sofrem mais que a prata | Produz e é muito sensível | [F20]; [F21] |
+| Banana | 13,3 a 14,4 °C (verde) | 85–90% [SUPOSTO] | 1 a 3 semanas [SUPOSTO] | 1 semana [SUPOSTO] | **Sim**: abaixo de 13 °C pode haver dano em 2 a 24 horas, conforme variedade e maturação [F35]; em ensaio a 10,5 °C, nanicão e maçã sofreram mais que a prata [F20] | Produz e é muito sensível: a banana verde se conserva com etileno abaixo de 1 ppm [F35] | [F35]; [F20]; [F21] |
 | Umbu | cerca de 14 °C | — | até 19 dias | 2 a 3 dias | Provável abaixo de 14 °C [SUPOSTO] | — | [F20] |
-| Limão | 12 a 14 °C | 85–90% | 2 a 3 meses | — | Sim | — | [F7] tabela 5 |
+| Limão | 12 a 14 °C (tabela internacional, sem dizer qual limão; o do Nordeste é o Tahiti, que pode pedir menos [VALIDAR]) | 85–90% | 2 a 3 meses | — | Sim | — | [F7] tabela 5 |
 | Laranja | 3 a 9 °C | 85–90% | 3 a 8 semanas | — | — | — | [F7] tabela 5 |
 | Coco verde, graviola, melancia | **não encontrei dado** | | | | | | Pesquisar se entrarem no projeto |
 

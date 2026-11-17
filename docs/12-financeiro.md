@@ -160,6 +160,11 @@ Cada pedido tem um código. A resposta ideal é: **valor, unidade, fonte (link o
 - **IM-5.** Sobressalentes que precisam vir no mesmo embarque e quanto somam; custo e prazo de uma peça de reposição depois, por remessa.
 - **IM-6.** Sensibilidade ao câmbio dos itens importados: câmbio usado e data.
 
+### 2.7b Pedidos novos após o térmico refeito
+- **ER-13.** Ficha técnica e preço do resfriador selado (Elgin EcoTherm Duo ou outro): capacidade com glicol a −6 °C e ar a 41 °C, gás, carga, comando externo. Sem ela, (a) x (b) não fecha.
+- **ER-14.** Preço do compressor BITZER 2CES/4FES e dos periféricos da (b) (hoje reserva minha de R$ 17 mil a 45 mil).
+- **IS-10.** Rota A: modelo e preço do inversor híbrido que aciona os compressores e da bateria de 10 a 15 kWh; Rota B: confirmação por escrito do fabricante do inversor solar para uso em compressor.
+
 ### 2.8 Perguntas que só o dono responde (levadas pelo orquestrador)
 - **DN-1.** O protótipo é para medir (aceita não dar retorno) ou precisa se pagar? A conta da seção 4 muda de sentido conforme a resposta.
 - **DN-2.** Quem opera: alguém da associação sem custo para o dono, ou operador pago?
@@ -305,6 +310,51 @@ Fora isso, para a bateria tocar o compressor seria preciso um inversor maior e u
 
 ---
 
+### 3(e) Comparações com a base térmica refeita (`docs/01` v2, seções 6 e 15.3 a 15.5) — [PROVISÓRIO]
+
+O projeto térmico foi refeito e está em segunda revisão. Números novos, usados aqui como base provisória: frio de projeto de **82,2 kWh/dia**; menor conjunto que fecha com recepção até 14 h: **12 kWp + 500 kg** na arquitetura (a) resfriador selado de fábrica, **10 kWp + 500 kg** na (b) R513A montado no local; **conjunto de referência: 12 kWp + 700 kg**. As seções 3(a) a 3(d) acima usaram a versão antiga (10 kWp, 600 kg, 68 kWh/dia) e ficam como registro do método; **onde houver diferença, vale esta seção.** O quadro da seção 1 continua na configuração antiga; passar para 12 kWp + 700 kg acrescenta cerca de R$ 5 mil a R$ 9 mil (2 kWp e 100 kg), dentro da faixa.
+
+Fonte de cada preço: as mesmas da seção 1. Preços que faltam e que só aparecem aqui são reservas minhas [C], sem fonte: compressor semi-hermético R$ 6 mil a R$ 15 mil cada; periféricos de frigorista R$ 5 mil a R$ 15 mil; R513A R$ 80 a R$ 200 por kg; cobre do banco R$ 4 mil a R$ 10 mil; bomba P1 e glicol da (a) R$ 4 mil a R$ 10 mil. O banco de gelo usa a ordem de grandeza do engenheiro: R$ 1.000 a R$ 2.000 por 100 kg [SUPOSTO, `docs/01`, seção 6.3].
+
+**Rota A x Rota B** [CALCULADO sobre B e C]
+
+| | Rota A — máquina de rede + inversor híbrido + 10 a 15 kWh (menor risco) | Rota B — compressor + inversor solar direto + 5 kWh (menor custo) |
+|---|---|---|
+| Itens | 2 condensadoras de rede (R$ 10.140 a 19.766, B); inversor híbrido para o compressor, referência 2 inversores 48 V (R$ 7.688 a 17.000, B); 2 a 3 módulos de bateria (R$ 16.662 a 39.000, B); +1 kWp (R$ 2.022 a 3.355) | 2 compressores (R$ 12.000 a 30.000, **C**); 2 inversores solares (R$ 5.628 a 7.138, B); periféricos (R$ 5.000 a 15.000, **C**); 1 módulo de bateria (R$ 8.331 a 13.000, B) |
+| **Investimento** | **R$ 36.512 a R$ 79.121** | **R$ 30.959 a R$ 65.138** |
+| 10 anos, com 1 reposição de bateria | R$ 53.174 a R$ 118.121 | R$ 39.290 a R$ 78.138 |
+| Risco | Peças comuns, garantia de cada fabricante; mais bateria no calor | Depende de duas confirmações por escrito (inversor de bomba em compressor; compressor em inversor); pode ficar sem garantia do conjunto |
+
+As faixas de investimento se sobrepõem (A − B vai de −R$ 29 mil a +R$ 48 mil); **em 10 anos a Rota A tende a custar R$ 14 mil a R$ 40 mil a mais**, quase tudo por causa da bateria (comprar e repor). O engenheiro estima o mesmo: A custa "2 a 3 módulos de bateria (R$ 17 mil a 25 mil), um inversor híbrido e cerca de 1 kWp a mais". **Isso é custo contra segurança de funcionamento, não contra segurança de pessoas.** O dono decide quanto vale o risco menor.
+
+**Arquitetura (a) resfriador selado, 12 kWp + 500 kg x (b) R513A, 10 kWp + 500 kg** — o resfriador selado (Elgin EcoTherm Duo) **não tem preço publicado nem ficha**. Por isso o script calcula o preço de empate:
+- (b): equipamento R$ 27.588 a R$ 66.138 (com 12 a 20 kg de R513A) + 15 a 25 diárias de frigorista (R$ 5.700 a 11.250) [SUPOSTO].
+- (a): precisa de +2 kWp e de bomba P1 e glicol (R$ 8.044 a 16.709) e de 4 a 8 diárias (R$ 1.520 a 3.600).
+- **A (a) empata com a (b) se o(s) resfriador(es) selado(s) instalado(s) custarem R$ 24 mil a R$ 57 mil** (R$ 24 mil a R$ 61 mil contando 10 anos de gás reposto na (b)).
+- O engenheiro recomenda (a) **se a ficha confirmar**; senão (b). O revisor prefere (a). A diferença de risco: na (b), solda e carga de 12 a 20 kg de gás de GWP 630 no local, com frigorista experiente; na (a), equipamento de fábrica sem gás montado no local.
+
+**Banco de gelo artesanal x comercial** — nenhum tem preço e o comercial não tem fornecedor identificado (`docs/01`, seção 15.3). Pela ordem de grandeza do engenheiro, 700 kg artesanais custam R$ 7 mil a R$ 14 mil só de material [SUPOSTO]; a seção 3(a), na base antiga, dava R$ 15 mil a R$ 42 mil com estrutura e montagem. **Método inalterado:** o comercial vence se custar até o preço de empate (R$ 19 mil a R$ 51 mil na conta antiga); a segunda rodada troca a entrada `A_PAR["preco_comercial"]` quando houver cotação.
+
+**10 x 12 kWp (10 kWp + 500 kg x 12 kWp + 700 kg)**
+- Diferença: +2 kWp e +200 kg = **R$ 6.044 a R$ 10.709** (o engenheiro conta R$ 3.480 só de módulos), isto é, 1 % a 6 % do custo total.
+- O que se compra: fechar nas duas arquiteturas, 1 dia nublado com recepção normal, folga para respiração maior e para as frutas de D6. Com 10 kWp + 500 kg, fecha só na (b), sem folga e sem nenhum dia nublado (`docs/01`, seção 6.2).
+- Paga-se se evitar de 0,8 a 6 perdas de fruta em 10 anos (perda = 30 % de 5 t [SUPOSTO]).
+- Posições: engenheiro — dimensionar estrutura e inversores para 12 a 14 kWp já; revisor — esperar catálogo e irradiação para comprar os 2 kWp finais.
+
+**Bateria** (combinações do `docs/01`, seção 6.2; só painel e bateria, gelo de 700 kg igual em todas):
+
+| Opção | Investimento | 10 anos com 1 reposição de bateria (ponto médio) | Dias nublados cobertos |
+|---|---|---|---|
+| 12 kWp + 5 kWh, meia carga no dia nublado | R$ 32.593 a R$ 53.255 | R$ 53.589 | 2; o 3º quase (polpa a 14,2 °C) |
+| 12 kWp + 10 kWh, recepção normal | R$ 40.924 a R$ 66.255 | R$ 74.920 | 2 |
+| **14 kWp + 5 kWh, recepção normal** | **R$ 36.636 a R$ 59.964** | **R$ 58.966** | 2 |
+| 14 kWp + 15 kWh, recepção normal | R$ 53.298 a R$ 85.964 | R$ 101.628 | 3 |
+
+- Para dois dias nublados com recepção normal, **14 kWp + 5 kWh custa cerca de R$ 16 mil menos em 10 anos** do que 12 kWp + 10 kWh, e faz o mesmo. Confirma a conta do engenheiro.
+- Custo por kWh de frio ao longo da vida, estimado pelo engenheiro: gelo cerca de R$ 0,54, painel R$ 1,08, bateria R$ 4,37. **A bateria custa 8 vezes o gelo e 4 vezes o painel.** Na seção 3(d) cheguei à mesma ordem por outro caminho (2,5 a 10 vezes).
+- A regra "no terceiro dia nublado, meia carga ou nenhuma fruta nova" custa zero e dispensa os 15 kWh.
+- **A Rota A já traz 10 a 15 kWh de bateria**, o que cobre o terceiro dia: quem escolher A não precisa somar bateria de apoio.
+
 ## 4. Receita e retorno
 
 Duas leituras da receita, **lado a lado, sem refazer nenhuma**:
@@ -433,10 +483,11 @@ Se algum agente propuser cortar um desses itens para baixar o total, registro co
 
 | Decisão | Para que lado pende hoje | Depende de |
 |---|---|---|
-| (a) Tanque artesanal x banco comercial | **Indefinido.** Comercial vence se custar até cerca de R$ 50 mil instalado | Cotação do comercial (IM-2, ER-6); material e diárias do artesanal corrigido (ER-6, FR-2) |
-| (b) Arranjo solar | **10 kWp, com estrutura pronta para 12.** Dinheiro para dia nublado vai para gelo | COP de catálogo (ER-3); irradiação e dias nublados (IS-1); valor da fruta perdida (FD-1) |
-| (c) Selada de fábrica x R513A no local | **R513A no local pelo custo e prazo; o revisor prefere a selada** | A selada existe e dá para trazer sem CNPJ? (ER-4, IM-1); lista e preço do R513A (ER-5) |
-| (d) Bateria | **Só a mínima: 1 a 2 módulos (5 a 10 kWh)** | Consumo noturno real (ER-10, PC-3, PC-5); preço no Brasil (IS-5, IM-4); arquitetura (IS-6) |
+| Rota A x Rota B | **B pelo custo** (R$ 14 mil a 40 mil a menos em 10 anos); **A pelo risco** de funcionamento | Confirmações por escrito do inversor e do compressor (IS-4, ER-4); preço real de bateria e de inversor híbrido (IS-5, IS-6) |
+| Arquitetura (a) selada x (b) R513A | **Indefinido:** a (a) vale se o resfriador instalado custar até cerca de R$ 24 mil a 57 mil | Ficha e preço do Elgin EcoTherm Duo ou equivalente (ER-4, IM-1) |
+| Tanque artesanal x banco comercial | **Indefinido.** O comercial vence se custar até o preço de empate | Cotação do comercial (IM-2, ER-6); diárias do artesanal (FR-2) |
+| Arranjo solar | **12 kWp + 700 kg**, com estrutura e inversores para 14 kWp. Custa R$ 6 mil a 11 mil a mais que 10 kWp + 500 kg | COP de catálogo (ER-3); irradiação (IS-1) |
+| Bateria | **Só a mínima (5 kWh) na Rota B**, com meia carga em dia nublado; para 2 dias com recepção normal, 14 kWp + 5 kWh, não 12 kWp + 10 kWh. Na Rota A a bateria já vem | Consumo noturno (150 W prudentes, `docs/01`) e preço de bateria (IS-5, IM-4) |
 
 O que o dono precisa decidir (quando chegarem os números): DN-1 (medir ou se pagar), DN-2 (quem opera), DN-3 (quantos dias nublados cobrir), e os conflitos 1 e 2.
 
@@ -719,4 +770,47 @@ Soma do que tem numero, sem operador: R$ 6.116 a R$ 18.017  (doc 10 supos R$ 12.
         R$ 173.357         R$ 17.336         R$ 19.299         R$ 25.256
         R$ 517.865         R$ 51.786         R$ 57.652         R$ 75.446
 Limites do Pronaf Mais Alimentos (doc 10 s.7): R$ 250 mil por familia; R$ 450 mil para fruticultura.
+
+====================================================================================================
+7. COMPARACOES COM A BASE TERMICA REFEITA (doc 01 v2) — PROVISORIO
+====================================================================================================
+Frio de projeto: 82.2 kWh/dia. Preco por kWp (modulo+estrutura): R$ 2.022 a R$ 3.355. Banco de gelo: R$ 1000 a 2000 por 100 kg [SUPOSTO, doc 01 s.6.3].
+
+7.1 Rota A (maquina de rede + inversor hibrido + bateria 10-15 kWh) x Rota B (compressor + inversor solar direto + 5 kWh)
+  Rota A: R$ 36.512 a R$ 79.121
+     - 2 unidades condensadoras de rede                             R$ 10.140 a    R$ 19.766  B
+     - inversor hibrido p/ compressor (ref.: 2 inversores 48 V)      R$ 7.688 a    R$ 17.000  B
+     - bateria 10 a 15 kWh (2 a 3 modulos)                          R$ 16.662 a    R$ 39.000  B
+     - +1 kWp (perdas do inversor/bateria, doc 01 s.15.3)            R$ 2.022 a     R$ 3.355  B
+  Rota B: R$ 30.959 a R$ 65.138
+     - 2 compressores semi-hermeticos                               R$ 12.000 a    R$ 30.000  C
+     - 2 inversores solares diretos                                  R$ 5.628 a     R$ 7.138  B
+     - perifericos de frigorista (condensador, valvulas...)          R$ 5.000 a    R$ 15.000  C
+     - bateria 5 kWh (1 modulo)                                      R$ 8.331 a    R$ 13.000  B
+  Diferenca de investimento (A - B): R$ -28.626 a R$ 48.162
+  Reposicao de bateria em 10 anos: A +R$ 16.662 a +R$ 39.000; B +R$ 8.331 a +R$ 13.000 (vida de 10 anos [SUPOSTO])
+  Custo em 10 anos (invest. + 1 reposicao de bateria): A R$ 53.174 a R$ 118.121; B R$ 39.290 a R$ 78.138
+  Nao entra (sem dado): garantia do conjunto na Rota B (duas confirmacoes por escrito pendentes); custo de uma parada.
+
+7.2 Arquitetura (a) resfriador selado + glicol, 12 kWp + 500 kg  x  (b) R513A expansao direta, 10 kWp + 500 kg
+  (b) equipamento R$ 27.588 a R$ 66.138 (inclui R$ 960 a R$ 4.000 de gas, 12 a 20 kg) + montagem R$ 5.700 a R$ 11.250 (15 a 25 diarias [SUPOSTO])
+  (a) precisa de +2 kWp e P1/glicol: R$ 8.044 a R$ 16.709; montagem R$ 1.520 a R$ 3.600
+  Preco de EMPATE do(s) resfriador(es) selado(s), instalado(s), so investimento: R$ 23.724 a R$ 57.079
+  Somando 10 anos de gas reposto na (b) (5 a 10 %/ano): empate sobe para R$ 24.204 a R$ 61.079
+
+7.3 Arranjo: 10 kWp + 500 kg x 12 kWp + 700 kg
+  Diferenca: +2 kWp e +200 kg = R$ 6.044 a R$ 10.709  (engenheiro: R$ 3.480 so de modulos)
+  = 1.2 % a 6.2 % do custo total do prototipo
+  O que compra: fecha nas DUAS arquiteturas, 1 dia nublado com recepcao normal, folga para respiracao maior e frutas de D6 (doc 01 s.15.3).
+  10 kWp + 500 kg: fecha so na (b), sem folga e sem dia nublado (doc 01 s.6.2: nao atende nem 1 dia).
+  Paga-se se evitar 0.8 a 5.9 perda(s) de fruta em 10 anos (perda = 30 % de 5 t [SUPOSTO])
+
+7.4 Bateria (doc 01 s.6.2 e 6.4)
+  opcao                                                        invest. (min-max)   10 anos c/ 1 repos. bat. (meio)  cobre
+  12 kWp + 700 kg + 5 kWh, meia carga no nublado        R$ 32.593 a   R$ 53.255                         R$ 53.589  2 dias; 3o quase (polpa 14,2 C)
+  12 kWp + 700 kg + 10 kWh, recepcao normal             R$ 40.924 a   R$ 66.255                         R$ 74.920  2 dias
+  14 kWp + 700 kg + 5 kWh, recepcao normal              R$ 36.636 a   R$ 59.964                         R$ 58.966  2 dias
+  14 kWp + 700 kg + 15 kWh, recepcao normal             R$ 53.298 a   R$ 85.964                        R$ 101.628  3 dias
+  (so painel e bateria; gelo de 700 kg igual em todas)
+  Custo por kWh de frio ao longo da vida (engenheiro, doc 01 s.6.3): gelo R$ 0.54, painel R$ 1.08, bateria R$ 4.37  -> bateria = 8x o gelo e 4x o painel
 ```
